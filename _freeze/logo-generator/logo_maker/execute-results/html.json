@@ -1,0 +1,15 @@
+{
+  "hash": "142b1815958a3fe87088aa8a3c1d27b9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"logo_generation code\"\nformat: html\n---\n\n\n\nUse this space to generate hexagonal stickers for the project. The stickers require the \"hexSticker\" package so make sure it is installed and loaded. This code requires an external image and can be adjusted accordingly within the shape. It is also possible to use code to create the visualization to be enclosed.\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nlibrary(hexSticker)\n```\n:::\n\n::: {.cell}\n\n```{.r .cell-code}\n# Install hexSticker if you haven't\n# install.packages(\"hexSticker\")\n\nlibrary(hexSticker)\n\n# Create a hex sticker with an image of your choosing\nsticker(\n  subplot = \"logo.png\",   # Replace with your image path\n  s_x = 1, s_y = 1,              # Centering\n  s_width = .58, s_height = .58, # Size of the image inside hex\n  package = \"\",          # Text at the bottom\n  p_size = 6,\n  p_color = \"grey20\",\n  h_fill = \"white\",             # Background color of the hex\n  h_color = \"#4A5568\",\n  h_size=.9,                     # Border color\n  filename = \"hex_sticker.png\"  # Output filename\n)\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

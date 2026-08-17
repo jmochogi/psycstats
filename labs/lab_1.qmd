@@ -1,0 +1,177 @@
+---
+title: "Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset"
+subtitle: "Covers chapter 1 material: Introduction to Statistics | 50-minute lab"
+#author: "Statistics in Psychology"
+format:
+  html:
+    toc: true
+    toc-location: right
+    theme: cosmo
+    css: lab-styles.css
+    embed-resources: true
+    number-sections: false
+  pdf:
+    toc: true
+    number-sections: true
+execute:
+  echo: true
+---
+
+**Before you start:** Open SPSS Statistics on your lab computer. When it opens, you may see a "What's New" or "Welcome" dialog box — close it. You should be looking at a blank **Data Editor** window with a grid of empty cells.
+
+------------------------------------------------------------------------
+
+## Part 0: Get Oriented (3 min)
+
+Look at the bottom-left corner of the Data Editor window. You'll see two tabs:
+
+- **Data View** — where you type in scores, one row per person, one column per variable
+- **Variable View** — where you describe each variable *before* you enter any scores
+
+There is also a separate window called the **Output Viewer** — it doesn't exist yet, but it will pop up automatically the first time you run an analysis. That's where your results/tables appear.
+
+**Rule for today:** we always set up a variable in **Variable View** *before* typing any scores for it in **Data View**. This mirrors Chapter 1's point that researchers must define how something will be measured before they collect data.
+
+------------------------------------------------------------------------
+
+## Part 1: Build Your Variable View (17 min)
+
+You're going to enter data from a mini-survey of 10 students. Click the **Variable View** tab now. You'll see rows (one per variable you're about to create) and columns including Name, Type, Decimals, Label, Values, and Measure.
+
+We will create **6 variables**, one per row. For each one, follow these exact steps.
+
+### Row 1: StudentID
+
+1.  Click the empty cell in **row 1, "Name" column**. Type: `StudentID`
+2.  Leave **Type** as the default (Numeric).
+3.  Click the **Decimals** cell for this row. Change it to `0` (an ID number has no decimal places).
+4.  Click the **Label** cell. Type: `Student identifier`
+5.  Click the **Measure** cell. Click the dropdown arrow and select **Nominal**.
+    - *Why nominal?* An ID number is just a name written as a digit — Student #7 isn't "more" than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.
+
+### Row 2: Major
+
+1.  **Name:** `Major`
+2.  **Decimals:** `0`
+3.  **Label:** `Academic major`
+4.  **Values:** Click the Values cell, then click the small gray **…** button that appears on the right side of the cell. A "Value Labels" dialog opens.
+    - In the **Value** box, type `1`. In the **Label** box, type `Psychology`. Click **Add**.
+    - Value `2`, Label `Biology`. Click **Add**.
+    - Value `3`, Label `Business`. Click **Add**.
+    - Value `4`, Label `Undecided`. Click **Add**.
+    - Click **OK**.
+5.  **Measure:** select **Nominal**.
+
+### Row 3: ClassYear
+
+1.  **Name:** `ClassYear`
+2.  **Decimals:** `0`
+3.  **Label:** `Year in school`
+4.  **Values:** same process as above —
+    - `1` = `Freshman`, `2` = `Sophomore`, `3` = `Junior`, `4` = `Senior` (Add after each one, then OK)
+5.  **Measure:** select **Ordinal**.
+    - *Why ordinal, not nominal?* Freshman → Senior is an ordered sequence, unlike majors.
+
+### Row 4: StudyHours
+
+1.  **Name:** `StudyHours`
+2.  **Decimals:** change to `1` (allow one decimal place, e.g., 8.5)
+3.  **Label:** `Hours spent studying per week`
+4.  **Values:** leave blank (this variable's numbers are real quantities, not category codes — nothing to label)
+5.  **Measure:** select **Scale**.
+
+### Row 5: NetflixHours
+
+1.  **Name:** `NetflixHrs`
+2.  **Decimals:** `1`
+3.  **Label:** `Hours streaming video per week`
+4.  **Values:** leave blank
+5.  **Measure:** select **Scale**.
+
+### Row 6: StressLevel
+
+1.  **Name:** `Stress`
+2.  **Decimals:** `0`
+3.  **Label:** `Self-rated stress, 1 (low) to 10 (high)`
+4.  **Values:** leave blank for now — we'll come back to this one in the discussion question below
+5.  **Measure:** select **Scale** for now (we'll revisit whether this is the right call)
+
+::: {.callout-tip title="Checkpoint"}
+You should have 6 rows filled in. Raise your hand if any Measure cell still says "Unknown."
+:::
+
+::: {.callout-note title="Note on SPSS's Measure column"}
+The textbook describes **four** scales of measurement (nominal, ordinal, interval, ratio). SPSS only gives you **three** options. Hang onto that observation — it's Concept Check question 4 below.
+:::
+
+------------------------------------------------------------------------
+
+## Part 2: Enter the Data (15 min)
+
+Click the **Data View** tab. Your 6 column headers (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress) should already be there from Part 1. Type the following, one row per student — click a cell, type the number, press **Tab** or **Enter** to move to the next cell.
+
+| StudentID | Major | ClassYear | StudyHours | NetflixHrs | Stress |
+|-----------|-------|-----------|------------|------------|--------|
+| 1         | 1     | 2         | 12.5       | 6.0        | 7      |
+| 2         | 3     | 4         | 6.0        | 10.5       | 5      |
+| 3         | 2     | 1         | 15.0       | 3.5        | 8      |
+| 4         | 4     | 1         | 8.5        | 9.0        | 6      |
+| 5         | 1     | 3         | 10.0       | 5.5        | 4      |
+| 6         | 2     | 4         | 18.5       | 2.0        | 9      |
+| 7         | 3     | 2         | 7.5        | 12.0       | 5      |
+| 8         | 1     | 4         | 11.0       | 4.5        | 6      |
+| 9         | 4     | 3         | 9.5        | 8.0        | 7      |
+| 10        | 2     | 2         | 13.0       | 6.5        | 8      |
+
+::: {.callout-tip title="Tip"}
+In Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the **View** menu (top menu bar) → click **Value Labels**. The columns should now display "Psychology," "Sophomore," etc. instead of numbers. Toggle it back off and on to see both views — the number is what's stored, the label is what humans read.
+:::
+
+**Save your file now:** File → Save As → name it `Lab1_YourLastName.sav` → save it to the location your instructor specifies.
+
+------------------------------------------------------------------------
+
+## Part 3: Run Your First Output (9 min)
+
+We haven't learned to *interpret* statistical output yet — that starts in Chapter 2. Right now we're just previewing what "descriptive statistics" (Chapter 1, Learning Objective 2) looks like in SPSS.
+
+**3a. Frequency table for a nominal variable:** 1. Menu bar: **Analyze → Descriptive Statistics → Frequencies** 2. In the dialog box, click **Major** in the left-hand list, then click the arrow button to move it into the "Variable(s)" box on the right. 3. Click **OK**. 4. The Output Viewer window opens automatically with a table showing how many students fall into each major category, and what percentage each represents.
+
+**3b. Summary numbers for a scale variable:** 1. **Analyze → Descriptive Statistics → Descriptives** 2. Move **StudyHours** and **NetflixHrs** into the "Variable(s)" box. 3. Click **OK**. A second table appears in the Output Viewer with N, Minimum, Maximum, Mean, and Std. Deviation for each.
+
+**Save your output too:** in the Output Viewer window, File → Save As → `Lab1_YourLastName_Output.spv`.
+
+------------------------------------------------------------------------
+
+## Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)
+
+Answer these on paper or in the LMS quiz (whichever your instructor specifies):
+
+1.  If we wanted to generalize beyond this room, what would the **population** be, and what would the 10 rows of data represent (in Chapter 1's terms)?
+2.  The average StudyHours you'd calculate from these 10 rows — is that a **parameter** or a **statistic**? Why?
+3.  When you ran Frequencies and Descriptives in Part 3, were you using **descriptive** or **inferential** statistics? How do you know?
+
+------------------------------------------------------------------------
+
+## Take-Home Lab Report (due before next class)
+
+Using your saved `.sav` file and output, write brief answers (a sentence or two each is fine):
+
+1.  **Variable classification table.** For each of the 6 variables, state (a) whether it's discrete or continuous, and (b) which of the four textbook scales of measurement it belongs to (nominal/ordinal/interval/ratio).
+2.  **SPSS's "Scale" category.** SPSS collapses two of the textbook's four scales into one "Scale" option. Which two, and why does that combination make statistical sense (hint: think about what interval and ratio scales have in common that nominal and ordinal don't)?
+3.  **Real limits.** One classmate's StudyHours value is 8.5. What are the real limits of that score, and why do real limits only apply to continuous variables?
+4.  **Stress variable debate.** We treated Stress (a 1–10 self-rating) as Scale in SPSS, but reasonable people disagree. Make a one-paragraph case that it's actually *ordinal* instead, using the textbook's definition of what an ordinal scale can and can't tell you.
+5.  **Independent/dependent variables.** Suppose a researcher used this same setup to test whether *Major* is related to *StudyHours* — comparing average study hours across the four majors. Identify the independent variable and the dependent variable. Is the independent variable a true independent variable or a **quasi-independent** variable? Explain using the textbook's distinction.
+6.  **Data structure.** Which of the three data structures from Section 1-3 (one-group descriptive research, the correlational method, or comparing groups of scores) best describes what we did today with the full 6-variable dataset? Justify your answer.
+
+------------------------------------------------------------------------
+
+## Instructor Notes
+
+::: {.callout-important title="Trim this section before distributing to students"}
+- **Timing is tight** — Part 1 (variable setup) is where students lose time fumbling with the Values dialog. Consider projecting your own screen through Row 1 and Row 2 live, then letting them do Rows 3–6 independently.
+- **Common error:** students forget to click "Add" before "OK" in the Value Labels dialog, so labels don't save. Worth a 10-second warning up front.
+- **Common error:** leaving Decimals at the default (2) for StudentID/Major/ClassYear — not wrong mechanically, but a good moment to ask "does a major code need decimal places?"
+- Question 4 (Stress variable) has no single correct answer — it's the intro-stats version of the ordinal-vs-interval Likert debate, and is meant to generate discussion, not a graded "right answer." Grade for reasoning quality, not conclusion.
+- If a pair finishes early, have them toggle **View → Value Labels** off/on a few times and predict what the Frequencies output would look like using raw codes vs. labels — reinforces that the label is cosmetic, not the stored value.
+:::

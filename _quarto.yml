@@ -1,0 +1,142 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  page-navigation: true
+  title: "PSYC 20700 - Statistics in Psychology"
+  description: "Homepage for PSYC 207 - Statistics in Psychology, Fall 2026."
+  site-url: "https://jmochogi.github.io/business-stats-s26/"
+
+  repo-url: https://github.com/jmochogi/psycstats
+  #repo-actions: [edit, issue]
+
+  open-graph: true
+  twitter-card:
+    creator: "@jmochogi"
+    image: "img/twitter-card.png"
+
+  sidebar:
+    background: "#4A5568" # Pantone Chambray Blue - Fall 2026, darkened to pass contrast checks
+    logo: "img/logo.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/jmochogi/business-stats-s26
+        text: "GitHub repository"
+      #- icon: code-square
+       # href: https://cmgr.oit.duke.edu/containers
+        #text: "RStudio containers"
+      - icon: life-preserver
+        href: https://calendly.com/jmochogi/20min
+        text: "Office hours"
+      - icon: chat-dots-fill
+        href: https://canvas.ithaca.edu/
+        text: "Canvas Discussions"
+      - icon: camera-reels-fill
+        href: https://ithaca.zoom.us/j/3364817575?pwd=WlA1S3hJWWZNTTFoWUVaZlA1clhtdz09
+        text: "Zoom link"
+      - icon: check-square-fill
+        href: https://canvas.ithaca.edu/
+        text: "Canvas"
+        #menu:
+         # - text: Gradescope
+          #  url: https://canvas.duke.edu/courses/26106/external_tools/181
+          #- text: Gradebook
+           # url: https://canvas.duke.edu/courses/26106/gradebook
+
+    style: docked
+    search: true
+    collapse-level: 2
+    contents:
+      - section: "Course information"
+        contents:
+          - href: course-overview.qmd
+            text: Overview
+          - href: course-syllabus.qmd
+            text: Syllabus
+          - href: course-support.qmd
+            text: Support
+          #- href: course-team.qmd
+            #text: Teaching team
+          - href: index.qmd
+            text: Schedule
+          - href: course-links.qmd
+            text: Useful links
+          - href: course-faq.qmd
+            text: FAQ
+      
+      - section: "Labs"
+        contents:
+          - href: labs/lab_1.qmd
+            text: Lab 1
+          - href: labs/lab_2.qmd
+            text: Lab 2
+          - href: labs/lab_3.qmd
+            text: Lab 3
+          - href: labs/lab_4.qmd
+            text: Lab 4            
+          - href: labs/lab_5.qmd
+            text: Lab 5
+          #- href: labs/lab_6.qmd
+            #text: Lab 6
+          #- href: labs/lab_7.qmd
+            #text: Lab 7
+          #- href: labs/lab_8.qmd
+            #text: Lab 8
+          #- href: labs/lab_9.qmd
+            #text: Lab 9
+          #- href: labs/lab_9b.qmd
+            #text: Lab 9b
+            
+          
+            
+      - section: "Projects"
+        contents:
+          - href: project/first-project.qmd
+            text: Project 1
+          - href: project/final-project.qmd
+            text: Project 2
+            
+      #- section: "Problem Sets"
+       # contents:
+          #- href: problem-sets/ps-1.qmd
+           # text: Problem Set 1
+          #- href: problem-sets/ps-2.qmd
+           # text: Problem Set 2
+       
+      - section: "Exam Review"
+        #contents:
+          #- href: exam-review/exam-1-review.qmd
+            #text: Exam 1
+          #- href: exam-review/exam-2-review.qmd
+            #text: Exam 2
+      
+      #- section: "Downloads"
+        #contents:
+          #- href: course-downloads/datasets.qmd
+           # text: Datasets
+          #- href: course-downloads/templates.qmd
+            #text: Templates
+  page-footer:
+    right: 'This page is built with [Quarto](https://quarto.org/).'
+    left: "&copy; Copyright 2026, Joash Geteregechi"
+    background: "#1E3A5F" # Pantone Chambray Blue
+
+format:
+  html:
+    theme:
+      light: [cosmo, style/math108.scss]
+      dark: [cosmo, style/math108.scss, style/dark.scss]
+    linkcolor: "#2731F5" # Pantone Chambray Blue - Spring 2024, darkened to pass contrast checks
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Atkinson Hyperlegible"
+    highlight-style: a11y-dark
+
+execute:
+  freeze: auto
+
+editor: visual

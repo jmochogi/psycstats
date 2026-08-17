@@ -1,0 +1,33 @@
+---
+title: "PSYC 207: Statistics in Psychology"
+subtitle: "Fall 2026 - Dr. Joash Geteregechi"
+navbar: false
+---
+
+# Overview
+
+Learn approaches for analyzing data drawn from psychology settings, such as surveys and experiments, emphasizing statistical inference via hypothesis testing and parameter estimation. This class emphasizes data analysis using a popular data analysis software known as SPSS — Statistical Product and Service Solutions.
+
+# Class Meetings
+
+|             |                      |                |
+|-------------|----------------------|----------------|
+| **Lecture** | Mon 02:00 - 02:50 pm | Williams 208 E |
+| **Lecture** | Wed 02:00 - 02:50 pm | Williams 208 E |
+| **Lab**     | Th 02:00 - 02:50 pm  | Williams 208 E |
+| **Lecture** | Fri 02:00 - 02:50 pm | Williams 208 E |
+
+# Teaching Team
+
+### Instructor
+
+[Joash Geteregechi](https://www.ithaca.edu/faculty/jgeteregechi) is an Associate Professor in the Department of Mathematics at Ithaca College in Ithaca, New York. He is originally from [Kenya](https://ktb.go.ke), a country located in eastern part of Africa. Joash earned his PhD in mathematics education in 2020 from Syracuse University in Syracuse, New York and joined Ithaca College in the same year. His work is in mathematics education with a focuses on understanding undergraduate students' mathematical reasoning.
+
+| Office hours         | Location      |
+|----------------------|---------------|
+| MWF 12:00 - 1:00 pm  | Williams 311E |
+| *or by appointment.* |               |
+
+## Teaching Assistant
+
+The teaching assistant for this course this semester is **Andrew Burkhardt**. Andrew is .....

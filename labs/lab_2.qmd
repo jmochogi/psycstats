@@ -1,0 +1,152 @@
+---
+title: "Lab 2: Frequency Distributions and Graphs"
+subtitle: "Covers Chapter 2: Frequency Distributions | 50-minute lab | Continues from Lab 1"
+#author: "Statistics in Psychology"
+format:
+  html:
+    toc: true
+    toc-location: right
+    theme: cosmo
+    css: lab-styles.css
+    embed-resources: true
+    number-sections: false
+  pdf:
+    documentclass: article
+    geometry: margin=1in
+    fontsize: 11pt
+    mainfont: "Liberation Serif"
+    sansfont: "Liberation Sans"
+    pdf-engine: xelatex
+    include-in-header: header-includes.tex
+    colorlinks: true
+    number-sections: false
+editor: visual
+---
+
+**Before you start:** Open SPSS, then open your saved file from last week: **File → Open → Data** → navigate to where you saved it → select `Lab1_YourLastName.sav` → **Open**. You should see your 10-row, 6-variable dataset (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress). We are *not* creating new variables today — we're analyzing the ones you already built.
+
+------------------------------------------------------------------------
+
+## Part 1: Frequency Table + Bar Chart for a Categorical Variable (13 min)
+
+We'll start with **Major** — a nominal variable — and build both a frequency table and its graph in one pass.
+
+1.  **Analyze → Descriptive Statistics → Frequencies**
+2.  Click **Major** in the left-hand list, click the arrow to move it into the **Variable(s)** box.
+3.  Click the **Charts…** button.
+    - Select the **Bar charts** radio button.
+    - Under "Chart Values," select **Percentages** (instead of the default "Frequencies") — this shows the proportion of students in each major, not just the raw count.
+    - Click **Continue**.
+4.  Click **OK**.
+
+Two things appear in the Output Viewer:
+
+**A frequency table.** Match its columns to the textbook's vocabulary:
+
+| SPSS column | Chapter 2 term |
+|----|----|
+| Frequency | *f* — the raw count in each category |
+| Percent | \% — same as computing p × 100, where p = f/N |
+| Valid Percent | \% excluding any missing data (identical to Percent here, since we have none) |
+| Cumulative Percent | running total as you move down the table — this is the basis for percentile ranks |
+
+**A bar chart.** Notice the spaces between the bars — that's deliberate. Chapter 2 draws bar charts with gaps specifically for nominal/ordinal data, to visually signal that the categories are separate and unordered, unlike a histogram's touching bars for numerical data.
+
+::: {.callout-tip title="Checkpoint"}
+In your output, which major has the highest frequency? What percentage of the class does it represent?
+:::
+
+------------------------------------------------------------------------
+
+## Part 2: Independent Practice — ClassYear (5 min)
+
+Repeat the same process for **ClassYear**, an ordinal variable, on your own:
+
+1.  **Analyze → Descriptive Statistics → Frequencies** → move **ClassYear** in → **Charts** → **Bar charts** → **Percentages** → **Continue** → **OK**.
+
+::: {.callout-tip title="Checkpoint"}
+Looking at the Cumulative Percent column, what percentage of students are Sophomores or below? (This is exactly what a percentile rank tells you — the percentage of the group at or below a given point.)
+:::
+
+------------------------------------------------------------------------
+
+## Part 3: A Numerical Variable — and Why It Gets Messy (8 min)
+
+Now let's try the same recipe on a **scale (numerical)** variable: **StudyHours**.
+
+1.  **Analyze → Descriptive Statistics → Frequencies**
+2.  Remove Major/ClassYear if they're still listed; move **StudyHours** in instead.
+3.  Click **Statistics…** and check the box for **Quartiles**. Click **Continue**.
+    - Quartiles report the 25th, 50th, and 75th percentiles — this is SPSS computing exactly the percentile concept from this chapter.
+4.  Click **OK** (leave Charts unchecked for now).
+
+**Look at the frequency table.** With only a few exceptions, every row has a frequency of 1 — because with continuous data spread across a wide range, individual scores rarely repeat.
+
+This is precisely the problem Chapter 2 describes as the reason for **grouped frequency distribution tables**: when scores cover a wide range, listing every individual value produces a long, uninformative table instead of a picture you can actually interpret.
+
+::: {.callout-tip title="Checkpoint"}
+Look at the Percentile Values table in your output. What StudyHours value corresponds to the 50th percentile?
+:::
+
+------------------------------------------------------------------------
+
+## Part 4: Building a Grouped Frequency Table (12 min)
+
+We'll now group StudyHours into class intervals, following the textbook's guidelines: about 3–10 intervals (we have a small dataset, so we'll aim for 3), a simple interval width (5 is a good round number), and a bottom score that's a multiple of the width.
+
+**Why the boundaries below look slightly unusual:** we're setting the cut points at the *real limits* (4.5, 9.5, 14.5, 19.5) rather than the whole numbers themselves. This matters because our data includes decimals (like 9.5 hours) — using the real limit means every possible score falls into exactly one interval with no gaps, exactly as Chapter 2 describes.
+
+1.  **Transform → Recode into Different Variables**
+2.  Click **StudyHours**, move it into the middle box (it will show as `StudyHours --> ?`).
+3.  In the **Output Variable** box on the right: type `StudyGroup` in **Name**, type `Study hours (grouped)` in **Label**. Click **Change**.
+4.  Click **Old and New Values…** A new dialog opens. Set up three ranges, clicking **Add** after each:
+    - Old Value → select **Range**: `4.5` through `9.4`. New Value: `1`. Click **Add**.
+    - Old Value → select **Range**: `9.5` through `14.4`. New Value: `2`. Click **Add**.
+    - Old Value → select **Range**: `14.5` through `19.4`. New Value: `3`. Click **Add**.
+5.  Click **Continue**, then **OK**. A new column, `StudyGroup`, appears at the end of your Data View.
+6.  Switch to **Variable View**. Find the `StudyGroup` row and finish setting it up like you did in Lab 1:
+    - **Decimals:** `0`
+    - **Values:** `1` = `5-9 hrs`, `2` = `10-14 hrs`, `3` = `15-19 hrs`
+    - **Measure:** select **Ordinal** (the groups now have a meaningful order, even though the underlying variable is scale)
+7.  Run **Analyze → Descriptive Statistics → Frequencies** on **StudyGroup**.
+
+**Compare this table to Part 3's.** Same underlying data, but now it tells a story you can actually see at a glance — that's the entire purpose of grouping.
+
+------------------------------------------------------------------------
+
+## Part 5: Histogram and Shape (6 min)
+
+1.  **Analyze → Descriptive Statistics → Frequencies**
+2.  Move **StudyHours** (the original, ungrouped variable) into the Variable(s) box.
+3.  Click **Charts…** → select **Histograms** → click **Continue** → **OK**.
+
+SPSS automatically bins the continuous variable for you (similar in spirit to what you just did by hand in Part 4). Look at the shape of the bars.
+
+::: {.callout-tip title="Checkpoint — answer using your histogram"}
+- Is the distribution roughly **symmetrical**, or does it look **skewed**?
+- If skewed, which direction is the tail pointing — toward the higher scores (positive skew) or the lower scores (negative skew)?
+- Take a look at where SPSS started the Y-axis. Does it start at zero? (Keep this in mind — we'll come back to it below.)
+:::
+
+------------------------------------------------------------------------
+
+## Take-Home Lab Report (due before next class)
+
+1.  **By-hand check.** Using the Major frequency table from Part 1, compute Σ*fX* by hand — but first you'll need to assign a numeric code to each major (use the same codes from your Values labels: 1=Psychology, 2=Biology, 3=Business, 4=Undecided) and treat frequency × code as *fX* for each row. Show your work. (This is an artificial calculation since Major is nominal and its codes aren't truly quantitative — that's the point: explain in one sentence why Σ*fX* is mathematically possible here but not meaningful.)
+2.  **Polygon by hand.** Using your Part 4 grouped frequency table (StudyGroup), sketch a frequency polygon on paper: place a dot above the *midpoint* of each interval at a height equal to its frequency, connect the dots, and drop the line to zero one interval-width beyond each end. (Recall: the midpoint of a class interval is the average of its highest and lowest apparent limits.)
+3.  **Stem-and-leaf by hand.** Construct a stem-and-leaf display for the 10 StudyHours values. What advantage does this display have over the grouped frequency table you built in Part 4?
+4.  **Population vs. sample.** Our 10 students are a sample. If we had data on the *entire population* of students at this university instead, would we typically graph actual frequencies or relative frequencies? Why does the textbook recommend relative frequencies for very large groups?
+5.  **The Y-axis question.** Referring to Box 2.1 in the textbook (the homicide-rate graph example) and what you noticed at the end of Part 5: why does it matter whether a graph's Y-axis starts at zero? Give a one-sentence explanation of how a manipulated Y-axis could mislead someone looking at your StudyHours histogram.
+6.  **Percentile interpretation.** In your own words, explain what it means that a StudyHours score has a percentile rank of 70%. Use the cumulative percent column from one of today's frequency tables as your example.
+
+------------------------------------------------------------------------
+
+## Instructor Notes
+
+::: {.callout-important title="Trim this section before distributing to students"}
+- **This is the tightest lab yet.** Part 4 (Recode) is the most likely place to run over — if the section is behind schedule, consider demonstrating Part 4 live on the projector rather than having students execute it themselves, and shift the hands-on grouping practice to the take-home assignment using a walkthrough video instead.
+- **The 4.5/9.5/14.5 boundary values are deliberate**, not arbitrary — they're the real limits, and they're chosen so that no student's actual StudyHours value (6.0, 7.5, 8.5, 9.5, 10.0, 11.0, 12.5, 13.0, 15.0, 18.5) sits ambiguously on a boundary. If you swap in a different class dataset, re-derive the cut points the same way rather than reusing 4.5/9.5/14.5 by default.
+- **Common error:** students select "Value" instead of "Range" in the Recode dialog, or forget to click "Add" after each range before moving to the next — same failure mode as the Values dialog in Lab 1.
+- **Shape discussion (Part 5):** with only 10 data points, resist letting students over-claim a strong skew — a good moment to explicitly note that shape judgments are much shakier with small samples, which sets up why later chapters (central tendency, variability) give us more precise numerical tools than "eyeballing" a graph.
+- Take-home Question 1 is intentionally a little bit of a trap — Σ*fX* is computable for nominal data but meaningless, and catching that is the actual learning objective, not the arithmetic.
+:::

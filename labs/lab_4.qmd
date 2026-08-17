@@ -1,0 +1,231 @@
+---
+title: "Lab 4: Measuring Variability"
+subtitle: "Range, Interquartile Range, Variance, and Standard Deviation in SPSS"
+format:
+  html:
+    toc: true
+    number-sections: false
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    pdf-engine: xelatex
+execute:
+  echo: true
+---
+
+::: callout-note
+## Student Information
+
+**Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
+**Date:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+:::
+
+**Estimated time:** 45–60 minutes\
+**Deliverables:** completed responses, SPSS output, a saved `.sav` file, and an APA-style results paragraph.
+
+## Overview
+
+In lecture and in the textbook (Chapter 4, *Variability*), you learned that variability describes how spread out or clustered together a set of scores is. In this lab you will use **SPSS** to compute and interpret the four measures of variability covered in the chapter:
+
+- the **range**
+- the **interquartile range (IQR)**
+- the **variance**
+- the **standard deviation**
+
+You will also learn how to visualize variability with boxplots and histograms.
+
+::: {.callout-note title="Learning Objectives"}
+By the end of this lab you should be able to:
+
+1.  Enter or import data into SPSS and produce descriptive statistics.
+2.  Compute the range and interquartile range using SPSS and explain why the IQR is often a better description of variability than the range.
+3.  Compute variance and standard deviation for a set of scores using SPSS's **Descriptives** procedure.
+4.  Explain why SPSS's default variance/standard deviation formulas divide by $n-1$ rather than $N$, and connect this to the concept of **degrees of freedom**.
+5.  Use boxplots and histograms to visualize variability.
+6.  Produce and interpret a complete descriptive summary (mean **and** standard deviation, or median **and** IQR) for a real data set, written in APA style.
+:::
+
+## Importing Data
+
+::: {.callout-important title="Before You Begin"}
+Download the data set from [here]() then import it to SPSS. To import the data set, follow these steps:
+
+**File \> Import Data \> CSV Data...**, browse to the file, and click **OK** on the import wizard (accept the default settings).
+:::
+
+------------------------------------------------------------------------
+
+## Part 1 — Why We Measure Variability
+
+Recall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:
+
+1.  **How spread out the distribution is** — are scores clustered close together or scattered widely?
+2.  **How well a single score represents the whole distribution** — the more variability there is, the less confidence we can place in any one score (or sample) as being representative of the group.
+
+The textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind — you'll be asked to reason about it below.
+
+::: {.callout-tip title="Checkpoint 1"}
+Without opening SPSS, which of the following would you expect to have **more** variability, and why?
+
+- The ages of students in a single 4th-grade classroom. \vspace{2in}
+- The ages of visitors at a public shopping mall. \vspace{2in}
+
+Jot down your reasoning before moving on.
+:::
+
+------------------------------------------------------------------------
+
+## Part 2 — The Range
+
+The **range** is the distance between the largest and smallest score in a distribution:
+
+$$\text{range} = X_{max} - X_{min}$$
+
+It is the simplest measure of variability, but it is also **unreliable** because it is based on only the two most extreme scores and ignores everything in between.
+
+### Get the range in SPSS
+
+1.  Click **Analyze \> Descriptive Statistics \> Descriptives**.
+2.  Move `QuizScore` into the **Variable(s)** box.
+3.  Click **Options...** and check **Range**, **Minimum**, and **Maximum**, then click **Continue**.
+4.  Click **OK**.
+
+Look at the SPSS Output Viewer. You should see a table listing `N`, `Range`, `Minimum`, and `Maximum` for `QuizScore`.
+
+::: {.callout-tip title="Checkpoint 2"}
+1.  What range does SPSS report for this data set? Confirm it by hand using the formula $\text{Range} = X_{max} - X_{min}$. \vspace{2in}
+2.  Suppose the quiz score of 32 in the data set were changed to 65, with everything else staying the same. Recompute the range by hand. What happened to the range, and what does this tell you about a weakness of using the range as a measure of variability? \vspace{2in}
+:::
+
+------------------------------------------------------------------------
+
+***NOTE:*** Please DO NOT close the output window! You can just click on the main file showing the variables and data when you are ready to continue with the other analyses.
+
+## Part 3 — Quartiles and the Interquartile Range (IQR)
+
+Because the range is so sensitive to extreme scores, researchers often prefer the **interquartile range**, which describes the spread of just the **middle 50%** of the distribution (between the 25th percentile, $Q_1$, and the 75th percentile, $Q_3$):
+
+$$IQR = Q_3 - Q_1$$
+
+The IQR trims off the top 25% and bottom 25% of scores, so a few unusually high or low scores do not distort it the way they distort the range.
+
+### Get Quartiles in SPSS
+
+There are two common ways to get the IQR in SPSS. Try both so you can see how they relate to one another.
+
+**Method A — Frequencies**
+
+1.  **Analyze \> Descriptive Statistics \> Frequencies**.
+2.  Move `QuizScore` into the **Variable(s)** box. (You can uncheck "Display frequency tables" if you don't want the full table.)
+3.  Click **Statistics...**, and under **Percentile Values** check **Quartiles**. Click **Continue**, then **OK**.
+4.  SPSS reports the 25th, 50th, and 75th percentiles ($Q_1$, the median, and $Q_3$). Use the formula $IQR = Q_3 - Q_1$ to calculate the $IQR$.
+
+**Method B — Explore**
+
+1.  **Analyze \> Descriptive Statistics \> Explore**.
+2.  Move `QuizScore` into the **Dependent List**.
+3.  Under **Display**, choose **Statistics**. Click **OK**.
+4.  Look at the **Descriptives** table — SPSS directly labels a row **Interquartile Range**.
+
+::: {.callout-tip title="Checkpoint 3"}
+1.  What value did SPSS report for $Q_1$, $Q_3$ `QuizScore`? What $IQR$ value did you get by using the formula $\text{Range}=Q_1 - Q_3$?\vspace{2in}
+2.  Did Method A and Method B give you exactly the same $IQR$? (They may differ slightly — SPSS offers several algorithms for calculating percentiles. This is worth noticing, but don't worry about resolving the discrepancy for this lab.) \vspace{2in}
+3.  Compare the $IQR$ to the $Range$ for this same variable (`QuizScore`). Which value is larger, and why does that make sense?\vspace{2in}
+:::
+
+------------------------------------------------------------------------
+
+## Part 4 — Standard Deviation and Variance
+
+Standard deviation is the most important and most commonly used measure of variability. Conceptually, it measures the **standard (average) distance** between each score and the mean. The variance is the average of the *squared* deviations; the standard deviation is simply the square root of the variance, which brings the measure back into the original units of the data.
+
+Both statistics are built from the **sum of squared deviations**, or $SS$. We obtain SS by subtracting the mean from each score, squaring the difference (deviation), the summing all squared deviations. Mathematically, this is abbreviated as;
+
+$$SS = \Sigma(X - \bar{X})^2.$$
+
+**Population formulas** (use $\mu$ for the mean and divide by $N$). The Greek letter $\sigma^2$ means population variance while $\sigma$ means population standard deviation.
+
+$$\sigma^2 = \frac{SS}{N} \qquad \sigma = \sqrt{\frac{SS}{N}}$$
+
+**Sample formulas** (use $M$ for the mean and divide by $n - 1$ instead of $n$). The notation $s^2$ means sample variance while $s$ means sample standard deviation.
+
+$$s^2 = \frac{SS}{n-1} \qquad s = \sqrt{\frac{SS}{n-1}}$$
+
+::: {.callout-important title="Why n − 1? Degrees of Freedom"}
+A sample mean is calculated *from* the sample, which places a restriction on the scores: once you know the mean and all but one score, the last score is no longer free to vary — it is fully determined. Only $n - 1$ of the $n$ scores are truly free to vary, so a sample has $df = n - 1$ **degrees of freedom**. Dividing $SS$ by $n-1$ (rather than $n$) slightly *increases* the resulting value, correcting for the fact that a sample's variability tends to underestimate the population's variability. This correction makes sample variance an accurate, **unbiased estimator** of the population variance.
+
+**This is exactly what SPSS's Descriptives procedure does by default** — it always computes the *sample* formulas ($n-1$ in the denominator), because SPSS assumes your data are a sample unless you tell it otherwise. Keep this in mind whenever you are working with data that represent an entire population.
+:::
+
+------------------------------------------------------------------------
+
+### Part 4a — Standard Deviation for a Sample
+
+We want to find the standard deviation (and other statistics) for the variable `Quiz score`. By default, SPSS computes the sample standard deviation (i.e., divides the $SS$ by $n-1$).
+
+Follow these steps to find the sample standard deviation for the variable `QuizScore`:
+
+1.  **Analyze \> Descriptive Statistics \> Descriptives**.
+2.  Move `QuizScore` into the variables box, click **Options...**, and check **Mean**, **Variance** and **Std. deviation**. Click **Continue**, then **OK**.
+
+::: {.callout-tip title="Checkpoint 4"}
+1.  What sample mean ($M$), variance ($s^2$), and standard deviation ($s$) does SPSS report? What does the standard deviation tell you about the Quiz scores? \vspace{2in}
+2.  In a sentence or two, explain in your own words why we divide by $n-1$ for a sample but by $N$ for a population. \vspace{2in}
+:::
+
+------------------------------------------------------------------------
+
+### Part 4b — Comparing Variability by Group (Sex)
+
+Suppose we wanted to answer the question, "Do Quiz scores for female students spread out more than Quiz scores for male students?'
+
+- Go to Analyze \> Descriptive Statistics \> Explore.
+- Move `QuizScore` into the 'Dependent List' box. Move `Sex` into the 'Factor List' box — this tells SPSS to split all output by male vs. female.
+- Click the '**Statistics**' button and make sure '**Descriptives**' is checked (this gives you *variance*, *std deviation*, *min*, *max*, and *range* for each group). Select std deviation. Click '**continue**'.
+
+::: {.callout-tip title="Checkpoint 5"}
+1.  What sample standard deviation ($s$) does SPSS report for each group? \vspace{2in}
+2.  What is a possible explanation for the discrepancy in std deviations? (***Note***: there can be multiple correct answers here).\vspace{2in}
+:::
+
+------------------------------------------------------------------------
+
+## Part 5 — Visualizing Variability
+
+Numbers alone don't always give you an intuitive feel for variability. Sometimes, graphs can be the tool to communicate the insights. Box plots and histograms are among the commonly used graphs to visualize variability of a numerical variable.
+
+### Boxplots (relate to the IQR)
+
+To create a boxplot for the variable `QuizScore`, follow these steps: 1. **Graphs \> Legacy Dialogs \> Boxplot...** 2. Choose **Simple**, and **Summaries of separate variables**. Click **Define**. 3. Move `QuizScore` into **Boxes Represent**. Click **OK**.
+
+The box itself spans from $Q_1$ to $Q_3$ (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers.
+
+### Histograms (relate to the standard deviation)
+
+To create a histogram for the variable `QuizScore`, follow these steps: 1. **Graphs \> Legacy Dialogs \> Histogram...** 2. Move `QuizScore` into the **Variable** box. 3. Check **Display normal curve**, then click **OK**.
+
+Recall the rule of thumb from the chapter: roughly 70% of scores in a distribution fall within one standard deviation of the mean, and roughly 95% fall within two standard deviations.
+
+::: {.callout-tip title="Checkpoint 6"}
+1.  In your boxplot, does the box (the IQR) look wide or narrow relative to the whiskers? What does that tell you about where most of the `QuizScores` are concentrated? \vspace{2in}
+2.  Look at your boxplot. Does SPSS flag any scores as outliers (shown as individual dots/asterisks beyond the whiskers)? If so, which score(s)?\vspace{2in}
+3.  Based on your histogram, how would you describe the spread of the QuizScores?\vspace{2in}
+4.  How do box plots and histograms differ, and what specific information can be derived exclusively from each?\vspace{2in}
+:::
+
+------------------------------------------------------------------------
+
+## Part 6 — Putting It All Together: A Full Descriptive Report
+
+A real research report almost never presents just one statistic in isolation — central tendency and variability are reported **together** (e.g., "$M = 12.45$, $SD = 3.70$" or, for skewed data, the median accompanied by the IQR).
+
+Using SPSS, produce all of the following for the variable `TextMessages`, representing the average number of text messages a student sent per day. - Mean and Median - Standard deviation and variance - Range - Interquartile Range - Boxplot - A histogram with the normal curve overlay.
+
+------------------------------------------------------------------------
+
+::: {.callout-tip title="Checkpoint 7 (Comprehensive)"}
+Write one APA-style sentence summarizing the central tendency and variability of the `TextMessages`, following the format from the chapter, e.g.: *"The daily number of text messages were, on average, moderate and fairly variable (M = **, SD =*** )." Fill in your own values.
+:::
+
+------------------------------------------------------------------------

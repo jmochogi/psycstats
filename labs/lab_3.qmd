@@ -1,0 +1,201 @@
+---
+title: "Lab 3: Central Tendency"
+subtitle: "Sleep, Test Anxiety, and Memory During Exam Week"
+author: ""
+date: "last-modified"
+format:
+  html:
+    toc: true
+    number-sections: false
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+execute:
+  echo: true
+---
+
+::: callout-note
+## Student Information
+
+**Name:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\
+**Date:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+:::
+
+**Estimated time:** 45–60 minutes\
+**Deliverables:** completed responses, SPSS output, a saved `.sav` file, and an APA-style results paragraph.
+
+## Research scenario
+
+A psychology research team is studying student well-being during exam week. They recruited 24 undergraduate students and recorded each participant’s self-reported sleep from the prior night, test-anxiety score, performance on a short memory-recall task, and primary coping strategy.
+
+The team’s research question is:
+
+> **During exam week, what are the typical levels of sleep, test anxiety, and memory recall among undergraduate students, and which coping strategy is most common?**
+
+This is a **descriptive** question. Your goal is not to test a hypothesis or compare groups. Instead, you will use the mean, median, and mode to describe the sample appropriately.
+
+## Learning objectives
+
+By the end of this lab, you should be able to:
+
+1.  Select the mean, median, or mode that best represents a variable.
+2.  Use SPSS to create frequency tables, descriptive statistics, and histograms.
+3.  Explain how an extreme score influences the mean and median.
+4.  Write a concise APA-style descriptive-results paragraph.
+
+## Part A — Set up the psychology dataset
+
+Download [the psychology lab dataset](chapter-3-psychology-context-lab-data.csv). In SPSS, select **File \> Import Data \> CSV Data** (or **File \> Open \> Data**, depending on your version). Confirm that variable names are read from the first row.
+
+In **Variable View**, enter the value labels and measurement levels below.
+
+| Variable | Description / labels | Measure |
+|------------------------|------------------------|------------------------|
+| `id` | Participant identification number | Nominal |
+| `coping_strategy` | 1 = Mindfulness; 2 = Planning; 3 = Social support | Nominal |
+| `sleep_hours` | Hours slept the night before the exam | Scale |
+| `test_anxiety` | Test-anxiety score; possible range 0–40, higher = more anxiety | Scale |
+| `memory_recall` | Number of words recalled correctly; possible range 0–20 | Scale |
+
+::: callout-tip
+## Checkpoint A
+
+Save the file as `lab_3_yourlastname.sav`.
+
+**Question:** Why is `coping_strategy` nominal, even though SPSS displays it using the numbers 1, 2, and 3?
+
+**Response:**
+:::
+
+## Part B — The mode: Most Common Coping Strategy
+
+Use **Analyze \> Descriptive Statistics \> Frequencies**. Move `coping_strategy` to the Variable(s) box. Click **Statistics**, select **Mode**, click continue, then OK. Keep the frequency table in your output.
+
+1.  Which coping strategy is the mode? Report its frequency and percentage.
+
+    **Response:**
+
+2.  Why would it be inappropriate to calculate the mean of `coping_strategy`?
+
+    **Response:**
+
+3.  In plain language, write one sentence that answers the coping-strategy portion of the research question.
+
+    **Response:**
+
+## Part C — Typical sleep and memory performance
+
+Use **Analyze \> Descriptive Statistics \> Explore**. Put `sleep_hours` and `memory_recall` in the **Dependent List**. Click on **Statistics**. Ensure ***Descriptives*** and Percentiles are selected. Under percentiles, select ***Quartiles*** then click ***Continue***. Next, click ***Plots***, then select *Histogram*. Click ***Continue*** the ***OK***. An output should popup.
+
+1.  Record the mean and median for each variable.
+
+| Variable        | Mean | Median |
+|-----------------|:----:|:------:|
+| `sleep_hours`   |      |        |
+| `memory_recall` |      |        |
+
+2.  For each variable, describe the histogram as roughly symmetric, positively skewed, or negatively skewed.
+
+    **Sleep hours:**
+
+    \
+    **Memory recall:**
+
+3.  For each variable, decide whether the mean or median is the better single summary of a typical score. Briefly justify your choices.
+
+    **Sleep hours:**
+
+    \
+    **Memory recall:**
+
+## Part D — Test Anxiety and an Extreme Score
+
+Use **Analyze \> Descriptive Statistics \> Explore** to obtain the mean, median, and histogram for `test_anxiety`. Refer to the steps described in part C above if you need to.
+
+1.  Record the mean, median, minimum, and maximum.
+
+| Mean | Median | Minimum | Maximum |
+|:----:|:------:|:-------:|:-------:|
+|      |        |         |         |
+
+2.  Does the distribution appear skewed? Identify the value that appears to be extreme, and state whether it is low or high relative to the other scores.
+
+    **Response:**
+
+3.  Which measure of central tendency—mean or median—best represents a typical test-anxiety score in this sample? Explain your answer using the effect of the extreme score.
+
+    **Response:**
+
+### Examine the Effect of the Extreme Score
+
+Use **Data \> Select Cases**. Choose **If condition is satisfied**, enter `id < 24`, the click continue. Select **Filter out unselected cases**. You will notice that some cases are crossed out. Re-run the Explore analysis for `test_anxiety`.
+
+4.  Complete the table. Round to two decimal places.
+
+| Cases included  | Mean | Median |
+|-----------------|:----:|:------:|
+| All 24 cases    |      |        |
+| Cases 1–23 only |      |        |
+| Change          |      |        |
+
+5.  Which statistic changed more after the extreme score was excluded? What does this demonstrate about the mean and median?
+
+    **Response:**
+
+## Part E — A simple linear transformation
+
+Before doing this part, we need to Restore **All cases**. To do this, return to **Data \> Select Cases \> All cases** \> **OK**. This will clear the conditional filtering applied earlier.
+
+Now, imagine the research team revises the anxiety scale by adding 5 points to every participant’s score. Use **Transform \> Compute Variable**. Under ***Target Variable***, write `anxiety_plus_5`. Under Numeric Expression write `test_anxiety + 5`. then click **OK**. A new variable named `anxiety_plus_5` will be created.
+
+Run Explore for `test_anxiety` and `anxiety_plus_5`.
+
+1.  Complete the table below:
+
+| Variable         | Mean | Median |
+|------------------|:----:|:------:|
+| `test_anxiety`   |      |        |
+| `anxiety_plus_5` |      |        |
+
+2.  How did the mean and median anxiety change after adding 5 to each individual score? State the rule for what happens to the mean and median when the same constant is added to every score.
+
+    **Response:**
+
+## Part F — Interpret and report the results in APA style
+
+APA-style results writing should be accurate, concise, and tied to the research question. Use the statistics you produced in SPSS—not estimates from the graph.
+
+### APA reporting reminders
+
+- Report the sample size as *N* when referring to the whole sample.
+- Report the mean as *M* and the standard deviation as *SD*.
+- Report the median as *Mdn* when it is the better summary for a skewed distribution.
+- Report a categorical mode in words, followed by its frequency (*n*) and percentage when useful.
+- Round consistently, typically to two decimal places unless your instructor directs otherwise.
+- Describe the distribution when that explains why you selected the median instead of the mean.
+
+### Build your results paragraph
+
+Use this template to write a paragraph that answers the research question:
+
+> The sample (*N* = ***) reported an average of M*** **=** hours of sleep (*SD* = ***; Mdn*** **=** ). Participants recalled an average of *M* = \_\_\_ words (*SD* = ***) on the memory task. The modal coping strategy was \[strategy\]** (n* = , ***%). Test-anxiety scores were \[roughly symmetric / positively skewed / negatively skewed\]; therefore, the \[mean / median\] was the most appropriate indicator of a typical score (M*** **or *Mdn* =** ). Overall, these results suggest that \[one sentence summarizing the sample descriptively without making a causal claim\].
+
+### Your APA-style results paragraph
+
+Write a polished 4–6 sentence paragraph below. Use the correct statistical notation and do not state that one variable *caused* another; this study only describes the sample.
+
+**Results:** \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ <br> <br> \vspace{3in}
+
+## Submission checklist
+
+- [ ] A saved SPSS data file with correct value labels and measurement levels.
+- [ ] SPSS output containing the frequency table, descriptive statistics, and histograms.
+- [ ] Completed responses for Parts A–F. You may print a PDF from the website and hand-write your responses or use a digital annotator tool.
+- [ ] One APA-style results paragraph that directly answers the research question.
+
+::: callout-tip
+## Optional challenge
+
+Use **Graphs \> Chart Builder** to make a bar chart of `coping_strategy`. Add an informative title and axis labels. In one sentence, explain how the tallest bar communicates the same information as the mode.
+:::
