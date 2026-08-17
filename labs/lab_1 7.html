@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="">
-<meta name="dcterms.date" content="2026-08-17">
 
-<title>Lab 3: Central Tendency – PSYC 20700 - Statistics in Psychology</title>
+<title>Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../labs/lab_4.html" rel="next">
-<link href="../labs/lab_1.html" rel="prev">
+<link href="../labs/lab_3.html" rel="next">
+<link href="../course-faq.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -71,11 +69,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Lab 3: Central Tendency – PSYC 20700 - Statistics in Psychology">
-<meta property="og:description" content="Sleep, Test Anxiety, and Memory During Exam Week">
+<link rel="stylesheet" href="lab-styles.css">
+<meta property="og:title" content="Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology">
+<meta property="og:description" content="Covers chapter 1 material: Introduction to Statistics | 50-minute lab">
 <meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
-<meta name="twitter:title" content="Lab 3: Central Tendency – PSYC 20700 - Statistics in Psychology">
-<meta name="twitter:description" content="Sleep, Test Anxiety, and Memory During Exam Week">
+<meta name="twitter:title" content="Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology">
+<meta name="twitter:description" content="Covers chapter 1 material: Introduction to Statistics | 50-minute lab">
 <meta name="twitter:image" content="https://jmochogi.github.io/business-stats-s26/labs/img/twitter-card.png">
 <meta name="twitter:creator" content="@jmochogi">
 <meta name="twitter:card" content="summary_large_image">
@@ -90,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_3.html">Lab 3</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_1.html">Lab 1</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -168,13 +167,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab_1.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../labs/lab_3.html" class="sidebar-item-text sidebar-link active">
+  <a href="../labs/lab_3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 3</span></a>
   </div>
 </li>
@@ -206,33 +205,31 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#research-scenario" id="toc-research-scenario" class="nav-link active" data-scroll-target="#research-scenario">Research scenario</a></li>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning objectives</a></li>
-  <li><a href="#part-a-set-up-the-psychology-dataset" id="toc-part-a-set-up-the-psychology-dataset" class="nav-link" data-scroll-target="#part-a-set-up-the-psychology-dataset">Part A — Set up the psychology dataset</a></li>
-  <li><a href="#part-b-the-mode-most-common-coping-strategy" id="toc-part-b-the-mode-most-common-coping-strategy" class="nav-link" data-scroll-target="#part-b-the-mode-most-common-coping-strategy">Part B — The mode: Most Common Coping Strategy</a></li>
-  <li><a href="#part-c-typical-sleep-and-memory-performance" id="toc-part-c-typical-sleep-and-memory-performance" class="nav-link" data-scroll-target="#part-c-typical-sleep-and-memory-performance">Part C — Typical sleep and memory performance</a></li>
-  <li><a href="#part-d-test-anxiety-and-an-extreme-score" id="toc-part-d-test-anxiety-and-an-extreme-score" class="nav-link" data-scroll-target="#part-d-test-anxiety-and-an-extreme-score">Part D — Test Anxiety and an Extreme Score</a>
+  <li><a href="#part-0-get-oriented-3-min" id="toc-part-0-get-oriented-3-min" class="nav-link active" data-scroll-target="#part-0-get-oriented-3-min">Part 0: Get Oriented (3 min)</a></li>
+  <li><a href="#part-1-build-your-variable-view-17-min" id="toc-part-1-build-your-variable-view-17-min" class="nav-link" data-scroll-target="#part-1-build-your-variable-view-17-min">Part 1: Build Your Variable View (17 min)</a>
   <ul class="collapse">
-  <li><a href="#examine-the-effect-of-the-extreme-score" id="toc-examine-the-effect-of-the-extreme-score" class="nav-link" data-scroll-target="#examine-the-effect-of-the-extreme-score">Examine the Effect of the Extreme Score</a></li>
+  <li><a href="#row-1-studentid" id="toc-row-1-studentid" class="nav-link" data-scroll-target="#row-1-studentid">Row 1: StudentID</a></li>
+  <li><a href="#row-2-major" id="toc-row-2-major" class="nav-link" data-scroll-target="#row-2-major">Row 2: Major</a></li>
+  <li><a href="#row-3-classyear" id="toc-row-3-classyear" class="nav-link" data-scroll-target="#row-3-classyear">Row 3: ClassYear</a></li>
+  <li><a href="#row-4-studyhours" id="toc-row-4-studyhours" class="nav-link" data-scroll-target="#row-4-studyhours">Row 4: StudyHours</a></li>
+  <li><a href="#row-5-netflixhours" id="toc-row-5-netflixhours" class="nav-link" data-scroll-target="#row-5-netflixhours">Row 5: NetflixHours</a></li>
+  <li><a href="#row-6-stresslevel" id="toc-row-6-stresslevel" class="nav-link" data-scroll-target="#row-6-stresslevel">Row 6: StressLevel</a></li>
   </ul></li>
-  <li><a href="#part-e-a-simple-linear-transformation" id="toc-part-e-a-simple-linear-transformation" class="nav-link" data-scroll-target="#part-e-a-simple-linear-transformation">Part E — A simple linear transformation</a></li>
-  <li><a href="#part-f-interpret-and-report-the-results-in-apa-style" id="toc-part-f-interpret-and-report-the-results-in-apa-style" class="nav-link" data-scroll-target="#part-f-interpret-and-report-the-results-in-apa-style">Part F — Interpret and report the results in APA style</a>
-  <ul class="collapse">
-  <li><a href="#apa-reporting-reminders" id="toc-apa-reporting-reminders" class="nav-link" data-scroll-target="#apa-reporting-reminders">APA reporting reminders</a></li>
-  <li><a href="#build-your-results-paragraph" id="toc-build-your-results-paragraph" class="nav-link" data-scroll-target="#build-your-results-paragraph">Build your results paragraph</a></li>
-  <li><a href="#your-apa-style-results-paragraph" id="toc-your-apa-style-results-paragraph" class="nav-link" data-scroll-target="#your-apa-style-results-paragraph">Your APA-style results paragraph</a></li>
-  </ul></li>
-  <li><a href="#submission-checklist" id="toc-submission-checklist" class="nav-link" data-scroll-target="#submission-checklist">Submission checklist</a></li>
+  <li><a href="#part-2-enter-the-data-15-min" id="toc-part-2-enter-the-data-15-min" class="nav-link" data-scroll-target="#part-2-enter-the-data-15-min">Part 2: Enter the Data (15 min)</a></li>
+  <li><a href="#part-3-run-your-first-output-9-min" id="toc-part-3-run-your-first-output-9-min" class="nav-link" data-scroll-target="#part-3-run-your-first-output-9-min">Part 3: Run Your First Output (9 min)</a></li>
+  <li><a href="#part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave" id="toc-part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave" class="nav-link" data-scroll-target="#part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave">Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)</a></li>
+  <li><a href="#take-home-lab-report-due-before-next-class" id="toc-take-home-lab-report-due-before-next-class" class="nav-link" data-scroll-target="#take-home-lab-report-due-before-next-class">Take-Home Lab Report (due before next class)</a></li>
+  <li><a href="#instructor-notes" id="toc-instructor-notes" class="nav-link" data-scroll-target="#instructor-notes">Instructor Notes</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_3.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_1.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_3.html">Lab 3</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_1.html">Lab 1</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab 3: Central Tendency</h1>
-<p class="subtitle lead">Sleep, Test Anxiety, and Memory During Exam Week</p>
+<h1 class="title">Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset</h1>
+<p class="subtitle lead">Covers chapter 1 material: Introduction to Statistics | 50-minute lab</p>
 </div>
 
 
@@ -240,12 +237,6 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 17, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -255,300 +246,290 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Student Information
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Name:</strong> ________________________________<br>
-<strong>Date:</strong> ________________________________</p>
-</div>
-</div>
-<p><strong>Estimated time:</strong> 45–60 minutes<br>
-<strong>Deliverables:</strong> completed responses, SPSS output, a saved <code>.sav</code> file, and an APA-style results paragraph.</p>
-<section id="research-scenario" class="level2">
-<h2 class="anchored" data-anchor-id="research-scenario">Research scenario</h2>
-<p>A psychology research team is studying student well-being during exam week. They recruited 24 undergraduate students and recorded each participant’s self-reported sleep from the prior night, test-anxiety score, performance on a short memory-recall task, and primary coping strategy.</p>
-<p>The team’s research question is:</p>
-<blockquote class="blockquote">
-<p><strong>During exam week, what are the typical levels of sleep, test anxiety, and memory recall among undergraduate students, and which coping strategy is most common?</strong></p>
-</blockquote>
-<p>This is a <strong>descriptive</strong> question. Your goal is not to test a hypothesis or compare groups. Instead, you will use the mean, median, and mode to describe the sample appropriately.</p>
-</section>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
-<p>By the end of this lab, you should be able to:</p>
-<ol type="1">
-<li>Select the mean, median, or mode that best represents a variable.</li>
-<li>Use SPSS to create frequency tables, descriptive statistics, and histograms.</li>
-<li>Explain how an extreme score influences the mean and median.</li>
-<li>Write a concise APA-style descriptive-results paragraph.</li>
-</ol>
-</section>
-<section id="part-a-set-up-the-psychology-dataset" class="level2">
-<h2 class="anchored" data-anchor-id="part-a-set-up-the-psychology-dataset">Part A — Set up the psychology dataset</h2>
-<p>Download <a href="chapter-3-psychology-context-lab-data.csv">the psychology lab dataset</a>. In SPSS, select <strong>File &gt; Import Data &gt; CSV Data</strong> (or <strong>File &gt; Open &gt; Data</strong>, depending on your version). Confirm that variable names are read from the first row.</p>
-<p>In <strong>Variable View</strong>, enter the value labels and measurement levels below.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th>Description / labels</th>
-<th>Measure</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>id</code></td>
-<td>Participant identification number</td>
-<td>Nominal</td>
-</tr>
-<tr class="even">
-<td><code>coping_strategy</code></td>
-<td>1 = Mindfulness; 2 = Planning; 3 = Social support</td>
-<td>Nominal</td>
-</tr>
-<tr class="odd">
-<td><code>sleep_hours</code></td>
-<td>Hours slept the night before the exam</td>
-<td>Scale</td>
-</tr>
-<tr class="even">
-<td><code>test_anxiety</code></td>
-<td>Test-anxiety score; possible range 0–40, higher = more anxiety</td>
-<td>Scale</td>
-</tr>
-<tr class="odd">
-<td><code>memory_recall</code></td>
-<td>Number of words recalled correctly; possible range 0–20</td>
-<td>Scale</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint A
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Save the file as <code>lab_3_yourlastname.sav</code>.</p>
-<p><strong>Question:</strong> Why is <code>coping_strategy</code> nominal, even though SPSS displays it using the numbers 1, 2, and 3?</p>
-<p><strong>Response:</strong></p>
-</div>
-</div>
-</section>
-<section id="part-b-the-mode-most-common-coping-strategy" class="level2">
-<h2 class="anchored" data-anchor-id="part-b-the-mode-most-common-coping-strategy">Part B — The mode: Most Common Coping Strategy</h2>
-<p>Use <strong>Analyze &gt; Descriptive Statistics &gt; Frequencies</strong>. Move <code>coping_strategy</code> to the Variable(s) box. Click <strong>Statistics</strong>, select <strong>Mode</strong>, click continue, then OK. Keep the frequency table in your output.</p>
-<ol type="1">
-<li><p>Which coping strategy is the mode? Report its frequency and percentage.</p>
-<p><strong>Response:</strong></p></li>
-<li><p>Why would it be inappropriate to calculate the mean of <code>coping_strategy</code>?</p>
-<p><strong>Response:</strong></p></li>
-<li><p>In plain language, write one sentence that answers the coping-strategy portion of the research question.</p>
-<p><strong>Response:</strong></p></li>
-</ol>
-</section>
-<section id="part-c-typical-sleep-and-memory-performance" class="level2">
-<h2 class="anchored" data-anchor-id="part-c-typical-sleep-and-memory-performance">Part C — Typical sleep and memory performance</h2>
-<p>Use <strong>Analyze &gt; Descriptive Statistics &gt; Explore</strong>. Put <code>sleep_hours</code> and <code>memory_recall</code> in the <strong>Dependent List</strong>. Click on <strong>Statistics</strong>. Ensure <strong><em>Descriptives</em></strong> and Percentiles are selected. Under percentiles, select <strong><em>Quartiles</em></strong> then click <strong><em>Continue</em></strong>. Next, click <strong><em>Plots</em></strong>, then select <em>Histogram</em>. Click <strong><em>Continue</em></strong> the <strong><em>OK</em></strong>. An output should popup.</p>
-<ol type="1">
-<li>Record the mean and median for each variable.</li>
-</ol>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th style="text-align: center;">Mean</th>
-<th style="text-align: center;">Median</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>sleep_hours</code></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td><code>memory_recall</code></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<ol start="2" type="1">
-<li><p>For each variable, describe the histogram as roughly symmetric, positively skewed, or negatively skewed.</p>
-<p><strong>Sleep hours:</strong></p>
-<p><br>
-<strong>Memory recall:</strong></p></li>
-<li><p>For each variable, decide whether the mean or median is the better single summary of a typical score. Briefly justify your choices.</p>
-<p><strong>Sleep hours:</strong></p>
-<p><br>
-<strong>Memory recall:</strong></p></li>
-</ol>
-</section>
-<section id="part-d-test-anxiety-and-an-extreme-score" class="level2">
-<h2 class="anchored" data-anchor-id="part-d-test-anxiety-and-an-extreme-score">Part D — Test Anxiety and an Extreme Score</h2>
-<p>Use <strong>Analyze &gt; Descriptive Statistics &gt; Explore</strong> to obtain the mean, median, and histogram for <code>test_anxiety</code>. Refer to the steps described in part C above if you need to.</p>
-<ol type="1">
-<li>Record the mean, median, minimum, and maximum.</li>
-</ol>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th style="text-align: center;">Mean</th>
-<th style="text-align: center;">Median</th>
-<th style="text-align: center;">Minimum</th>
-<th style="text-align: center;">Maximum</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<ol start="2" type="1">
-<li><p>Does the distribution appear skewed? Identify the value that appears to be extreme, and state whether it is low or high relative to the other scores.</p>
-<p><strong>Response:</strong></p></li>
-<li><p>Which measure of central tendency—mean or median—best represents a typical test-anxiety score in this sample? Explain your answer using the effect of the extreme score.</p>
-<p><strong>Response:</strong></p></li>
-</ol>
-<section id="examine-the-effect-of-the-extreme-score" class="level3">
-<h3 class="anchored" data-anchor-id="examine-the-effect-of-the-extreme-score">Examine the Effect of the Extreme Score</h3>
-<p>Use <strong>Data &gt; Select Cases</strong>. Choose <strong>If condition is satisfied</strong>, enter <code>id &lt; 24</code>, the click continue. Select <strong>Filter out unselected cases</strong>. You will notice that some cases are crossed out. Re-run the Explore analysis for <code>test_anxiety</code>.</p>
-<ol start="4" type="1">
-<li>Complete the table. Round to two decimal places.</li>
-</ol>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Cases included</th>
-<th style="text-align: center;">Mean</th>
-<th style="text-align: center;">Median</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>All 24 cases</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td>Cases 1–23 only</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="odd">
-<td>Change</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<ol start="5" type="1">
-<li><p>Which statistic changed more after the extreme score was excluded? What does this demonstrate about the mean and median?</p>
-<p><strong>Response:</strong></p></li>
-</ol>
-</section>
-</section>
-<section id="part-e-a-simple-linear-transformation" class="level2">
-<h2 class="anchored" data-anchor-id="part-e-a-simple-linear-transformation">Part E — A simple linear transformation</h2>
-<p>Before doing this part, we need to Restore <strong>All cases</strong>. To do this, return to <strong>Data &gt; Select Cases &gt; All cases</strong> &gt; <strong>OK</strong>. This will clear the conditional filtering applied earlier.</p>
-<p>Now, imagine the research team revises the anxiety scale by adding 5 points to every participant’s score. Use <strong>Transform &gt; Compute Variable</strong>. Under <strong><em>Target Variable</em></strong>, write <code>anxiety_plus_5</code>. Under Numeric Expression write <code>test_anxiety + 5</code>. then click <strong>OK</strong>. A new variable named <code>anxiety_plus_5</code> will be created.</p>
-<p>Run Explore for <code>test_anxiety</code> and <code>anxiety_plus_5</code>.</p>
-<ol type="1">
-<li>Complete the table below:</li>
-</ol>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Variable</th>
-<th style="text-align: center;">Mean</th>
-<th style="text-align: center;">Median</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>test_anxiety</code></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td><code>anxiety_plus_5</code></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-</tr>
-</tbody>
-</table>
-<ol start="2" type="1">
-<li><p>How did the mean and median anxiety change after adding 5 to each individual score? State the rule for what happens to the mean and median when the same constant is added to every score.</p>
-<p><strong>Response:</strong></p></li>
-</ol>
-</section>
-<section id="part-f-interpret-and-report-the-results-in-apa-style" class="level2">
-<h2 class="anchored" data-anchor-id="part-f-interpret-and-report-the-results-in-apa-style">Part F — Interpret and report the results in APA style</h2>
-<p>APA-style results writing should be accurate, concise, and tied to the research question. Use the statistics you produced in SPSS—not estimates from the graph.</p>
-<section id="apa-reporting-reminders" class="level3">
-<h3 class="anchored" data-anchor-id="apa-reporting-reminders">APA reporting reminders</h3>
+<p><strong>Before you start:</strong> Open SPSS Statistics on your lab computer. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank <strong>Data Editor</strong> window with a grid of empty cells.</p>
+<hr>
+<section id="part-0-get-oriented-3-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-0-get-oriented-3-min">Part 0: Get Oriented (3 min)</h2>
+<p>Look at the bottom-left corner of the Data Editor window. You’ll see two tabs:</p>
 <ul>
-<li>Report the sample size as <em>N</em> when referring to the whole sample.</li>
-<li>Report the mean as <em>M</em> and the standard deviation as <em>SD</em>.</li>
-<li>Report the median as <em>Mdn</em> when it is the better summary for a skewed distribution.</li>
-<li>Report a categorical mode in words, followed by its frequency (<em>n</em>) and percentage when useful.</li>
-<li>Round consistently, typically to two decimal places unless your instructor directs otherwise.</li>
-<li>Describe the distribution when that explains why you selected the median instead of the mean.</li>
+<li><strong>Data View</strong> — where you type in scores, one row per person, one column per variable</li>
+<li><strong>Variable View</strong> — where you describe each variable <em>before</em> you enter any scores</li>
 </ul>
+<p>There is also a separate window called the <strong>Output Viewer</strong> — it doesn’t exist yet, but it will pop up automatically the first time you run an analysis. That’s where your results/tables appear.</p>
+<p><strong>Rule for today:</strong> we always set up a variable in <strong>Variable View</strong> <em>before</em> typing any scores for it in <strong>Data View</strong>. This mirrors Chapter 1’s point that researchers must define how something will be measured before they collect data.</p>
+<hr>
 </section>
-<section id="build-your-results-paragraph" class="level3">
-<h3 class="anchored" data-anchor-id="build-your-results-paragraph">Build your results paragraph</h3>
-<p>Use this template to write a paragraph that answers the research question:</p>
-<blockquote class="blockquote">
-<p>The sample (<em>N</em> = <strong><em>) reported an average of M</em></strong> <strong>=</strong> hours of sleep (<em>SD</em> = <strong><em>; Mdn</em></strong> <strong>=</strong> ). Participants recalled an average of <em>M</em> = ___ words (<em>SD</em> = <em><strong>) on the memory task. The modal coping strategy was [strategy]</strong> (n</em> = , <strong><em>%). Test-anxiety scores were [roughly symmetric / positively skewed / negatively skewed]; therefore, the [mean / median] was the most appropriate indicator of a typical score (M</em></strong> <strong>or <em>Mdn</em> =</strong> ). Overall, these results suggest that [one sentence summarizing the sample descriptively without making a causal claim].</p>
-</blockquote>
+<section id="part-1-build-your-variable-view-17-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-build-your-variable-view-17-min">Part 1: Build Your Variable View (17 min)</h2>
+<p>You’re going to enter data from a mini-survey of 10 students. Click the <strong>Variable View</strong> tab now. You’ll see rows (one per variable you’re about to create) and columns including Name, Type, Decimals, Label, Values, and Measure.</p>
+<p>We will create <strong>6 variables</strong>, one per row. For each one, follow these exact steps.</p>
+<section id="row-1-studentid" class="level3">
+<h3 class="anchored" data-anchor-id="row-1-studentid">Row 1: StudentID</h3>
+<ol type="1">
+<li>Click the empty cell in <strong>row 1, “Name” column</strong>. Type: <code>StudentID</code></li>
+<li>Leave <strong>Type</strong> as the default (Numeric).</li>
+<li>Click the <strong>Decimals</strong> cell for this row. Change it to <code>0</code> (an ID number has no decimal places).</li>
+<li>Click the <strong>Label</strong> cell. Type: <code>Student identifier</code></li>
+<li>Click the <strong>Measure</strong> cell. Click the dropdown arrow and select <strong>Nominal</strong>.
+<ul>
+<li><em>Why nominal?</em> An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.</li>
+</ul></li>
+</ol>
 </section>
-<section id="your-apa-style-results-paragraph" class="level3">
-<h3 class="anchored" data-anchor-id="your-apa-style-results-paragraph">Your APA-style results paragraph</h3>
-<p>Write a polished 4–6 sentence paragraph below. Use the correct statistical notation and do not state that one variable <em>caused</em> another; this study only describes the sample.</p>
-<p><strong>Results:</strong> __________________________________________________ <br> <br> </p>
+<section id="row-2-major" class="level3">
+<h3 class="anchored" data-anchor-id="row-2-major">Row 2: Major</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Major</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Academic major</code></li>
+<li><strong>Values:</strong> Click the Values cell, then click the small gray <strong>…</strong> button that appears on the right side of the cell. A “Value Labels” dialog opens.
+<ul>
+<li>In the <strong>Value</strong> box, type <code>1</code>. In the <strong>Label</strong> box, type <code>Psychology</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>2</code>, Label <code>Biology</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>3</code>, Label <code>Business</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>4</code>, Label <code>Undecided</code>. Click <strong>Add</strong>.</li>
+<li>Click <strong>OK</strong>.</li>
+</ul></li>
+<li><strong>Measure:</strong> select <strong>Nominal</strong>.</li>
+</ol>
 </section>
+<section id="row-3-classyear" class="level3">
+<h3 class="anchored" data-anchor-id="row-3-classyear">Row 3: ClassYear</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>ClassYear</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Year in school</code></li>
+<li><strong>Values:</strong> same process as above —
+<ul>
+<li><code>1</code> = <code>Freshman</code>, <code>2</code> = <code>Sophomore</code>, <code>3</code> = <code>Junior</code>, <code>4</code> = <code>Senior</code> (Add after each one, then OK)</li>
+</ul></li>
+<li><strong>Measure:</strong> select <strong>Ordinal</strong>.
+<ul>
+<li><em>Why ordinal, not nominal?</em> Freshman → Senior is an ordered sequence, unlike majors.</li>
+</ul></li>
+</ol>
 </section>
-<section id="submission-checklist" class="level2">
-<h2 class="anchored" data-anchor-id="submission-checklist">Submission checklist</h2>
-<ul class="task-list">
-<li><label><input type="checkbox">A saved SPSS data file with correct value labels and measurement levels.</label></li>
-<li><label><input type="checkbox">SPSS output containing the frequency table, descriptive statistics, and histograms.</label></li>
-<li><label><input type="checkbox">Completed responses for Parts A–F. You may print a PDF from the website and hand-write your responses or use a digital annotator tool.</label></li>
-<li><label><input type="checkbox">One APA-style results paragraph that directly answers the research question.</label></li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled">
+<section id="row-4-studyhours" class="level3">
+<h3 class="anchored" data-anchor-id="row-4-studyhours">Row 4: StudyHours</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>StudyHours</code></li>
+<li><strong>Decimals:</strong> change to <code>1</code> (allow one decimal place, e.g., 8.5)</li>
+<li><strong>Label:</strong> <code>Hours spent studying per week</code></li>
+<li><strong>Values:</strong> leave blank (this variable’s numbers are real quantities, not category codes — nothing to label)</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong>.</li>
+</ol>
+</section>
+<section id="row-5-netflixhours" class="level3">
+<h3 class="anchored" data-anchor-id="row-5-netflixhours">Row 5: NetflixHours</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>NetflixHrs</code></li>
+<li><strong>Decimals:</strong> <code>1</code></li>
+<li><strong>Label:</strong> <code>Hours streaming video per week</code></li>
+<li><strong>Values:</strong> leave blank</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong>.</li>
+</ol>
+</section>
+<section id="row-6-stresslevel" class="level3">
+<h3 class="anchored" data-anchor-id="row-6-stresslevel">Row 6: StressLevel</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Stress</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Self-rated stress, 1 (low) to 10 (high)</code></li>
+<li><strong>Values:</strong> leave blank for now — we’ll come back to this one in the discussion question below</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong> for now (we’ll revisit whether this is the right call)</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Optional challenge
+Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Use <strong>Graphs &gt; Chart Builder</strong> to make a bar chart of <code>coping_strategy</code>. Add an informative title and axis labels. In one sentence, explain how the tallest bar communicates the same information as the mode.</p>
+<p>You should have 6 rows filled in. Raise your hand if any Measure cell still says “Unknown.”</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Note on SPSS's Measure column">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note on SPSS’s Measure column
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The textbook describes <strong>four</strong> scales of measurement (nominal, ordinal, interval, ratio). SPSS only gives you <strong>three</strong> options. Hang onto that observation — it’s Concept Check question 4 below.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="part-2-enter-the-data-15-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-enter-the-data-15-min">Part 2: Enter the Data (15 min)</h2>
+<p>Click the <strong>Data View</strong> tab. Your 6 column headers (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress) should already be there from Part 1. Type the following, one row per student — click a cell, type the number, press <strong>Tab</strong> or <strong>Enter</strong> to move to the next cell.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>StudentID</th>
+<th>Major</th>
+<th>ClassYear</th>
+<th>StudyHours</th>
+<th>NetflixHrs</th>
+<th>Stress</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>12.5</td>
+<td>6.0</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>6.0</td>
+<td>10.5</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>15.0</td>
+<td>3.5</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>8.5</td>
+<td>9.0</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>10.0</td>
+<td>5.5</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>2</td>
+<td>4</td>
+<td>18.5</td>
+<td>2.0</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>3</td>
+<td>2</td>
+<td>7.5</td>
+<td>12.0</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>1</td>
+<td>4</td>
+<td>11.0</td>
+<td>4.5</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>4</td>
+<td>3</td>
+<td>9.5</td>
+<td>8.0</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>2</td>
+<td>2</td>
+<td>13.0</td>
+<td>6.5</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the <strong>View</strong> menu (top menu bar) → click <strong>Value Labels</strong>. The columns should now display “Psychology,” “Sophomore,” etc. instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.</p>
+</div>
+</div>
+<p><strong>Save your file now:</strong> File → Save As → name it <code>Lab1_YourLastName.sav</code> → save it to the location your instructor specifies.</p>
+<hr>
+</section>
+<section id="part-3-run-your-first-output-9-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-run-your-first-output-9-min">Part 3: Run Your First Output (9 min)</h2>
+<p>We haven’t learned to <em>interpret</em> statistical output yet — that starts in Chapter 2. Right now we’re just previewing what “descriptive statistics” (Chapter 1, Learning Objective 2) looks like in SPSS.</p>
+<p><strong>3a. Frequency table for a nominal variable:</strong> 1. Menu bar: <strong>Analyze → Descriptive Statistics → Frequencies</strong> 2. In the dialog box, click <strong>Major</strong> in the left-hand list, then click the arrow button to move it into the “Variable(s)” box on the right. 3. Click <strong>OK</strong>. 4. The Output Viewer window opens automatically with a table showing how many students fall into each major category, and what percentage each represents.</p>
+<p><strong>3b. Summary numbers for a scale variable:</strong> 1. <strong>Analyze → Descriptive Statistics → Descriptives</strong> 2. Move <strong>StudyHours</strong> and <strong>NetflixHrs</strong> into the “Variable(s)” box. 3. Click <strong>OK</strong>. A second table appears in the Output Viewer with N, Minimum, Maximum, Mean, and Std. Deviation for each.</p>
+<p><strong>Save your output too:</strong> in the Output Viewer window, File → Save As → <code>Lab1_YourLastName_Output.spv</code>.</p>
+<hr>
+</section>
+<section id="part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave">Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)</h2>
+<p>Answer these on paper or in the LMS quiz (whichever your instructor specifies):</p>
+<ol type="1">
+<li>If we wanted to generalize beyond this room, what would the <strong>population</strong> be, and what would the 10 rows of data represent (in Chapter 1’s terms)?</li>
+<li>The average StudyHours you’d calculate from these 10 rows — is that a <strong>parameter</strong> or a <strong>statistic</strong>? Why?</li>
+<li>When you ran Frequencies and Descriptives in Part 3, were you using <strong>descriptive</strong> or <strong>inferential</strong> statistics? How do you know?</li>
+</ol>
+<hr>
+</section>
+<section id="take-home-lab-report-due-before-next-class" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-lab-report-due-before-next-class">Take-Home Lab Report (due before next class)</h2>
+<p>Using your saved <code>.sav</code> file and output, write brief answers (a sentence or two each is fine):</p>
+<ol type="1">
+<li><strong>Variable classification table.</strong> For each of the 6 variables, state (a) whether it’s discrete or continuous, and (b) which of the four textbook scales of measurement it belongs to (nominal/ordinal/interval/ratio).</li>
+<li><strong>SPSS’s “Scale” category.</strong> SPSS collapses two of the textbook’s four scales into one “Scale” option. Which two, and why does that combination make statistical sense (hint: think about what interval and ratio scales have in common that nominal and ordinal don’t)?</li>
+<li><strong>Real limits.</strong> One classmate’s StudyHours value is 8.5. What are the real limits of that score, and why do real limits only apply to continuous variables?</li>
+<li><strong>Stress variable debate.</strong> We treated Stress (a 1–10 self-rating) as Scale in SPSS, but reasonable people disagree. Make a one-paragraph case that it’s actually <em>ordinal</em> instead, using the textbook’s definition of what an ordinal scale can and can’t tell you.</li>
+<li><strong>Independent/dependent variables.</strong> Suppose a researcher used this same setup to test whether <em>Major</em> is related to <em>StudyHours</em> — comparing average study hours across the four majors. Identify the independent variable and the dependent variable. Is the independent variable a true independent variable or a <strong>quasi-independent</strong> variable? Explain using the textbook’s distinction.</li>
+<li><strong>Data structure.</strong> Which of the three data structures from Section 1-3 (one-group descriptive research, the correlational method, or comparing groups of scores) best describes what we did today with the full 6-variable dataset? Justify your answer.</li>
+</ol>
+<hr>
+</section>
+<section id="instructor-notes" class="level2">
+<h2 class="anchored" data-anchor-id="instructor-notes">Instructor Notes</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Trim this section before distributing to students">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Trim this section before distributing to students
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Timing is tight</strong> — Part 1 (variable setup) is where students lose time fumbling with the Values dialog. Consider projecting your own screen through Row 1 and Row 2 live, then letting them do Rows 3–6 independently.</li>
+<li><strong>Common error:</strong> students forget to click “Add” before “OK” in the Value Labels dialog, so labels don’t save. Worth a 10-second warning up front.</li>
+<li><strong>Common error:</strong> leaving Decimals at the default (2) for StudentID/Major/ClassYear — not wrong mechanically, but a good moment to ask “does a major code need decimal places?”</li>
+<li>Question 4 (Stress variable) has no single correct answer — it’s the intro-stats version of the ordinal-vs-interval Likert debate, and is meant to generate discussion, not a graded “right answer.” Grade for reasoning quality, not conclusion.</li>
+<li>If a pair finishes early, have them toggle <strong>View → Value Labels</strong> off/on a few times and predict what the Frequencies output would look like using raw codes vs.&nbsp;labels — reinforces that the label is cosmetic, not the stored value.</li>
+</ul>
 </div>
 </div>
 
@@ -975,13 +956,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../labs/lab_1.html" class="pagination-link" aria-label="Lab 1">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 1</span>
+      <a href="../course-faq.html" class="pagination-link" aria-label="FAQ">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">FAQ</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../labs/lab_4.html" class="pagination-link" aria-label="Lab 4">
-        <span class="nav-page-text">Lab 4</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../labs/lab_3.html" class="pagination-link" aria-label="Lab 3">
+        <span class="nav-page-text">Lab 3</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

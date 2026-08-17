@@ -11,13 +11,12 @@ format:
     embed-resources: true
     number-sections: false
   pdf:
+    toc: false
     documentclass: article
     geometry: margin=1in
     fontsize: 11pt
     mainfont: "Liberation Serif"
     sansfont: "Liberation Sans"
-    pdf-engine: xelatex
-    include-in-header: header-includes.tex
     colorlinks: true
     number-sections: false
 editor: visual
@@ -44,7 +43,7 @@ Two things appear in the Output Viewer:
 **A frequency table.** Match its columns to the textbook's vocabulary:
 
 | SPSS column | Chapter 2 term |
-|----|----|
+|------------------------------------|------------------------------------|
 | Frequency | *f* — the raw count in each category |
 | Percent | \% — same as computing p × 100, where p = f/N |
 | Valid Percent | \% excluding any missing data (identical to Percent here, since we have none) |
@@ -140,13 +139,3 @@ SPSS automatically bins the continuous variable for you (similar in spirit to wh
 6.  **Percentile interpretation.** In your own words, explain what it means that a StudyHours score has a percentile rank of 70%. Use the cumulative percent column from one of today's frequency tables as your example.
 
 ------------------------------------------------------------------------
-
-## Instructor Notes
-
-::: {.callout-important title="Trim this section before distributing to students"}
-- **This is the tightest lab yet.** Part 4 (Recode) is the most likely place to run over — if the section is behind schedule, consider demonstrating Part 4 live on the projector rather than having students execute it themselves, and shift the hands-on grouping practice to the take-home assignment using a walkthrough video instead.
-- **The 4.5/9.5/14.5 boundary values are deliberate**, not arbitrary — they're the real limits, and they're chosen so that no student's actual StudyHours value (6.0, 7.5, 8.5, 9.5, 10.0, 11.0, 12.5, 13.0, 15.0, 18.5) sits ambiguously on a boundary. If you swap in a different class dataset, re-derive the cut points the same way rather than reusing 4.5/9.5/14.5 by default.
-- **Common error:** students select "Value" instead of "Range" in the Recode dialog, or forget to click "Add" after each range before moving to the next — same failure mode as the Values dialog in Lab 1.
-- **Shape discussion (Part 5):** with only 10 data points, resist letting students over-claim a strong skew — a good moment to explicitly note that shape judgments are much shakier with small samples, which sets up why later chapters (central tendency, variability) give us more precise numerical tools than "eyeballing" a graph.
-- Take-home Question 1 is intentionally a little bit of a trap — Σ*fX* is computable for nominal data but meaningless, and catching that is the actual learning objective, not the arithmetic.
-:::

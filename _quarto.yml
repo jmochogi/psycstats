@@ -52,7 +52,7 @@ website:
     contents:
       - section: "Course information"
         contents:
-          - href: course-overview.qmd
+          - href: index.qmd
             text: Overview
           - href: course-syllabus.qmd
             text: Syllabus
@@ -60,10 +60,10 @@ website:
             text: Support
           #- href: course-team.qmd
             #text: Teaching team
-          - href: index.qmd
-            text: Schedule
-          - href: course-links.qmd
-            text: Useful links
+          #- href: index.qmd
+            #text: Schedule
+          #- href: course-links.qmd
+            #text: Useful links
           - href: course-faq.qmd
             text: FAQ
       
@@ -71,8 +71,8 @@ website:
         contents:
           - href: labs/lab_1.qmd
             text: Lab 1
-          - href: labs/lab_2.qmd
-            text: Lab 2
+          #- href: labs/lab_2.qmd
+            #text: Lab 2
           - href: labs/lab_3.qmd
             text: Lab 3
           - href: labs/lab_4.qmd
@@ -92,12 +92,12 @@ website:
             
           
             
-      - section: "Projects"
-        contents:
-          - href: project/first-project.qmd
-            text: Project 1
-          - href: project/final-project.qmd
-            text: Project 2
+      #- section: "Projects"
+        #contents:
+          #- href: project/first-project.qmd
+            #text: Project 1
+          #- href: project/final-project.qmd
+            #text: Project 2
             
       #- section: "Problem Sets"
        # contents:

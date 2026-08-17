@@ -51,7 +51,7 @@ Download [the psychology lab dataset](chapter-3-psychology-context-lab-data.csv)
 In **Variable View**, enter the value labels and measurement levels below.
 
 | Variable | Description / labels | Measure |
-|------------------------|------------------------|------------------------|
+|----|----|----|
 | `id` | Participant identification number | Nominal |
 | `coping_strategy` | 1 = Mindfulness; 2 = Planning; 3 = Social support | Nominal |
 | `sleep_hours` | Hours slept the night before the exam | Scale |

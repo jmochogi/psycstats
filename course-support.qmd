@@ -1,0 +1,54 @@
+---
+title: "Course Support"
+---
+
+There are various resources available to help you succeed in this course and in college in general. Should you feel like you are struggling too much, please don’t hesitate to reach out to me so we can discuss possible ways forward. Below are some support services available to you.
+
+## Open Hours
+
+I will be available during open hours (see syllabus) to answer questions or concerns that you may have in the course. You can simply walk in during the stated times above. Even if you don't have any question, you can just stop by to say hi. If the above posted times don't work for you, please click [this link](https://calendly.com/jmochogi/20min?month=2024-08) to see more options. Open hours may be held in-person or virtually depending on your preference and the circumstances of the day. Below are the zoom link and passcode for virtual meetings:
+
+**Zoom Link:** [click here](https://ithaca.zoom.us/j/3364817575?pwd=WlA1S3hJWWZNTTFoWUVaZlA1clhtdz09)
+
+**Passcode:** 850 424
+
+## Mathematics Support Center
+
+The mathematics department is committed to the success of all students enrolled in mathematics courses. Free one-on-one support for your mathematics coursework is available during select daytime and evening hours Monday-Friday at the Mathematics Room (Williams Hall 209). The Mathematics Room is staffed by mathematics faculty and vetted students. Student tutors offer support to fellow students in courses numbered 200 and below while math faculty offer support in any of the math courses. For more information and the schedule, please visit the [Math Support Center](https://www.ithaca.edu/academics/school-humanities-and-sciences/mathematics/courses-placement-resources/mathematics-support-center).
+
+## Discussion Forums
+
+Have a question that can’t wait for office hours? Prefer to write out your question in detail rather than asking in person? The Canvas Discussion forums, might be the best venue for these! There is a chance another student has already asked a similar question, so please check the other posts on before asking a new question. If you know the answer to a question that is posted, I encourage you to respond! In Canvas discussion section, anybody is able to start threads and others can jump in with replies.
+
+## Email
+
+Please refrain from emailing any course content questions (those should go to Canvas Discussion forums), and only use email for questions about personal matters that may not be appropriate for the public course forum (e.g., illness, accommodations, etc.). My email address is [jgeteregechi\@ithaca.edu](mailto:jgeteregechi@ithaca.edu).
+
+If there is a question that's not appropriate for the public forum, you are welcome to email me directly. If you email me, **please include the course and class time in the subject line (e.g., "MATH 144 10am").** Barring extenuating circumstances, I will respond to MATH 144 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday. If I take too long, please reach out again or talk to me before or after class as I may have missed your email.
+
+## Tutoring and Academic Enrichment Services
+
+As a supplement to faculty advising and office hours, Tutoring and Academic Enrichment Services offers exceptional peer resources free of charge. Learning Coaches provide content-specific peer tutoring in a variety of courses. Peer Success Coaches mentor students who wish to develop collegiate-level academic and social engagement skills. To access these courses and for more information, please visit the [Center for Student Success](https://www.ithaca.edu/tutoring-services).
+
+## Writing Center
+
+The Writing Center aims to help students from all disciplines, backgrounds, and experiences to develop greater independence as writers. We are committed to helping students see writing as central to critical and creative thinking. The physical location in Smiddy 107 will not be open to clients. For more information and scheduling appointments please visit the [writing center website](https://ithaca.mywconline.com).
+
+## Mental health and wellness
+
+If your mental health concerns and/or stressful events negatively affect your daily emotional state, academic performance, or ability to participate in your daily activities, many resources are available to help you through difficult times. Please visit the [Mental Health Services](https://www.ithaca.edu/student-health-services/health-services/mental-health-services) for more information. Ithaca College encourages all students to access these resources.
+
+## Course costs
+
+- **Textbooks:** The textbooks for this course are open-source and freely available on the web.
+
+- **Laptops:** Each student is expected to have a laptop they can bring to each lecture and lab.
+
+- **Software subscriptions:**
+
+  - **RStudio:** RStudio cloud ([posit cloud](https://posit.cloud/)) is available for a \$5 per month subscription for students. We will start with a free version but this is limited to about 20 hrs a month. I do not expect you to hit this cap but should you do, consider subscribing for a students license at \$5 using your "*.edu"* email address.
+  - **MyOpenMath:** This is a free online homework system and you will be able to access the assignments directly from Canvas.
+
+## **Technology Assistance**
+
+For technical help with Canvas and other technologies used, contact the Ithaca College IT support team at (607) 274-1000 or email them at [servicedesk\@ithaca.edu](mailto:servicedesk@ithaca.edu){.email}. I may also be able to help with some course-related technology issues but I can only do so during office hours.
