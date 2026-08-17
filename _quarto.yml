@@ -6,7 +6,7 @@ website:
   page-navigation: true
   title: "PSYC 20700 - Statistics in Psychology"
   description: "Homepage for PSYC 207 - Statistics in Psychology, Fall 2026."
-  site-url: "https://jmochogi.github.io/business-stats-s26/"
+  site-url: "https://jmochogi.github.io/psycstats/"
 
   repo-url: https://github.com/jmochogi/psycstats
   #repo-actions: [edit, issue]
@@ -23,7 +23,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/jmochogi/business-stats-s26
+        href: https://github.com/jmochogi/psycstats
         text: "GitHub repository"
       #- icon: code-square
        # href: https://cmgr.oit.duke.edu/containers
