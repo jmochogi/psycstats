@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
 
-<title>Lab 2: Frequency Distributions and Graphs – PSYC 20700 - Statistics in Psychology</title>
+<title>Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -149,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_1.html" class="sidebar-item-text sidebar-link">
+  <a href="/labs/lab_1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 1</span></a>
   </div>
 </li>
@@ -190,8 +190,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 2: Frequency Distributions and Graphs</h1>
-<p class="subtitle lead">Covers Chapter 2: Frequency Distributions | 50-minute lab | Continues from Lab 1</p>
+<h1 class="title">Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset</h1>
+<p class="subtitle lead">Covers chapter 1 material: Introduction to Statistics | 50-minute lab</p>
 </div>
 
 
@@ -211,194 +211,311 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#part-1-frequency-table-bar-chart-for-a-categorical-variable-13-min" id="toc-part-1-frequency-table-bar-chart-for-a-categorical-variable-13-min">Part 1: Frequency Table + Bar Chart for a Categorical Variable (13 min)</a></li>
-  <li><a href="#part-2-independent-practice-classyear-5-min" id="toc-part-2-independent-practice-classyear-5-min">Part 2: Independent Practice — ClassYear (5 min)</a></li>
-  <li><a href="#part-3-a-numerical-variable-and-why-it-gets-messy-8-min" id="toc-part-3-a-numerical-variable-and-why-it-gets-messy-8-min">Part 3: A Numerical Variable — and Why It Gets Messy (8 min)</a></li>
-  <li><a href="#part-4-building-a-grouped-frequency-table-12-min" id="toc-part-4-building-a-grouped-frequency-table-12-min">Part 4: Building a Grouped Frequency Table (12 min)</a></li>
-  <li><a href="#part-5-histogram-and-shape-6-min" id="toc-part-5-histogram-and-shape-6-min">Part 5: Histogram and Shape (6 min)</a></li>
+  <li><a href="#part-0-get-oriented-3-min" id="toc-part-0-get-oriented-3-min">Part 0: Get Oriented (3 min)</a></li>
+  <li><a href="#part-1-build-your-variable-view-17-min" id="toc-part-1-build-your-variable-view-17-min">Part 1: Build Your Variable View (17 min)</a>
+  <ul>
+  <li><a href="#row-1-studentid" id="toc-row-1-studentid">Row 1: StudentID</a></li>
+  <li><a href="#row-2-major" id="toc-row-2-major">Row 2: Major</a></li>
+  <li><a href="#row-3-classyear" id="toc-row-3-classyear">Row 3: ClassYear</a></li>
+  <li><a href="#row-4-studyhours" id="toc-row-4-studyhours">Row 4: StudyHours</a></li>
+  <li><a href="#row-5-netflixhours" id="toc-row-5-netflixhours">Row 5: NetflixHours</a></li>
+  <li><a href="#row-6-stresslevel" id="toc-row-6-stresslevel">Row 6: StressLevel</a></li>
+  </ul></li>
+  <li><a href="#part-2-enter-the-data-15-min" id="toc-part-2-enter-the-data-15-min">Part 2: Enter the Data (15 min)</a></li>
+  <li><a href="#part-3-run-your-first-output-9-min" id="toc-part-3-run-your-first-output-9-min">Part 3: Run Your First Output (9 min)</a></li>
+  <li><a href="#part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave" id="toc-part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave">Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)</a></li>
   <li><a href="#take-home-lab-report-due-before-next-class" id="toc-take-home-lab-report-due-before-next-class">Take-Home Lab Report (due before next class)</a></li>
+  <li><a href="#instructor-notes" id="toc-instructor-notes">Instructor Notes</a></li>
   </ul>
 </nav>
-<p><strong>Before you start:</strong> Open SPSS, then open your saved file from last week: <strong>File → Open → Data</strong> → navigate to where you saved it → select <code>Lab1_YourLastName.sav</code> → <strong>Open</strong>. You should see your 10-row, 6-variable dataset (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress). We are <em>not</em> creating new variables today — we’re analyzing the ones you already built.</p>
+<p><strong>Before you start:</strong> Open SPSS Statistics on your lab computer. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank <strong>Data Editor</strong> window with a grid of empty cells.</p>
 <hr />
-<section id="part-1-frequency-table-bar-chart-for-a-categorical-variable-13-min" class="level2">
-<h2>Part 1: Frequency Table + Bar Chart for a Categorical Variable (13 min)</h2>
-<p>We’ll start with <strong>Major</strong> — a nominal variable — and build both a frequency table and its graph in one pass.</p>
-<ol type="1">
-<li><strong>Analyze → Descriptive Statistics → Frequencies</strong></li>
-<li>Click <strong>Major</strong> in the left-hand list, click the arrow to move it into the <strong>Variable(s)</strong> box.</li>
-<li>Click the <strong>Charts…</strong> button.
+<section id="part-0-get-oriented-3-min" class="level2">
+<h2>Part 0: Get Oriented (3 min)</h2>
+<p>Look at the bottom-left corner of the Data Editor window. You’ll see two tabs:</p>
 <ul>
-<li>Select the <strong>Bar charts</strong> radio button.</li>
-<li>Under “Chart Values,” select <strong>Percentages</strong> (instead of the default “Frequencies”) — this shows the proportion of students in each major, not just the raw count.</li>
-<li>Click <strong>Continue</strong>.</li>
+<li><strong>Data View</strong> — where you type in scores, one row per person, one column per variable</li>
+<li><strong>Variable View</strong> — where you describe each variable <em>before</em> you enter any scores</li>
+</ul>
+<p>There is also a separate window called the <strong>Output Viewer</strong> — it doesn’t exist yet, but it will pop up automatically the first time you run an analysis. That’s where your results/tables appear.</p>
+<p><strong>Rule for today:</strong> we always set up a variable in <strong>Variable View</strong> <em>before</em> typing any scores for it in <strong>Data View</strong>. This mirrors Chapter 1’s point that researchers must define how something will be measured before they collect data.</p>
+<hr />
+</section>
+<section id="part-1-build-your-variable-view-17-min" class="level2">
+<h2>Part 1: Build Your Variable View (17 min)</h2>
+<p>You’re going to enter data from a mini-survey of 10 students. Click the <strong>Variable View</strong> tab now. You’ll see rows (one per variable you’re about to create) and columns including Name, Type, Decimals, Label, Values, and Measure.</p>
+<p>We will create <strong>6 variables</strong>, one per row. For each one, follow these exact steps.</p>
+<section id="row-1-studentid" class="level3">
+<h3>Row 1: StudentID</h3>
+<ol type="1">
+<li>Click the empty cell in <strong>row 1, “Name” column</strong>. Type: <code>StudentID</code></li>
+<li>Leave <strong>Type</strong> as the default (Numeric).</li>
+<li>Click the <strong>Decimals</strong> cell for this row. Change it to <code>0</code> (an ID number has no decimal places).</li>
+<li>Click the <strong>Label</strong> cell. Type: <code>Student identifier</code></li>
+<li>Click the <strong>Measure</strong> cell. Click the dropdown arrow and select <strong>Nominal</strong>.
+<ul>
+<li><em>Why nominal?</em> An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.</li>
 </ul></li>
-<li>Click <strong>OK</strong>.</li>
 </ol>
-<p>Two things appear in the Output Viewer:</p>
-<p><strong>A frequency table.</strong> Match its columns to the textbook’s vocabulary:</p>
+</section>
+<section id="row-2-major" class="level3">
+<h3>Row 2: Major</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Major</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Academic major</code></li>
+<li><strong>Values:</strong> Click the Values cell, then click the small gray <strong>…</strong> button that appears on the right side of the cell. A “Value Labels” dialog opens.
+<ul>
+<li>In the <strong>Value</strong> box, type <code>1</code>. In the <strong>Label</strong> box, type <code>Psychology</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>2</code>, Label <code>Biology</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>3</code>, Label <code>Business</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>4</code>, Label <code>Undecided</code>. Click <strong>Add</strong>.</li>
+<li>Click <strong>OK</strong>.</li>
+</ul></li>
+<li><strong>Measure:</strong> select <strong>Nominal</strong>.</li>
+</ol>
+</section>
+<section id="row-3-classyear" class="level3">
+<h3>Row 3: ClassYear</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>ClassYear</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Year in school</code></li>
+<li><strong>Values:</strong> same process as above —
+<ul>
+<li><code>1</code> = <code>Freshman</code>, <code>2</code> = <code>Sophomore</code>, <code>3</code> = <code>Junior</code>, <code>4</code> = <code>Senior</code> (Add after each one, then OK)</li>
+</ul></li>
+<li><strong>Measure:</strong> select <strong>Ordinal</strong>.
+<ul>
+<li><em>Why ordinal, not nominal?</em> Freshman → Senior is an ordered sequence, unlike majors.</li>
+</ul></li>
+</ol>
+</section>
+<section id="row-4-studyhours" class="level3">
+<h3>Row 4: StudyHours</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>StudyHours</code></li>
+<li><strong>Decimals:</strong> change to <code>1</code> (allow one decimal place, e.g., 8.5)</li>
+<li><strong>Label:</strong> <code>Hours spent studying per week</code></li>
+<li><strong>Values:</strong> leave blank (this variable’s numbers are real quantities, not category codes — nothing to label)</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong>.</li>
+</ol>
+</section>
+<section id="row-5-netflixhours" class="level3">
+<h3>Row 5: NetflixHours</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>NetflixHrs</code></li>
+<li><strong>Decimals:</strong> <code>1</code></li>
+<li><strong>Label:</strong> <code>Hours streaming video per week</code></li>
+<li><strong>Values:</strong> leave blank</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong>.</li>
+</ol>
+</section>
+<section id="row-6-stresslevel" class="level3">
+<h3>Row 6: StressLevel</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Stress</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Self-rated stress, 1 (low) to 10 (high)</code></li>
+<li><strong>Values:</strong> leave blank for now — we’ll come back to this one in the discussion question below</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong> for now (we’ll revisit whether this is the right call)</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You should have 6 rows filled in. Raise your hand if any Measure cell still says “Unknown.”</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Note on SPSS&#39;s Measure column">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note on SPSS’s Measure column
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The textbook describes <strong>four</strong> scales of measurement (nominal, ordinal, interval, ratio). SPSS only gives you <strong>three</strong> options. Hang onto that observation — it’s Concept Check question 4 below.</p>
+</div>
+</div>
+<hr />
+</section>
+</section>
+<section id="part-2-enter-the-data-15-min" class="level2">
+<h2>Part 2: Enter the Data (15 min)</h2>
+<p>Click the <strong>Data View</strong> tab. Your 6 column headers (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress) should already be there from Part 1. Type the following, one row per student — click a cell, type the number, press <strong>Tab</strong> or <strong>Enter</strong> to move to the next cell.</p>
 <table class="caption-top">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="header">
-<th>SPSS column</th>
-<th>Chapter 2 term</th>
+<th>StudentID</th>
+<th>Major</th>
+<th>ClassYear</th>
+<th>StudyHours</th>
+<th>NetflixHrs</th>
+<th>Stress</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Frequency</td>
-<td><em>f</em> — the raw count in each category</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>12.5</td>
+<td>6.0</td>
+<td>7</td>
 </tr>
 <tr class="even">
-<td>Percent</td>
-<td>% — same as computing p × 100, where p = f/N</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>6.0</td>
+<td>10.5</td>
+<td>5</td>
 </tr>
 <tr class="odd">
-<td>Valid Percent</td>
-<td>% excluding any missing data (identical to Percent here, since we have none)</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>15.0</td>
+<td>3.5</td>
+<td>8</td>
 </tr>
 <tr class="even">
-<td>Cumulative Percent</td>
-<td>running total as you move down the table — this is the basis for percentile ranks</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>8.5</td>
+<td>9.0</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>10.0</td>
+<td>5.5</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>2</td>
+<td>4</td>
+<td>18.5</td>
+<td>2.0</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>3</td>
+<td>2</td>
+<td>7.5</td>
+<td>12.0</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>1</td>
+<td>4</td>
+<td>11.0</td>
+<td>4.5</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>4</td>
+<td>3</td>
+<td>9.5</td>
+<td>8.0</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>2</td>
+<td>2</td>
+<td>13.0</td>
+<td>6.5</td>
+<td>8</td>
 </tr>
 </tbody>
 </table>
-<p><strong>A bar chart.</strong> Notice the spaces between the bars — that’s deliberate. Chapter 2 draws bar charts with gaps specifically for nominal/ordinal data, to visually signal that the categories are separate and unordered, unlike a histogram’s touching bars for numerical data.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class='callout-icon'></i>
 </div>
 <div class="callout-title-container flex-fill">
-Checkpoint
+Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In your output, which major has the highest frequency? What percentage of the class does it represent?</p>
+<p>In Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the <strong>View</strong> menu (top menu bar) → click <strong>Value Labels</strong>. The columns should now display “Psychology,” “Sophomore,” etc. instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.</p>
 </div>
 </div>
+<p><strong>Save your file now:</strong> File → Save As → name it <code>Lab1_YourLastName.sav</code> → save it to the location your instructor specifies.</p>
 <hr />
 </section>
-<section id="part-2-independent-practice-classyear-5-min" class="level2">
-<h2>Part 2: Independent Practice — ClassYear (5 min)</h2>
-<p>Repeat the same process for <strong>ClassYear</strong>, an ordinal variable, on your own:</p>
-<ol type="1">
-<li><strong>Analyze → Descriptive Statistics → Frequencies</strong> → move <strong>ClassYear</strong> in → <strong>Charts</strong> → <strong>Bar charts</strong> → <strong>Percentages</strong> → <strong>Continue</strong> → <strong>OK</strong>.</li>
-</ol>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Looking at the Cumulative Percent column, what percentage of students are Sophomores or below? (This is exactly what a percentile rank tells you — the percentage of the group at or below a given point.)</p>
-</div>
-</div>
+<section id="part-3-run-your-first-output-9-min" class="level2">
+<h2>Part 3: Run Your First Output (9 min)</h2>
+<p>We haven’t learned to <em>interpret</em> statistical output yet — that starts in Chapter 2. Right now we’re just previewing what “descriptive statistics” (Chapter 1, Learning Objective 2) looks like in SPSS.</p>
+<p><strong>3a. Frequency table for a nominal variable:</strong> 1. Menu bar: <strong>Analyze → Descriptive Statistics → Frequencies</strong> 2. In the dialog box, click <strong>Major</strong> in the left-hand list, then click the arrow button to move it into the “Variable(s)” box on the right. 3. Click <strong>OK</strong>. 4. The Output Viewer window opens automatically with a table showing how many students fall into each major category, and what percentage each represents.</p>
+<p><strong>3b. Summary numbers for a scale variable:</strong> 1. <strong>Analyze → Descriptive Statistics → Descriptives</strong> 2. Move <strong>StudyHours</strong> and <strong>NetflixHrs</strong> into the “Variable(s)” box. 3. Click <strong>OK</strong>. A second table appears in the Output Viewer with N, Minimum, Maximum, Mean, and Std. Deviation for each.</p>
+<p><strong>Save your output too:</strong> in the Output Viewer window, File → Save As → <code>Lab1_YourLastName_Output.spv</code>.</p>
 <hr />
 </section>
-<section id="part-3-a-numerical-variable-and-why-it-gets-messy-8-min" class="level2">
-<h2>Part 3: A Numerical Variable — and Why It Gets Messy (8 min)</h2>
-<p>Now let’s try the same recipe on a <strong>scale (numerical)</strong> variable: <strong>StudyHours</strong>.</p>
+<section id="part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave" class="level2">
+<h2>Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)</h2>
+<p>Answer these on paper or in the LMS quiz (whichever your instructor specifies):</p>
 <ol type="1">
-<li><strong>Analyze → Descriptive Statistics → Frequencies</strong></li>
-<li>Remove Major/ClassYear if they’re still listed; move <strong>StudyHours</strong> in instead.</li>
-<li>Click <strong>Statistics…</strong> and check the box for <strong>Quartiles</strong>. Click <strong>Continue</strong>.
-<ul>
-<li>Quartiles report the 25th, 50th, and 75th percentiles — this is SPSS computing exactly the percentile concept from this chapter.</li>
-</ul></li>
-<li>Click <strong>OK</strong> (leave Charts unchecked for now).</li>
+<li>If we wanted to generalize beyond this room, what would the <strong>population</strong> be, and what would the 10 rows of data represent (in Chapter 1’s terms)?</li>
+<li>The average StudyHours you’d calculate from these 10 rows — is that a <strong>parameter</strong> or a <strong>statistic</strong>? Why?</li>
+<li>When you ran Frequencies and Descriptives in Part 3, were you using <strong>descriptive</strong> or <strong>inferential</strong> statistics? How do you know?</li>
 </ol>
-<p><strong>Look at the frequency table.</strong> With only a few exceptions, every row has a frequency of 1 — because with continuous data spread across a wide range, individual scores rarely repeat.</p>
-<p>This is precisely the problem Chapter 2 describes as the reason for <strong>grouped frequency distribution tables</strong>: when scores cover a wide range, listing every individual value produces a long, uninformative table instead of a picture you can actually interpret.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Look at the Percentile Values table in your output. What StudyHours value corresponds to the 50th percentile?</p>
-</div>
-</div>
-<hr />
-</section>
-<section id="part-4-building-a-grouped-frequency-table-12-min" class="level2">
-<h2>Part 4: Building a Grouped Frequency Table (12 min)</h2>
-<p>We’ll now group StudyHours into class intervals, following the textbook’s guidelines: about 3–10 intervals (we have a small dataset, so we’ll aim for 3), a simple interval width (5 is a good round number), and a bottom score that’s a multiple of the width.</p>
-<p><strong>Why the boundaries below look slightly unusual:</strong> we’re setting the cut points at the <em>real limits</em> (4.5, 9.5, 14.5, 19.5) rather than the whole numbers themselves. This matters because our data includes decimals (like 9.5 hours) — using the real limit means every possible score falls into exactly one interval with no gaps, exactly as Chapter 2 describes.</p>
-<ol type="1">
-<li><strong>Transform → Recode into Different Variables</strong></li>
-<li>Click <strong>StudyHours</strong>, move it into the middle box (it will show as <code>StudyHours --&gt; ?</code>).</li>
-<li>In the <strong>Output Variable</strong> box on the right: type <code>StudyGroup</code> in <strong>Name</strong>, type <code>Study hours (grouped)</code> in <strong>Label</strong>. Click <strong>Change</strong>.</li>
-<li>Click <strong>Old and New Values…</strong> A new dialog opens. Set up three ranges, clicking <strong>Add</strong> after each:
-<ul>
-<li>Old Value → select <strong>Range</strong>: <code>4.5</code> through <code>9.4</code>. New Value: <code>1</code>. Click <strong>Add</strong>.</li>
-<li>Old Value → select <strong>Range</strong>: <code>9.5</code> through <code>14.4</code>. New Value: <code>2</code>. Click <strong>Add</strong>.</li>
-<li>Old Value → select <strong>Range</strong>: <code>14.5</code> through <code>19.4</code>. New Value: <code>3</code>. Click <strong>Add</strong>.</li>
-</ul></li>
-<li>Click <strong>Continue</strong>, then <strong>OK</strong>. A new column, <code>StudyGroup</code>, appears at the end of your Data View.</li>
-<li>Switch to <strong>Variable View</strong>. Find the <code>StudyGroup</code> row and finish setting it up like you did in Lab 1:
-<ul>
-<li><strong>Decimals:</strong> <code>0</code></li>
-<li><strong>Values:</strong> <code>1</code> = <code>5-9 hrs</code>, <code>2</code> = <code>10-14 hrs</code>, <code>3</code> = <code>15-19 hrs</code></li>
-<li><strong>Measure:</strong> select <strong>Ordinal</strong> (the groups now have a meaningful order, even though the underlying variable is scale)</li>
-</ul></li>
-<li>Run <strong>Analyze → Descriptive Statistics → Frequencies</strong> on <strong>StudyGroup</strong>.</li>
-</ol>
-<p><strong>Compare this table to Part 3’s.</strong> Same underlying data, but now it tells a story you can actually see at a glance — that’s the entire purpose of grouping.</p>
-<hr />
-</section>
-<section id="part-5-histogram-and-shape-6-min" class="level2">
-<h2>Part 5: Histogram and Shape (6 min)</h2>
-<ol type="1">
-<li><strong>Analyze → Descriptive Statistics → Frequencies</strong></li>
-<li>Move <strong>StudyHours</strong> (the original, ungrouped variable) into the Variable(s) box.</li>
-<li>Click <strong>Charts…</strong> → select <strong>Histograms</strong> → click <strong>Continue</strong> → <strong>OK</strong>.</li>
-</ol>
-<p>SPSS automatically bins the continuous variable for you (similar in spirit to what you just did by hand in Part 4). Look at the shape of the bars.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint — answer using your histogram">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint — answer using your histogram
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Is the distribution roughly <strong>symmetrical</strong>, or does it look <strong>skewed</strong>?</li>
-<li>If skewed, which direction is the tail pointing — toward the higher scores (positive skew) or the lower scores (negative skew)?</li>
-<li>Take a look at where SPSS started the Y-axis. Does it start at zero? (Keep this in mind — we’ll come back to it below.)</li>
-</ul>
-</div>
-</div>
 <hr />
 </section>
 <section id="take-home-lab-report-due-before-next-class" class="level2">
 <h2>Take-Home Lab Report (due before next class)</h2>
+<p>Using your saved <code>.sav</code> file and output, write brief answers (a sentence or two each is fine):</p>
 <ol type="1">
-<li><strong>By-hand check.</strong> Using the Major frequency table from Part 1, compute Σ<em>fX</em> by hand — but first you’ll need to assign a numeric code to each major (use the same codes from your Values labels: 1=Psychology, 2=Biology, 3=Business, 4=Undecided) and treat frequency × code as <em>fX</em> for each row. Show your work. (This is an artificial calculation since Major is nominal and its codes aren’t truly quantitative — that’s the point: explain in one sentence why Σ<em>fX</em> is mathematically possible here but not meaningful.)</li>
-<li><strong>Polygon by hand.</strong> Using your Part 4 grouped frequency table (StudyGroup), sketch a frequency polygon on paper: place a dot above the <em>midpoint</em> of each interval at a height equal to its frequency, connect the dots, and drop the line to zero one interval-width beyond each end. (Recall: the midpoint of a class interval is the average of its highest and lowest apparent limits.)</li>
-<li><strong>Stem-and-leaf by hand.</strong> Construct a stem-and-leaf display for the 10 StudyHours values. What advantage does this display have over the grouped frequency table you built in Part 4?</li>
-<li><strong>Population vs. sample.</strong> Our 10 students are a sample. If we had data on the <em>entire population</em> of students at this university instead, would we typically graph actual frequencies or relative frequencies? Why does the textbook recommend relative frequencies for very large groups?</li>
-<li><strong>The Y-axis question.</strong> Referring to Box 2.1 in the textbook (the homicide-rate graph example) and what you noticed at the end of Part 5: why does it matter whether a graph’s Y-axis starts at zero? Give a one-sentence explanation of how a manipulated Y-axis could mislead someone looking at your StudyHours histogram.</li>
-<li><strong>Percentile interpretation.</strong> In your own words, explain what it means that a StudyHours score has a percentile rank of 70%. Use the cumulative percent column from one of today’s frequency tables as your example.</li>
+<li><strong>Variable classification table.</strong> For each of the 6 variables, state (a) whether it’s discrete or continuous, and (b) which of the four textbook scales of measurement it belongs to (nominal/ordinal/interval/ratio).</li>
+<li><strong>SPSS’s “Scale” category.</strong> SPSS collapses two of the textbook’s four scales into one “Scale” option. Which two, and why does that combination make statistical sense (hint: think about what interval and ratio scales have in common that nominal and ordinal don’t)?</li>
+<li><strong>Real limits.</strong> One classmate’s StudyHours value is 8.5. What are the real limits of that score, and why do real limits only apply to continuous variables?</li>
+<li><strong>Stress variable debate.</strong> We treated Stress (a 1–10 self-rating) as Scale in SPSS, but reasonable people disagree. Make a one-paragraph case that it’s actually <em>ordinal</em> instead, using the textbook’s definition of what an ordinal scale can and can’t tell you.</li>
+<li><strong>Independent/dependent variables.</strong> Suppose a researcher used this same setup to test whether <em>Major</em> is related to <em>StudyHours</em> — comparing average study hours across the four majors. Identify the independent variable and the dependent variable. Is the independent variable a true independent variable or a <strong>quasi-independent</strong> variable? Explain using the textbook’s distinction.</li>
+<li><strong>Data structure.</strong> Which of the three data structures from Section 1-3 (one-group descriptive research, the correlational method, or comparing groups of scores) best describes what we did today with the full 6-variable dataset? Justify your answer.</li>
 </ol>
 <hr />
+</section>
+<section id="instructor-notes" class="level2">
+<h2>Instructor Notes</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Trim this section before distributing to students">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Trim this section before distributing to students
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Timing is tight</strong> — Part 1 (variable setup) is where students lose time fumbling with the Values dialog. Consider projecting your own screen through Row 1 and Row 2 live, then letting them do Rows 3–6 independently.</li>
+<li><strong>Common error:</strong> students forget to click “Add” before “OK” in the Value Labels dialog, so labels don’t save. Worth a 10-second warning up front.</li>
+<li><strong>Common error:</strong> leaving Decimals at the default (2) for StudentID/Major/ClassYear — not wrong mechanically, but a good moment to ask “does a major code need decimal places?”</li>
+<li>Question 4 (Stress variable) has no single correct answer — it’s the intro-stats version of the ordinal-vs-interval Likert debate, and is meant to generate discussion, not a graded “right answer.” Grade for reasoning quality, not conclusion.</li>
+<li>If a pair finishes early, have them toggle <strong>View → Value Labels</strong> off/on a few times and predict what the Frequencies output would look like using raw codes vs. labels — reinforces that the label is cosmetic, not the stored value.</li>
+</ul>
+</div>
+</div>
 <div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMQ==">Course information</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pbmRleC5odG1sT3ZlcnZpZXc=">Overview</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3lsbGFidXMuaHRtbFN5bGxhYnVz">Syllabus</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3VwcG9ydC5odG1sU3VwcG9ydA==">Support</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2UtZmFxLmh0bWxGQVE=">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMg==">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8xLmh0bWxMYWItMQ==">Lab 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8zLmh0bWxMYWItMw==">Lab 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl80Lmh0bWxMYWItNA==">Lab 4</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl81Lmh0bWxMYWItNQ==">Lab 5</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMw==">Exam Review</span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uZXh0">Lab 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1wcmV2">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMQ==">Course information</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pbmRleC5odG1sT3ZlcnZpZXc=">Overview</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3lsbGFidXMuaHRtbFN5bGxhYnVz">Syllabus</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3VwcG9ydC5odG1sU3VwcG9ydA==">Support</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2UtZmFxLmh0bWxGQVE=">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMg==">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8xLmh0bWxMYWItMQ==">Lab 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8zLmh0bWxMYWItMw==">Lab 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl80Lmh0bWxMYWItNA==">Lab 4</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl81Lmh0bWxMYWItNQ==">Lab 5</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMw==">Exam Review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUxhYnM=">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUxhYi0x">Lab 1</span></p>
 <div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWxlZnQ=">
 <p>© Copyright 2026, Joash Geteregechi</p>
 </div>
@@ -407,7 +524,7 @@ Checkpoint — answer using your histogram
 </div>
 </div>
 <div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Lab 2: Frequency Distributions and Graphs – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Lab 2: Frequency Distributions and Graphs – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Lab 2: Frequency Distributions and Graphs – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Covers Chapter 2: Frequency Distributions | 50-minute lab | Continues from Lab 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Covers Chapter 2: Frequency Distributions | 50-minute lab | Continues from Lab 1</span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Covers chapter 1 material: Introduction to Statistics | 50-minute lab</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Covers chapter 1 material: Introduction to Statistics | 50-minute lab</span></p>
 </div>
 </section>
 
@@ -829,6 +946,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a  href="/course-faq.html" class="pagination-link" aria-label="FAQ">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">FAQ</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a  href="/labs/lab_3.html" class="pagination-link" aria-label="Lab 3">
+        <span class="nav-page-text">Lab 3</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

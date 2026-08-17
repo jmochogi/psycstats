@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<head>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.36">
 
-<meta charset="utf-8" />
-<meta name="generator" content="quarto-1.6.36" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 2: Frequency Distributions and Graphs – PSYC 20700 - Statistics in Psychology</title>
+<title>Lab 5: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +22,23 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-<!-- htmldependencies:E3FAD763 -->
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../labs/lab_4.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d9ea220ee908cb7322d1b5aeb522d8d4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-65ae455a2e4e78411e26450ecfc10254.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -53,26 +67,60 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="lab-styles.css" />
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Lab 5: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology">
+<meta property="og:description" content="Comparing Extroversion Scores from Different Scales">
+<meta property="og:image" content="https://jmochogi.github.io/business-stats-s26/labs/images/lab5_im1.png">
+<meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
+<meta property="og:image:height" content="404">
+<meta property="og:image:width" content="2038">
+<meta name="twitter:title" content="Lab 5: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology">
+<meta name="twitter:description" content="Comparing Extroversion Scores from Different Scales">
+<meta name="twitter:image" content="https://jmochogi.github.io/business-stats-s26/labs/img/twitter-card.png">
+<meta name="twitter:creator" content="@jmochogi">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body>
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn"
-      data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" 
-      aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
-      onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <h1 class="quarto-secondary-nav-title no-breadcrumbs"></h1>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" role="link"
-        aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
-        onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_5.html">Lab 5</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -85,15 +133,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="/index.html" class="sidebar-logo-link">
-      <img src="/img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"/>
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/jmochogi/business-stats-s26"  title="GitHub repository" class="quarto-navigation-tool px-1" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
-    <a href="https://calendly.com/jmochogi/20min"  title="Office hours" class="quarto-navigation-tool px-1" aria-label="Office hours"><i class="bi bi-life-preserver"></i></a>
-    <a href="https://canvas.ithaca.edu/"  title="Canvas Discussions" class="quarto-navigation-tool px-1" aria-label="Canvas Discussions"><i class="bi bi-chat-dots-fill"></i></a>
-    <a href="https://ithaca.zoom.us/j/3364817575?pwd=WlA1S3hJWWZNTTFoWUVaZlA1clhtdz09"  title="Zoom link" class="quarto-navigation-tool px-1" aria-label="Zoom link"><i class="bi bi-camera-reels-fill"></i></a>
-    <a href="https://canvas.ithaca.edu/"  title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-check-square-fill"></i></a>
+    <a href="https://github.com/jmochogi/business-stats-s26" title="GitHub repository" class="quarto-navigation-tool px-1" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
+    <a href="https://calendly.com/jmochogi/20min" title="Office hours" class="quarto-navigation-tool px-1" aria-label="Office hours"><i class="bi bi-life-preserver"></i></a>
+    <a href="https://canvas.ithaca.edu/" title="Canvas Discussions" class="quarto-navigation-tool px-1" aria-label="Canvas Discussions"><i class="bi bi-chat-dots-fill"></i></a>
+    <a href="https://ithaca.zoom.us/j/3364817575?pwd=WlA1S3hJWWZNTTFoWUVaZlA1clhtdz09" title="Zoom link" class="quarto-navigation-tool px-1" aria-label="Zoom link"><i class="bi bi-camera-reels-fill"></i></a>
+    <a href="https://canvas.ithaca.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-check-square-fill"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -105,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1"  role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Course information</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -114,25 +162,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/course-support.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-support.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Support</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/course-faq.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
   </div>
 </li>
@@ -140,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2"  role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -149,25 +197,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_1.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_3.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_4.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_5.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_5.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 5</span></a>
   </div>
 </li>
@@ -180,18 +228,31 @@ ul.task-list li input[type="checkbox"] {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" ></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <div id="quarto-toc-target"></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#part-1-the-data" id="toc-part-1-the-data" class="nav-link" data-scroll-target="#part-1-the-data">Part 1 — The Data</a>
+  <ul class="collapse">
+  <li><a href="#row-1-extscore" id="toc-row-1-extscore" class="nav-link" data-scroll-target="#row-1-extscore">Row 1: extScore</a></li>
+  <li><a href="#row-2-assessnum" id="toc-row-2-assessnum" class="nav-link" data-scroll-target="#row-2-assessnum">Row 2: assessNum</a></li>
+  </ul></li>
+  <li><a href="#part-2-the-z-score-conversion" id="toc-part-2-the-z-score-conversion" class="nav-link" data-scroll-target="#part-2-the-z-score-conversion">Part 2 — The z-score Conversion</a></li>
+  <li><a href="#submission-checklist" id="toc-submission-checklist" class="nav-link" data-scroll-target="#submission-checklist">Submission Checklist</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_5.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_5.html">Lab 5</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab 2: Frequency Distributions and Graphs</h1>
-<p class="subtitle lead">Covers Chapter 2: Frequency Distributions | 50-minute lab | Continues from Lab 1</p>
+<h1 class="title">Lab 5: Z-score Standardization in SPSS</h1>
+<p class="subtitle lead">Comparing Extroversion Scores from Different Scales</p>
 </div>
 
 
@@ -207,212 +268,229 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#part-1-frequency-table-bar-chart-for-a-categorical-variable-13-min" id="toc-part-1-frequency-table-bar-chart-for-a-categorical-variable-13-min">Part 1: Frequency Table + Bar Chart for a Categorical Variable (13 min)</a></li>
-  <li><a href="#part-2-independent-practice-classyear-5-min" id="toc-part-2-independent-practice-classyear-5-min">Part 2: Independent Practice — ClassYear (5 min)</a></li>
-  <li><a href="#part-3-a-numerical-variable-and-why-it-gets-messy-8-min" id="toc-part-3-a-numerical-variable-and-why-it-gets-messy-8-min">Part 3: A Numerical Variable — and Why It Gets Messy (8 min)</a></li>
-  <li><a href="#part-4-building-a-grouped-frequency-table-12-min" id="toc-part-4-building-a-grouped-frequency-table-12-min">Part 4: Building a Grouped Frequency Table (12 min)</a></li>
-  <li><a href="#part-5-histogram-and-shape-6-min" id="toc-part-5-histogram-and-shape-6-min">Part 5: Histogram and Shape (6 min)</a></li>
-  <li><a href="#take-home-lab-report-due-before-next-class" id="toc-take-home-lab-report-due-before-next-class">Take-Home Lab Report (due before next class)</a></li>
-  </ul>
-</nav>
-<p><strong>Before you start:</strong> Open SPSS, then open your saved file from last week: <strong>File → Open → Data</strong> → navigate to where you saved it → select <code>Lab1_YourLastName.sav</code> → <strong>Open</strong>. You should see your 10-row, 6-variable dataset (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress). We are <em>not</em> creating new variables today — we’re analyzing the ones you already built.</p>
-<hr />
-<section id="part-1-frequency-table-bar-chart-for-a-categorical-variable-13-min" class="level2">
-<h2>Part 1: Frequency Table + Bar Chart for a Categorical Variable (13 min)</h2>
-<p>We’ll start with <strong>Major</strong> — a nominal variable — and build both a frequency table and its graph in one pass.</p>
-<ol type="1">
-<li><strong>Analyze → Descriptive Statistics → Frequencies</strong></li>
-<li>Click <strong>Major</strong> in the left-hand list, click the arrow to move it into the <strong>Variable(s)</strong> box.</li>
-<li>Click the <strong>Charts…</strong> button.
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Student Information
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Name:</strong> ________________________________<br>
+<strong>Date:</strong> ________________________________</p>
+</div>
+</div>
+<p><strong>Estimated time:</strong> 45–60 minutes<br>
+<strong>Deliverables:</strong> completed responses (checkpoints), SPSS output showing analyses, a saved <code>.sav</code> file.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>An employer is interested in identifying the top five most extroverted individuals from either assessment in the pool of applicants. Importantly the employer cant select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to <span class="math inline">\(z-scores\)</span> to allow direct comparison.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Learning Objectives">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Learning Objectives
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>By the end of this lab, you will be able to:</p>
 <ul>
-<li>Select the <strong>Bar charts</strong> radio button.</li>
-<li>Under “Chart Values,” select <strong>Percentages</strong> (instead of the default “Frequencies”) — this shows the proportion of students in each major, not just the raw count.</li>
-<li>Click <strong>Continue</strong>.</li>
-</ul></li>
-<li>Click <strong>OK</strong>.</li>
-</ol>
-<p>Two things appear in the Output Viewer:</p>
-<p><strong>A frequency table.</strong> Match its columns to the textbook’s vocabulary:</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
+<li>Use SPSS to compute <span class="math inline">\(z-scores\)</span> for two different assessments.</li>
+<li>Use SPSS to identify the top five most extroverted individuals based on <span class="math inline">\(z-scores\)</span>.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="part-1-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-the-data">Part 1 — The Data</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Before You Begin">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Before You Begin
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The tables below show the raw scores for the two extroversion assessments. The first assessment is a 10-item questionnaire with a maximum score of 20, while the second assessment is a 20-item questionnaire with a maximum score of 200.</p>
+<table class="caption-top table">
+<caption>Extroversion Assessment 1</caption>
 <thead>
 <tr class="header">
-<th>SPSS column</th>
-<th>Chapter 2 term</th>
+<th>Applicant</th>
+<th>Score</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Frequency</td>
-<td><em>f</em> — the raw count in each category</td>
+<td>1</td>
+<td>17</td>
 </tr>
 <tr class="even">
-<td>Percent</td>
-<td>% — same as computing p × 100, where p = f/N</td>
+<td>2</td>
+<td>8</td>
 </tr>
 <tr class="odd">
-<td>Valid Percent</td>
-<td>% excluding any missing data (identical to Percent here, since we have none)</td>
+<td>3</td>
+<td>9</td>
 </tr>
 <tr class="even">
-<td>Cumulative Percent</td>
-<td>running total as you move down the table — this is the basis for percentile ranks</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>5</td>
 </tr>
 </tbody>
 </table>
-<p><strong>A bar chart.</strong> Notice the spaces between the bars — that’s deliberate. Chapter 2 draws bar charts with gaps specifically for nominal/ordinal data, to visually signal that the categories are separate and unordered, unlike a histogram’s touching bars for numerical data.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
+<table class="caption-top table">
+<caption>Extroversion Assessment 2</caption>
+<thead>
+<tr class="header">
+<th>Applicant</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>8</td>
+<td>149</td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td>99</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>192</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>61</td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td>62</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td>138</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td>184</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+<p><strong>Entering the Variables:</strong> Open SPSS Statistics on your lab computer. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank <strong>Data Editor</strong> window with a grid of empty cells. Make sure you are under <strong>variable view</strong></p>
+<section id="row-1-extscore" class="level3">
+<h3 class="anchored" data-anchor-id="row-1-extscore">Row 1: extScore</h3>
+<ol type="1">
+<li>Click the first cell in <strong>row 1, “Name” column</strong>. Type: <code>extScore</code></li>
+<li>Leave <strong>Type</strong> as the default (Numeric).</li>
+<li>Click the <strong>Decimals</strong> cell for this row. Change it to <code>0</code> (the scores are whole numbers).</li>
+<li>Click the <strong>Label</strong> cell. Type: <code>Extroversion Score</code></li>
+<li>Click the <strong>Measure</strong> cell. Click the dropdown arrow and select <code>Scale</code>.</li>
+</ol>
+</section>
+<section id="row-2-assessnum" class="level3">
+<h3 class="anchored" data-anchor-id="row-2-assessnum">Row 2: assessNum</h3>
+<ol type="1">
+<li>Click the empty cell in <strong>row 2, “Name” column</strong>. Type: <code>extScore</code></li>
+<li>Leave <strong>Type</strong> as the default (Numeric).</li>
+<li>Set the <strong>Decimals</strong> to <code>0</code>.</li>
+<li>Set the <strong>Label</strong> to <code>Assessment Number</code></li>
+<li>Set the <strong>Measure</strong> to <code>nominal</code>.</li>
+</ol>
+<p>If you entered everything as per the instructions up to this point, the variable view will appear as follows:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab5_im1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p><strong>Entering the Data:</strong> After creating the variables, switch to <strong>Data View</strong> by clicking the tab at the bottom of the SPSS window. You will see a grid with two columns: <code>extScore</code> and <code>assessNum</code>. Enter the data from the tables above into the appropriate columns. For example, for Applicant 1, enter <code>17</code> in the <code>extScore</code> column and <code>1</code> in the <code>assessNum</code> column. Continue entering all the data for both assessments. Your completed data view should look like this:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab5_im2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="360"></p>
+</figure>
+</div>
+<hr>
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 1">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Checkpoint
+Checkpoint 1
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>In your output, which major has the highest frequency? What percentage of the class does it represent?</p>
-</div>
-</div>
-<hr />
-</section>
-<section id="part-2-independent-practice-classyear-5-min" class="level2">
-<h2>Part 2: Independent Practice — ClassYear (5 min)</h2>
-<p>Repeat the same process for <strong>ClassYear</strong>, an ordinal variable, on your own:</p>
 <ol type="1">
-<li><strong>Analyze → Descriptive Statistics → Frequencies</strong> → move <strong>ClassYear</strong> in → <strong>Charts</strong> → <strong>Bar charts</strong> → <strong>Percentages</strong> → <strong>Continue</strong> → <strong>OK</strong>.</li>
+<li>Why did we record the variable <code>assessNum</code> as a nominal variable in the data set even though its entries are numbers? </li>
+<li>A student suggested that converting the scores to percentages without finding <span class="math inline">\(z-scores\)</span> would be sufficient to allow for a direct comparison between the two assessments. Do you agree or disagree with this suggestion? Why or why not? </li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
+</div>
+</div>
+</section>
+</section>
+<section id="part-2-the-z-score-conversion" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-the-z-score-conversion">Part 2 — The z-score Conversion</h2>
+<p>Although we have one dataset, we will first need to program SPSS to treat the two assessments as separate datasets since the assessments are different. To do this, we will use the <code>Split File</code> function in SPSS. Follow the steps below:</p>
+<ol type="1">
+<li>Click <code>Data</code> &gt; <code>Split File</code> &gt; <code>Organize output by groups</code> &gt; <code>Select</code> <code>assessNum</code> &gt; Click <code>OK</code>.</li>
+<li>Click <code>Analyze</code> &gt; <code>Descriptive Statistics</code> &gt; <code>Descriptives</code>.</li>
+<li>Highlight the column label <code>extScore</code> and click the arrow to move it to the <strong>Variable(s)</strong> box.</li>
+<li>Click the <code>Save standardized values as variables</code> checkbox.</li>
+<li>Click <code>OK</code>.</li>
+</ol>
+<p>The output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main dataset called <code>ZextScore</code>. This new variable contains the <span class="math inline">\(z-scores\)</span> for each applicant’s extroversion score. The data view will now look like this:</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 2">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Checkpoint
+Checkpoint 2
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Looking at the Cumulative Percent column, what percentage of students are Sophomores or below? (This is exactly what a percentile rank tells you — the percentage of the group at or below a given point.)</p>
-</div>
-</div>
-<hr />
-</section>
-<section id="part-3-a-numerical-variable-and-why-it-gets-messy-8-min" class="level2">
-<h2>Part 3: A Numerical Variable — and Why It Gets Messy (8 min)</h2>
-<p>Now let’s try the same recipe on a <strong>scale (numerical)</strong> variable: <strong>StudyHours</strong>.</p>
-<ol type="1">
-<li><strong>Analyze → Descriptive Statistics → Frequencies</strong></li>
-<li>Remove Major/ClassYear if they’re still listed; move <strong>StudyHours</strong> in instead.</li>
-<li>Click <strong>Statistics…</strong> and check the box for <strong>Quartiles</strong>. Click <strong>Continue</strong>.
-<ul>
-<li>Quartiles report the 25th, 50th, and 75th percentiles — this is SPSS computing exactly the percentile concept from this chapter.</li>
-</ul></li>
-<li>Click <strong>OK</strong> (leave Charts unchecked for now).</li>
+<ol start="3" type="1">
+<li>Based on the computed <span class="math inline">\(z-scores\)</span>, which applicants are the top five most extroverted individuals? List their applicant numbers and <span class="math inline">\(z-scores\)</span>. </li>
 </ol>
-<p><strong>Look at the frequency table.</strong> With only a few exceptions, every row has a frequency of 1 — because with continuous data spread across a wide range, individual scores rarely repeat.</p>
-<p>This is precisely the problem Chapter 2 describes as the reason for <strong>grouped frequency distribution tables</strong>: when scores cover a wide range, listing every individual value produces a long, uninformative table instead of a picture you can actually interpret.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint
 </div>
 </div>
-<div class="callout-body-container callout-body">
-<p>Look at the Percentile Values table in your output. What StudyHours value corresponds to the 50th percentile?</p>
-</div>
-</div>
-<hr />
 </section>
-<section id="part-4-building-a-grouped-frequency-table-12-min" class="level2">
-<h2>Part 4: Building a Grouped Frequency Table (12 min)</h2>
-<p>We’ll now group StudyHours into class intervals, following the textbook’s guidelines: about 3–10 intervals (we have a small dataset, so we’ll aim for 3), a simple interval width (5 is a good round number), and a bottom score that’s a multiple of the width.</p>
-<p><strong>Why the boundaries below look slightly unusual:</strong> we’re setting the cut points at the <em>real limits</em> (4.5, 9.5, 14.5, 19.5) rather than the whole numbers themselves. This matters because our data includes decimals (like 9.5 hours) — using the real limit means every possible score falls into exactly one interval with no gaps, exactly as Chapter 2 describes.</p>
-<ol type="1">
-<li><strong>Transform → Recode into Different Variables</strong></li>
-<li>Click <strong>StudyHours</strong>, move it into the middle box (it will show as <code>StudyHours --&gt; ?</code>).</li>
-<li>In the <strong>Output Variable</strong> box on the right: type <code>StudyGroup</code> in <strong>Name</strong>, type <code>Study hours (grouped)</code> in <strong>Label</strong>. Click <strong>Change</strong>.</li>
-<li>Click <strong>Old and New Values…</strong> A new dialog opens. Set up three ranges, clicking <strong>Add</strong> after each:
-<ul>
-<li>Old Value → select <strong>Range</strong>: <code>4.5</code> through <code>9.4</code>. New Value: <code>1</code>. Click <strong>Add</strong>.</li>
-<li>Old Value → select <strong>Range</strong>: <code>9.5</code> through <code>14.4</code>. New Value: <code>2</code>. Click <strong>Add</strong>.</li>
-<li>Old Value → select <strong>Range</strong>: <code>14.5</code> through <code>19.4</code>. New Value: <code>3</code>. Click <strong>Add</strong>.</li>
-</ul></li>
-<li>Click <strong>Continue</strong>, then <strong>OK</strong>. A new column, <code>StudyGroup</code>, appears at the end of your Data View.</li>
-<li>Switch to <strong>Variable View</strong>. Find the <code>StudyGroup</code> row and finish setting it up like you did in Lab 1:
-<ul>
-<li><strong>Decimals:</strong> <code>0</code></li>
-<li><strong>Values:</strong> <code>1</code> = <code>5-9 hrs</code>, <code>2</code> = <code>10-14 hrs</code>, <code>3</code> = <code>15-19 hrs</code></li>
-<li><strong>Measure:</strong> select <strong>Ordinal</strong> (the groups now have a meaningful order, even though the underlying variable is scale)</li>
-</ul></li>
-<li>Run <strong>Analyze → Descriptive Statistics → Frequencies</strong> on <strong>StudyGroup</strong>.</li>
-</ol>
-<p><strong>Compare this table to Part 3’s.</strong> Same underlying data, but now it tells a story you can actually see at a glance — that’s the entire purpose of grouping.</p>
-<hr />
-</section>
-<section id="part-5-histogram-and-shape-6-min" class="level2">
-<h2>Part 5: Histogram and Shape (6 min)</h2>
-<ol type="1">
-<li><strong>Analyze → Descriptive Statistics → Frequencies</strong></li>
-<li>Move <strong>StudyHours</strong> (the original, ungrouped variable) into the Variable(s) box.</li>
-<li>Click <strong>Charts…</strong> → select <strong>Histograms</strong> → click <strong>Continue</strong> → <strong>OK</strong>.</li>
-</ol>
-<p>SPSS automatically bins the continuous variable for you (similar in spirit to what you just did by hand in Part 4). Look at the shape of the bars.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint — answer using your histogram">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint — answer using your histogram
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Is the distribution roughly <strong>symmetrical</strong>, or does it look <strong>skewed</strong>?</li>
-<li>If skewed, which direction is the tail pointing — toward the higher scores (positive skew) or the lower scores (negative skew)?</li>
-<li>Take a look at where SPSS started the Y-axis. Does it start at zero? (Keep this in mind — we’ll come back to it below.)</li>
+<section id="submission-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="submission-checklist">Submission Checklist</h2>
+<ul class="task-list">
+<li><label><input type="checkbox">A saved SPSS data (.sav) file showing the variables and data (includes <span class="math inline">\(z-scores\)</span>).</label></li>
+<li><label><input type="checkbox">SPSS output file (.spv) showing the analyses performed.</label></li>
+<li><label><input type="checkbox">Completed responses for all checkpoints in the lab. You may print a PDF from the website and hand-write your responses or use a digital annotator tool.</label></li>
 </ul>
-</div>
-</div>
-<hr />
-</section>
-<section id="take-home-lab-report-due-before-next-class" class="level2">
-<h2>Take-Home Lab Report (due before next class)</h2>
-<ol type="1">
-<li><strong>By-hand check.</strong> Using the Major frequency table from Part 1, compute Σ<em>fX</em> by hand — but first you’ll need to assign a numeric code to each major (use the same codes from your Values labels: 1=Psychology, 2=Biology, 3=Business, 4=Undecided) and treat frequency × code as <em>fX</em> for each row. Show your work. (This is an artificial calculation since Major is nominal and its codes aren’t truly quantitative — that’s the point: explain in one sentence why Σ<em>fX</em> is mathematically possible here but not meaningful.)</li>
-<li><strong>Polygon by hand.</strong> Using your Part 4 grouped frequency table (StudyGroup), sketch a frequency polygon on paper: place a dot above the <em>midpoint</em> of each interval at a height equal to its frequency, connect the dots, and drop the line to zero one interval-width beyond each end. (Recall: the midpoint of a class interval is the average of its highest and lowest apparent limits.)</li>
-<li><strong>Stem-and-leaf by hand.</strong> Construct a stem-and-leaf display for the 10 StudyHours values. What advantage does this display have over the grouped frequency table you built in Part 4?</li>
-<li><strong>Population vs. sample.</strong> Our 10 students are a sample. If we had data on the <em>entire population</em> of students at this university instead, would we typically graph actual frequencies or relative frequencies? Why does the textbook recommend relative frequencies for very large groups?</li>
-<li><strong>The Y-axis question.</strong> Referring to Box 2.1 in the textbook (the homicide-rate graph example) and what you noticed at the end of Part 5: why does it matter whether a graph’s Y-axis starts at zero? Give a one-sentence explanation of how a manipulated Y-axis could mislead someone looking at your StudyHours histogram.</li>
-<li><strong>Percentile interpretation.</strong> In your own words, explain what it means that a StudyHours score has a percentile rank of 70%. Use the cumulative percent column from one of today’s frequency tables as your example.</li>
-</ol>
-<hr />
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMQ==">Course information</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pbmRleC5odG1sT3ZlcnZpZXc=">Overview</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3lsbGFidXMuaHRtbFN5bGxhYnVz">Syllabus</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3VwcG9ydC5odG1sU3VwcG9ydA==">Support</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2UtZmFxLmh0bWxGQVE=">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMg==">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8xLmh0bWxMYWItMQ==">Lab 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8zLmh0bWxMYWItMw==">Lab 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl80Lmh0bWxMYWItNA==">Lab 4</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl81Lmh0bWxMYWItNQ==">Lab 5</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMw==">Exam Review</span></p>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWxlZnQ=">
-<p>© Copyright 2026, Joash Geteregechi</p>
-</div>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLXJpZ2h0">
-<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Lab 2: Frequency Distributions and Graphs – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Lab 2: Frequency Distributions and Graphs – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Lab 2: Frequency Distributions and Graphs – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Covers Chapter 2: Frequency Distributions | 50-minute lab | Continues from Lab 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Covers Chapter 2: Frequency Distributions | 50-minute lab | Continues from Lab 1</span></p>
-</div>
+
+
 </section>
 
 </main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -829,21 +907,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../labs/lab_4.html" class="pagination-link" aria-label="Lab 4">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 4</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      <div class='footer-contents'>&copy; Copyright 2026, Joash Geteregechi</div>  
-    </div>   
+<p>© Copyright 2026, Joash Geteregechi</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      <div class='footer-contents'>This page is built with [Quarto](https://quarto.org/).</div>  
-    </div>
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
   </div>
 </footer>
 
-</body>
 
-</html>
+
+
+</body></html>

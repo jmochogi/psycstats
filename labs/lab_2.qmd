@@ -12,12 +12,6 @@ format:
     number-sections: false
   pdf:
     toc: false
-    documentclass: article
-    geometry: margin=1in
-    fontsize: 11pt
-    mainfont: "Liberation Serif"
-    sansfont: "Liberation Sans"
-    colorlinks: true
     number-sections: false
 editor: visual
 ---
