@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Course Support – PSYC 20700 - Statistics in Psychology</title>
+<title>Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./course-faq.html" rel="next">
-<link href="./course-syllabus.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-d9ea220ee908cb7322d1b5aeb522d8d4.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d9ea220ee908cb7322d1b5aeb522d8d4.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-65ae455a2e4e78411e26450ecfc10254.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-65ae455a2e4e78411e26450ecfc10254.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../labs/lab_3.html" rel="next">
+<link href="../course-faq.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d9ea220ee908cb7322d1b5aeb522d8d4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-65ae455a2e4e78411e26450ecfc10254.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -71,12 +69,13 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Course Support – PSYC 20700 - Statistics in Psychology">
-<meta property="og:description" content="Homepage for PSYC 207 - Statistics in Psychology, Fall 2026.">
+<link rel="stylesheet" href="lab-styles.css">
+<meta property="og:title" content="Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology">
+<meta property="og:description" content="Covers chapter 1 material: Introduction to Statistics | 50-minute lab">
 <meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
-<meta name="twitter:title" content="Course Support – PSYC 20700 - Statistics in Psychology">
-<meta name="twitter:description" content="Homepage for PSYC 207 - Statistics in Psychology, Fall 2026.">
-<meta name="twitter:image" content="https://jmochogi.github.io/psycstats/img/twitter-card.png">
+<meta name="twitter:title" content="Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset – PSYC 20700 - Statistics in Psychology">
+<meta name="twitter:description" content="Covers chapter 1 material: Introduction to Statistics | 50-minute lab">
+<meta name="twitter:image" content="https://jmochogi.github.io/psycstats/labs/img/twitter-card.png">
 <meta name="twitter:creator" content="@jmochogi">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -90,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Course information</a></li><li class="breadcrumb-item"><a href="./course-support.html">Support</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_1.html">Lab 1</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -104,8 +103,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/jmochogi/psycstats" title="GitHub repository" class="quarto-navigation-tool px-1" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
@@ -113,7 +112,6 @@ ul.task-list li input[type="checkbox"] {
     <a href="https://canvas.ithaca.edu/" title="Canvas Discussions" class="quarto-navigation-tool px-1" aria-label="Canvas Discussions"><i class="bi bi-chat-dots-fill"></i></a>
     <a href="https://ithaca.zoom.us/j/3364817575?pwd=WlA1S3hJWWZNTTFoWUVaZlA1clhtdz09" title="Zoom link" class="quarto-navigation-tool px-1" aria-label="Zoom link"><i class="bi bi-camera-reels-fill"></i></a>
     <a href="https://canvas.ithaca.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-check-square-fill"></i></a>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -134,25 +132,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-support.html" class="sidebar-item-text sidebar-link active">
+  <a href="../course-support.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Support</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./course-faq.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
   </div>
 </li>
@@ -169,25 +167,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/lab_1.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/lab_3.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/lab_4.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 4</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs/lab_5.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_5.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 5</span></a>
   </div>
 </li>
@@ -207,24 +205,31 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#open-hours" id="toc-open-hours" class="nav-link active" data-scroll-target="#open-hours">Open Hours</a></li>
-  <li><a href="#mathematics-support-center" id="toc-mathematics-support-center" class="nav-link" data-scroll-target="#mathematics-support-center">Mathematics Support Center</a></li>
-  <li><a href="#discussion-forums" id="toc-discussion-forums" class="nav-link" data-scroll-target="#discussion-forums">Discussion Forums</a></li>
-  <li><a href="#email" id="toc-email" class="nav-link" data-scroll-target="#email">Email</a></li>
-  <li><a href="#tutoring-and-academic-enrichment-services" id="toc-tutoring-and-academic-enrichment-services" class="nav-link" data-scroll-target="#tutoring-and-academic-enrichment-services">Tutoring and Academic Enrichment Services</a></li>
-  <li><a href="#writing-center" id="toc-writing-center" class="nav-link" data-scroll-target="#writing-center">Writing Center</a></li>
-  <li><a href="#mental-health-and-wellness" id="toc-mental-health-and-wellness" class="nav-link" data-scroll-target="#mental-health-and-wellness">Mental health and wellness</a></li>
-  <li><a href="#course-costs" id="toc-course-costs" class="nav-link" data-scroll-target="#course-costs">Course costs</a></li>
-  <li><a href="#technology-assistance" id="toc-technology-assistance" class="nav-link" data-scroll-target="#technology-assistance"><strong>Technology Assistance</strong></a></li>
+  <li><a href="#part-0-get-oriented-3-min" id="toc-part-0-get-oriented-3-min" class="nav-link active" data-scroll-target="#part-0-get-oriented-3-min">Part 0: Get Oriented (3 min)</a></li>
+  <li><a href="#part-1-build-your-variable-view-17-min" id="toc-part-1-build-your-variable-view-17-min" class="nav-link" data-scroll-target="#part-1-build-your-variable-view-17-min">Part 1: Build Your Variable View (17 min)</a>
+  <ul class="collapse">
+  <li><a href="#row-1-studentid" id="toc-row-1-studentid" class="nav-link" data-scroll-target="#row-1-studentid">Row 1: StudentID</a></li>
+  <li><a href="#row-2-major" id="toc-row-2-major" class="nav-link" data-scroll-target="#row-2-major">Row 2: Major</a></li>
+  <li><a href="#row-3-classyear" id="toc-row-3-classyear" class="nav-link" data-scroll-target="#row-3-classyear">Row 3: ClassYear</a></li>
+  <li><a href="#row-4-studyhours" id="toc-row-4-studyhours" class="nav-link" data-scroll-target="#row-4-studyhours">Row 4: StudyHours</a></li>
+  <li><a href="#row-5-netflixhours" id="toc-row-5-netflixhours" class="nav-link" data-scroll-target="#row-5-netflixhours">Row 5: NetflixHours</a></li>
+  <li><a href="#row-6-stresslevel" id="toc-row-6-stresslevel" class="nav-link" data-scroll-target="#row-6-stresslevel">Row 6: StressLevel</a></li>
+  </ul></li>
+  <li><a href="#part-2-enter-the-data-15-min" id="toc-part-2-enter-the-data-15-min" class="nav-link" data-scroll-target="#part-2-enter-the-data-15-min">Part 2: Enter the Data (15 min)</a></li>
+  <li><a href="#part-3-run-your-first-output-9-min" id="toc-part-3-run-your-first-output-9-min" class="nav-link" data-scroll-target="#part-3-run-your-first-output-9-min">Part 3: Run Your First Output (9 min)</a></li>
+  <li><a href="#part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave" id="toc-part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave" class="nav-link" data-scroll-target="#part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave">Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)</a></li>
+  <li><a href="#take-home-lab-report-due-before-next-class" id="toc-take-home-lab-report-due-before-next-class" class="nav-link" data-scroll-target="#take-home-lab-report-due-before-next-class">Take-Home Lab Report (due before next class)</a></li>
+  <li><a href="#instructor-notes" id="toc-instructor-notes" class="nav-link" data-scroll-target="#instructor-notes">Instructor Notes</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_1.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Course information</a></li><li class="breadcrumb-item"><a href="./course-support.html">Support</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_1.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_1.html">Lab 1</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Course Support</h1>
+<h1 class="title">Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset</h1>
+<p class="subtitle lead">Covers chapter 1 material: Introduction to Statistics | 50-minute lab</p>
 </div>
 
 
@@ -241,51 +246,292 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>There are various resources available to help you succeed in this course and in college in general. Should you feel like you are struggling too much, please don’t hesitate to reach out to me so we can discuss possible ways forward. Below are some support services available to you.</p>
-<section id="open-hours" class="level2">
-<h2 class="anchored" data-anchor-id="open-hours">Open Hours</h2>
-<p>I will be available during open hours (see syllabus) to answer questions or concerns that you may have in the course. You can simply walk in during the stated times above. Even if you don’t have any question, you can just stop by to say hi. If the above posted times don’t work for you, please click <a href="https://calendly.com/jmochogi/20min?month=2024-08">this link</a> to see more options. Open hours may be held in-person or virtually depending on your preference and the circumstances of the day. Below are the zoom link and passcode for virtual meetings:</p>
-<p><strong>Zoom Link:</strong> <a href="https://ithaca.zoom.us/j/3364817575?pwd=WlA1S3hJWWZNTTFoWUVaZlA1clhtdz09">click here</a></p>
-<p><strong>Passcode:</strong> 850 424</p>
-</section>
-<section id="mathematics-support-center" class="level2">
-<h2 class="anchored" data-anchor-id="mathematics-support-center">Mathematics Support Center</h2>
-<p>The mathematics department is committed to the success of all students enrolled in mathematics courses. Free one-on-one support for your mathematics coursework is available during select daytime and evening hours Monday-Friday at the Mathematics Room (Williams Hall 209). The Mathematics Room is staffed by mathematics faculty and vetted students. Student tutors offer support to fellow students in courses numbered 200 and below while math faculty offer support in any of the math courses. For more information and the schedule, please visit the <a href="https://www.ithaca.edu/academics/school-humanities-and-sciences/mathematics/courses-placement-resources/mathematics-support-center">Math Support Center</a>.</p>
-</section>
-<section id="discussion-forums" class="level2">
-<h2 class="anchored" data-anchor-id="discussion-forums">Discussion Forums</h2>
-<p>Have a question that can’t wait for office hours? Prefer to write out your question in detail rather than asking in person? The Canvas Discussion forums, might be the best venue for these! There is a chance another student has already asked a similar question, so please check the other posts on before asking a new question. If you know the answer to a question that is posted, I encourage you to respond! In Canvas discussion section, anybody is able to start threads and others can jump in with replies.</p>
-</section>
-<section id="email" class="level2">
-<h2 class="anchored" data-anchor-id="email">Email</h2>
-<p>Please refrain from emailing any course content questions (those should go to Canvas Discussion forums), and only use email for questions about personal matters that may not be appropriate for the public course forum (e.g., illness, accommodations, etc.). My email address is <a href="mailto:jgeteregechi@ithaca.edu">jgeteregechi@ithaca.edu</a>.</p>
-<p>If there is a question that’s not appropriate for the public forum, you are welcome to email me directly. If you email me, <strong>please include the course and class time in the subject line (e.g., “MATH 144 10am”).</strong> Barring extenuating circumstances, I will respond to MATH 144 emails within 48 hours Monday - Friday. Response time may be slower for emails sent Friday evening - Sunday. If I take too long, please reach out again or talk to me before or after class as I may have missed your email.</p>
-</section>
-<section id="tutoring-and-academic-enrichment-services" class="level2">
-<h2 class="anchored" data-anchor-id="tutoring-and-academic-enrichment-services">Tutoring and Academic Enrichment Services</h2>
-<p>As a supplement to faculty advising and office hours, Tutoring and Academic Enrichment Services offers exceptional peer resources free of charge. Learning Coaches provide content-specific peer tutoring in a variety of courses. Peer Success Coaches mentor students who wish to develop collegiate-level academic and social engagement skills. To access these courses and for more information, please visit the <a href="https://www.ithaca.edu/tutoring-services">Center for Student Success</a>.</p>
-</section>
-<section id="writing-center" class="level2">
-<h2 class="anchored" data-anchor-id="writing-center">Writing Center</h2>
-<p>The Writing Center aims to help students from all disciplines, backgrounds, and experiences to develop greater independence as writers. We are committed to helping students see writing as central to critical and creative thinking. The physical location in Smiddy 107 will not be open to clients. For more information and scheduling appointments please visit the <a href="https://ithaca.mywconline.com">writing center website</a>.</p>
-</section>
-<section id="mental-health-and-wellness" class="level2">
-<h2 class="anchored" data-anchor-id="mental-health-and-wellness">Mental health and wellness</h2>
-<p>If your mental health concerns and/or stressful events negatively affect your daily emotional state, academic performance, or ability to participate in your daily activities, many resources are available to help you through difficult times. Please visit the <a href="https://www.ithaca.edu/student-health-services/health-services/mental-health-services">Mental Health Services</a> for more information. Ithaca College encourages all students to access these resources.</p>
-</section>
-<section id="course-costs" class="level2">
-<h2 class="anchored" data-anchor-id="course-costs">Course costs</h2>
+<p><strong>Before you start:</strong> Open SPSS Statistics on your lab computer. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank <strong>Data Editor</strong> window with a grid of empty cells.</p>
+<hr>
+<section id="part-0-get-oriented-3-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-0-get-oriented-3-min">Part 0: Get Oriented (3 min)</h2>
+<p>Look at the bottom-left corner of the Data Editor window. You’ll see two tabs:</p>
 <ul>
-<li><p><strong>Textbooks:</strong> The textbooks for this course are open-source and freely available on the web.</p></li>
-<li><p><strong>Software subscriptions:</strong></p>
-<ul>
-<li><strong>SPSS:</strong> This software is required for the course but can be accessed for free via college computers (e.g., in our classroom and library). If you choose to purchase the software for your personal computer, please see more information in the course syllabus under <a href="./course-syllabus.html">course resources</a>.</li>
-</ul></li>
+<li><strong>Data View</strong> — where you type in scores, one row per person, one column per variable</li>
+<li><strong>Variable View</strong> — where you describe each variable <em>before</em> you enter any scores</li>
 </ul>
+<p>There is also a separate window called the <strong>Output Viewer</strong> — it doesn’t exist yet, but it will pop up automatically the first time you run an analysis. That’s where your results/tables appear.</p>
+<p><strong>Rule for today:</strong> we always set up a variable in <strong>Variable View</strong> <em>before</em> typing any scores for it in <strong>Data View</strong>. This mirrors Chapter 1’s point that researchers must define how something will be measured before they collect data.</p>
+<hr>
 </section>
-<section id="technology-assistance" class="level2">
-<h2 class="anchored" data-anchor-id="technology-assistance"><strong>Technology Assistance</strong></h2>
-<p>For technical help with Canvas and other technologies used, contact the Ithaca College IT support team at (607) 274-1000 or email them at <a href="mailto:servicedesk@ithaca.edu" class="email">servicedesk@ithaca.edu</a>. I may also be able to help with some course-related technology issues but I can only do so during office hours.</p>
+<section id="part-1-build-your-variable-view-17-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-build-your-variable-view-17-min">Part 1: Build Your Variable View (17 min)</h2>
+<p>You’re going to enter data from a mini-survey of 10 students. Click the <strong>Variable View</strong> tab now. You’ll see rows (one per variable you’re about to create) and columns including Name, Type, Decimals, Label, Values, and Measure.</p>
+<p>We will create <strong>6 variables</strong>, one per row. For each one, follow these exact steps.</p>
+<section id="row-1-studentid" class="level3">
+<h3 class="anchored" data-anchor-id="row-1-studentid">Row 1: StudentID</h3>
+<ol type="1">
+<li>Click the empty cell in <strong>row 1, “Name” column</strong>. Type: <code>StudentID</code></li>
+<li>Leave <strong>Type</strong> as the default (Numeric).</li>
+<li>Click the <strong>Decimals</strong> cell for this row. Change it to <code>0</code> (an ID number has no decimal places).</li>
+<li>Click the <strong>Label</strong> cell. Type: <code>Student identifier</code></li>
+<li>Click the <strong>Measure</strong> cell. Click the dropdown arrow and select <strong>Nominal</strong>.
+<ul>
+<li><em>Why nominal?</em> An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.</li>
+</ul></li>
+</ol>
+</section>
+<section id="row-2-major" class="level3">
+<h3 class="anchored" data-anchor-id="row-2-major">Row 2: Major</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Major</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Academic major</code></li>
+<li><strong>Values:</strong> Click the Values cell, then click the small gray <strong>…</strong> button that appears on the right side of the cell. A “Value Labels” dialog opens.
+<ul>
+<li>In the <strong>Value</strong> box, type <code>1</code>. In the <strong>Label</strong> box, type <code>Psychology</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>2</code>, Label <code>Biology</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>3</code>, Label <code>Business</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>4</code>, Label <code>Undecided</code>. Click <strong>Add</strong>.</li>
+<li>Click <strong>OK</strong>.</li>
+</ul></li>
+<li><strong>Measure:</strong> select <strong>Nominal</strong>.</li>
+</ol>
+</section>
+<section id="row-3-classyear" class="level3">
+<h3 class="anchored" data-anchor-id="row-3-classyear">Row 3: ClassYear</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>ClassYear</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Year in school</code></li>
+<li><strong>Values:</strong> same process as above —
+<ul>
+<li><code>1</code> = <code>Freshman</code>, <code>2</code> = <code>Sophomore</code>, <code>3</code> = <code>Junior</code>, <code>4</code> = <code>Senior</code> (Add after each one, then OK)</li>
+</ul></li>
+<li><strong>Measure:</strong> select <strong>Ordinal</strong>.
+<ul>
+<li><em>Why ordinal, not nominal?</em> Freshman → Senior is an ordered sequence, unlike majors.</li>
+</ul></li>
+</ol>
+</section>
+<section id="row-4-studyhours" class="level3">
+<h3 class="anchored" data-anchor-id="row-4-studyhours">Row 4: StudyHours</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>StudyHours</code></li>
+<li><strong>Decimals:</strong> change to <code>1</code> (allow one decimal place, e.g., 8.5)</li>
+<li><strong>Label:</strong> <code>Hours spent studying per week</code></li>
+<li><strong>Values:</strong> leave blank (this variable’s numbers are real quantities, not category codes — nothing to label)</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong>.</li>
+</ol>
+</section>
+<section id="row-5-netflixhours" class="level3">
+<h3 class="anchored" data-anchor-id="row-5-netflixhours">Row 5: NetflixHours</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>NetflixHrs</code></li>
+<li><strong>Decimals:</strong> <code>1</code></li>
+<li><strong>Label:</strong> <code>Hours streaming video per week</code></li>
+<li><strong>Values:</strong> leave blank</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong>.</li>
+</ol>
+</section>
+<section id="row-6-stresslevel" class="level3">
+<h3 class="anchored" data-anchor-id="row-6-stresslevel">Row 6: StressLevel</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Stress</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Self-rated stress, 1 (low) to 10 (high)</code></li>
+<li><strong>Values:</strong> leave blank for now — we’ll come back to this one in the discussion question below</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong> for now (we’ll revisit whether this is the right call)</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You should have 6 rows filled in. Raise your hand if any Measure cell still says “Unknown.”</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Note on SPSS's Measure column">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note on SPSS’s Measure column
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The textbook describes <strong>four</strong> scales of measurement (nominal, ordinal, interval, ratio). SPSS only gives you <strong>three</strong> options. Hang onto that observation — it’s Concept Check question 4 below.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="part-2-enter-the-data-15-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-enter-the-data-15-min">Part 2: Enter the Data (15 min)</h2>
+<p>Click the <strong>Data View</strong> tab. Your 6 column headers (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress) should already be there from Part 1. Type the following, one row per student — click a cell, type the number, press <strong>Tab</strong> or <strong>Enter</strong> to move to the next cell.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>StudentID</th>
+<th>Major</th>
+<th>ClassYear</th>
+<th>StudyHours</th>
+<th>NetflixHrs</th>
+<th>Stress</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>12.5</td>
+<td>6.0</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>6.0</td>
+<td>10.5</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>15.0</td>
+<td>3.5</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>8.5</td>
+<td>9.0</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>10.0</td>
+<td>5.5</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>2</td>
+<td>4</td>
+<td>18.5</td>
+<td>2.0</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>3</td>
+<td>2</td>
+<td>7.5</td>
+<td>12.0</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>1</td>
+<td>4</td>
+<td>11.0</td>
+<td>4.5</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>4</td>
+<td>3</td>
+<td>9.5</td>
+<td>8.0</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>2</td>
+<td>2</td>
+<td>13.0</td>
+<td>6.5</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the <strong>View</strong> menu (top menu bar) → click <strong>Value Labels</strong>. The columns should now display “Psychology,” “Sophomore,” etc. instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.</p>
+</div>
+</div>
+<p><strong>Save your file now:</strong> File → Save As → name it <code>Lab1_YourLastName.sav</code> → save it to the location your instructor specifies.</p>
+<hr>
+</section>
+<section id="part-3-run-your-first-output-9-min" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-run-your-first-output-9-min">Part 3: Run Your First Output (9 min)</h2>
+<p>We haven’t learned to <em>interpret</em> statistical output yet — that starts in Chapter 2. Right now we’re just previewing what “descriptive statistics” (Chapter 1, Learning Objective 2) looks like in SPSS.</p>
+<p><strong>3a. Frequency table for a nominal variable:</strong> 1. Menu bar: <strong>Analyze → Descriptive Statistics → Frequencies</strong> 2. In the dialog box, click <strong>Major</strong> in the left-hand list, then click the arrow button to move it into the “Variable(s)” box on the right. 3. Click <strong>OK</strong>. 4. The Output Viewer window opens automatically with a table showing how many students fall into each major category, and what percentage each represents.</p>
+<p><strong>3b. Summary numbers for a scale variable:</strong> 1. <strong>Analyze → Descriptive Statistics → Descriptives</strong> 2. Move <strong>StudyHours</strong> and <strong>NetflixHrs</strong> into the “Variable(s)” box. 3. Click <strong>OK</strong>. A second table appears in the Output Viewer with N, Minimum, Maximum, Mean, and Std. Deviation for each.</p>
+<p><strong>Save your output too:</strong> in the Output Viewer window, File → Save As → <code>Lab1_YourLastName_Output.spv</code>.</p>
+<hr>
+</section>
+<section id="part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave">Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)</h2>
+<p>Answer these on paper or in the LMS quiz (whichever your instructor specifies):</p>
+<ol type="1">
+<li>If we wanted to generalize beyond this room, what would the <strong>population</strong> be, and what would the 10 rows of data represent (in Chapter 1’s terms)?</li>
+<li>The average StudyHours you’d calculate from these 10 rows — is that a <strong>parameter</strong> or a <strong>statistic</strong>? Why?</li>
+<li>When you ran Frequencies and Descriptives in Part 3, were you using <strong>descriptive</strong> or <strong>inferential</strong> statistics? How do you know?</li>
+</ol>
+<hr>
+</section>
+<section id="take-home-lab-report-due-before-next-class" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-lab-report-due-before-next-class">Take-Home Lab Report (due before next class)</h2>
+<p>Using your saved <code>.sav</code> file and output, write brief answers (a sentence or two each is fine):</p>
+<ol type="1">
+<li><strong>Variable classification table.</strong> For each of the 6 variables, state (a) whether it’s discrete or continuous, and (b) which of the four textbook scales of measurement it belongs to (nominal/ordinal/interval/ratio).</li>
+<li><strong>SPSS’s “Scale” category.</strong> SPSS collapses two of the textbook’s four scales into one “Scale” option. Which two, and why does that combination make statistical sense (hint: think about what interval and ratio scales have in common that nominal and ordinal don’t)?</li>
+<li><strong>Real limits.</strong> One classmate’s StudyHours value is 8.5. What are the real limits of that score, and why do real limits only apply to continuous variables?</li>
+<li><strong>Stress variable debate.</strong> We treated Stress (a 1–10 self-rating) as Scale in SPSS, but reasonable people disagree. Make a one-paragraph case that it’s actually <em>ordinal</em> instead, using the textbook’s definition of what an ordinal scale can and can’t tell you.</li>
+<li><strong>Independent/dependent variables.</strong> Suppose a researcher used this same setup to test whether <em>Major</em> is related to <em>StudyHours</em> — comparing average study hours across the four majors. Identify the independent variable and the dependent variable. Is the independent variable a true independent variable or a <strong>quasi-independent</strong> variable? Explain using the textbook’s distinction.</li>
+<li><strong>Data structure.</strong> Which of the three data structures from Section 1-3 (one-group descriptive research, the correlational method, or comparing groups of scores) best describes what we did today with the full 6-variable dataset? Justify your answer.</li>
+</ol>
+<hr>
+</section>
+<section id="instructor-notes" class="level2">
+<h2 class="anchored" data-anchor-id="instructor-notes">Instructor Notes</h2>
+<div class="callout callout-style-default callout-important callout-titled" title="Trim this section before distributing to students">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Trim this section before distributing to students
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Timing is tight</strong> — Part 1 (variable setup) is where students lose time fumbling with the Values dialog. Consider projecting your own screen through Row 1 and Row 2 live, then letting them do Rows 3–6 independently.</li>
+<li><strong>Common error:</strong> students forget to click “Add” before “OK” in the Value Labels dialog, so labels don’t save. Worth a 10-second warning up front.</li>
+<li><strong>Common error:</strong> leaving Decimals at the default (2) for StudentID/Major/ClassYear — not wrong mechanically, but a good moment to ask “does a major code need decimal places?”</li>
+<li>Question 4 (Stress variable) has no single correct answer — it’s the intro-stats version of the ordinal-vs-interval Likert debate, and is meant to generate discussion, not a graded “right answer.” Grade for reasoning quality, not conclusion.</li>
+<li>If a pair finishes early, have them toggle <strong>View → Value Labels</strong> off/on a few times and predict what the Frequencies output would look like using raw codes vs.&nbsp;labels — reinforces that the label is cosmetic, not the stored value.</li>
+</ul>
+</div>
+</div>
 
 
 </section>
@@ -311,150 +557,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -854,13 +956,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./course-syllabus.html" class="pagination-link" aria-label="Syllabus">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Syllabus</span>
+      <a href="../course-faq.html" class="pagination-link" aria-label="FAQ">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">FAQ</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./course-faq.html" class="pagination-link" aria-label="FAQ">
-        <span class="nav-page-text">FAQ</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../labs/lab_3.html" class="pagination-link" aria-label="Lab 3">
+        <span class="nav-page-text">Lab 3</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

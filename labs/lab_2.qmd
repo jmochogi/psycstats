@@ -37,7 +37,7 @@ Two things appear in the Output Viewer:
 **A frequency table.** Match its columns to the textbook's vocabulary:
 
 | SPSS column | Chapter 2 term |
-|------------------------------------|------------------------------------|
+|----|----|
 | Frequency | *f* — the raw count in each category |
 | Percent | \% — same as computing p × 100, where p = f/N |
 | Valid Percent | \% excluding any missing data (identical to Percent here, since we have none) |

@@ -79,13 +79,21 @@ Upon successful completion of this course, students will be able to:
 
 ### [Textbooks]{style="color:#20B2AA;"}
 
-We will use the following text in this course. You may purchase an electrinic or physical copy of the book. MindTap purchase is not required, but you may choose to purchase it to get access to more practice problems.
+We will use the following text in this course. You may purchase an electronic or physical copy of the book. MindTap purchase is not required, but you may choose to purchase it to get access to more practice problems.
 
 - Gravetter, F.J, Wallnau, L.B., Forzano, L.B. & Witnauer, J,E. (2021/2018). ***Essentials of Statistics for the Behavioral Sciences*** (10th Ed). Boston, MA: Cengage.
 
+Note: We will cover most of the chapters in this book, and homework assignments will be drawn from the end-of-chapter exercises. You do not need to purchase your own copy if you prefer to share one with a friend. You may also rent the book or buy a digital version. A physical copy may be the most convenient, but the choice is up to you. The purchase link is available below:
+
+[Textbook Link](https://ithaca.textbookx.com/institutional/index.php?action=browse&utm_source=Klaviyo&utm_medium=email&utm_campaign=081926_FA26_Faculty_T50_S1_PRO_W_Single_Syllabus#/books/5407443/)
+
 ### [Computing:]{style="color:#20B2AA;"}
 
-The primary software we will use in this course is IBM SPSS Statistics. You will be equipped with computers enabled with SPSS for labs. You will also need to access SPSS to finish lab or class assignments. There are two ways to access SPSS: - Most computers in our classroom (Williams 203) have SPSS pre-installed. Whenever you need the software, you can sign in using your IC credentials. - If you choose, you can purchase a Student Version of the SPSS Statistics GradPack Base that will last for 6 months. HOWEVER: You must first register with [OnTheHub](https://onthehub.com/spss) first – and your email will be used to verify that you are a student. After that (there may be a short one day delay) you can then order the SPSS software. The cost for this download is approximately \$37.90. Follow the link below:
+The primary software we will use in this course is IBM SPSS Statistics. You will need a computers enabled with SPSS for labs. You will also need to access SPSS to finish lab or class assignments. There are two ways to access SPSS:
+
+- Most computers in our classroom (Williams 203) have SPSS pre-installed. Whenever you need the software, you can sign in using your IC credentials.
+
+- If you choose, you can purchase a Student Version of the SPSS Statistics GradPack Base that will last for 6 months. HOWEVER: You must first register with [OnTheHub](https://onthehub.com/spss) first – and your email will be used to verify that you are a student. After that (there may be a short one day delay) you can then order the SPSS software. The cost for this download is approximately \$37.90. Follow the link below:
 
 - **Optional:** You may want to have a scientific calculator (one that has the ability to compute powers–e.g., $(1.675)^3)$\$(1.675)\^3)\$\$(1.675)\^3)\$ to use when you want to do quick calculations in class or during Quizzes. Calculators on devices such as cellphones or iPads will not be allowed during Quizzes and exams.
 

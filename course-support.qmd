@@ -42,12 +42,9 @@ If your mental health concerns and/or stressful events negatively affect your da
 
 - **Textbooks:** The textbooks for this course are open-source and freely available on the web.
 
-- **Laptops:** Each student is expected to have a laptop they can bring to each lecture and lab.
-
 - **Software subscriptions:**
 
-  - **RStudio:** RStudio cloud ([posit cloud](https://posit.cloud/)) is available for a \$5 per month subscription for students. We will start with a free version but this is limited to about 20 hrs a month. I do not expect you to hit this cap but should you do, consider subscribing for a students license at \$5 using your "*.edu"* email address.
-  - **MyOpenMath:** This is a free online homework system and you will be able to access the assignments directly from Canvas.
+  - **SPSS:** This software is required for the course but can be accessed for free via college computers (e.g., in our classroom and library). If you choose to purchase the software for your personal computer, please see more information in the course syllabus under [course resources](course-syllabus.qmd).
 
 ## **Technology Assistance**
 
