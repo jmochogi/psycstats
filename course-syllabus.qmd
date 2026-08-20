@@ -146,7 +146,7 @@ a.  **Final Portfolio:** A portfolio with the following:
 - Revised work (if necessary) on both mid-term exams. Again, you should point out the errors on every problem and explain how your revisions fix your errors. Exam revisions will be due one week after the exams are returned.
 - A reflective essay on your main takeaways from the course and how you may implement that knowledge in your field or other real-life situations. The essay will be due on Thursday, 12/10/2026 by 10.00 PM.
 
-b.  **Oral Presentation:** You will be required to give a 10-minute oral presentation on a question related to the course content. This will be an individual presentation and you may be expected to use R to perform analyses. The question will be sent to you about 24 hours before your scheduled presentation time and solutions must be submitted to Canvas by 8.00 am on the day of the presentation. You should be prepared to answer questions from your peers and/or the instructor.
+b.  **Oral Presentation:** You will be required to give a 10-minute oral presentation on a question related to the course content. This will be an individual presentation and you may be expected to use SPSS to perform analyses. The question will be sent to you about 24 hours before your scheduled presentation time and solutions must be submitted to Canvas by 8.00 am on the day of the presentation. You should be prepared to answer questions from your peers and/or the instructor.
 
 More information on the Final "Exam" will be provided later in the semester.
 
