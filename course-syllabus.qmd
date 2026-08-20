@@ -20,7 +20,7 @@ format:
 
 - More hours (virtual) may be available. Please check here: [appointment](https://calendly.com/jmochogi/20min).
 
-***Course Website:*** [Click here]().
+***External Course Website:*** [Click here](https://jmochogi.github.io/psycstats/).
 
 ### [Meeting Times and Location]{style="color:#20B2AA;"}
 
