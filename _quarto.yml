@@ -69,16 +69,16 @@ website:
       
       - section: "Labs"
         contents:
-          - href: labs/lab_1.qmd
-            text: Lab 1
+          #- href: labs/lab_1.qmd
+            #text: Lab 1
           #- href: labs/lab_2.qmd
             #text: Lab 2
-          - href: labs/lab_3.qmd
-            text: Lab 3
-          - href: labs/lab_4.qmd
-            text: Lab 4            
-          - href: labs/lab_5.qmd
-            text: Lab 5
+          #- href: labs/lab_3.qmd
+            #text: Lab 3
+          #- href: labs/lab_4.qmd
+            #text: Lab 4            
+          #- href: labs/lab_5.qmd
+            #text: Lab 5
           #- href: labs/lab_6.qmd
             #text: Lab 6
           #- href: labs/lab_7.qmd

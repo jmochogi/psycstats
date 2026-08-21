@@ -165,7 +165,7 @@ Using your saved `.sav` file and output, write brief answers (a sentence or two 
 6.  **Data structure.** Which of the three data structures from Section 1-3 (one-group descriptive research, the correlational method, or comparing groups of scores) best describes what we did today with the full 6-variable dataset? Justify your answer.
 
 ------------------------------------------------------------------------
-
+<!--
 ## Instructor Notes
 
 ::: {.callout-important title="Trim this section before distributing to students"}
@@ -175,3 +175,4 @@ Using your saved `.sav` file and output, write brief answers (a sentence or two 
 - Question 4 (Stress variable) has no single correct answer — it's the intro-stats version of the ordinal-vs-interval Likert debate, and is meant to generate discussion, not a graded "right answer." Grade for reasoning quality, not conclusion.
 - If a pair finishes early, have them toggle **View → Value Labels** off/on a few times and predict what the Frequencies output would look like using raw codes vs. labels — reinforces that the label is cosmetic, not the stored value.
 :::
+--> 

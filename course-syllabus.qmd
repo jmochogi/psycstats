@@ -111,7 +111,7 @@ You’re expected to attend all classes and participate during class discussions
 
 ### [Class Preparation Assignments (CPAs)]{style="color:#20B2AA;"}
 
-CPAs are done ***prior*** to class. They involve completing short readings or activities and/or watching videos then answering a few questions based on the covered material. CPA's are meant to get you prepared for the material of the week/day so that you can contribute meaningfully during class discussions. For this reason, deadlines for CPAs cannot be extended.
+CPAs are done ***prior*** to class. They involve completing short readings or activities and/or watching videos then answering a few questions based on the covered material. CPA's are meant to get you prepared for the material of the week/day so that you can contribute meaningfully during class discussions. For this reason, deadlines for CPAs cannot be extended. The CPA's will be be due by 6 PM (soft deadline) the **day before** class but can still be completed until 7 AM the next morning **(day of class)**. You won't be able to do the CPA after 7.00 AM on the day of class.
 
 ### [Labs]{style="color:#20B2AA;"}
 
@@ -123,7 +123,7 @@ The lowest lab grade will be dropped at the end of the semester.
 
 There will be a short quiz (10–15 minutes) in class almost every week, usually on Fridays. The quiz will be based mainly on material covered in the CPAs and/or discussed in class during the current or previous week. To do well on these quizzes, you should complete your CPAs accurately and attend class regularly. If there are concepts you have questions about, be sure to ask. All quizzes will be closed book and closed notes, but you will be allowed to bring a one-page, A4-sized notes/formula sheet for your own use. Do not simply write down formulas or notes without understanding them and how to interpret the results. Drawing insights from statistical analyses is as important as, if not more important than, being able to run the analyses. The lowest quiz grade will be dropped at the end of the semester.
 
-### [Problem Sets]{style="color:#20B2AA;"}
+### [Homework Problems]{style="color:#20B2AA;"}
 
 I will assign selected homework problems from the textbook chapters. I strongly recommend working through these problems as we cover the corresponding material in class. Even for multiple-choice questions, you must show and explain all work to justify your answer choice.
 
