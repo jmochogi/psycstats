@@ -244,53 +244,147 @@
     "text": "Submission checklist\n\nA saved SPSS data file with correct value labels and measurement levels.\nSPSS output containing the frequency table, descriptive statistics, and histograms.\nCompleted responses for Parts A–F. You may print a PDF from the website and hand-write your responses or use a digital annotator tool.\nOne APA-style results paragraph that directly answers the research question.\n\n\n\n\n\n\n\nOptional challenge\n\n\n\nUse Graphs &gt; Chart Builder to make a bar chart of coping_strategy. Add an informative title and axis labels. In one sentence, explain how the tallest bar communicates the same information as the mode."
   },
   {
+    "objectID": "labs/lab_0.html",
+    "href": "labs/lab_0.html",
+    "title": "Lab 0: Meet SPSS — Variables, Measurement, and Your First Dataset",
+    "section": "",
+    "text": "Before you start: Open SPSS Statistics on your lab computer or personal computer if you have the software installed. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank Data Editor window with a grid of empty cells.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-0-spss-interface",
+    "href": "labs/lab_0.html#part-0-spss-interface",
+    "title": "Lab 0: Meet SPSS — Variables, Measurement, and Your First Dataset",
+    "section": "Part 0: SPSS Interface",
+    "text": "Part 0: SPSS Interface\nLook at the bottom of the SPSS window. You’ll see Data View and Variable View options. See below:\n\n\n\n\n\n\nData View — this is where you type in the data/scores. Each row represents one individual and each column represents one variable.\nVariable View — this is where you describe each variable before you enter any scores.\n\nThere is also a separate window called the Output Viewer — it doesn’t exist yet, but it will pop up automatically the first time you run an analysis (not today!). That’s where your results/tables/graphs etc appear.\nRule for today: we always set up a variable in Variable View before typing any scores for it in Data View. This mirrors Chapter 1’s point that researchers must define how something will be measured (operationalized) before they collect data.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-1-entering-variables",
+    "href": "labs/lab_0.html#part-1-entering-variables",
+    "title": "Lab 0: Meet SPSS — Variables, Measurement, and Your First Dataset",
+    "section": "Part 1: Entering Variables",
+    "text": "Part 1: Entering Variables\nYou’re going to enter data from a classroom mini-survey of 8 students (the survey we conducted yesterday).\n\nClick the Variable View tab. You’ll see rows (one per variable) and columns including Name, Type, Decimals, Label, Values, and Measure.\nFollow the following steps to enter the variables:\n\n\nRow 1: StudentID\n\nClick the first empty cell in row 1, “Name” column. Type: StudentID\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (an ID number has no decimal places).\nClick the Label cell. Type: Student identifier\nClick the Measure cell. Click the dropdown arrow and select Nominal.\n\nWhy nominal? An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.\n\n\n\n\nRow 2: Sex\n\nName: Sex\nDecimals: 0\nLabel: Student's sex\nValues: Click the Values cell, then click the small gray … button that appears on the right side of the cell. A “Value Labels” dialog opens. Click the + sign to add values.\n\nIn the Value box, type 1. In the Label box, type Female. Click Add.\nValue 2, Label Male. Click Add.\nValue 3, Label Other.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 3: Hours\n\nName: Hours\nDecimals: set to 0\nLabel: Number of hours slept\nMeasure: select Scale.\n\n\n\nRow 4: Coffee\n\nName: Coffee\nDecimals: set to 0\nLabel: Coffee cups per day.\nMeasure: select Scale.\n\n\n\nRow 5: State\n\nName: State\nType: Click on the grey three ... dots on the right of the cell then choose String. The string string option allows you to enter non-numeric information. With this option, numerals are interpreted as characters.\nWidth: Use 10.\nDecimals: 0\nLabel: Student's state\nValues: Click the Values cell, then click the three … dots that appears on the right side of the cell. A “Value Labels” dialog opens. Click the + sign to add values.\n\nIn the Value box, type NY. In the Label box, type New York. Click Add.\nContinue until all states in the data are entered.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 6: Water\n\nName: Water\nType: Leave as Numeric\nDecimals: Use 1 decimal to entries such as 2.5 liters.\nLabel: Daily water consumption.\nMeasure: select Scale.\n\nIf you did everything correctly, your variable view screen should look as follows:",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-2-entering-the-data",
+    "href": "labs/lab_0.html#part-2-entering-the-data",
+    "title": "Lab 0: Meet SPSS — Variables, Measurement, and Your First Dataset",
+    "section": "Part 2: Entering the Data",
+    "text": "Part 2: Entering the Data\nThe second step after setting up variables is to enter the data themselves. Click the Data View tab on the bottom of the SPSS window. The 6 column headers created (StudentID, Sex, etc) should appear, this time round as columns, as shown below:\n\n\n\n\n\nNow enter the data accordingly. See the class activity for Wed 8/26 in OneNote.\n\n\n\n\n\n\nTip\n\n\n\nIn Data View, the Sex variable will still show plain numbers (1, 2, 3) unless you turn on value labels. To check your coding: go to the View menu (top menu bar) → Grid Lines → click Value Labels. The columns should now display the named values instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-3-saving-and-retrieving-files",
+    "href": "labs/lab_0.html#part-3-saving-and-retrieving-files",
+    "title": "Lab 0: Meet SPSS — Variables, Measurement, and Your First Dataset",
+    "section": "Part 3: Saving and Retrieving Files",
+    "text": "Part 3: Saving and Retrieving Files\nSave your file: File → Save As → File name it Lab_0_YourLastName.sav → save it in a convenient location for you, preferably the desktop.\nNow, close the program and try to navigate to the file you just saved. When you find it, double clikc to make sure it is opening at it should. Next time you need this file, this is what you will doRelax and slow down! We will run analyses in the next lab.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-4-running-analyses",
+    "href": "labs/lab_0.html#part-4-running-analyses",
+    "title": "Lab 0: Meet SPSS — Variables, Measurement, and Your First Dataset",
+    "section": "Part 4: Running Analyses",
+    "text": "Part 4: Running Analyses\nKudos if you made it this far! In the next lab, we will perform some data analysis (basic descriptive statistics).",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
     "objectID": "labs/lab_1.html",
     "href": "labs/lab_1.html",
     "title": "Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset",
     "section": "",
-    "text": "Before you start: Open SPSS Statistics on your lab computer. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank Data Editor window with a grid of empty cells."
+    "text": "Before you start: Open SPSS Statistics on your lab computer. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank Data Editor window with a grid of empty cells.",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
   },
   {
     "objectID": "labs/lab_1.html#part-0-get-oriented-3-min",
     "href": "labs/lab_1.html#part-0-get-oriented-3-min",
     "title": "Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset",
     "section": "Part 0: Get Oriented (3 min)",
-    "text": "Part 0: Get Oriented (3 min)\nLook at the bottom-left corner of the Data Editor window. You’ll see two tabs:\n\nData View — where you type in scores, one row per person, one column per variable\nVariable View — where you describe each variable before you enter any scores\n\nThere is also a separate window called the Output Viewer — it doesn’t exist yet, but it will pop up automatically the first time you run an analysis. That’s where your results/tables appear.\nRule for today: we always set up a variable in Variable View before typing any scores for it in Data View. This mirrors Chapter 1’s point that researchers must define how something will be measured before they collect data."
+    "text": "Part 0: Get Oriented (3 min)\nLook at the bottom-left corner of the Data Editor window. You’ll see two tabs:\n\nData View — where you type in scores, one row per person, one column per variable\nVariable View — where you describe each variable before you enter any scores\n\nThere is also a separate window called the Output Viewer — it doesn’t exist yet, but it will pop up automatically the first time you run an analysis. That’s where your results/tables appear.\nRule for today: we always set up a variable in Variable View before typing any scores for it in Data View. This mirrors Chapter 1’s point that researchers must define how something will be measured before they collect data.",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
   },
   {
     "objectID": "labs/lab_1.html#part-1-build-your-variable-view-17-min",
     "href": "labs/lab_1.html#part-1-build-your-variable-view-17-min",
     "title": "Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset",
     "section": "Part 1: Build Your Variable View (17 min)",
-    "text": "Part 1: Build Your Variable View (17 min)\nYou’re going to enter data from a mini-survey of 10 students. Click the Variable View tab now. You’ll see rows (one per variable you’re about to create) and columns including Name, Type, Decimals, Label, Values, and Measure.\nWe will create 6 variables, one per row. For each one, follow these exact steps.\n\nRow 1: StudentID\n\nClick the empty cell in row 1, “Name” column. Type: StudentID\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (an ID number has no decimal places).\nClick the Label cell. Type: Student identifier\nClick the Measure cell. Click the dropdown arrow and select Nominal.\n\nWhy nominal? An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.\n\n\n\n\nRow 2: Major\n\nName: Major\nDecimals: 0\nLabel: Academic major\nValues: Click the Values cell, then click the small gray … button that appears on the right side of the cell. A “Value Labels” dialog opens.\n\nIn the Value box, type 1. In the Label box, type Psychology. Click Add.\nValue 2, Label Biology. Click Add.\nValue 3, Label Business. Click Add.\nValue 4, Label Undecided. Click Add.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 3: ClassYear\n\nName: ClassYear\nDecimals: 0\nLabel: Year in school\nValues: same process as above —\n\n1 = Freshman, 2 = Sophomore, 3 = Junior, 4 = Senior (Add after each one, then OK)\n\nMeasure: select Ordinal.\n\nWhy ordinal, not nominal? Freshman → Senior is an ordered sequence, unlike majors.\n\n\n\n\nRow 4: StudyHours\n\nName: StudyHours\nDecimals: change to 1 (allow one decimal place, e.g., 8.5)\nLabel: Hours spent studying per week\nValues: leave blank (this variable’s numbers are real quantities, not category codes — nothing to label)\nMeasure: select Scale.\n\n\n\nRow 5: NetflixHours\n\nName: NetflixHrs\nDecimals: 1\nLabel: Hours streaming video per week\nValues: leave blank\nMeasure: select Scale.\n\n\n\nRow 6: StressLevel\n\nName: Stress\nDecimals: 0\nLabel: Self-rated stress, 1 (low) to 10 (high)\nValues: leave blank for now — we’ll come back to this one in the discussion question below\nMeasure: select Scale for now (we’ll revisit whether this is the right call)\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nYou should have 6 rows filled in. Raise your hand if any Measure cell still says “Unknown.”\n\n\n\n\n\n\n\n\nNote on SPSS’s Measure column\n\n\n\nThe textbook describes four scales of measurement (nominal, ordinal, interval, ratio). SPSS only gives you three options. Hang onto that observation — it’s Concept Check question 4 below."
+    "text": "Part 1: Build Your Variable View (17 min)\nYou’re going to enter data from a mini-survey of 10 students. Click the Variable View tab now. You’ll see rows (one per variable you’re about to create) and columns including Name, Type, Decimals, Label, Values, and Measure.\nWe will create 6 variables, one per row. For each one, follow these exact steps.\n\nRow 1: StudentID\n\nClick the empty cell in row 1, “Name” column. Type: StudentID\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (an ID number has no decimal places).\nClick the Label cell. Type: Student identifier\nClick the Measure cell. Click the dropdown arrow and select Nominal.\n\nWhy nominal? An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.\n\n\n\n\nRow 2: Major\n\nName: Major\nDecimals: 0\nLabel: Academic major\nValues: Click the Values cell, then click the small gray … button that appears on the right side of the cell. A “Value Labels” dialog opens.\n\nIn the Value box, type 1. In the Label box, type Psychology. Click Add.\nValue 2, Label Biology. Click Add.\nValue 3, Label Business. Click Add.\nValue 4, Label Undecided. Click Add.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 3: ClassYear\n\nName: ClassYear\nDecimals: 0\nLabel: Year in school\nValues: same process as above —\n\n1 = Freshman, 2 = Sophomore, 3 = Junior, 4 = Senior (Add after each one, then OK)\n\nMeasure: select Ordinal.\n\nWhy ordinal, not nominal? Freshman → Senior is an ordered sequence, unlike majors.\n\n\n\n\nRow 4: StudyHours\n\nName: StudyHours\nDecimals: change to 1 (allow one decimal place, e.g., 8.5)\nLabel: Hours spent studying per week\nValues: leave blank (this variable’s numbers are real quantities, not category codes — nothing to label)\nMeasure: select Scale.\n\n\n\nRow 5: NetflixHours\n\nName: NetflixHrs\nDecimals: 1\nLabel: Hours streaming video per week\nValues: leave blank\nMeasure: select Scale.\n\n\n\nRow 6: StressLevel\n\nName: Stress\nDecimals: 0\nLabel: Self-rated stress, 1 (low) to 10 (high)\nValues: leave blank for now — we’ll come back to this one in the discussion question below\nMeasure: select Scale for now (we’ll revisit whether this is the right call)\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nYou should have 6 rows filled in. Raise your hand if any Measure cell still says “Unknown.”\n\n\n\n\n\n\n\n\nNote on SPSS’s Measure column\n\n\n\nThe textbook describes four scales of measurement (nominal, ordinal, interval, ratio). SPSS only gives you three options. Hang onto that observation — it’s Concept Check question 4 below.",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
   },
   {
     "objectID": "labs/lab_1.html#part-2-enter-the-data-15-min",
     "href": "labs/lab_1.html#part-2-enter-the-data-15-min",
     "title": "Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset",
     "section": "Part 2: Enter the Data (15 min)",
-    "text": "Part 2: Enter the Data (15 min)\nClick the Data View tab. Your 6 column headers (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress) should already be there from Part 1. Type the following, one row per student — click a cell, type the number, press Tab or Enter to move to the next cell.\n\n\n\nStudentID\nMajor\nClassYear\nStudyHours\nNetflixHrs\nStress\n\n\n\n\n1\n1\n2\n12.5\n6.0\n7\n\n\n2\n3\n4\n6.0\n10.5\n5\n\n\n3\n2\n1\n15.0\n3.5\n8\n\n\n4\n4\n1\n8.5\n9.0\n6\n\n\n5\n1\n3\n10.0\n5.5\n4\n\n\n6\n2\n4\n18.5\n2.0\n9\n\n\n7\n3\n2\n7.5\n12.0\n5\n\n\n8\n1\n4\n11.0\n4.5\n6\n\n\n9\n4\n3\n9.5\n8.0\n7\n\n\n10\n2\n2\n13.0\n6.5\n8\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nIn Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the View menu (top menu bar) → click Value Labels. The columns should now display “Psychology,” “Sophomore,” etc. instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.\n\n\nSave your file now: File → Save As → name it Lab1_YourLastName.sav → save it to the location your instructor specifies."
+    "text": "Part 2: Enter the Data (15 min)\nClick the Data View tab. Your 6 column headers (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress) should already be there from Part 1. Type the following, one row per student — click a cell, type the number, press Tab or Enter to move to the next cell.\n\n\n\nStudentID\nMajor\nClassYear\nStudyHours\nNetflixHrs\nStress\n\n\n\n\n1\n1\n2\n12.5\n6.0\n7\n\n\n2\n3\n4\n6.0\n10.5\n5\n\n\n3\n2\n1\n15.0\n3.5\n8\n\n\n4\n4\n1\n8.5\n9.0\n6\n\n\n5\n1\n3\n10.0\n5.5\n4\n\n\n6\n2\n4\n18.5\n2.0\n9\n\n\n7\n3\n2\n7.5\n12.0\n5\n\n\n8\n1\n4\n11.0\n4.5\n6\n\n\n9\n4\n3\n9.5\n8.0\n7\n\n\n10\n2\n2\n13.0\n6.5\n8\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nIn Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the View menu (top menu bar) → click Value Labels. The columns should now display “Psychology,” “Sophomore,” etc. instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.\n\n\nSave your file now: File → Save As → name it Lab1_YourLastName.sav → save it to the location your instructor specifies.",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
   },
   {
     "objectID": "labs/lab_1.html#part-3-run-your-first-output-9-min",
     "href": "labs/lab_1.html#part-3-run-your-first-output-9-min",
     "title": "Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset",
     "section": "Part 3: Run Your First Output (9 min)",
-    "text": "Part 3: Run Your First Output (9 min)\nWe haven’t learned to interpret statistical output yet — that starts in Chapter 2. Right now we’re just previewing what “descriptive statistics” (Chapter 1, Learning Objective 2) looks like in SPSS.\n3a. Frequency table for a nominal variable: 1. Menu bar: Analyze → Descriptive Statistics → Frequencies 2. In the dialog box, click Major in the left-hand list, then click the arrow button to move it into the “Variable(s)” box on the right. 3. Click OK. 4. The Output Viewer window opens automatically with a table showing how many students fall into each major category, and what percentage each represents.\n3b. Summary numbers for a scale variable: 1. Analyze → Descriptive Statistics → Descriptives 2. Move StudyHours and NetflixHrs into the “Variable(s)” box. 3. Click OK. A second table appears in the Output Viewer with N, Minimum, Maximum, Mean, and Std. Deviation for each.\nSave your output too: in the Output Viewer window, File → Save As → Lab1_YourLastName_Output.spv."
+    "text": "Part 3: Run Your First Output (9 min)\nWe haven’t learned to interpret statistical output yet — that starts in Chapter 2. Right now we’re just previewing what “descriptive statistics” (Chapter 1, Learning Objective 2) looks like in SPSS.\n3a. Frequency table for a nominal variable: 1. Menu bar: Analyze → Descriptive Statistics → Frequencies 2. In the dialog box, click Major in the left-hand list, then click the arrow button to move it into the “Variable(s)” box on the right. 3. Click OK. 4. The Output Viewer window opens automatically with a table showing how many students fall into each major category, and what percentage each represents.\n3b. Summary numbers for a scale variable: 1. Analyze → Descriptive Statistics → Descriptives 2. Move StudyHours and NetflixHrs into the “Variable(s)” box. 3. Click OK. A second table appears in the Output Viewer with N, Minimum, Maximum, Mean, and Std. Deviation for each.\nSave your output too: in the Output Viewer window, File → Save As → Lab1_YourLastName_Output.spv.",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
   },
   {
     "objectID": "labs/lab_1.html#part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave",
     "href": "labs/lab_1.html#part-4-in-lab-concept-checkpoint-6-min-complete-before-you-leave",
     "title": "Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset",
     "section": "Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)",
-    "text": "Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)\nAnswer these on paper or in the LMS quiz (whichever your instructor specifies):\n\nIf we wanted to generalize beyond this room, what would the population be, and what would the 10 rows of data represent (in Chapter 1’s terms)?\nThe average StudyHours you’d calculate from these 10 rows — is that a parameter or a statistic? Why?\nWhen you ran Frequencies and Descriptives in Part 3, were you using descriptive or inferential statistics? How do you know?"
+    "text": "Part 4: In-Lab Concept Checkpoint (6 min — complete before you leave)\nAnswer these on paper or in the LMS quiz (whichever your instructor specifies):\n\nIf we wanted to generalize beyond this room, what would the population be, and what would the 10 rows of data represent (in Chapter 1’s terms)?\nThe average StudyHours you’d calculate from these 10 rows — is that a parameter or a statistic? Why?\nWhen you ran Frequencies and Descriptives in Part 3, were you using descriptive or inferential statistics? How do you know?",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
   },
   {
     "objectID": "labs/lab_1.html#take-home-lab-report-due-before-next-class",
     "href": "labs/lab_1.html#take-home-lab-report-due-before-next-class",
     "title": "Lab 1: Meet SPSS — Variables, Measurement, and Your First Dataset",
     "section": "Take-Home Lab Report (due before next class)",
-    "text": "Take-Home Lab Report (due before next class)\nUsing your saved .sav file and output, write brief answers (a sentence or two each is fine):\n\nVariable classification table. For each of the 6 variables, state (a) whether it’s discrete or continuous, and (b) which of the four textbook scales of measurement it belongs to (nominal/ordinal/interval/ratio).\nSPSS’s “Scale” category. SPSS collapses two of the textbook’s four scales into one “Scale” option. Which two, and why does that combination make statistical sense (hint: think about what interval and ratio scales have in common that nominal and ordinal don’t)?\nReal limits. One classmate’s StudyHours value is 8.5. What are the real limits of that score, and why do real limits only apply to continuous variables?\nStress variable debate. We treated Stress (a 1–10 self-rating) as Scale in SPSS, but reasonable people disagree. Make a one-paragraph case that it’s actually ordinal instead, using the textbook’s definition of what an ordinal scale can and can’t tell you.\nIndependent/dependent variables. Suppose a researcher used this same setup to test whether Major is related to StudyHours — comparing average study hours across the four majors. Identify the independent variable and the dependent variable. Is the independent variable a true independent variable or a quasi-independent variable? Explain using the textbook’s distinction.\nData structure. Which of the three data structures from Section 1-3 (one-group descriptive research, the correlational method, or comparing groups of scores) best describes what we did today with the full 6-variable dataset? Justify your answer."
+    "text": "Take-Home Lab Report (due before next class)\nUsing your saved .sav file and output, write brief answers (a sentence or two each is fine):\n\nVariable classification table. For each of the 6 variables, state (a) whether it’s discrete or continuous, and (b) which of the four textbook scales of measurement it belongs to (nominal/ordinal/interval/ratio).\nSPSS’s “Scale” category. SPSS collapses two of the textbook’s four scales into one “Scale” option. Which two, and why does that combination make statistical sense (hint: think about what interval and ratio scales have in common that nominal and ordinal don’t)?\nReal limits. One classmate’s StudyHours value is 8.5. What are the real limits of that score, and why do real limits only apply to continuous variables?\nStress variable debate. We treated Stress (a 1–10 self-rating) as Scale in SPSS, but reasonable people disagree. Make a one-paragraph case that it’s actually ordinal instead, using the textbook’s definition of what an ordinal scale can and can’t tell you.\nIndependent/dependent variables. Suppose a researcher used this same setup to test whether Major is related to StudyHours — comparing average study hours across the four majors. Identify the independent variable and the dependent variable. Is the independent variable a true independent variable or a quasi-independent variable? Explain using the textbook’s distinction.\nData structure. Which of the three data structures from Section 1-3 (one-group descriptive research, the correlational method, or comparing groups of scores) best describes what we did today with the full 6-variable dataset? Justify your answer.",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
   },
   {
     "objectID": "labs/lab_2.html",

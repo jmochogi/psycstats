@@ -12,10 +12,10 @@ Learn approaches for analyzing data drawn from psychology settings, such as surv
 
 |             |                      |                |
 |-------------|----------------------|----------------|
-| **Lecture** | Mon 02:00 - 02:50 pm | Williams 208 E |
-| **Lecture** | Wed 02:00 - 02:50 pm | Williams 208 E |
-| **Lab**     | Th 02:00 - 02:50 pm  | Williams 208 E |
-| **Lecture** | Fri 02:00 - 02:50 pm | Williams 208 E |
+| **Lecture** | Mon 02:00 - 02:50 pm | Williams 203  |
+| **Lecture** | Wed 02:00 - 02:50 pm | Williams 203  |
+| **Lab**     | Th 02:00 - 02:50 pm  | Williams 203  |
+| **Lecture** | Fri 02:00 - 02:50 pm | Williams 203  |
 
 # Teaching Team
 
