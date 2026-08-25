@@ -1,5 +1,5 @@
 ---
-title: "Lab 0: Meet SPSS — Variables, Measurement, and Your First Dataset"
+title: "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry"
 subtitle: "Introducing SPSS"
 #author: "Statistics in Psychology"
 format:
