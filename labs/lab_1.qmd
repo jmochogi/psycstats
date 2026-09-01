@@ -1,6 +1,6 @@
 ---
-title: "Lab 1: Frequency Distributions and Visualizations"
-subtitle: "Covers chapter 1 and 2 material"
+title: "Lab 1: Frequency Distributions & Visualizations"
+subtitle: "Covers Material from Chapter 1 & 2 "
 #author: "Statistics in Psychology"
 format:
   html:
@@ -19,7 +19,7 @@ execute:
 
 ## Overview
 
-In this lab, you will be introduced to methods of data organization and visualization using SPSS. You will learn how to create a dataset, enter data, and generate frequency tables and graphs for both nominal and scale variables. These are important beginning skills for analyzing data in behavioral sciences.
+In this lab, you will be introduced to methods of data organization and visualization using SPSS. You will learn how to create a dataset, enter data, and generate frequency tables and graphs for both nominal (or ordinal) and scale variables. These are important beginning skills for analyzing data in behavioral sciences.
 
 ## Part 1: Build Your Variable View
 
@@ -64,7 +64,7 @@ Open SPSS and create a new dataset. Click the **Variable View** tab and add the 
 3.  **Label:** `Hours spent studying per week`
 4.  **Values:** leave blank (this variable's numbers are real quantities, not category codes — nothing to label)
 5.  **Measure:** select **Scale**.
-    - *Why Scale?* This is a continuous variable with a meaningful zero (0 hours studied means no studying at all), so it meets the textbook's definition of a ratio scale. Recall that SPSS collapses `interval` and `ratio` into one `Scale` category.
+    - *Why Scale?* This is a continuous variable with a meaningful zero (0 hours studied means no studying at all), so it meets the textbook's definition of a ratio scale. Recall that SPSS collapses `interval` and `ratio` into one category named `Scale`.
 
 ### Row 5: NetflixHours
 
@@ -101,12 +101,12 @@ Click the **Data View** tab. Your 6 column headers (StudentID, Major, etc.) shou
 | 5         | 1     | 3         | 10.0       | 5.5        | 4      |
 | 6         | 2     | 4         | 18.5       | 2.0        | 9      |
 | 7         | 3     | 2         | 7.5        | 12.0       | 5      |
-| 8         | 1     | 4         | 11.0       | 4.5        | 6      |
+| 8         | 1     | 4         | 11.0       | 4          | 6      |
 | 9         | 4     | 3         | 9.5        | 8.0        | 7      |
 | 10        | 2     | 2         | 13.0       | 6.5        | 8      |
 
 ::: {.callout-tip title="Tip"}
-In Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the **View** menu (top menu bar) → click **Value Labels**. The columns should now display "Psychology," "Sophomore," etc. instead of numbers. Toggle it back off and on to see both views — the number is what's stored, the label is what humans read.
+In Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the **View** menu (top menu bar) → click **Value Labels**. The columns should now display "Freshman", "Sophomore," etc. instead of numbers. Toggle it back off and on to see both views — the number is what's stored, the label is what humans read.
 :::
 
 **Save your file now:** File → Save As → name it `Lab_1_YourLastName.sav` → Note the location you saved your file.
@@ -131,7 +131,7 @@ In this section, you'll run two basic analyses in SPSS: a frequency table for a 
 
 - The Output Viewer window opens with a table showing how many students fall into each major category, and what percentage each represents.
 
-### Visualizing a Nominal(or Ordinal) Variable
+### Visualizing a Nominal (or Ordinal) Variable
 
 The common tools used to visualize the distribution of nominal or ordinal variables are bar graphs or pie charts. To create a bar graph for the variable Major, follow the steps steps below:
 
@@ -141,7 +141,7 @@ The common tools used to visualize the distribution of nominal or ordinal variab
 
 It is often helpful to have percentages displayed on the vertical axis instead of the raw frequencies. To do this, select the `percentages` option under the `Frequency Charts` pop up box (step 2 above).
 
-### Frequency table for a Scale Variable
+### Frequency Table for a Scale Variable
 
 We want to create a table that summarizes the variable `StudyHours`. Follow these steps:
 
@@ -152,10 +152,11 @@ We want to create a table that summarizes the variable `StudyHours`. Follow thes
 - Click **OK**. A frequency table appears in the **Output Viewer** showing each study hour and the corresponding frequency.
 
 ::: {.callout-caution title="Caution"}
-When working with large data sets, a frequency table on this kind is not helpful. We can use a grouped frequency table instead.
+When working with larger data sets, a frequency table on this kind is not helpful. We can use a grouped frequency table instead. 
+Although the grouped frequency table loses some information, it is easier to read and interpret when we have a large number of unique values.
 :::
 
-Although our data set is fairly small, we can still use it to demonstrate the process of creating a grouped frequency table for **StudyHours**, we will begin by transforming the variable to create three bins (5-10, 11-15, 16-20) as follows:
+Although our data set is fairly small (n=10), we can still use it to demonstrate the process of creating a grouped frequency table for **StudyHours**, we will begin by transforming the variable to create three bins (5-10, 11-15, 16-20) as follows:
 
 - Menu bar: **tranform → Recode into Different Variable**.
 
@@ -189,28 +190,28 @@ To create a frequency table, we follow the steps from earlier:
 
 ### Visualizing a Scale Variable
 
-There are various graphs that can be used to visualize the distribution of a scale variable such as `StudyHours`. The most common ones are histograms, boxplots, and stem-and-leaf plots. Histograms are good for showing the shape of the distribution, boxplots are good for showing the median, quartiles, and if there are any outliers.
+There are various graphs that can be used to visualize the distribution of a scale variable. The most common ones are histograms, boxplots, dotplots, and stem-and-leaf plots. Histograms are good for showing the shape of the distribution, boxplots are good for showing the shape of the distributions as well as locations of the median, quartiles, and if there are any outliers.
 
-We will creat a `histogram` to visualize the distribution of `StudyHours` as follows:
+For this lab, we will creat a `histogram` to visualize the distribution of `StudyHours`. Here are the steps:
 
 - Menu bar: **Analyze → Descriptive Statistics → Frequencies.** Move the variable **StudyHours** into the "Variable(s)" box. Uncheck the box ***Display frequency tables*** (we do not need the table).
 - Click **Charts** on the right side of the dialog box. In the new dialog box, select **Histograms** and click **Continue**.
 - Click **OK**. A histogram appears in the Output Viewer showing the distribution of `StudyHours`.
 
 ::: {.callout-tip title="Checkpoint"}
-Based on the histogram, what can you say about the distribution of the study hours?
+Based on the histogram, what can you say about the distribution of the study hours? Is the histogram roughly symmetric, skewed to the left, or skewed to the right?
 :::
 
 **Save your output file:** File → Save As → name it `Lab_1_Output_YourLastName.spv` → Note the location you saved your file.
 
 ------------------------------------------------------------------------
 
-## Take-Home Lab Report
+## Take-Home Lab Exercises
 
 Answer the following questions based on your SPSS output (more analyses may be required). Include screenshots of the relevant software outputs (e.g., frequency tables, bar graphs, histograms) in your report. Your report should be typed (Times New Roman, Font size 12, double spaced). The lab is graded out of 20 points. Ten points are for the 2 SPSS outputs and ten points are for your written responses to the questions below.
 
 1.  **(Frequency tables, 2 points.)** Create a ***frequency table*** for the variable `ClassYear`. Based on the table, answer the following questions:
-    - What is the most common class year among the students in this dataset?
+    - What is the most common class year(s) among the students in this dataset?
     - What percentage of students are either Freshmen or Sophomores?
 2.  **(Bar Graph, 2 points.)** Create a ***bar graph*** for the variable `ClassYear`. Based on the graph, answer the following questions:
     - Which major has the highest number of students?
@@ -222,9 +223,9 @@ Answer the following questions based on your SPSS output (more analyses may be r
 
 ## Submission Checklist
 
-- [ ] A saved SPSS data file (.sav) with correct variable specifications and the data themselves.
+- [ ] A saved SPSS data file (.sav) with correct **variables** alongside their specifications, and correctly entered data.
 
-- [ ] SPSS output file (.spv) showing all the analyses performed during the lab, including frequency tables, bar graphs, grouped frequency tables, and histograms.
+- [ ] SPSS output file (.spv) showing the analyses performed, including frequency tables, bar graphs, grouped frequency tables, and histograms.
 
 - [ ] Completed responses for Questions 1—4 above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include screenshots of the relevant software outputs (e.g., frequency tables).
 
