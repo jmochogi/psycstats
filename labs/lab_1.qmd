@@ -214,12 +214,12 @@ Answer the following questions based on your SPSS output (more analyses may be r
     - What is the most common class year(s) among the students in this dataset?
     - What percentage of students are either Freshmen or Sophomores?
 2.  **(Bar Graph, 2 points.)** Create a ***bar graph*** for the variable `ClassYear`. Based on the graph, answer the following questions:
-    - Which major has the highest number of students?
-    - Which major has the lowest number of students?
+    - Which year has the highest number of students?
+    - Which year has the lowest number of students?
 3.  **(Frequency Tables, 4 points.)** Create a ***grouped frequency table*** for the variable `NetflixHours` using the groups 0-4, 5-9, 10-14. Based on the table, answer the following questions:
     - What is the most common range of hours spent streaming video per week?
     - What percentage of students spend more than 10 hours per week streaming video?
-4.  **(Histogram, 2 points.)** Create a ***histogram*** for the variable `NetflixHours`. Based on the histogram, what can you say about the distribution of the study hours?
+4.  **(Histogram, 2 points.)** Create a ***histogram*** for the variable `NetflixHours`. Based on the histogram, what can you say about the distribution of the hours students spent streaming?
 
 ## Submission Checklist
 
