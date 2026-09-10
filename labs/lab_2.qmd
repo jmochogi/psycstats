@@ -1,135 +1,212 @@
 ---
-title: "Lab 2: Frequency Distributions and Graphs"
-subtitle: "Covers Chapter 2: Frequency Distributions | 50-minute lab | Continues from Lab 1"
-#author: "Statistics in Psychology"
+title: "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization"
+subtitle: "Sleep, Test Anxiety, and Memory During Exam Week"
+author: ""
+date: "last-modified"
 format:
   html:
     toc: true
-    toc-location: right
-    theme: cosmo
-    css: lab-styles.css
-    embed-resources: true
     number-sections: false
+    theme: cosmo
   pdf:
     toc: false
     number-sections: false
-editor: visual
+execute:
+  echo: true
 ---
 
-**Before you start:** Open SPSS, then open your saved file from last week: **File → Open → Data** → navigate to where you saved it → select `Lab1_YourLastName.sav` → **Open**. You should see your 10-row, 6-variable dataset (StudentID, Major, ClassYear, StudyHours, NetflixHrs, Stress). We are *not* creating new variables today — we're analyzing the ones you already built.
+## Overview & Scenario
 
-------------------------------------------------------------------------
+A psychology research team is studying student well-being during exam week. They recruited 24 undergraduate students and recorded each participant’s self-reported sleep from the prior night, test-anxiety score, performance on a short memory-recall task, and primary coping strategy.
 
-## Part 1: Frequency Table + Bar Chart for a Categorical Variable (13 min)
+The team’s research question is:
 
-We'll start with **Major** — a nominal variable — and build both a frequency table and its graph in one pass.
+> **During exam week, what are the typical levels of sleep, test anxiety, and memory recall among undergraduate students, and which coping strategy is most common?**
 
-1.  **Analyze → Descriptive Statistics → Frequencies**
-2.  Click **Major** in the left-hand list, click the arrow to move it into the **Variable(s)** box.
-3.  Click the **Charts…** button.
-    - Select the **Bar charts** radio button.
-    - Under "Chart Values," select **Percentages** (instead of the default "Frequencies") — this shows the proportion of students in each major, not just the raw count.
-    - Click **Continue**.
-4.  Click **OK**.
+This is a **descriptive** question. We will use the mean, median, and mode to describe the sample appropriately. We will also use visualizations to help us understand the distributions of the variables. Finally, we will write a concise APA-style paragraph to summarize the results.
 
-Two things appear in the Output Viewer:
+## Learning Objectives
 
-**A frequency table.** Match its columns to the textbook's vocabulary:
+By the end of this lab, you should be able to:
 
-| SPSS column | Chapter 2 term |
-|----|----|
-| Frequency | *f* — the raw count in each category |
-| Percent | \% — same as computing p × 100, where p = f/N |
-| Valid Percent | \% excluding any missing data (identical to Percent here, since we have none) |
-| Cumulative Percent | running total as you move down the table — this is the basis for percentile ranks |
+1.  Import a excel format dataset into SPSS and set up variable names, value labels, and measurement levels.\
+    Select the mean, median, or mode that best represents a variable.
+2.  Use SPSS to create frequency tables, descriptive statistics, and histograms.
+3.  Explain how an extreme score influences the mean and median.
+4.  Write a concise APA-style descriptive-results paragraph.
 
-**A bar chart.** Notice the spaces between the bars — that's deliberate. Chapter 2 draws bar charts with gaps specifically for nominal/ordinal data, to visually signal that the categories are separate and unordered, unlike a histogram's touching bars for numerical data.
+## Part A — Importing Data into SPSS
 
-::: {.callout-tip title="Checkpoint"}
-In your output, which major has the highest frequency? What percentage of the class does it represent?
+- Download the [Exam Week Well Being Dataset](datasets/student_wellbeing_exam_week.csv). Note where the file is located (most likely downloads).
+
+- Open the SPSS program on your computer. Select **File \> Import Data \> CSV Data**. Navigate to the file location and select it.
+
+- Click **Open**. In the pop-up window, ensure that **Read variable names from the first row of data** is checked. Click **OK**. An output pop up window may appear but you can ignore it and proceed to the data window. The dataset should now appear in SPSS.
+
+- In **Variable View**, enter the **value labels** and **measurement levels** below.
+
+| Variable | Description / labels | Measure |
+|----|----|----|
+| `Participant_id` | Participant identification number | Nominal |
+| `Primary_coping_strategy` | 1 = Exercise;<br> 2 = Social Support;<br> 3 = Avoidance;<br> 4 = Planning;<br> 5= Cognitive Reframing | Nominal |
+| `Sleep_Hours_Prior_Night` | Hours slept the night before the exam | Scale |
+| `Test_Anxiety_Score` | Test-anxiety score; possible range 0–100, higher = more anxiety | Scale |
+| `Memory_Recall_Score` | Number of words recalled correctly; possible range 0–20 | Scale |
+
+::: callout-tip
+## Checkpoint
+
+Save the data file as `lab_2_yourlastname.sav`.
 :::
 
-------------------------------------------------------------------------
+## Part B — Analyzing Continuous Variables
 
-## Part 2: Independent Practice — ClassYear (5 min)
+## Central Tendency
 
-Repeat the same process for **ClassYear**, an ordinal variable, on your own:
+We want to find the "typical hours of sleep" for the sampled students by finding the **Mean**, **Mode**, and **Median** using SPSS. Follow the following steps:
 
-1.  **Analyze → Descriptive Statistics → Frequencies** → move **ClassYear** in → **Charts** → **Bar charts** → **Percentages** → **Continue** → **OK**.
+- **Analyze \> Descriptive Statistics \> Frequencies**.
+- Move `sleep_hours` to the Variable(s) box.
+- Click **Statistics**, and check **Mode**, **Meam**, and **Median**
+- Click **Continue**, then OK. Keep the frequency table in your output.
 
-::: {.callout-tip title="Checkpoint"}
-Looking at the Cumulative Percent column, what percentage of students are Sophomores or below? (This is exactly what a percentile rank tells you — the percentage of the group at or below a given point.)
+::: callout-tip
+## Checkpoint
+
+1.  Report the three measures of center.
+2.  Which of the three measures is the most reliable and why?
 :::
 
-------------------------------------------------------------------------
+### Visualizing Continuous Variables (Sleep Hours)
 
-## Part 3: A Numerical Variable — and Why It Gets Messy (8 min)
+To visualize the distribution of a continuous variable such as `sleep_hours`, a histogram is one of the most reliable tools. Follow the following steps to create a histogram in SPSS:
 
-Now let's try the same recipe on a **scale (numerical)** variable: **StudyHours**.
+- **Analyze \> Descriptive Statistics \> Frequencies**.
+- Move `sleep_hours` to the Variable(s) box.
+- Click **Charts**, select **Histograms**, and check **Display normal curve**.
+- Click **Continue**, then OK. Keep the histogram in your output.
 
-1.  **Analyze → Descriptive Statistics → Frequencies**
-2.  Remove Major/ClassYear if they're still listed; move **StudyHours** in instead.
-3.  Click **Statistics…** and check the box for **Quartiles**. Click **Continue**.
-    - Quartiles report the 25th, 50th, and 75th percentiles — this is SPSS computing exactly the percentile concept from this chapter.
-4.  Click **OK** (leave Charts unchecked for now).
+::: callout-tip
+## Checkpoint
 
-**Look at the frequency table.** With only a few exceptions, every row has a frequency of 1 — because with continuous data spread across a wide range, individual scores rarely repeat.
-
-This is precisely the problem Chapter 2 describes as the reason for **grouped frequency distribution tables**: when scores cover a wide range, listing every individual value produces a long, uninformative table instead of a picture you can actually interpret.
-
-::: {.callout-tip title="Checkpoint"}
-Look at the Percentile Values table in your output. What StudyHours value corresponds to the 50th percentile?
+How would you describe the distribution of sleep hours? Is the histogram roughly symmetric, positively skewed, or negatively skewed?
 :::
 
-------------------------------------------------------------------------
+Another tool that can be used to visualize the distribution of a continuous variable is a boxplot. Follow the following steps to create a boxplot in SPSS:
 
-## Part 4: Building a Grouped Frequency Table (12 min)
+- **Graphs \> Chart Builder**.
+- Select **Boxplot** from the gallery, then drag the simple boxplot icon to the chart preview area.
+- Drag `sleep_hours` to the y-axis and click **OK**. Keep the box plot in your output.
 
-We'll now group StudyHours into class intervals, following the textbook's guidelines: about 3–10 intervals (we have a small dataset, so we'll aim for 3), a simple interval width (5 is a good round number), and a bottom score that's a multiple of the width.
+::: callout-tip
+## Checkpoint
 
-**Why the boundaries below look slightly unusual:** we're setting the cut points at the *real limits* (4.5, 9.5, 14.5, 19.5) rather than the whole numbers themselves. This matters because our data includes decimals (like 9.5 hours) — using the real limit means every possible score falls into exactly one interval with no gaps, exactly as Chapter 2 describes.
-
-1.  **Transform → Recode into Different Variables**
-2.  Click **StudyHours**, move it into the middle box (it will show as `StudyHours --> ?`).
-3.  In the **Output Variable** box on the right: type `StudyGroup` in **Name**, type `Study hours (grouped)` in **Label**. Click **Change**.
-4.  Click **Old and New Values…** A new dialog opens. Set up three ranges, clicking **Add** after each:
-    - Old Value → select **Range**: `4.5` through `9.4`. New Value: `1`. Click **Add**.
-    - Old Value → select **Range**: `9.5` through `14.4`. New Value: `2`. Click **Add**.
-    - Old Value → select **Range**: `14.5` through `19.4`. New Value: `3`. Click **Add**.
-5.  Click **Continue**, then **OK**. A new column, `StudyGroup`, appears at the end of your Data View.
-6.  Switch to **Variable View**. Find the `StudyGroup` row and finish setting it up like you did in Lab 1:
-    - **Decimals:** `0`
-    - **Values:** `1` = `5-9 hrs`, `2` = `10-14 hrs`, `3` = `15-19 hrs`
-    - **Measure:** select **Ordinal** (the groups now have a meaningful order, even though the underlying variable is scale)
-7.  Run **Analyze → Descriptive Statistics → Frequencies** on **StudyGroup**.
-
-**Compare this table to Part 3's.** Same underlying data, but now it tells a story you can actually see at a glance — that's the entire purpose of grouping.
-
-------------------------------------------------------------------------
-
-## Part 5: Histogram and Shape (6 min)
-
-1.  **Analyze → Descriptive Statistics → Frequencies**
-2.  Move **StudyHours** (the original, ungrouped variable) into the Variable(s) box.
-3.  Click **Charts…** → select **Histograms** → click **Continue** → **OK**.
-
-SPSS automatically bins the continuous variable for you (similar in spirit to what you just did by hand in Part 4). Look at the shape of the bars.
-
-::: {.callout-tip title="Checkpoint — answer using your histogram"}
-- Is the distribution roughly **symmetrical**, or does it look **skewed**?
-- If skewed, which direction is the tail pointing — toward the higher scores (positive skew) or the lower scores (negative skew)?
-- Take a look at where SPSS started the Y-axis. Does it start at zero? (Keep this in mind — we'll come back to it below.)
+How would you describe the distribution of sleep hours based on the box plot?
 :::
 
-------------------------------------------------------------------------
+### Extreme Scores
 
-## Take-Home Lab Report (due before next class)
+Presence of extreme scores (outliers) can influence central tendency. Change the sleet hours for the last participant (id = 24) to 20 hours. Re-run the analysis for `sleep_hours` and record the new mean, median, and mode. - How does this change affect these values? In this case, which value is more reliable? - How do the distributions change based on the histogram and box plot?
 
-1.  **By-hand check.** Using the Major frequency table from Part 1, compute Σ*fX* by hand — but first you'll need to assign a numeric code to each major (use the same codes from your Values labels: 1=Psychology, 2=Biology, 3=Business, 4=Undecided) and treat frequency × code as *fX* for each row. Show your work. (This is an artificial calculation since Major is nominal and its codes aren't truly quantitative — that's the point: explain in one sentence why Σ*fX* is mathematically possible here but not meaningful.)
-2.  **Polygon by hand.** Using your Part 4 grouped frequency table (StudyGroup), sketch a frequency polygon on paper: place a dot above the *midpoint* of each interval at a height equal to its frequency, connect the dots, and drop the line to zero one interval-width beyond each end. (Recall: the midpoint of a class interval is the average of its highest and lowest apparent limits.)
-3.  **Stem-and-leaf by hand.** Construct a stem-and-leaf display for the 10 StudyHours values. What advantage does this display have over the grouped frequency table you built in Part 4?
-4.  **Population vs. sample.** Our 10 students are a sample. If we had data on the *entire population* of students at this university instead, would we typically graph actual frequencies or relative frequencies? Why does the textbook recommend relative frequencies for very large groups?
-5.  **The Y-axis question.** Referring to Box 2.1 in the textbook (the homicide-rate graph example) and what you noticed at the end of Part 5: why does it matter whether a graph's Y-axis starts at zero? Give a one-sentence explanation of how a manipulated Y-axis could mislead someone looking at your StudyHours histogram.
-6.  **Percentile interpretation.** In your own words, explain what it means that a StudyHours score has a percentile rank of 70%. Use the cumulative percent column from one of today's frequency tables as your example.
+### Simple Transformations on Continuous Variables
 
-------------------------------------------------------------------------
+Now, imagine the research team revises the anxiety scores by adding 5 points to every participant’s score. We can do this in SPSS as follows:
+
+- **Transform \> Compute Variable**.
+- Under ***Target Variable***, write `anxiety_plus_5`.
+- Under Numeric Expression write `Test_Anxiety_Score + 5`.
+- Click **OK**.
+
+Look at the data file and you should see a new variable called `anxiety_plus_5`.
+
+Run the Mean and median for for `Test_Anxiety_Score` and `anxiety_plus_5`.
+
+::: callout-tip
+## Checkpoint
+
+How did the mean and median anxiety change after adding 5 to each individual score? State the rule for what happens to the mean and median when the same constant is added to every score.
+:::
+
+## Part C — Analyzing Discrete Variables
+
+In most cases, summary statistics such as the mean and median are not useful for discrete variables measured at the nominal or ordinal level. This is because it doesnt make mathematical sense to add two categories (e.g Male +Female). For these variables, the **mode** can be used to tell us the category with the highest representation (frequency). A frequency distribution table can be made to identify this.
+
+### Frequency Distribution Table for Discrete Variables
+
+A frequency Distribution table is a straight forward tool that can be used to summarize and organize a discrete nominal variable such as `Primary_Coping_Startegy`. To make the table in SPSS, follow the following steps:
+
+\[Be sure to clear the previous analyses before running this one. For example, disable Histograms\]
+
+- **Analyze \> Descriptive Statistics \> Frequencies**.
+- Move `Primary_Coping_Strategy` to the Variable(s) box.
+- Check the **Display frequency tables** box.
+- Click **OK**.
+
+### Visualizing Discrete Variables
+
+To visualize a discrete variable such as `Primary_Coping_Strategy`, a **bar chart** is one of the most reliable tools. Follow the following steps to create a bar chart in SPSS:
+
+- **Analyze \> Descriptive Statistics \> Frequencies**.
+- Move `Primary_Coping_Strategy` to the Variable(s) box.
+- Click **Charts**, select **Bar charts**,\
+- Uncheck the **Display frequency tables** box.
+- Click **OK**.
+
+Keep the bar chart in your output.
+
+::: callout-tip
+Based on the frequency table and bar chart, which coping strategy was the most common among the sample? Report the mode in words, along with its frequency and percentage.
+:::
+
+## Part D — Analyzing Data Across Groups
+
+Although analyzing variables separately is useful, the complexity of life often require us to look at multiple variables together. For example, we may want to know if students who sleep more hours have lower test anxiety scores. To do this, we can use a scatterplot to visualize the relationship between two continuous variables.
+
+Here is how to create a scatterplot for sleep hours vs test anxiety scores in SPSS:
+
+- **Graphs \> Chart Builder**.
+- Select **Scatter/Dot** from the gallery, then drag the simple scatter icon to the chart preview area.
+- Drag `Sleep_Hours_Prior_Night` to the x-axis and `Test_Anxiety_Score` to the y-axis. Click **OK**. Keep the scatterplot in your output.
+
+We may also want to compare the mean test anxiety scores by coping strategy. To do this, we can use a bar chart to visualize the mean test anxiety scores for each coping strategy.
+
+- **Graphs \> Chart Builder**.
+- Select **Bar** from the gallery, then drag the simple bar icon to the chart preview
+- Drag `Primary_Coping_Strategy` to the x-axis and `Test_Anxiety_Score` to the y-axis. Click **OK**. By default, SPSS will calculate the mean for each group. Keep the bar chart in your output.
+
+::: callout-tip
+## Checkpoint
+
+- Based on the scatterplot, is there a relationship between sleep hours and test anxiety scores?
+- Based on the bar chart, which coping strategy is associated with the lowest mean test anxiety score?
+:::
+
+## APA-Style Reporting Tips
+
+APA-style results writing should be accurate, concise, and tied to the research question. Use the statistics you produced in SPSS—not estimates from the graph.
+
+- Report the sample size as *N* when referring to the whole sample.
+- Report the mean as *M* and the standard deviation as *SD*.
+- Report the median as *Mdn* when it is the better summary for a skewed distribution.
+- Report a categorical mode in words, followed by its frequency (*n*) and percentage when useful.
+- Round consistently, typically to two decimal places unless your instructor directs otherwise.
+- Describe the distribution when that explains why you selected the median instead of the mean.
+
+### Build your Results Paragraph
+
+Use this template to write a paragraph that answers the research question:
+
+> The sample (*N* = ***) reported an average of M*** **=** hours of sleep (*SD* = ***; Mdn*** **=** ). Participants recalled an average of *M* = \_\_\_ words (*SD* = ***) on the memory task. The modal coping strategy was \[strategy\]** (n* = , ***%). Test-anxiety scores were \[roughly symmetric / positively skewed / negatively skewed\]; therefore, the \[mean / median\] was the most appropriate indicator of a typical score (M*** **or *Mdn* =** ). Overall, these results suggest that \[one sentence summarizing the sample descriptively without making a causal claim\].
+
+## Take-Home Lab Exercises
+
+1.  Use SPSS to generate the mean, median, and mode for the `Memory_Recall_Score` variable.
+2.  Create a histogram to visualize the distribution of `Memory_Recall_Score` scores. Describe the distribution of `Memory_Recall_Score` based on the histogram.
+3.  Create a boxplot to visualize the distribution of `Memory_Recall_Score` scores. Describe the distribution of `Memory_Recall_Score` based on the boxplot.
+4.  Use SPSS to generate a bar graph comparing the mean memory recall across the five coping strategies. Comment on which coping strategy is associated with the highest mean memory recall score.
+
+## Submission checklist
+
+- [ ] A saved SPSS data file with correct value labels and measurement levels.
+- [ ] SPSS output containing all the analyses performed.
+- [ ] Completed responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include screenshots of the relevant software outputs where necessary.
