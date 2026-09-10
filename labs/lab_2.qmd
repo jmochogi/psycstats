@@ -46,7 +46,7 @@ By the end of this lab, you should be able to:
 - In **Variable View**, enter the **value labels** and **measurement levels** below.
 
 | Variable | Description / labels | Measure |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | `Participant_id` | Participant identification number | Nominal |
 | `Primary_coping_strategy` | 1 = Exercise;<br> 2 = Social Support;<br> 3 = Avoidance;<br> 4 = Planning;<br> 5= Cognitive Reframing | Nominal |
 | `Sleep_Hours_Prior_Night` | Hours slept the night before the exam | Scale |
@@ -55,8 +55,8 @@ By the end of this lab, you should be able to:
 
 ::: callout-tip
 ## Checkpoint
-
-Save the data file as `lab_2_yourlastname.sav`.
+- Double check that you have entered the value labels and measurement levels correctly.
+- Save the data file as `lab_2_yourlastname.sav`.
 :::
 
 ## Part B — Analyzing Continuous Variables
@@ -158,7 +158,7 @@ Keep the bar chart in your output.
 Based on the frequency table and bar chart, which coping strategy was the most common among the sample? Report the mode in words, along with its frequency and percentage.
 :::
 
-## Part D — Analyzing Data Across Groups
+## Part D — Analyzing  Multiple Variables
 
 Although analyzing variables separately is useful, the complexity of life often require us to look at multiple variables together. For example, we may want to know if students who sleep more hours have lower test anxiety scores. To do this, we can use a scatterplot to visualize the relationship between two continuous variables.
 
@@ -179,6 +179,7 @@ We may also want to compare the mean test anxiety scores by coping strategy. To 
 
 - Based on the scatterplot, is there a relationship between sleep hours and test anxiety scores?
 - Based on the bar chart, which coping strategy is associated with the lowest mean test anxiety score?
+- Save your SPSS output file as `Lab_2_Output_YourLastName.spv`.
 :::
 
 ## APA-Style Reporting Tips
