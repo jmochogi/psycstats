@@ -29,11 +29,11 @@ This is a **descriptive** question. We will use the mean, median, and mode to de
 
 By the end of this lab, you should be able to:
 
-1.  Import a excel format dataset into SPSS and set up variable names, value labels, and measurement levels.\
-    Select the mean, median, or mode that best represents a variable.
-2.  Use SPSS to create frequency tables, descriptive statistics, and histograms.
-3.  Explain how an extreme score influences the mean and median.
-4.  Write a concise APA-style descriptive-results paragraph.
+1.  Import an excel format dataset into SPSS and set up variable names, value labels, and measurement levels.
+2.  Use SPSS to run descriptive summary statistics (central tendency) and basic data visualizations for both continuous and discrete variables.
+3.  Explain the effect of extreme scores on measures of central tendency such as the mean and the median.
+4. Perform simple transformations on continuous variables and explain the effect of these transformations on measures of central tendency.
+5.  Write a concise APA-style descriptive-results paragraph.
 
 ## Part A — Importing Data into SPSS
 
@@ -48,10 +48,10 @@ By the end of this lab, you should be able to:
 | Variable | Description / labels | Measure |
 |------------------------|------------------------|------------------------|
 | `Participant_id` | Participant identification number | Nominal |
-| `Primary_coping_strategy` | 1 = Exercise;<br> 2 = Social Support;<br> 3 = Avoidance;<br> 4 = Planning;<br> 5= Cognitive Reframing | Nominal |
-| `Sleep_Hours_Prior_Night` | Hours slept the night before the exam | Scale |
+| `Sleep_Hours_Prior_Night` |Hours slept the night before the exam| Scale |
+| `Memory_Recall_Score` |  Number of words recalled correctly; possible range 0–20   | Scale |
 | `Test_Anxiety_Score` | Test-anxiety score; possible range 0–100, higher = more anxiety | Scale |
-| `Memory_Recall_Score` | Number of words recalled correctly; possible range 0–20 | Scale |
+|`Primary_coping_strategy`  |1 = Exercise;<br> 2 = Social Support;<br> 3 = Avoidance;<br> 4 = Planning;<br> 5= Cognitive Reframing | Nominal |
 
 ::: callout-tip
 ## Checkpoint
@@ -63,16 +63,17 @@ By the end of this lab, you should be able to:
 
 ## Central Tendency
 
-We want to find the "typical hours of sleep" for the sampled students by finding the **Mean**, **Mode**, and **Median** using SPSS. Follow the following steps:
+We want to find the "typical hours of sleep" (a continuous variable) for the sampled students by finding the **Mean**, **Mode**, and **Median** using SPSS. Follow the following steps:
 
 - **Analyze \> Descriptive Statistics \> Frequencies**.
-- Move `sleep_hours` to the Variable(s) box.
-- Click **Statistics**, and check **Mode**, **Meam**, and **Median**
-- Click **Continue**, then OK. Keep the frequency table in your output.
+- Move `Sleep_Hours_Prior_Night` to the Variable(s) box. Check the **Display frequency tables** box.
+- Click **Statistics**, and check boxes for **Mean**, **Median**, and **Mode**
+- Click **Continue**, then **OK**.
+
+The output should show both the frequency table and the three measures of central tendency for `Sleep_Hours_Prior_Night`.
 
 ::: callout-tip
 ## Checkpoint
-
 1.  Report the three measures of center.
 2.  Which of the three measures is the most reliable and why?
 :::
@@ -82,21 +83,21 @@ We want to find the "typical hours of sleep" for the sampled students by finding
 To visualize the distribution of a continuous variable such as `sleep_hours`, a histogram is one of the most reliable tools. Follow the following steps to create a histogram in SPSS:
 
 - **Analyze \> Descriptive Statistics \> Frequencies**.
-- Move `sleep_hours` to the Variable(s) box.
+- Move `Sleep_Hours_Prior_Night` to the Variable(s) box.
 - Click **Charts**, select **Histograms**, and check **Display normal curve**.
-- Click **Continue**, then OK. Keep the histogram in your output.
+- Click **Continue**, then **OK**. Keep the histogram in your output.
 
 ::: callout-tip
 ## Checkpoint
 
-How would you describe the distribution of sleep hours? Is the histogram roughly symmetric, positively skewed, or negatively skewed?
+How would you describe the distribution of sleep hours? Is the histogram roughly symmetric, positively skewed, or negatively skewed? The overlayed normal curve can help you determine this.
 :::
 
-Another tool that can be used to visualize the distribution of a continuous variable is a boxplot. Follow the following steps to create a boxplot in SPSS:
+Another tool that can be used to visualize the distribution of a continuous variable is a box plot. Follow the following steps to create a box plot for `Sleep_Hours_Prior_Night` in SPSS:
 
 - **Graphs \> Chart Builder**.
-- Select **Boxplot** from the gallery, then drag the simple boxplot icon to the chart preview area.
-- Drag `sleep_hours` to the y-axis and click **OK**. Keep the box plot in your output.
+- Select **Boxplot** from the gallery, then drag the simple box plot icon to the chart preview area.
+- Drag `Sleep_Hours_Prior_Night` to the y-axis and click **OK**. Keep the box plot in your output.
 
 ::: callout-tip
 ## Checkpoint
@@ -106,7 +107,7 @@ How would you describe the distribution of sleep hours based on the box plot?
 
 ### Extreme Scores
 
-Presence of extreme scores (outliers) can influence central tendency. Change the sleet hours for the last participant (id = 24) to 20 hours. Re-run the analysis for `sleep_hours` and record the new mean, median, and mode. - How does this change affect these values? In this case, which value is more reliable? - How do the distributions change based on the histogram and box plot?
+Presence of extreme scores (suspected outliers) can influence central tendency. Change the sleep hours for the last participant (id = 24) to 22 hours. Re-run the analysis for `Sleep_Hours_Prior_Night` and record the new mean, median, and mode. - How does this change affect these values? In this case, which value is more reliable? - How do the distributions change based on the histogram and box plot?
 
 ### Simple Transformations on Continuous Variables
 
@@ -129,7 +130,7 @@ How did the mean and median anxiety change after adding 5 to each individual sco
 
 ## Part C — Analyzing Discrete Variables
 
-In most cases, summary statistics such as the mean and median are not useful for discrete variables measured at the nominal or ordinal level. This is because it doesnt make mathematical sense to add two categories (e.g Male +Female). For these variables, the **mode** can be used to tell us the category with the highest representation (frequency). A frequency distribution table can be made to identify this.
+In most cases, summary statistics such as the mean and median are not useful for discrete variables measured at the nominal or ordinal level. This is because it doesn't make mathematical sense to add two categories (e.g Male +Female). For these variables, the **mode** can be used to tell us the category with the highest representation (frequency). A frequency distribution table can be made to identify this.
 
 ### Frequency Distribution Table for Discrete Variables
 
@@ -202,8 +203,8 @@ Use this template to write a paragraph that answers the research question:
 ## Take-Home Lab Exercises
 
 1.  Use SPSS to generate the mean, median, and mode for the `Memory_Recall_Score` variable.
-2.  Create a histogram to visualize the distribution of `Memory_Recall_Score` scores. Describe the distribution of `Memory_Recall_Score` based on the histogram.
-3.  Create a boxplot to visualize the distribution of `Memory_Recall_Score` scores. Describe the distribution of `Memory_Recall_Score` based on the boxplot.
+2.  Create a histogram to visualize the distribution of `Memory_Recall_Score`. Describe the distribution of `Memory_Recall_Score` based on the histogram.
+3.  Create a box plot to visualize the distribution of `Memory_Recall_Score`. Describe the distribution of this variable based on the box plot. What insights can you draw based on the box plot that would be difficult to see in the histogram?
 4.  Use SPSS to generate a bar graph comparing the mean memory recall across the five coping strategies. Comment on which coping strategy is associated with the highest mean memory recall score.
 
 ## Submission checklist

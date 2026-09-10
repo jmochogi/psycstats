@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="">
-<meta name="dcterms.date" content="2026-09-09">
+<meta name="dcterms.date" content="2026-09-10">
 
 <title>Lab 2: Descriptive Statistics - Central Tendency &amp; Data Visualization – PSYC 20700 - Statistics in Psychology</title>
 <style>
@@ -241,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 9, 2026</p>
+      <p class="date">September 10, 2026</p>
     </div>
   </div>
   
@@ -266,10 +266,10 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <p>By the end of this lab, you should be able to:</p>
 <ol type="1">
-<li>Import a excel format dataset into SPSS and set up variable names, value labels, and measurement levels.<br>
-Select the mean, median, or mode that best represents a variable.</li>
-<li>Use SPSS to create frequency tables, descriptive statistics, and histograms.</li>
-<li>Explain how an extreme score influences the mean and median.</li>
+<li>Import an excel format dataset into SPSS and set up variable names, value labels, and measurement levels.</li>
+<li>Use SPSS to run descriptive summary statistics (central tendency) and basic data visualizations for both continuous and discrete variables.</li>
+<li>Explain the effect of extreme scores on measures of central tendency such as the mean and the median.</li>
+<li>Perform simple transformations on continuous variables and explain the effect of these transformations on measures of central tendency.</li>
 <li>Write a concise APA-style descriptive-results paragraph.</li>
 </ol>
 </section>
@@ -301,13 +301,13 @@ Select the mean, median, or mode that best represents a variable.</li>
 <td>Nominal</td>
 </tr>
 <tr class="even">
-<td><code>Primary_coping_strategy</code></td>
-<td>1 = Exercise;<br> 2 = Social Support;<br> 3 = Avoidance;<br> 4 = Planning;<br> 5= Cognitive Reframing</td>
-<td>Nominal</td>
-</tr>
-<tr class="odd">
 <td><code>Sleep_Hours_Prior_Night</code></td>
 <td>Hours slept the night before the exam</td>
+<td>Scale</td>
+</tr>
+<tr class="odd">
+<td><code>Memory_Recall_Score</code></td>
+<td>Number of words recalled correctly; possible range 0–20</td>
 <td>Scale</td>
 </tr>
 <tr class="even">
@@ -316,9 +316,9 @@ Select the mean, median, or mode that best represents a variable.</li>
 <td>Scale</td>
 </tr>
 <tr class="odd">
-<td><code>Memory_Recall_Score</code></td>
-<td>Number of words recalled correctly; possible range 0–20</td>
-<td>Scale</td>
+<td><code>Primary_coping_strategy</code></td>
+<td>1 = Exercise;<br> 2 = Social Support;<br> 3 = Avoidance;<br> 4 = Planning;<br> 5= Cognitive Reframing</td>
+<td>Nominal</td>
 </tr>
 </tbody>
 </table>
@@ -344,13 +344,14 @@ Checkpoint
 </section>
 <section id="central-tendency" class="level2">
 <h2 class="anchored" data-anchor-id="central-tendency">Central Tendency</h2>
-<p>We want to find the “typical hours of sleep” for the sampled students by finding the <strong>Mean</strong>, <strong>Mode</strong>, and <strong>Median</strong> using SPSS. Follow the following steps:</p>
+<p>We want to find the “typical hours of sleep” (a continuous variable) for the sampled students by finding the <strong>Mean</strong>, <strong>Mode</strong>, and <strong>Median</strong> using SPSS. Follow the following steps:</p>
 <ul>
 <li><strong>Analyze &gt; Descriptive Statistics &gt; Frequencies</strong>.</li>
-<li>Move <code>sleep_hours</code> to the Variable(s) box.</li>
-<li>Click <strong>Statistics</strong>, and check <strong>Mode</strong>, <strong>Meam</strong>, and <strong>Median</strong></li>
-<li>Click <strong>Continue</strong>, then OK. Keep the frequency table in your output.</li>
+<li>Move <code>Sleep_Hours_Prior_Night</code> to the Variable(s) box. Check the <strong>Display frequency tables</strong> box.</li>
+<li>Click <strong>Statistics</strong>, and check boxes for <strong>Mean</strong>, <strong>Median</strong>, and <strong>Mode</strong></li>
+<li>Click <strong>Continue</strong>, then <strong>OK</strong>.</li>
 </ul>
+<p>The output should show both the frequency table and the three measures of central tendency for <code>Sleep_Hours_Prior_Night</code>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -372,9 +373,9 @@ Checkpoint
 <p>To visualize the distribution of a continuous variable such as <code>sleep_hours</code>, a histogram is one of the most reliable tools. Follow the following steps to create a histogram in SPSS:</p>
 <ul>
 <li><strong>Analyze &gt; Descriptive Statistics &gt; Frequencies</strong>.</li>
-<li>Move <code>sleep_hours</code> to the Variable(s) box.</li>
+<li>Move <code>Sleep_Hours_Prior_Night</code> to the Variable(s) box.</li>
 <li>Click <strong>Charts</strong>, select <strong>Histograms</strong>, and check <strong>Display normal curve</strong>.</li>
-<li>Click <strong>Continue</strong>, then OK. Keep the histogram in your output.</li>
+<li>Click <strong>Continue</strong>, then <strong>OK</strong>. Keep the histogram in your output.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -386,14 +387,14 @@ Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>How would you describe the distribution of sleep hours? Is the histogram roughly symmetric, positively skewed, or negatively skewed?</p>
+<p>How would you describe the distribution of sleep hours? Is the histogram roughly symmetric, positively skewed, or negatively skewed? The overlayed normal curve can help you determine this.</p>
 </div>
 </div>
-<p>Another tool that can be used to visualize the distribution of a continuous variable is a boxplot. Follow the following steps to create a boxplot in SPSS:</p>
+<p>Another tool that can be used to visualize the distribution of a continuous variable is a box plot. Follow the following steps to create a box plot for <code>Sleep_Hours_Prior_Night</code> in SPSS:</p>
 <ul>
 <li><strong>Graphs &gt; Chart Builder</strong>.</li>
-<li>Select <strong>Boxplot</strong> from the gallery, then drag the simple boxplot icon to the chart preview area.</li>
-<li>Drag <code>sleep_hours</code> to the y-axis and click <strong>OK</strong>. Keep the box plot in your output.</li>
+<li>Select <strong>Boxplot</strong> from the gallery, then drag the simple box plot icon to the chart preview area.</li>
+<li>Drag <code>Sleep_Hours_Prior_Night</code> to the y-axis and click <strong>OK</strong>. Keep the box plot in your output.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -411,7 +412,7 @@ Checkpoint
 </section>
 <section id="extreme-scores" class="level3">
 <h3 class="anchored" data-anchor-id="extreme-scores">Extreme Scores</h3>
-<p>Presence of extreme scores (outliers) can influence central tendency. Change the sleet hours for the last participant (id = 24) to 20 hours. Re-run the analysis for <code>sleep_hours</code> and record the new mean, median, and mode. - How does this change affect these values? In this case, which value is more reliable? - How do the distributions change based on the histogram and box plot?</p>
+<p>Presence of extreme scores (suspected outliers) can influence central tendency. Change the sleep hours for the last participant (id = 24) to 22 hours. Re-run the analysis for <code>Sleep_Hours_Prior_Night</code> and record the new mean, median, and mode. - How does this change affect these values? In this case, which value is more reliable? - How do the distributions change based on the histogram and box plot?</p>
 </section>
 <section id="simple-transformations-on-continuous-variables" class="level3">
 <h3 class="anchored" data-anchor-id="simple-transformations-on-continuous-variables">Simple Transformations on Continuous Variables</h3>
@@ -441,7 +442,7 @@ Checkpoint
 </section>
 <section id="part-c-analyzing-discrete-variables" class="level2">
 <h2 class="anchored" data-anchor-id="part-c-analyzing-discrete-variables">Part C — Analyzing Discrete Variables</h2>
-<p>In most cases, summary statistics such as the mean and median are not useful for discrete variables measured at the nominal or ordinal level. This is because it doesnt make mathematical sense to add two categories (e.g Male +Female). For these variables, the <strong>mode</strong> can be used to tell us the category with the highest representation (frequency). A frequency distribution table can be made to identify this.</p>
+<p>In most cases, summary statistics such as the mean and median are not useful for discrete variables measured at the nominal or ordinal level. This is because it doesn’t make mathematical sense to add two categories (e.g Male +Female). For these variables, the <strong>mode</strong> can be used to tell us the category with the highest representation (frequency). A frequency distribution table can be made to identify this.</p>
 <section id="frequency-distribution-table-for-discrete-variables" class="level3">
 <h3 class="anchored" data-anchor-id="frequency-distribution-table-for-discrete-variables">Frequency Distribution Table for Discrete Variables</h3>
 <p>A frequency Distribution table is a straight forward tool that can be used to summarize and organize a discrete nominal variable such as <code>Primary_Coping_Startegy</code>. To make the table in SPSS, follow the following steps:</p>
@@ -536,8 +537,8 @@ Checkpoint
 <h2 class="anchored" data-anchor-id="take-home-lab-exercises">Take-Home Lab Exercises</h2>
 <ol type="1">
 <li>Use SPSS to generate the mean, median, and mode for the <code>Memory_Recall_Score</code> variable.</li>
-<li>Create a histogram to visualize the distribution of <code>Memory_Recall_Score</code> scores. Describe the distribution of <code>Memory_Recall_Score</code> based on the histogram.</li>
-<li>Create a boxplot to visualize the distribution of <code>Memory_Recall_Score</code> scores. Describe the distribution of <code>Memory_Recall_Score</code> based on the boxplot.</li>
+<li>Create a histogram to visualize the distribution of <code>Memory_Recall_Score</code>. Describe the distribution of <code>Memory_Recall_Score</code> based on the histogram.</li>
+<li>Create a box plot to visualize the distribution of <code>Memory_Recall_Score</code>. Describe the distribution of this variable based on the box plot. What insights can you draw based on the box plot that would be difficult to see in the histogram?</li>
 <li>Use SPSS to generate a bar graph comparing the mean memory recall across the five coping strategies. Comment on which coping strategy is associated with the highest mean memory recall score.</li>
 </ol>
 </section>
