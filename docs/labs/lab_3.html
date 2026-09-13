@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 4: Measuring Variability – PSYC 20700 - Statistics in Psychology</title>
+<title>Lab 3: Measuring Variability – PSYC 20700 - Statistics in Psychology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../labs/lab_2.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -96,10 +97,10 @@ window.Quarto = {
 };
 </script>
 
-<meta property="og:title" content="Lab 4: Measuring Variability – PSYC 20700 - Statistics in Psychology">
+<meta property="og:title" content="Lab 3: Measuring Variability – PSYC 20700 - Statistics in Psychology">
 <meta property="og:description" content="Range, Interquartile Range, Variance, and Standard Deviation in SPSS">
 <meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
-<meta name="twitter:title" content="Lab 4: Measuring Variability – PSYC 20700 - Statistics in Psychology">
+<meta name="twitter:title" content="Lab 3: Measuring Variability – PSYC 20700 - Statistics in Psychology">
 <meta name="twitter:description" content="Range, Interquartile Range, Variance, and Standard Deviation in SPSS">
 <meta name="twitter:image" content="https://jmochogi.github.io/psycstats/labs/img/twitter-card.png">
 <meta name="twitter:creator" content="@jmochogi">
@@ -115,7 +116,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Lab 4: Measuring Variability</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_0.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_3.html">Lab 3</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -209,6 +210,12 @@ window.Quarto = {
  <span class="menu-text">Lab 2</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab_3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 3</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -225,37 +232,38 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#importing-data" id="toc-importing-data" class="nav-link" data-scroll-target="#importing-data">Importing Data</a></li>
-  <li><a href="#part-1-why-we-measure-variability" id="toc-part-1-why-we-measure-variability" class="nav-link" data-scroll-target="#part-1-why-we-measure-variability">Part 1 — Why We Measure Variability</a></li>
-  <li><a href="#part-2-the-range" id="toc-part-2-the-range" class="nav-link" data-scroll-target="#part-2-the-range">Part 2 — The Range</a>
+  <li><a href="#part-a---overview" id="toc-part-a---overview" class="nav-link active" data-scroll-target="#part-a---overview">PART A - Overview</a></li>
+  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a></li>
+  <li><a href="#why-we-measure-variability" id="toc-why-we-measure-variability" class="nav-link" data-scroll-target="#why-we-measure-variability">Why We Measure Variability</a></li>
+  <li><a href="#part-b-the-range" id="toc-part-b-the-range" class="nav-link" data-scroll-target="#part-b-the-range">Part B — The Range</a>
   <ul class="collapse">
   <li><a href="#get-the-range-in-spss" id="toc-get-the-range-in-spss" class="nav-link" data-scroll-target="#get-the-range-in-spss">Get the range in SPSS</a></li>
   </ul></li>
-  <li><a href="#part-3-quartiles-and-the-interquartile-range-iqr" id="toc-part-3-quartiles-and-the-interquartile-range-iqr" class="nav-link" data-scroll-target="#part-3-quartiles-and-the-interquartile-range-iqr">Part 3 — Quartiles and the Interquartile Range (IQR)</a>
+  <li><a href="#part-c-quartiles-and-the-interquartile-range-iqr" id="toc-part-c-quartiles-and-the-interquartile-range-iqr" class="nav-link" data-scroll-target="#part-c-quartiles-and-the-interquartile-range-iqr">Part C — Quartiles and the Interquartile Range (IQR)</a>
   <ul class="collapse">
-  <li><a href="#get-quartiles-in-spss" id="toc-get-quartiles-in-spss" class="nav-link" data-scroll-target="#get-quartiles-in-spss">Get Quartiles in SPSS</a></li>
+  <li><a href="#getting-quartiles-in-spss" id="toc-getting-quartiles-in-spss" class="nav-link" data-scroll-target="#getting-quartiles-in-spss">Getting Quartiles in SPSS</a></li>
   </ul></li>
-  <li><a href="#part-4-standard-deviation-and-variance" id="toc-part-4-standard-deviation-and-variance" class="nav-link" data-scroll-target="#part-4-standard-deviation-and-variance">Part 4 — Standard Deviation and Variance</a>
+  <li><a href="#part-c-standard-deviation-and-variance" id="toc-part-c-standard-deviation-and-variance" class="nav-link" data-scroll-target="#part-c-standard-deviation-and-variance">Part C — Standard Deviation and Variance</a>
   <ul class="collapse">
-  <li><a href="#part-4a-standard-deviation-for-a-sample" id="toc-part-4a-standard-deviation-for-a-sample" class="nav-link" data-scroll-target="#part-4a-standard-deviation-for-a-sample">Part 4a — Standard Deviation for a Sample</a></li>
-  <li><a href="#part-4b-comparing-variability-by-group-sex" id="toc-part-4b-comparing-variability-by-group-sex" class="nav-link" data-scroll-target="#part-4b-comparing-variability-by-group-sex">Part 4b — Comparing Variability by Group (Sex)</a></li>
+  <li><a href="#standard-deviation-for-a-sample" id="toc-standard-deviation-for-a-sample" class="nav-link" data-scroll-target="#standard-deviation-for-a-sample">Standard Deviation for a Sample</a></li>
+  <li><a href="#comparing-variability-by-group-sex" id="toc-comparing-variability-by-group-sex" class="nav-link" data-scroll-target="#comparing-variability-by-group-sex">Comparing Variability by Group (Sex)</a></li>
   </ul></li>
-  <li><a href="#part-5-visualizing-variability" id="toc-part-5-visualizing-variability" class="nav-link" data-scroll-target="#part-5-visualizing-variability">Part 5 — Visualizing Variability</a>
+  <li><a href="#part-d-visualizing-variability" id="toc-part-d-visualizing-variability" class="nav-link" data-scroll-target="#part-d-visualizing-variability">Part D — Visualizing Variability</a>
   <ul class="collapse">
-  <li><a href="#boxplots-relate-to-the-iqr" id="toc-boxplots-relate-to-the-iqr" class="nav-link" data-scroll-target="#boxplots-relate-to-the-iqr">Boxplots (relate to the IQR)</a></li>
+  <li><a href="#boxplots-in-spss" id="toc-boxplots-in-spss" class="nav-link" data-scroll-target="#boxplots-in-spss">Boxplots in SPSS</a></li>
   <li><a href="#histograms-relate-to-the-standard-deviation" id="toc-histograms-relate-to-the-standard-deviation" class="nav-link" data-scroll-target="#histograms-relate-to-the-standard-deviation">Histograms (relate to the standard deviation)</a></li>
   </ul></li>
-  <li><a href="#part-6-putting-it-all-together-a-full-descriptive-report" id="toc-part-6-putting-it-all-together-a-full-descriptive-report" class="nav-link" data-scroll-target="#part-6-putting-it-all-together-a-full-descriptive-report">Part 6 — Putting It All Together: A Full Descriptive Report</a></li>
+  <li><a href="#part-e-apa-style-reporting" id="toc-part-e-apa-style-reporting" class="nav-link" data-scroll-target="#part-e-apa-style-reporting">Part E — APA-Style Reporting</a></li>
+  <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises" class="nav-link" data-scroll-target="#take-home-lab-exercises">Take-Home Lab Exercises</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_4.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_3.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_0.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_3.html">Lab 3</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab 4: Measuring Variability</h1>
+<h1 class="title">Lab 3: Measuring Variability</h1>
 <p class="subtitle lead">Range, Interquartile Range, Variance, and Standard Deviation in SPSS</p>
 </div>
 
@@ -273,102 +281,60 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Student Information
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Name:</strong> ________________________________<br>
-<strong>Date:</strong> ________________________________</p>
-</div>
-</div>
-<p><strong>Estimated time:</strong> 45–60 minutes<br>
-<strong>Deliverables:</strong> completed responses, SPSS output, a saved <code>.sav</code> file, and an APA-style results paragraph.</p>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>In lecture and in the textbook (Chapter 4, <em>Variability</em>), you learned that variability describes how spread out or clustered together a set of scores is. In this lab you will use <strong>SPSS</strong> to compute and interpret the four measures of variability covered in the chapter:</p>
+<p><strong>Deliverables:</strong> completed responses, SPSS data (<code>.sav</code>) and output (<code>.spv)</code> files, and a word or pdf document with answers to the take-home lab exercises.</p>
+<section id="part-a---overview" class="level2">
+<h2 class="anchored" data-anchor-id="part-a---overview">PART A - Overview</h2>
+<p>In lecture and in the textbook (Chapter 4, <em>Variability</em>), you learned that variability describes how spread out or clustered together a set of scores is. In this lab, you will use <strong>SPSS</strong> to compute and interpret the four measures of variability covered in the chapter:</p>
 <ul>
 <li>the <strong>range</strong></li>
 <li>the <strong>interquartile range (IQR)</strong></li>
 <li>the <strong>variance</strong></li>
 <li>the <strong>standard deviation</strong></li>
 </ul>
-<p>You will also learn how to visualize variability with boxplots and histograms.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Learning Objectives">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Learning Objectives
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>By the end of this lab you should be able to:</p>
-<ol type="1">
-<li>Enter or import data into SPSS and produce descriptive statistics.</li>
-<li>Compute the range and interquartile range using SPSS and explain why the IQR is often a better description of variability than the range.</li>
-<li>Compute variance and standard deviation for a set of scores using SPSS’s <strong>Descriptives</strong> procedure.</li>
-<li>Explain why SPSS’s default variance/standard deviation formulas divide by <span class="math inline">\(n-1\)</span> rather than <span class="math inline">\(N\)</span>, and connect this to the concept of <strong>degrees of freedom</strong>.</li>
-<li>Use boxplots and histograms to visualize variability.</li>
-<li>Produce and interpret a complete descriptive summary (mean <strong>and</strong> standard deviation, or median <strong>and</strong> IQR) for a real data set, written in APA style.</li>
-</ol>
-</div>
-</div>
+<p>You will also learn about commonly used tools to visualize data variability of a continuous variable.</p>
 </section>
-<section id="importing-data" class="level2">
-<h2 class="anchored" data-anchor-id="importing-data">Importing Data</h2>
-<div class="callout callout-style-default callout-important callout-titled" title="Before You Begin">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Before You Begin
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Download the data set from <a href="">here</a> then import it to SPSS. To import the data set, follow these steps:</p>
+<section id="the-data" class="level2">
+<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
+<p>A psychologist is interested in understanding reaction time and how much reaction times vary from person to person. To investigate this, the psychologist asked 120 participants to complete a Stroop task, a commonly used task in psychology that measures how quickly people can respond when they encounter conflicting information. The variable Stroop_RT_ms records each participant’s reaction time in milliseconds, with larger values indicating slower responses. Download the dataset from [this link] () then import it to SPSS. To import the data set, follow these steps:</p>
 <p><strong>File &gt; Import Data &gt; CSV Data…</strong>, browse to the file, and click <strong>OK</strong> on the import wizard (accept the default settings).</p>
-</div>
-</div>
+<p>Make sure the measurement scales are set as follows:</p>
+<ul>
+<li><code>Stroop_RT_ms</code> = Scale</li>
+<li><code>Gender</code> = Nominal</li>
+<li><code>Age</code> = Scale</li>
+<li><code>ParticipantID</code> = Nominal</li>
+</ul>
 <hr>
 </section>
-<section id="part-1-why-we-measure-variability" class="level2">
-<h2 class="anchored" data-anchor-id="part-1-why-we-measure-variability">Part 1 — Why We Measure Variability</h2>
+<section id="why-we-measure-variability" class="level2">
+<h2 class="anchored" data-anchor-id="why-we-measure-variability">Why We Measure Variability</h2>
 <p>Recall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:</p>
 <ol type="1">
 <li><strong>How spread out the distribution is</strong> — are scores clustered close together or scattered widely?</li>
 <li><strong>How well a single score represents the whole distribution</strong> — the more variability there is, the less confidence we can place in any one score (or sample) as being representative of the group.</li>
 </ol>
-<p>The textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind — you’ll be asked to reason about it below.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 1">
+<p>The textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Checkpoint 1
+Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>Without opening SPSS, which of the following would you expect to have <strong>more</strong> variability, and why?</p>
 <ul>
-<li>The ages of students in a single 4th-grade classroom. </li>
-<li>The ages of visitors at a public shopping mall. </li>
+<li>The ages of students in a single 4th-grade classroom.</li>
+<li>The ages of visitors at a public shopping mall.</li>
 </ul>
-<p>Jot down your reasoning before moving on.</p>
 </div>
 </div>
 <hr>
 </section>
-<section id="part-2-the-range" class="level2">
-<h2 class="anchored" data-anchor-id="part-2-the-range">Part 2 — The Range</h2>
+<section id="part-b-the-range" class="level2">
+<h2 class="anchored" data-anchor-id="part-b-the-range">Part B — The Range</h2>
 <p>The <strong>range</strong> is the distance between the largest and smallest score in a distribution:</p>
 <p><span class="math display">\[\text{range} = X_{max} - X_{min}\]</span></p>
 <p>It is the simplest measure of variability, but it is also <strong>unreliable</strong> because it is based on only the two most extreme scores and ignores everything in between.</p>
@@ -376,24 +342,24 @@ Checkpoint 1
 <h3 class="anchored" data-anchor-id="get-the-range-in-spss">Get the range in SPSS</h3>
 <ol type="1">
 <li>Click <strong>Analyze &gt; Descriptive Statistics &gt; Descriptives</strong>.</li>
-<li>Move <code>QuizScore</code> into the <strong>Variable(s)</strong> box.</li>
+<li>Move <code>Stroop_RT_ms</code> into the <strong>Variable(s)</strong> box.</li>
 <li>Click <strong>Options…</strong> and check <strong>Range</strong>, <strong>Minimum</strong>, and <strong>Maximum</strong>, then click <strong>Continue</strong>.</li>
 <li>Click <strong>OK</strong>.</li>
 </ol>
-<p>Look at the SPSS Output Viewer. You should see a table listing <code>N</code>, <code>Range</code>, <code>Minimum</code>, and <code>Maximum</code> for <code>QuizScore</code>.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 2">
+<p>Look at the SPSS Output Viewer. You should see a table listing <code>N</code>, <code>Range</code>, <code>Minimum</code>, and <code>Maximum</code> for <code>Stroop_RT_ms</code>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint ">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Checkpoint 2
+Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>What range does SPSS report for this data set? Confirm it by hand using the formula <span class="math inline">\(\text{Range} = X_{max} - X_{min}\)</span>. </li>
-<li>Suppose the quiz score of 32 in the data set were changed to 65, with everything else staying the same. Recompute the range by hand. What happened to the range, and what does this tell you about a weakness of using the range as a measure of variability? </li>
+<li>What range does SPSS report for this data set? Confirm it by hand using the formula <span class="math inline">\(\text{Range} = X_{max} - X_{min}\)</span>.</li>
+<li>Suppose the quiz score of 32 in the data set were changed to 65, with everything else staying the same. Recompute the range by hand. What happened to the range, and what does this tell you about a weakness of using the range as a measure of variability?</li>
 </ol>
 </div>
 </div>
@@ -401,51 +367,51 @@ Checkpoint 2
 <p><strong><em>NOTE:</em></strong> Please DO NOT close the output window! You can just click on the main file showing the variables and data when you are ready to continue with the other analyses.</p>
 </section>
 </section>
-<section id="part-3-quartiles-and-the-interquartile-range-iqr" class="level2">
-<h2 class="anchored" data-anchor-id="part-3-quartiles-and-the-interquartile-range-iqr">Part 3 — Quartiles and the Interquartile Range (IQR)</h2>
+<section id="part-c-quartiles-and-the-interquartile-range-iqr" class="level2">
+<h2 class="anchored" data-anchor-id="part-c-quartiles-and-the-interquartile-range-iqr">Part C — Quartiles and the Interquartile Range (IQR)</h2>
 <p>Because the range is so sensitive to extreme scores, researchers often prefer the <strong>interquartile range</strong>, which describes the spread of just the <strong>middle 50%</strong> of the distribution (between the 25th percentile, <span class="math inline">\(Q_1\)</span>, and the 75th percentile, <span class="math inline">\(Q_3\)</span>):</p>
 <p><span class="math display">\[IQR = Q_3 - Q_1\]</span></p>
 <p>The IQR trims off the top 25% and bottom 25% of scores, so a few unusually high or low scores do not distort it the way they distort the range.</p>
-<section id="get-quartiles-in-spss" class="level3">
-<h3 class="anchored" data-anchor-id="get-quartiles-in-spss">Get Quartiles in SPSS</h3>
+<section id="getting-quartiles-in-spss" class="level3">
+<h3 class="anchored" data-anchor-id="getting-quartiles-in-spss">Getting Quartiles in SPSS</h3>
 <p>There are two common ways to get the IQR in SPSS. Try both so you can see how they relate to one another.</p>
 <p><strong>Method A — Frequencies</strong></p>
 <ol type="1">
 <li><strong>Analyze &gt; Descriptive Statistics &gt; Frequencies</strong>.</li>
-<li>Move <code>QuizScore</code> into the <strong>Variable(s)</strong> box. (You can uncheck “Display frequency tables” if you don’t want the full table.)</li>
+<li>Move <code>Stroop_RT_ms</code> into the <strong>Variable(s)</strong> box. (Uncheck “Display frequency tables” if you don’t want the full table.)</li>
 <li>Click <strong>Statistics…</strong>, and under <strong>Percentile Values</strong> check <strong>Quartiles</strong>. Click <strong>Continue</strong>, then <strong>OK</strong>.</li>
 <li>SPSS reports the 25th, 50th, and 75th percentiles (<span class="math inline">\(Q_1\)</span>, the median, and <span class="math inline">\(Q_3\)</span>). Use the formula <span class="math inline">\(IQR = Q_3 - Q_1\)</span> to calculate the <span class="math inline">\(IQR\)</span>.</li>
 </ol>
 <p><strong>Method B — Explore</strong></p>
 <ol type="1">
 <li><strong>Analyze &gt; Descriptive Statistics &gt; Explore</strong>.</li>
-<li>Move <code>QuizScore</code> into the <strong>Dependent List</strong>.</li>
+<li>Move <code>Stroop_RT_ms</code> into the <strong>Dependent List</strong>.</li>
 <li>Under <strong>Display</strong>, choose <strong>Statistics</strong>. Click <strong>OK</strong>.</li>
 <li>Look at the <strong>Descriptives</strong> table — SPSS directly labels a row <strong>Interquartile Range</strong>.</li>
 </ol>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 3">
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Checkpoint 3
+Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>What value did SPSS report for <span class="math inline">\(Q_1\)</span>, <span class="math inline">\(Q_3\)</span> <code>QuizScore</code>? What <span class="math inline">\(IQR\)</span> value did you get by using the formula <span class="math inline">\(\text{Range}=Q_1 - Q_3\)</span>?</li>
-<li>Did Method A and Method B give you exactly the same <span class="math inline">\(IQR\)</span>? (They may differ slightly — SPSS offers several algorithms for calculating percentiles. This is worth noticing, but don’t worry about resolving the discrepancy for this lab.) </li>
-<li>Compare the <span class="math inline">\(IQR\)</span> to the <span class="math inline">\(Range\)</span> for this same variable (<code>QuizScore</code>). Which value is larger, and why does that make sense?</li>
+<li>What value did SPSS report for <span class="math inline">\(Q_1\)</span>, <span class="math inline">\(Q_3\)</span> <code>Stroop_RT_ms</code>? What <span class="math inline">\(IQR\)</span> value did you get by using the formula <span class="math inline">\(\text{Range}=Q_1 - Q_3\)</span>?</li>
+<li>Did Method A and Method B give you exactly the same <span class="math inline">\(IQR\)</span>? (They may differ slightly — SPSS offers several algorithms for calculating percentiles. This is worth noticing, but don’t worry about resolving the discrepancy for this lab.)</li>
+<li>Compare the <span class="math inline">\(IQR\)</span> to the <span class="math inline">\(Range\)</span> for this same variable (<code>Stroop_RT_ms</code>). Which value is larger, and why does that make sense?</li>
 </ol>
 </div>
 </div>
 <hr>
 </section>
 </section>
-<section id="part-4-standard-deviation-and-variance" class="level2">
-<h2 class="anchored" data-anchor-id="part-4-standard-deviation-and-variance">Part 4 — Standard Deviation and Variance</h2>
-<p>Standard deviation is the most important and most commonly used measure of variability. Conceptually, it measures the <strong>standard (average) distance</strong> between each score and the mean. The variance is the average of the <em>squared</em> deviations; the standard deviation is simply the square root of the variance, which brings the measure back into the original units of the data.</p>
+<section id="part-c-standard-deviation-and-variance" class="level2">
+<h2 class="anchored" data-anchor-id="part-c-standard-deviation-and-variance">Part C — Standard Deviation and Variance</h2>
+<p>Standard deviation is perhaps the most important and most commonly used measure of variability. Conceptually, it measures the <strong>standard (average) distance</strong> between each score and the mean. The variance is the average of the <em>squared</em> deviations; the standard deviation is simply the square root of the variance, which brings the measure back into the original units of the data.</p>
 <p>Both statistics are built from the <strong>sum of squared deviations</strong>, or <span class="math inline">\(SS\)</span>. We obtain SS by subtracting the mean from each score, squaring the difference (deviation), the summing all squared deviations. Mathematically, this is abbreviated as;</p>
 <p><span class="math display">\[SS = \Sigma(X - \bar{X})^2.\]</span></p>
 <p><strong>Population formulas</strong> (use <span class="math inline">\(\mu\)</span> for the mean and divide by <span class="math inline">\(N\)</span>). The Greek letter <span class="math inline">\(\sigma^2\)</span> means population variance while <span class="math inline">\(\sigma\)</span> means population standard deviation.</p>
@@ -467,13 +433,13 @@ Why n − 1? Degrees of Freedom
 </div>
 </div>
 <hr>
-<section id="part-4a-standard-deviation-for-a-sample" class="level3">
-<h3 class="anchored" data-anchor-id="part-4a-standard-deviation-for-a-sample">Part 4a — Standard Deviation for a Sample</h3>
-<p>We want to find the standard deviation (and other statistics) for the variable <code>Quiz score</code>. By default, SPSS computes the sample standard deviation (i.e., divides the <span class="math inline">\(SS\)</span> by <span class="math inline">\(n-1\)</span>).</p>
-<p>Follow these steps to find the sample standard deviation for the variable <code>QuizScore</code>:</p>
+<section id="standard-deviation-for-a-sample" class="level3">
+<h3 class="anchored" data-anchor-id="standard-deviation-for-a-sample">Standard Deviation for a Sample</h3>
+<p>We want to find the standard deviation (and other statistics) for the variable <code>Stroop_RT_ms</code>. By default, SPSS computes the sample standard deviation (i.e., divides the <span class="math inline">\(SS\)</span> by <span class="math inline">\(n-1\)</span>).</p>
+<p>Follow these steps to find the sample standard deviation for the variable <code>Stroop_RT_ms</code>:</p>
 <ol type="1">
 <li><strong>Analyze &gt; Descriptive Statistics &gt; Descriptives</strong>.</li>
-<li>Move <code>QuizScore</code> into the variables box, click <strong>Options…</strong>, and check <strong>Mean</strong>, <strong>Variance</strong> and <strong>Std. deviation</strong>. Click <strong>Continue</strong>, then <strong>OK</strong>.</li>
+<li>Move <code>Stroop_RT_ms</code> into the variables box, click <strong>Options…</strong>, and check <strong>Mean</strong>, <strong>Variance</strong> and <strong>Std. deviation</strong>. Click <strong>Continue</strong>, then <strong>OK</strong>.</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 4">
 <div class="callout-header d-flex align-content-center">
@@ -486,33 +452,33 @@ Checkpoint 4
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>What sample mean (<span class="math inline">\(M\)</span>), variance (<span class="math inline">\(s^2\)</span>), and standard deviation (<span class="math inline">\(s\)</span>) does SPSS report? What does the standard deviation tell you about the Quiz scores? </li>
-<li>In a sentence or two, explain in your own words why we divide by <span class="math inline">\(n-1\)</span> for a sample but by <span class="math inline">\(N\)</span> for a population. </li>
+<li>What sample mean (<span class="math inline">\(M\)</span>), variance (<span class="math inline">\(s^2\)</span>), and standard deviation (<span class="math inline">\(s\)</span>) does SPSS report?</li>
+<li>What does the standard deviation tell you about the spread of the <code>Stroop_RT_ms</code> scores?</li>
 </ol>
 </div>
 </div>
 <hr>
 </section>
-<section id="part-4b-comparing-variability-by-group-sex" class="level3">
-<h3 class="anchored" data-anchor-id="part-4b-comparing-variability-by-group-sex">Part 4b — Comparing Variability by Group (Sex)</h3>
-<p>Suppose we wanted to answer the question, “Do Quiz scores for female students spread out more than Quiz scores for male students?’</p>
+<section id="comparing-variability-by-group-sex" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-variability-by-group-sex">Comparing Variability by Group (Sex)</h3>
+<p>Suppose we wanted to answer the question, “Do <code>Stroop_RT_ms</code> scores for females spread out more than <code>Stroop_RT_ms</code> scores for male students?</p>
 <ul>
 <li>Go to Analyze &gt; Descriptive Statistics &gt; Explore.</li>
-<li>Move <code>QuizScore</code> into the ‘Dependent List’ box. Move <code>Sex</code> into the ‘Factor List’ box — this tells SPSS to split all output by male vs.&nbsp;female.</li>
+<li>Move <code>Stroop_RT_ms</code> into the ‘Dependent List’ box. Move <code>Sex</code> into the ‘Factor List’ box — this tells SPSS to split all output by male vs.&nbsp;female.</li>
 <li>Click the ‘<strong>Statistics</strong>’ button and make sure ‘<strong>Descriptives</strong>’ is checked (this gives you <em>variance</em>, <em>std deviation</em>, <em>min</em>, <em>max</em>, and <em>range</em> for each group). Select std deviation. Click ‘<strong>continue</strong>’.</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 5">
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Checkpoint 5
+Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>What sample standard deviation (<span class="math inline">\(s\)</span>) does SPSS report for each group? </li>
+<li>What sample standard deviation (<span class="math inline">\(s\)</span>) does SPSS report for each group?</li>
 <li>What is a possible explanation for the discrepancy in std deviations? (<strong><em>Note</em></strong>: there can be multiple correct answers here).</li>
 </ol>
 </div>
@@ -520,18 +486,17 @@ Checkpoint 5
 <hr>
 </section>
 </section>
-<section id="part-5-visualizing-variability" class="level2">
-<h2 class="anchored" data-anchor-id="part-5-visualizing-variability">Part 5 — Visualizing Variability</h2>
-<p>Numbers alone don’t always give you an intuitive feel for variability. Sometimes, graphs can be the tool to communicate the insights. Box plots and histograms are among the commonly used graphs to visualize variability of a numerical variable.</p>
-<section id="boxplots-relate-to-the-iqr" class="level3">
-<h3 class="anchored" data-anchor-id="boxplots-relate-to-the-iqr">Boxplots (relate to the IQR)</h3>
-<p>To create a boxplot for the variable <code>QuizScore</code>, follow these steps: 1. <strong>Graphs &gt; Legacy Dialogs &gt; Boxplot…</strong> 2. Choose <strong>Simple</strong>, and <strong>Summaries of separate variables</strong>. Click <strong>Define</strong>. 3. Move <code>QuizScore</code> into <strong>Boxes Represent</strong>. Click <strong>OK</strong>.</p>
-<p>The box itself spans from <span class="math inline">\(Q_1\)</span> to <span class="math inline">\(Q_3\)</span> (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers.</p>
+<section id="part-d-visualizing-variability" class="level2">
+<h2 class="anchored" data-anchor-id="part-d-visualizing-variability">Part D — Visualizing Variability</h2>
+<p>Numbers alone don’t always give you an intuitive feel for variability. Sometimes, graphs can be better tools to communicate the insights. <strong>Box plots</strong> and <strong>histograms</strong> are among the commonly used graphs to visualize variability of a continuous variable.</p>
+<section id="boxplots-in-spss" class="level3">
+<h3 class="anchored" data-anchor-id="boxplots-in-spss">Boxplots in SPSS</h3>
+<p>To create a boxplot for the variable <code>Stroop_RT_ms</code>, follow these steps: 1. <strong>Graphs &gt; Chart Builder</strong> 2. From the gallery list, choose <strong>Box plots</strong>, then drag the <strong>simple box plot</strong> icon to the chart preview area. Drag <code>Stroop_RT_ms</code> to the y-axis and click <strong>OK</strong>.</p>
+<p>The box itself spans from <span class="math inline">\(Q_1\)</span> to <span class="math inline">\(Q_3\)</span> (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers. Any outliers are indicated with a dot or asterisk beyond the whiskers.</p>
 </section>
 <section id="histograms-relate-to-the-standard-deviation" class="level3">
 <h3 class="anchored" data-anchor-id="histograms-relate-to-the-standard-deviation">Histograms (relate to the standard deviation)</h3>
-<p>To create a histogram for the variable <code>QuizScore</code>, follow these steps: 1. <strong>Graphs &gt; Legacy Dialogs &gt; Histogram…</strong> 2. Move <code>QuizScore</code> into the <strong>Variable</strong> box. 3. Check <strong>Display normal curve</strong>, then click <strong>OK</strong>.</p>
-<p>Recall the rule of thumb from the chapter: roughly 70% of scores in a distribution fall within one standard deviation of the mean, and roughly 95% fall within two standard deviations.</p>
+<p>Create a histogram for <code>Stroop_RT_ms</code>. The steps are similar to those for a box plot. Let your instructor know if you need help with this. Once you have your histogram, you can add a normal curve overlay to help visualize how the distribution compares to a normal distribution.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 6">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -543,9 +508,9 @@ Checkpoint 6
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li>In your boxplot, does the box (the IQR) look wide or narrow relative to the whiskers? What does that tell you about where most of the <code>QuizScores</code> are concentrated? </li>
-<li>Look at your boxplot. Does SPSS flag any scores as outliers (shown as individual dots/asterisks beyond the whiskers)? If so, which score(s)?</li>
-<li>Based on your histogram, how would you describe the spread of the QuizScores?</li>
+<li>In your boxplot, does the box (the IQR) look wide or narrow relative to the whiskers? What does that tell you about where most of the <code>Stroop_RT_ms</code> are concentrated?</li>
+<li>Look at your boxplot. Does SPSS flag any scores as outliers (shown as individual dots/asterisks beyond the whiskers)? If so, which score(s) are these?</li>
+<li>Based on your histogram, how would you describe the spread of the <code>Stroop_RT_ms</code>?</li>
 <li>How do box plots and histograms differ, and what specific information can be derived exclusively from each?</li>
 </ol>
 </div>
@@ -553,25 +518,33 @@ Checkpoint 6
 <hr>
 </section>
 </section>
-<section id="part-6-putting-it-all-together-a-full-descriptive-report" class="level2">
-<h2 class="anchored" data-anchor-id="part-6-putting-it-all-together-a-full-descriptive-report">Part 6 — Putting It All Together: A Full Descriptive Report</h2>
-<p>A real research report almost never presents just one statistic in isolation — central tendency and variability are reported <strong>together</strong> (e.g., “<span class="math inline">\(M = 12.45\)</span>, <span class="math inline">\(SD = 3.70\)</span>” or, for skewed data, the median accompanied by the IQR).</p>
-<p>Using SPSS, produce all of the following for the variable <code>TextMessages</code>, representing the average number of text messages a student sent per day. - Mean and Median - Standard deviation and variance - Range - Interquartile Range - Boxplot - A histogram with the normal curve overlay.</p>
+<section id="part-e-apa-style-reporting" class="level2">
+<h2 class="anchored" data-anchor-id="part-e-apa-style-reporting">Part E — APA-Style Reporting</h2>
+<p>In journals following the APA style, the standard deviation (abbreviated as SD) and the mean (abbreviated as M) are reported in parentheses after the mean, e.g., <span class="math inline">\(M = 12.45\)</span>, <span class="math inline">\(SD = 3.70\)</span>. For skewed data, the median is reported with the IQR, e.g., <span class="math inline">\(Mdn = 12.45\)</span>, <span class="math inline">\(IQR = 3.70\)</span>.). Here is an example of a paragraph that reports the mean and standard deviation for a hypothetical memory recall test:</p>
+<blockquote class="blockquote">
+<p>Female respondents displayed higher memory recall (<strong><em>M</em></strong> = 12.45, <strong><em>SD</em></strong> = 3.70) than male respondents (<strong><em>M</em></strong> = 10.20, <strong><em>SD</em></strong> = 2.80).</p>
+</blockquote>
 <hr>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 7 (Comprehensive)">
+<div class="callout callout-style-default callout-tip callout-titled" title="&quot;Checkpoint">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Checkpoint 7 (Comprehensive)
+“Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Write one APA-style sentence summarizing the central tendency and variability of the <code>TextMessages</code>, following the format from the chapter, e.g.: *“The daily number of text messages were, on average, moderate and fairly variable (M = <strong>, SD =</strong>* ).” Fill in your own values.</p>
+<p>Write one APA-style sentence summarizing the central tendency and variability of the <code>Stroop_RT_ms</code>. In your paragraph, compare the variability of <code>Stroop_RT_ms</code> for males and females.</p>
 </div>
 </div>
 <hr>
+</section>
+<section id="take-home-lab-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-lab-exercises">Take-Home Lab Exercises</h2>
+<ol type="1">
+<li></li>
+</ol>
 
 
 </section>
@@ -994,6 +967,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../labs/lab_2.html" class="pagination-link" aria-label="Lab 2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 2</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

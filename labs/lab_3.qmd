@@ -1,0 +1,217 @@
+---
+title: "Lab 3: Measuring Variability"
+subtitle: "Range, Interquartile Range, Variance, and Standard Deviation in SPSS"
+format:
+  html:
+    toc: true
+    number-sections: false
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    pdf-engine: xelatex
+execute:
+  echo: true
+---
+
+**Deliverables:** completed responses, SPSS data (`.sav`) and output (`.spv)` files, and a word or pdf document with answers to the take-home lab exercises.
+
+## PART A - Overview
+
+In lecture and in the textbook (Chapter 4, *Variability*), you learned that variability describes how spread out or clustered together a set of scores is. In this lab, you will use **SPSS** to compute and interpret the four measures of variability covered in the chapter:
+
+- the **range**
+- the **interquartile range (IQR)**
+- the **variance**
+- the **standard deviation**
+
+You will also learn about commonly used tools to visualize data variability of a continuous variable.
+
+## The Data
+
+A psychologist is interested in understanding reaction time and how much reaction times vary from person to person. To investigate this, the psychologist asked 120 participants to complete a Stroop task, a commonly used task in psychology that measures how quickly people can respond when they encounter conflicting information. The variable Stroop_RT_ms records each participant’s reaction time in milliseconds, with larger values indicating slower responses. Download the dataset from \[this link\] () then import it to SPSS. To import the data set, follow these steps:
+
+**File \> Import Data \> CSV Data...**, browse to the file, and click **OK** on the import wizard (accept the default settings).
+
+Make sure the measurement scales are set as follows:
+
+- `Stroop_RT_ms` = Scale
+- `Gender` = Nominal
+- `Age` = Scale
+- `ParticipantID` = Nominal
+
+------------------------------------------------------------------------
+
+## Why We Measure Variability
+
+Recall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:
+
+1.  **How spread out the distribution is** — are scores clustered close together or scattered widely?
+2.  **How well a single score represents the whole distribution** — the more variability there is, the less confidence we can place in any one score (or sample) as being representative of the group.
+
+The textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind.
+
+::: {.callout-tip title="Checkpoint"}
+Without opening SPSS, which of the following would you expect to have **more** variability, and why?
+
+- The ages of students in a single 4th-grade classroom.
+- The ages of visitors at a public shopping mall.
+:::
+
+------------------------------------------------------------------------
+
+## Part B — The Range
+
+The **range** is the distance between the largest and smallest score in a distribution:
+
+$$\text{range} = X_{max} - X_{min}$$
+
+It is the simplest measure of variability, but it is also **unreliable** because it is based on only the two most extreme scores and ignores everything in between.
+
+### Get the range in SPSS
+
+1.  Click **Analyze \> Descriptive Statistics \> Descriptives**.
+2.  Move `Stroop_RT_ms` into the **Variable(s)** box.
+3.  Click **Options...** and check **Range**, **Minimum**, and **Maximum**, then click **Continue**.
+4.  Click **OK**.
+
+Look at the SPSS Output Viewer. You should see a table listing `N`, `Range`, `Minimum`, and `Maximum` for `Stroop_RT_ms`.
+
+::: {.callout-tip title="Checkpoint "}
+1.  What range does SPSS report for this data set? Confirm it by hand using the formula $\text{Range} = X_{max} - X_{min}$.
+2.  Suppose the quiz score of 32 in the data set were changed to 65, with everything else staying the same. Recompute the range by hand. What happened to the range, and what does this tell you about a weakness of using the range as a measure of variability?
+:::
+
+------------------------------------------------------------------------
+
+***NOTE:*** Please DO NOT close the output window! You can just click on the main file showing the variables and data when you are ready to continue with the other analyses.
+
+## Part C — Quartiles and the Interquartile Range (IQR)
+
+Because the range is so sensitive to extreme scores, researchers often prefer the **interquartile range**, which describes the spread of just the **middle 50%** of the distribution (between the 25th percentile, $Q_1$, and the 75th percentile, $Q_3$):
+
+$$IQR = Q_3 - Q_1$$
+
+The IQR trims off the top 25% and bottom 25% of scores, so a few unusually high or low scores do not distort it the way they distort the range.
+
+### Getting Quartiles in SPSS
+
+There are two common ways to get the IQR in SPSS. Try both so you can see how they relate to one another.
+
+**Method A — Frequencies**
+
+1.  **Analyze \> Descriptive Statistics \> Frequencies**.
+2.  Move `Stroop_RT_ms` into the **Variable(s)** box. (Uncheck "Display frequency tables" if you don't want the full table.)
+3.  Click **Statistics...**, and under **Percentile Values** check **Quartiles**. Click **Continue**, then **OK**.
+4.  SPSS reports the 25th, 50th, and 75th percentiles ($Q_1$, the median, and $Q_3$). Use the formula $IQR = Q_3 - Q_1$ to calculate the $IQR$.
+
+**Method B — Explore**
+
+1.  **Analyze \> Descriptive Statistics \> Explore**.
+2.  Move `Stroop_RT_ms` into the **Dependent List**.
+3.  Under **Display**, choose **Statistics**. Click **OK**.
+4.  Look at the **Descriptives** table — SPSS directly labels a row **Interquartile Range**.
+
+::: {.callout-tip title="Checkpoint"}
+1.  What value did SPSS report for $Q_1$, $Q_3$ `Stroop_RT_ms`? What $IQR$ value did you get by using the formula $\text{Range}=Q_1 - Q_3$?\vspace{2in}
+2.  Did Method A and Method B give you exactly the same $IQR$? (They may differ slightly — SPSS offers several algorithms for calculating percentiles. This is worth noticing, but don't worry about resolving the discrepancy for this lab.)
+3.  Compare the $IQR$ to the $Range$ for this same variable (`Stroop_RT_ms`). Which value is larger, and why does that make sense?
+:::
+
+------------------------------------------------------------------------
+
+## Part C — Standard Deviation and Variance
+
+Standard deviation is perhaps the most important and most commonly used measure of variability. Conceptually, it measures the **standard (average) distance** between each score and the mean. The variance is the average of the *squared* deviations; the standard deviation is simply the square root of the variance, which brings the measure back into the original units of the data.
+
+Both statistics are built from the **sum of squared deviations**, or $SS$. We obtain SS by subtracting the mean from each score, squaring the difference (deviation), the summing all squared deviations. Mathematically, this is abbreviated as;
+
+$$SS = \Sigma(X - \bar{X})^2.$$
+
+**Population formulas** (use $\mu$ for the mean and divide by $N$). The Greek letter $\sigma^2$ means population variance while $\sigma$ means population standard deviation.
+
+$$\sigma^2 = \frac{SS}{N} \qquad \sigma = \sqrt{\frac{SS}{N}}$$
+
+**Sample formulas** (use $M$ for the mean and divide by $n - 1$ instead of $n$). The notation $s^2$ means sample variance while $s$ means sample standard deviation.
+
+$$s^2 = \frac{SS}{n-1} \qquad s = \sqrt{\frac{SS}{n-1}}$$
+
+::: {.callout-important title="Why n − 1? Degrees of Freedom"}
+A sample mean is calculated *from* the sample, which places a restriction on the scores: once you know the mean and all but one score, the last score is no longer free to vary — it is fully determined. Only $n - 1$ of the $n$ scores are truly free to vary, so a sample has $df = n - 1$ **degrees of freedom**. Dividing $SS$ by $n-1$ (rather than $n$) slightly *increases* the resulting value, correcting for the fact that a sample's variability tends to underestimate the population's variability. This correction makes sample variance an accurate, **unbiased estimator** of the population variance.
+
+**This is exactly what SPSS's Descriptives procedure does by default** — it always computes the *sample* formulas ($n-1$ in the denominator), because SPSS assumes your data are a sample unless you tell it otherwise. Keep this in mind whenever you are working with data that represent an entire population.
+:::
+
+------------------------------------------------------------------------
+
+### Standard Deviation for a Sample
+
+We want to find the standard deviation (and other statistics) for the variable `Stroop_RT_ms`. By default, SPSS computes the sample standard deviation (i.e., divides the $SS$ by $n-1$).
+
+Follow these steps to find the sample standard deviation for the variable `Stroop_RT_ms`:
+
+1.  **Analyze \> Descriptive Statistics \> Descriptives**.
+2.  Move `Stroop_RT_ms` into the variables box, click **Options...**, and check **Mean**, **Variance** and **Std. deviation**. Click **Continue**, then **OK**.
+
+::: {.callout-tip title="Checkpoint 4"}
+1.  What sample mean ($M$), variance ($s^2$), and standard deviation ($s$) does SPSS report?
+2.  What does the standard deviation tell you about the spread of the `Stroop_RT_ms` scores?
+:::
+
+------------------------------------------------------------------------
+
+### Comparing Variability by Group (Sex)
+
+Suppose we wanted to answer the question, "Do `Stroop_RT_ms` scores for females spread out more than `Stroop_RT_ms` scores for male students?
+
+- Go to Analyze \> Descriptive Statistics \> Explore.
+- Move `Stroop_RT_ms` into the 'Dependent List' box. Move `Sex` into the 'Factor List' box — this tells SPSS to split all output by male vs. female.
+- Click the '**Statistics**' button and make sure '**Descriptives**' is checked (this gives you *variance*, *std deviation*, *min*, *max*, and *range* for each group). Select std deviation. Click '**continue**'.
+
+::: {.callout-tip title="Checkpoint"}
+1.  What sample standard deviation ($s$) does SPSS report for each group?
+2.  What is a possible explanation for the discrepancy in std deviations? (***Note***: there can be multiple correct answers here).
+:::
+
+------------------------------------------------------------------------
+
+## Part D — Visualizing Variability
+
+Numbers alone don't always give you an intuitive feel for variability. Sometimes, graphs can be better tools to communicate the insights. **Box plots** and **histograms** are among the commonly used graphs to visualize variability of a continuous variable.
+
+### Boxplots in SPSS
+
+To create a boxplot for the variable `Stroop_RT_ms`, follow these steps: 1. **Graphs \> Chart Builder** 2. From the gallery list, choose **Box plots**, then drag the **simple box plot** icon to the chart preview area. Drag `Stroop_RT_ms` to the y-axis and click **OK**.
+
+The box itself spans from $Q_1$ to $Q_3$ (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers. Any outliers are indicated with a dot or asterisk beyond the whiskers.
+
+### Histograms (relate to the standard deviation)
+
+Create a histogram for `Stroop_RT_ms`. The steps are similar to those for a box plot. Let your instructor know if you need help with this. Once you have your histogram, you can add a normal curve overlay to help visualize how the distribution compares to a normal distribution.
+
+::: {.callout-tip title="Checkpoint 6"}
+1.  In your boxplot, does the box (the IQR) look wide or narrow relative to the whiskers? What does that tell you about where most of the `Stroop_RT_ms` are concentrated?
+2.  Look at your boxplot. Does SPSS flag any scores as outliers (shown as individual dots/asterisks beyond the whiskers)? If so, which score(s) are these?
+3.  Based on your histogram, how would you describe the spread of the `Stroop_RT_ms`?
+4.  How do box plots and histograms differ, and what specific information can be derived exclusively from each?
+:::
+
+------------------------------------------------------------------------
+
+## Part E — APA-Style Reporting
+
+In journals following the APA style, the standard deviation (abbreviated as SD) and the mean (abbreviated as M) are reported in parentheses after the mean, e.g., $M = 12.45$, $SD = 3.70$. For skewed data, the median is reported with the IQR, e.g., $Mdn = 12.45$, $IQR = 3.70$.). Here is an example of a paragraph that reports the mean and standard deviation for a hypothetical memory recall test:
+
+> Female respondents displayed higher memory recall (***M*** = 12.45, ***SD*** = 3.70) than male respondents (***M*** = 10.20, ***SD*** = 2.80).
+
+------------------------------------------------------------------------
+
+::: {.callout-tip title="\"Checkpoint"}
+Write one APA-style sentence summarizing the central tendency and variability of the `Stroop_RT_ms`. In your paragraph, compare the variability of `Stroop_RT_ms` for males and females.
+:::
+
+------------------------------------------------------------------------
+
+## Take-Home Lab Exercises
+
+1.  

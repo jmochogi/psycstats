@@ -139,39 +139,125 @@
     ]
   },
   {
-    "objectID": "labs/lab_5.html",
-    "href": "labs/lab_5.html",
-    "title": "Lab 5: Z-score Standardization in SPSS",
+    "objectID": "labs/lab_2.html",
+    "href": "labs/lab_2.html",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
     "section": "",
-    "text": "Student Information\n\n\n\nName: ________________________________\nDate: ________________________________\nEstimated time: 45–60 minutes\nDeliverables: completed responses (checkpoints), SPSS output showing analyses, a saved .sav file."
+    "text": "A psychology research team is studying student well-being during exam week. They recruited 24 undergraduate students and recorded each participant’s self-reported sleep from the prior night, test-anxiety score, performance on a short memory-recall task, and primary coping strategy.\nThe team’s research question is:\n\nDuring exam week, what are the typical levels of sleep, test anxiety, and memory recall among undergraduate students, and which coping strategy is most common?\n\nThis is a descriptive question. We will use the mean, median, and mode to describe the sample appropriately. We will also use visualizations to help us understand the distributions of the variables. Finally, we will write a concise APA-style paragraph to summarize the results.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
   },
   {
-    "objectID": "labs/lab_5.html#overview",
-    "href": "labs/lab_5.html#overview",
-    "title": "Lab 5: Z-score Standardization in SPSS",
-    "section": "Overview",
-    "text": "Overview\nAn employer is interested in identifying the top five most extroverted individuals from either assessment in the pool of applicants. Importantly the employer cant select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to \\(z-scores\\) to allow direct comparison.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you will be able to:\n\nUse SPSS to compute \\(z-scores\\) for two different assessments.\nUse SPSS to identify the top five most extroverted individuals based on \\(z-scores\\)."
+    "objectID": "labs/lab_2.html#overview-scenario",
+    "href": "labs/lab_2.html#overview-scenario",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "",
+    "text": "A psychology research team is studying student well-being during exam week. They recruited 24 undergraduate students and recorded each participant’s self-reported sleep from the prior night, test-anxiety score, performance on a short memory-recall task, and primary coping strategy.\nThe team’s research question is:\n\nDuring exam week, what are the typical levels of sleep, test anxiety, and memory recall among undergraduate students, and which coping strategy is most common?\n\nThis is a descriptive question. We will use the mean, median, and mode to describe the sample appropriately. We will also use visualizations to help us understand the distributions of the variables. Finally, we will write a concise APA-style paragraph to summarize the results.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
   },
   {
-    "objectID": "labs/lab_5.html#part-1-the-data",
-    "href": "labs/lab_5.html#part-1-the-data",
-    "title": "Lab 5: Z-score Standardization in SPSS",
-    "section": "Part 1 — The Data",
-    "text": "Part 1 — The Data\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThe tables below show the raw scores for the two extroversion assessments. The first assessment is a 10-item questionnaire with a maximum score of 20, while the second assessment is a 20-item questionnaire with a maximum score of 200.\n\nExtroversion Assessment 1\n\n\nApplicant\nScore\n\n\n\n\n1\n17\n\n\n2\n8\n\n\n3\n9\n\n\n4\n9\n\n\n5\n16\n\n\n6\n4\n\n\n7\n5\n\n\n\n\nExtroversion Assessment 2\n\n\nApplicant\nScore\n\n\n\n\n8\n149\n\n\n9\n99\n\n\n10\n192\n\n\n11\n61\n\n\n12\n62\n\n\n13\n138\n\n\n14\n184\n\n\n\n\n\n\nEntering the Variables: Open SPSS Statistics on your lab computer. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank Data Editor window with a grid of empty cells. Make sure you are under variable view\n\nRow 1: extScore\n\nClick the first cell in row 1, “Name” column. Type: extScore\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (the scores are whole numbers).\nClick the Label cell. Type: Extroversion Score\nClick the Measure cell. Click the dropdown arrow and select Scale.\n\n\n\nRow 2: assessNum\n\nClick the empty cell in row 2, “Name” column. Type: extScore\nLeave Type as the default (Numeric).\nSet the Decimals to 0.\nSet the Label to Assessment Number\nSet the Measure to nominal.\n\nIf you entered everything as per the instructions up to this point, the variable view will appear as follows:\n\n\n\n\n\nEntering the Data: After creating the variables, switch to Data View by clicking the tab at the bottom of the SPSS window. You will see a grid with two columns: extScore and assessNum. Enter the data from the tables above into the appropriate columns. For example, for Applicant 1, enter 17 in the extScore column and 1 in the assessNum column. Continue entering all the data for both assessments. Your completed data view should look like this:\n\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint 1\n\n\n\n\nWhy did we record the variable assessNum as a nominal variable in the data set even though its entries are numbers? \nA student suggested that converting the scores to percentages without finding \\(z-scores\\) would be sufficient to allow for a direct comparison between the two assessments. Do you agree or disagree with this suggestion? Why or why not?"
+    "objectID": "labs/lab_2.html#learning-objectives",
+    "href": "labs/lab_2.html#learning-objectives",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of this lab, you should be able to:\n\nImport an excel format dataset into SPSS and set up variable names, value labels, and measurement levels.\nUse SPSS to run descriptive summary statistics (central tendency) and basic data visualizations for both continuous and discrete variables.\nExplain the effect of extreme scores on measures of central tendency such as the mean and the median.\nPerform simple transformations on continuous variables and explain the effect of these transformations on measures of central tendency.\nWrite a concise APA-style descriptive-results paragraph.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
   },
   {
-    "objectID": "labs/lab_5.html#part-2-the-z-score-conversion",
-    "href": "labs/lab_5.html#part-2-the-z-score-conversion",
-    "title": "Lab 5: Z-score Standardization in SPSS",
-    "section": "Part 2 — The z-score Conversion",
-    "text": "Part 2 — The z-score Conversion\nAlthough we have one dataset, we will first need to program SPSS to treat the two assessments as separate datasets since the assessments are different. To do this, we will use the Split File function in SPSS. Follow the steps below:\n\nClick Data &gt; Split File &gt; Organize output by groups &gt; Select assessNum &gt; Click OK.\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nHighlight the column label extScore and click the arrow to move it to the Variable(s) box.\nClick the Save standardized values as variables checkbox.\nClick OK.\n\nThe output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main dataset called ZextScore. This new variable contains the \\(z-scores\\) for each applicant’s extroversion score. The data view will now look like this:\n\n\n\n\n\n\nCheckpoint 2\n\n\n\n\nBased on the computed \\(z-scores\\), which applicants are the top five most extroverted individuals? List their applicant numbers and \\(z-scores\\)."
+    "objectID": "labs/lab_2.html#part-a-importing-data-into-spss",
+    "href": "labs/lab_2.html#part-a-importing-data-into-spss",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "Part A — Importing Data into SPSS",
+    "text": "Part A — Importing Data into SPSS\n\nDownload the Exam Week Well Being Dataset. Note where the file is located (most likely downloads).\nOpen the SPSS program on your computer. Select File &gt; Import Data &gt; CSV Data. Navigate to the file location and select it.\nClick Open. In the pop-up window, ensure that Read variable names from the first row of data is checked. Click OK. An output pop up window may appear but you can ignore it and proceed to the data window. The dataset should now appear in SPSS.\nIn Variable View, enter the value labels and measurement levels below.\n\n\n\n\n\n\n\n\n\nVariable\nDescription / labels\nMeasure\n\n\n\n\nParticipant_id\nParticipant identification number\nNominal\n\n\nSleep_Hours_Prior_Night\nHours slept the night before the exam\nScale\n\n\nMemory_Recall_Score\nNumber of words recalled correctly; possible range 0–20\nScale\n\n\nTest_Anxiety_Score\nTest-anxiety score; possible range 0–100, higher = more anxiety\nScale\n\n\nPrimary_coping_strategy\n1 = Exercise; 2 = Social Support; 3 = Avoidance; 4 = Planning; 5= Cognitive Reframing\nNominal\n\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nDouble check that you have entered the value labels and measurement levels correctly.\nSave the data file as lab_2_yourlastname.sav.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
   },
   {
-    "objectID": "labs/lab_5.html#submission-checklist",
-    "href": "labs/lab_5.html#submission-checklist",
-    "title": "Lab 5: Z-score Standardization in SPSS",
-    "section": "Submission Checklist",
-    "text": "Submission Checklist\n\nA saved SPSS data (.sav) file showing the variables and data (includes \\(z-scores\\)).\nSPSS output file (.spv) showing the analyses performed.\nCompleted responses for all checkpoints in the lab. You may print a PDF from the website and hand-write your responses or use a digital annotator tool."
+    "objectID": "labs/lab_2.html#part-b-analyzing-continuous-variables",
+    "href": "labs/lab_2.html#part-b-analyzing-continuous-variables",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "Part B — Analyzing Continuous Variables",
+    "text": "Part B — Analyzing Continuous Variables",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab_2.html#central-tendency",
+    "href": "labs/lab_2.html#central-tendency",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "Central Tendency",
+    "text": "Central Tendency\nWe want to find the “typical hours of sleep” (a continuous variable) for the sampled students by finding the Mean, Mode, and Median using SPSS. Follow the following steps:\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Sleep_Hours_Prior_Night to the Variable(s) box. Check the Display frequency tables box.\nClick Statistics, and check boxes for Mean, Median, and Mode\nClick Continue, then OK.\n\nThe output should show both the frequency table and the three measures of central tendency for Sleep_Hours_Prior_Night.\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nReport the three measures of center.\nWhich of the three measures is the most reliable and why?\n\n\n\n\nVisualizing Continuous Variables (Sleep Hours)\nTo visualize the distribution of a continuous variable such as sleep_hours, a histogram is one of the most reliable tools. Follow the following steps to create a histogram in SPSS:\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Sleep_Hours_Prior_Night to the Variable(s) box.\nClick Charts, select Histograms, and check Display normal curve.\nClick Continue, then OK. Keep the histogram in your output.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nHow would you describe the distribution of sleep hours? Is the histogram roughly symmetric, positively skewed, or negatively skewed? The overlayed normal curve can help you determine this.\n\n\nAnother tool that can be used to visualize the distribution of a continuous variable is a box plot. Follow the following steps to create a box plot for Sleep_Hours_Prior_Night in SPSS:\n\nGraphs &gt; Chart Builder.\nSelect Boxplot from the gallery, then drag the simple box plot icon to the chart preview area.\nDrag Sleep_Hours_Prior_Night to the y-axis and click OK. Keep the box plot in your output.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nHow would you describe the distribution of sleep hours based on the box plot?\n\n\n\n\nExtreme Scores\nPresence of extreme scores (suspected outliers) can influence central tendency. Change the sleep hours for the last participant (id = 24) to 22 hours. Re-run the analysis for Sleep_Hours_Prior_Night and record the new mean, median, and mode. - How does this change affect these values? In this case, which value is more reliable? - How do the distributions change based on the histogram and box plot?\n\n\nSimple Transformations on Continuous Variables\nNow, imagine the research team revises the anxiety scores by adding 5 points to every participant’s score. We can do this in SPSS as follows:\n\nTransform &gt; Compute Variable.\nUnder Target Variable, write anxiety_plus_5.\nUnder Numeric Expression write Test_Anxiety_Score + 5.\nClick OK.\n\nLook at the data file and you should see a new variable called anxiety_plus_5.\nRun the Mean and median for for Test_Anxiety_Score and anxiety_plus_5.\n\n\n\n\n\n\nCheckpoint\n\n\n\nHow did the mean and median anxiety change after adding 5 to each individual score? State the rule for what happens to the mean and median when the same constant is added to every score.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab_2.html#part-c-analyzing-discrete-variables",
+    "href": "labs/lab_2.html#part-c-analyzing-discrete-variables",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "Part C — Analyzing Discrete Variables",
+    "text": "Part C — Analyzing Discrete Variables\nIn most cases, summary statistics such as the mean and median are not useful for discrete variables measured at the nominal or ordinal level. This is because it doesn’t make mathematical sense to add two categories (e.g Male +Female). For these variables, the mode can be used to tell us the category with the highest representation (frequency). A frequency distribution table can be made to identify this.\n\nFrequency Distribution Table for Discrete Variables\nA frequency Distribution table is a straight forward tool that can be used to summarize and organize a discrete nominal variable such as Primary_Coping_Startegy. To make the table in SPSS, follow the following steps:\n[Be sure to clear the previous analyses before running this one. For example, disable Histograms]\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Primary_Coping_Strategy to the Variable(s) box.\nCheck the Display frequency tables box.\nClick OK.\n\n\n\nVisualizing Discrete Variables\nTo visualize a discrete variable such as Primary_Coping_Strategy, a bar chart is one of the most reliable tools. Follow the following steps to create a bar chart in SPSS:\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Primary_Coping_Strategy to the Variable(s) box.\nClick Charts, select Bar charts,\n\nUncheck the Display frequency tables box.\nClick OK.\n\nKeep the bar chart in your output.\n\n\n\n\n\n\nTip\n\n\n\nBased on the frequency table and bar chart, which coping strategy was the most common among the sample? Report the mode in words, along with its frequency and percentage.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab_2.html#part-d-analyzing-multiple-variables",
+    "href": "labs/lab_2.html#part-d-analyzing-multiple-variables",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "Part D — Analyzing Multiple Variables",
+    "text": "Part D — Analyzing Multiple Variables\nAlthough analyzing variables separately is useful, the complexity of life often require us to look at multiple variables together. For example, we may want to know if students who sleep more hours have lower test anxiety scores. To do this, we can use a scatterplot to visualize the relationship between two continuous variables.\nHere is how to create a scatterplot for sleep hours vs test anxiety scores in SPSS:\n\nGraphs &gt; Chart Builder.\nSelect Scatter/Dot from the gallery, then drag the simple scatter icon to the chart preview area.\nDrag Sleep_Hours_Prior_Night to the x-axis and Test_Anxiety_Score to the y-axis. Click OK. Keep the scatterplot in your output.\n\nWe may also want to compare the mean test anxiety scores by coping strategy. To do this, we can use a bar chart to visualize the mean test anxiety scores for each coping strategy.\n\nGraphs &gt; Chart Builder.\nSelect Bar from the gallery, then drag the simple bar icon to the chart preview\nDrag Primary_Coping_Strategy to the x-axis and Test_Anxiety_Score to the y-axis. Click OK. By default, SPSS will calculate the mean for each group. Keep the bar chart in your output.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nBased on the scatterplot, is there a relationship between sleep hours and test anxiety scores?\nBased on the bar chart, which coping strategy is associated with the lowest mean test anxiety score?\nSave your SPSS output file as Lab_2_Output_YourLastName.spv.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab_2.html#apa-style-reporting-tips",
+    "href": "labs/lab_2.html#apa-style-reporting-tips",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "APA-Style Reporting Tips",
+    "text": "APA-Style Reporting Tips\nAPA-style results writing should be accurate, concise, and tied to the research question. Use the statistics you produced in SPSS—not estimates from the graph.\n\nReport the sample size as N when referring to the whole sample.\nReport the mean as M and the standard deviation as SD.\nReport the median as Mdn when it is the better summary for a skewed distribution.\nReport a categorical mode in words, followed by its frequency (n) and percentage when useful.\nRound consistently, typically to two decimal places unless your instructor directs otherwise.\nDescribe the distribution when that explains why you selected the median instead of the mean.\n\n\nBuild your Results Paragraph\nUse this template to write a paragraph that answers the research question:\n\nThe sample (N = ) reported an average of M = hours of sleep (SD = ; Mdn = ). Participants recalled an average of M = ___ words (SD = ) on the memory task. The modal coping strategy was [strategy] (n = , %). Test-anxiety scores were [roughly symmetric / positively skewed / negatively skewed]; therefore, the [mean / median] was the most appropriate indicator of a typical score (M or Mdn = ). Overall, these results suggest that [one sentence summarizing the sample descriptively without making a causal claim].",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab_2.html#take-home-lab-exercises",
+    "href": "labs/lab_2.html#take-home-lab-exercises",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "Take-Home Lab Exercises",
+    "text": "Take-Home Lab Exercises\n\nUse SPSS to generate the mean, median, and mode for the Memory_Recall_Score variable.\nCreate a histogram to visualize the distribution of Memory_Recall_Score. Describe the distribution of Memory_Recall_Score based on the histogram.\nCreate a box plot to visualize the distribution of Memory_Recall_Score. Describe the distribution of this variable based on the box plot. What insights can you draw based on the box plot that would be difficult to see in the histogram?\nUse SPSS to generate a bar graph comparing the mean memory recall across the five coping strategies. Comment on which coping strategy is associated with the highest mean memory recall score.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
+  },
+  {
+    "objectID": "labs/lab_2.html#submission-checklist",
+    "href": "labs/lab_2.html#submission-checklist",
+    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "section": "Submission checklist",
+    "text": "Submission checklist\n\nA saved SPSS data file with correct value labels and measurement levels.\nSPSS output containing all the analyses performed.\nCompleted responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include screenshots of the relevant software outputs where necessary.",
+    "crumbs": [
+      "Labs",
+      "Lab 2"
+    ]
   },
   {
     "objectID": "labs/lab_1.html",
@@ -317,188 +403,149 @@
     ]
   },
   {
-    "objectID": "labs/lab_2.html",
-    "href": "labs/lab_2.html",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "objectID": "labs/lab_3.html",
+    "href": "labs/lab_3.html",
+    "title": "Lab 3: Measuring Variability",
     "section": "",
-    "text": "A psychology research team is studying student well-being during exam week. They recruited 24 undergraduate students and recorded each participant’s self-reported sleep from the prior night, test-anxiety score, performance on a short memory-recall task, and primary coping strategy.\nThe team’s research question is:\n\nDuring exam week, what are the typical levels of sleep, test anxiety, and memory recall among undergraduate students, and which coping strategy is most common?\n\nThis is a descriptive question. We will use the mean, median, and mode to describe the sample appropriately. We will also use visualizations to help us understand the distributions of the variables. Finally, we will write a concise APA-style paragraph to summarize the results.",
+    "text": "Deliverables: completed responses, SPSS data (.sav) and output (.spv) files, and a word or pdf document with answers to the take-home lab exercises.",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#overview-scenario",
-    "href": "labs/lab_2.html#overview-scenario",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "",
-    "text": "A psychology research team is studying student well-being during exam week. They recruited 24 undergraduate students and recorded each participant’s self-reported sleep from the prior night, test-anxiety score, performance on a short memory-recall task, and primary coping strategy.\nThe team’s research question is:\n\nDuring exam week, what are the typical levels of sleep, test anxiety, and memory recall among undergraduate students, and which coping strategy is most common?\n\nThis is a descriptive question. We will use the mean, median, and mode to describe the sample appropriately. We will also use visualizations to help us understand the distributions of the variables. Finally, we will write a concise APA-style paragraph to summarize the results.",
+    "objectID": "labs/lab_3.html#part-a---overview",
+    "href": "labs/lab_3.html#part-a---overview",
+    "title": "Lab 3: Measuring Variability",
+    "section": "PART A - Overview",
+    "text": "PART A - Overview\nIn lecture and in the textbook (Chapter 4, Variability), you learned that variability describes how spread out or clustered together a set of scores is. In this lab, you will use SPSS to compute and interpret the four measures of variability covered in the chapter:\n\nthe range\nthe interquartile range (IQR)\nthe variance\nthe standard deviation\n\nYou will also learn about commonly used tools to visualize data variability of a continuous variable.",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#learning-objectives",
-    "href": "labs/lab_2.html#learning-objectives",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this lab, you should be able to:\n\nImport an excel format dataset into SPSS and set up variable names, value labels, and measurement levels.\nUse SPSS to run descriptive summary statistics (central tendency) and basic data visualizations for both continuous and discrete variables.\nExplain the effect of extreme scores on measures of central tendency such as the mean and the median.\nPerform simple transformations on continuous variables and explain the effect of these transformations on measures of central tendency.\nWrite a concise APA-style descriptive-results paragraph.",
+    "objectID": "labs/lab_3.html#the-data",
+    "href": "labs/lab_3.html#the-data",
+    "title": "Lab 3: Measuring Variability",
+    "section": "The Data",
+    "text": "The Data\nA psychologist is interested in understanding reaction time and how much reaction times vary from person to person. To investigate this, the psychologist asked 120 participants to complete a Stroop task, a commonly used task in psychology that measures how quickly people can respond when they encounter conflicting information. The variable Stroop_RT_ms records each participant’s reaction time in milliseconds, with larger values indicating slower responses. Download the dataset from [this link] () then import it to SPSS. To import the data set, follow these steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows:\n\nStroop_RT_ms = Scale\nGender = Nominal\nAge = Scale\nParticipantID = Nominal",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#part-a-importing-data-into-spss",
-    "href": "labs/lab_2.html#part-a-importing-data-into-spss",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "Part A — Importing Data into SPSS",
-    "text": "Part A — Importing Data into SPSS\n\nDownload the Exam Week Well Being Dataset. Note where the file is located (most likely downloads).\nOpen the SPSS program on your computer. Select File &gt; Import Data &gt; CSV Data. Navigate to the file location and select it.\nClick Open. In the pop-up window, ensure that Read variable names from the first row of data is checked. Click OK. An output pop up window may appear but you can ignore it and proceed to the data window. The dataset should now appear in SPSS.\nIn Variable View, enter the value labels and measurement levels below.\n\n\n\n\n\n\n\n\n\nVariable\nDescription / labels\nMeasure\n\n\n\n\nParticipant_id\nParticipant identification number\nNominal\n\n\nSleep_Hours_Prior_Night\nHours slept the night before the exam\nScale\n\n\nMemory_Recall_Score\nNumber of words recalled correctly; possible range 0–20\nScale\n\n\nTest_Anxiety_Score\nTest-anxiety score; possible range 0–100, higher = more anxiety\nScale\n\n\nPrimary_coping_strategy\n1 = Exercise; 2 = Social Support; 3 = Avoidance; 4 = Planning; 5= Cognitive Reframing\nNominal\n\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nDouble check that you have entered the value labels and measurement levels correctly.\nSave the data file as lab_2_yourlastname.sav.",
+    "objectID": "labs/lab_3.html#why-we-measure-variability",
+    "href": "labs/lab_3.html#why-we-measure-variability",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Why We Measure Variability",
+    "text": "Why We Measure Variability\nRecall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:\n\nHow spread out the distribution is — are scores clustered close together or scattered widely?\nHow well a single score represents the whole distribution — the more variability there is, the less confidence we can place in any one score (or sample) as being representative of the group.\n\nThe textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind.\n\n\n\n\n\n\nCheckpoint\n\n\n\nWithout opening SPSS, which of the following would you expect to have more variability, and why?\n\nThe ages of students in a single 4th-grade classroom.\nThe ages of visitors at a public shopping mall.",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#part-b-analyzing-continuous-variables",
-    "href": "labs/lab_2.html#part-b-analyzing-continuous-variables",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "Part B — Analyzing Continuous Variables",
-    "text": "Part B — Analyzing Continuous Variables",
+    "objectID": "labs/lab_3.html#part-b-the-range",
+    "href": "labs/lab_3.html#part-b-the-range",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part B — The Range",
+    "text": "Part B — The Range\nThe range is the distance between the largest and smallest score in a distribution:\n\\[\\text{range} = X_{max} - X_{min}\\]\nIt is the simplest measure of variability, but it is also unreliable because it is based on only the two most extreme scores and ignores everything in between.\n\nGet the range in SPSS\n\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nMove Stroop_RT_ms into the Variable(s) box.\nClick Options… and check Range, Minimum, and Maximum, then click Continue.\nClick OK.\n\nLook at the SPSS Output Viewer. You should see a table listing N, Range, Minimum, and Maximum for Stroop_RT_ms.\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat range does SPSS report for this data set? Confirm it by hand using the formula \\(\\text{Range} = X_{max} - X_{min}\\).\nSuppose the quiz score of 32 in the data set were changed to 65, with everything else staying the same. Recompute the range by hand. What happened to the range, and what does this tell you about a weakness of using the range as a measure of variability?\n\n\n\n\nNOTE: Please DO NOT close the output window! You can just click on the main file showing the variables and data when you are ready to continue with the other analyses.",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#central-tendency",
-    "href": "labs/lab_2.html#central-tendency",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "Central Tendency",
-    "text": "Central Tendency\nWe want to find the “typical hours of sleep” (a continuous variable) for the sampled students by finding the Mean, Mode, and Median using SPSS. Follow the following steps:\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Sleep_Hours_Prior_Night to the Variable(s) box. Check the Display frequency tables box.\nClick Statistics, and check boxes for Mean, Median, and Mode\nClick Continue, then OK.\n\nThe output should show both the frequency table and the three measures of central tendency for Sleep_Hours_Prior_Night.\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nReport the three measures of center.\nWhich of the three measures is the most reliable and why?\n\n\n\n\nVisualizing Continuous Variables (Sleep Hours)\nTo visualize the distribution of a continuous variable such as sleep_hours, a histogram is one of the most reliable tools. Follow the following steps to create a histogram in SPSS:\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Sleep_Hours_Prior_Night to the Variable(s) box.\nClick Charts, select Histograms, and check Display normal curve.\nClick Continue, then OK. Keep the histogram in your output.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nHow would you describe the distribution of sleep hours? Is the histogram roughly symmetric, positively skewed, or negatively skewed? The overlayed normal curve can help you determine this.\n\n\nAnother tool that can be used to visualize the distribution of a continuous variable is a box plot. Follow the following steps to create a box plot for Sleep_Hours_Prior_Night in SPSS:\n\nGraphs &gt; Chart Builder.\nSelect Boxplot from the gallery, then drag the simple box plot icon to the chart preview area.\nDrag Sleep_Hours_Prior_Night to the y-axis and click OK. Keep the box plot in your output.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nHow would you describe the distribution of sleep hours based on the box plot?\n\n\n\n\nExtreme Scores\nPresence of extreme scores (suspected outliers) can influence central tendency. Change the sleep hours for the last participant (id = 24) to 22 hours. Re-run the analysis for Sleep_Hours_Prior_Night and record the new mean, median, and mode. - How does this change affect these values? In this case, which value is more reliable? - How do the distributions change based on the histogram and box plot?\n\n\nSimple Transformations on Continuous Variables\nNow, imagine the research team revises the anxiety scores by adding 5 points to every participant’s score. We can do this in SPSS as follows:\n\nTransform &gt; Compute Variable.\nUnder Target Variable, write anxiety_plus_5.\nUnder Numeric Expression write Test_Anxiety_Score + 5.\nClick OK.\n\nLook at the data file and you should see a new variable called anxiety_plus_5.\nRun the Mean and median for for Test_Anxiety_Score and anxiety_plus_5.\n\n\n\n\n\n\nCheckpoint\n\n\n\nHow did the mean and median anxiety change after adding 5 to each individual score? State the rule for what happens to the mean and median when the same constant is added to every score.",
+    "objectID": "labs/lab_3.html#part-c-quartiles-and-the-interquartile-range-iqr",
+    "href": "labs/lab_3.html#part-c-quartiles-and-the-interquartile-range-iqr",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part C — Quartiles and the Interquartile Range (IQR)",
+    "text": "Part C — Quartiles and the Interquartile Range (IQR)\nBecause the range is so sensitive to extreme scores, researchers often prefer the interquartile range, which describes the spread of just the middle 50% of the distribution (between the 25th percentile, \\(Q_1\\), and the 75th percentile, \\(Q_3\\)):\n\\[IQR = Q_3 - Q_1\\]\nThe IQR trims off the top 25% and bottom 25% of scores, so a few unusually high or low scores do not distort it the way they distort the range.\n\nGetting Quartiles in SPSS\nThere are two common ways to get the IQR in SPSS. Try both so you can see how they relate to one another.\nMethod A — Frequencies\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Stroop_RT_ms into the Variable(s) box. (Uncheck “Display frequency tables” if you don’t want the full table.)\nClick Statistics…, and under Percentile Values check Quartiles. Click Continue, then OK.\nSPSS reports the 25th, 50th, and 75th percentiles (\\(Q_1\\), the median, and \\(Q_3\\)). Use the formula \\(IQR = Q_3 - Q_1\\) to calculate the \\(IQR\\).\n\nMethod B — Explore\n\nAnalyze &gt; Descriptive Statistics &gt; Explore.\nMove Stroop_RT_ms into the Dependent List.\nUnder Display, choose Statistics. Click OK.\nLook at the Descriptives table — SPSS directly labels a row Interquartile Range.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat value did SPSS report for \\(Q_1\\), \\(Q_3\\) Stroop_RT_ms? What \\(IQR\\) value did you get by using the formula \\(\\text{Range}=Q_1 - Q_3\\)?\nDid Method A and Method B give you exactly the same \\(IQR\\)? (They may differ slightly — SPSS offers several algorithms for calculating percentiles. This is worth noticing, but don’t worry about resolving the discrepancy for this lab.)\nCompare the \\(IQR\\) to the \\(Range\\) for this same variable (Stroop_RT_ms). Which value is larger, and why does that make sense?",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#part-c-analyzing-discrete-variables",
-    "href": "labs/lab_2.html#part-c-analyzing-discrete-variables",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "Part C — Analyzing Discrete Variables",
-    "text": "Part C — Analyzing Discrete Variables\nIn most cases, summary statistics such as the mean and median are not useful for discrete variables measured at the nominal or ordinal level. This is because it doesn’t make mathematical sense to add two categories (e.g Male +Female). For these variables, the mode can be used to tell us the category with the highest representation (frequency). A frequency distribution table can be made to identify this.\n\nFrequency Distribution Table for Discrete Variables\nA frequency Distribution table is a straight forward tool that can be used to summarize and organize a discrete nominal variable such as Primary_Coping_Startegy. To make the table in SPSS, follow the following steps:\n[Be sure to clear the previous analyses before running this one. For example, disable Histograms]\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Primary_Coping_Strategy to the Variable(s) box.\nCheck the Display frequency tables box.\nClick OK.\n\n\n\nVisualizing Discrete Variables\nTo visualize a discrete variable such as Primary_Coping_Strategy, a bar chart is one of the most reliable tools. Follow the following steps to create a bar chart in SPSS:\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Primary_Coping_Strategy to the Variable(s) box.\nClick Charts, select Bar charts,\n\nUncheck the Display frequency tables box.\nClick OK.\n\nKeep the bar chart in your output.\n\n\n\n\n\n\nTip\n\n\n\nBased on the frequency table and bar chart, which coping strategy was the most common among the sample? Report the mode in words, along with its frequency and percentage.",
+    "objectID": "labs/lab_3.html#part-c-standard-deviation-and-variance",
+    "href": "labs/lab_3.html#part-c-standard-deviation-and-variance",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part C — Standard Deviation and Variance",
+    "text": "Part C — Standard Deviation and Variance\nStandard deviation is perhaps the most important and most commonly used measure of variability. Conceptually, it measures the standard (average) distance between each score and the mean. The variance is the average of the squared deviations; the standard deviation is simply the square root of the variance, which brings the measure back into the original units of the data.\nBoth statistics are built from the sum of squared deviations, or \\(SS\\). We obtain SS by subtracting the mean from each score, squaring the difference (deviation), the summing all squared deviations. Mathematically, this is abbreviated as;\n\\[SS = \\Sigma(X - \\bar{X})^2.\\]\nPopulation formulas (use \\(\\mu\\) for the mean and divide by \\(N\\)). The Greek letter \\(\\sigma^2\\) means population variance while \\(\\sigma\\) means population standard deviation.\n\\[\\sigma^2 = \\frac{SS}{N} \\qquad \\sigma = \\sqrt{\\frac{SS}{N}}\\]\nSample formulas (use \\(M\\) for the mean and divide by \\(n - 1\\) instead of \\(n\\)). The notation \\(s^2\\) means sample variance while \\(s\\) means sample standard deviation.\n\\[s^2 = \\frac{SS}{n-1} \\qquad s = \\sqrt{\\frac{SS}{n-1}}\\]\n\n\n\n\n\n\nWhy n − 1? Degrees of Freedom\n\n\n\nA sample mean is calculated from the sample, which places a restriction on the scores: once you know the mean and all but one score, the last score is no longer free to vary — it is fully determined. Only \\(n - 1\\) of the \\(n\\) scores are truly free to vary, so a sample has \\(df = n - 1\\) degrees of freedom. Dividing \\(SS\\) by \\(n-1\\) (rather than \\(n\\)) slightly increases the resulting value, correcting for the fact that a sample’s variability tends to underestimate the population’s variability. This correction makes sample variance an accurate, unbiased estimator of the population variance.\nThis is exactly what SPSS’s Descriptives procedure does by default — it always computes the sample formulas (\\(n-1\\) in the denominator), because SPSS assumes your data are a sample unless you tell it otherwise. Keep this in mind whenever you are working with data that represent an entire population.\n\n\n\n\nStandard Deviation for a Sample\nWe want to find the standard deviation (and other statistics) for the variable Stroop_RT_ms. By default, SPSS computes the sample standard deviation (i.e., divides the \\(SS\\) by \\(n-1\\)).\nFollow these steps to find the sample standard deviation for the variable Stroop_RT_ms:\n\nAnalyze &gt; Descriptive Statistics &gt; Descriptives.\nMove Stroop_RT_ms into the variables box, click Options…, and check Mean, Variance and Std. deviation. Click Continue, then OK.\n\n\n\n\n\n\n\nCheckpoint 4\n\n\n\n\nWhat sample mean (\\(M\\)), variance (\\(s^2\\)), and standard deviation (\\(s\\)) does SPSS report?\nWhat does the standard deviation tell you about the spread of the Stroop_RT_ms scores?\n\n\n\n\n\n\nComparing Variability by Group (Sex)\nSuppose we wanted to answer the question, “Do Stroop_RT_ms scores for females spread out more than Stroop_RT_ms scores for male students?\n\nGo to Analyze &gt; Descriptive Statistics &gt; Explore.\nMove Stroop_RT_ms into the ‘Dependent List’ box. Move Sex into the ‘Factor List’ box — this tells SPSS to split all output by male vs. female.\nClick the ‘Statistics’ button and make sure ‘Descriptives’ is checked (this gives you variance, std deviation, min, max, and range for each group). Select std deviation. Click ‘continue’.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat sample standard deviation (\\(s\\)) does SPSS report for each group?\nWhat is a possible explanation for the discrepancy in std deviations? (Note: there can be multiple correct answers here).",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#part-d-analyzing-data-across-groups",
-    "href": "labs/lab_2.html#part-d-analyzing-data-across-groups",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "Part D — Analyzing Data Across Groups",
-    "text": "Part D — Analyzing Data Across Groups\nAlthough analyzing variables separately is useful, the complexity of life often require us to look at multiple variables together. For example, we may want to know if students who sleep more hours have lower test anxiety scores. To do this, we can use a scatterplot to visualize the relationship between two continuous variables.\nHere is how to create a scatterplot for sleep hours vs test anxiety scores in SPSS:\n\nGraphs &gt; Chart Builder.\nSelect Scatter/Dot from the gallery, then drag the simple scatter icon to the chart preview area.\nDrag Sleep_Hours_Prior_Night to the x-axis and Test_Anxiety_Score to the y-axis. Click OK. Keep the scatterplot in your output.\n\nWe may also want to compare the mean test anxiety scores by coping strategy. To do this, we can use a bar chart to visualize the mean test anxiety scores for each coping strategy.\n\nGraphs &gt; Chart Builder.\nSelect Bar from the gallery, then drag the simple bar icon to the chart preview\nDrag Primary_Coping_Strategy to the x-axis and Test_Anxiety_Score to the y-axis. Click OK. By default, SPSS will calculate the mean for each group. Keep the bar chart in your output.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nBased on the scatterplot, is there a relationship between sleep hours and test anxiety scores?\nBased on the bar chart, which coping strategy is associated with the lowest mean test anxiety score?",
+    "objectID": "labs/lab_3.html#part-d-visualizing-variability",
+    "href": "labs/lab_3.html#part-d-visualizing-variability",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part D — Visualizing Variability",
+    "text": "Part D — Visualizing Variability\nNumbers alone don’t always give you an intuitive feel for variability. Sometimes, graphs can be better tools to communicate the insights. Box plots and histograms are among the commonly used graphs to visualize variability of a continuous variable.\n\nBoxplots in SPSS\nTo create a boxplot for the variable Stroop_RT_ms, follow these steps: 1. Graphs &gt; Chart Builder 2. From the gallery list, choose Box plots, then drag the simple box plot icon to the chart preview area. Drag Stroop_RT_ms to the y-axis and click OK.\nThe box itself spans from \\(Q_1\\) to \\(Q_3\\) (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers. Any outliers are indicated with a dot or asterisk beyond the whiskers.\n\n\nHistograms (relate to the standard deviation)\nCreate a histogram for Stroop_RT_ms. The steps are similar to those for a box plot. Let your instructor know if you need help with this. Once you have your histogram, you can add a normal curve overlay to help visualize how the distribution compares to a normal distribution.\n\n\n\n\n\n\nCheckpoint 6\n\n\n\n\nIn your boxplot, does the box (the IQR) look wide or narrow relative to the whiskers? What does that tell you about where most of the Stroop_RT_ms are concentrated?\nLook at your boxplot. Does SPSS flag any scores as outliers (shown as individual dots/asterisks beyond the whiskers)? If so, which score(s) are these?\nBased on your histogram, how would you describe the spread of the Stroop_RT_ms?\nHow do box plots and histograms differ, and what specific information can be derived exclusively from each?",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#apa-style-reporting-tips",
-    "href": "labs/lab_2.html#apa-style-reporting-tips",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "APA-Style Reporting Tips",
-    "text": "APA-Style Reporting Tips\nAPA-style results writing should be accurate, concise, and tied to the research question. Use the statistics you produced in SPSS—not estimates from the graph.\n\nReport the sample size as N when referring to the whole sample.\nReport the mean as M and the standard deviation as SD.\nReport the median as Mdn when it is the better summary for a skewed distribution.\nReport a categorical mode in words, followed by its frequency (n) and percentage when useful.\nRound consistently, typically to two decimal places unless your instructor directs otherwise.\nDescribe the distribution when that explains why you selected the median instead of the mean.\n\n\nBuild your Results Paragraph\nUse this template to write a paragraph that answers the research question:\n\nThe sample (N = ) reported an average of M = hours of sleep (SD = ; Mdn = ). Participants recalled an average of M = ___ words (SD = ) on the memory task. The modal coping strategy was [strategy] (n = , %). Test-anxiety scores were [roughly symmetric / positively skewed / negatively skewed]; therefore, the [mean / median] was the most appropriate indicator of a typical score (M or Mdn = ). Overall, these results suggest that [one sentence summarizing the sample descriptively without making a causal claim].",
+    "objectID": "labs/lab_3.html#part-e-apa-style-reporting",
+    "href": "labs/lab_3.html#part-e-apa-style-reporting",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part E — APA-Style Reporting",
+    "text": "Part E — APA-Style Reporting\nIn journals following the APA style, the standard deviation (abbreviated as SD) and the mean (abbreviated as M) are reported in parentheses after the mean, e.g., \\(M = 12.45\\), \\(SD = 3.70\\). For skewed data, the median is reported with the IQR, e.g., \\(Mdn = 12.45\\), \\(IQR = 3.70\\).). Here is an example of a paragraph that reports the mean and standard deviation for a hypothetical memory recall test:\n\nFemale respondents displayed higher memory recall (M = 12.45, SD = 3.70) than male respondents (M = 10.20, SD = 2.80).\n\n\n\n\n\n\n\n\n“Checkpoint\n\n\n\nWrite one APA-style sentence summarizing the central tendency and variability of the Stroop_RT_ms. In your paragraph, compare the variability of Stroop_RT_ms for males and females.",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#take-home-lab-exercises",
-    "href": "labs/lab_2.html#take-home-lab-exercises",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
+    "objectID": "labs/lab_3.html#take-home-lab-exercises",
+    "href": "labs/lab_3.html#take-home-lab-exercises",
+    "title": "Lab 3: Measuring Variability",
     "section": "Take-Home Lab Exercises",
-    "text": "Take-Home Lab Exercises\n\nUse SPSS to generate the mean, median, and mode for the Memory_Recall_Score variable.\nCreate a histogram to visualize the distribution of Memory_Recall_Score. Describe the distribution of Memory_Recall_Score based on the histogram.\nCreate a box plot to visualize the distribution of Memory_Recall_Score. Describe the distribution of this variable based on the box plot. What insights can you draw based on the box plot that would be difficult to see in the histogram?\nUse SPSS to generate a bar graph comparing the mean memory recall across the five coping strategies. Comment on which coping strategy is associated with the highest mean memory recall score.",
+    "text": "Take-Home Lab Exercises",
     "crumbs": [
       "Labs",
-      "Lab 2"
+      "Lab 3"
     ]
   },
   {
-    "objectID": "labs/lab_2.html#submission-checklist",
-    "href": "labs/lab_2.html#submission-checklist",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "Submission checklist",
-    "text": "Submission checklist\n\nA saved SPSS data file with correct value labels and measurement levels.\nSPSS output containing all the analyses performed.\nCompleted responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include screenshots of the relevant software outputs where necessary.",
-    "crumbs": [
-      "Labs",
-      "Lab 2"
-    ]
-  },
-  {
-    "objectID": "labs/lab_4.html",
-    "href": "labs/lab_4.html",
-    "title": "Lab 4: Measuring Variability",
+    "objectID": "labs/lab_5.html",
+    "href": "labs/lab_5.html",
+    "title": "Lab 5: Z-score Standardization in SPSS",
     "section": "",
-    "text": "Student Information\n\n\n\nName: ________________________________\nDate: ________________________________\nEstimated time: 45–60 minutes\nDeliverables: completed responses, SPSS output, a saved .sav file, and an APA-style results paragraph."
+    "text": "Student Information\n\n\n\nName: ________________________________\nDate: ________________________________\nEstimated time: 45–60 minutes\nDeliverables: completed responses (checkpoints), SPSS output showing analyses, a saved .sav file."
   },
   {
-    "objectID": "labs/lab_4.html#overview",
-    "href": "labs/lab_4.html#overview",
-    "title": "Lab 4: Measuring Variability",
+    "objectID": "labs/lab_5.html#overview",
+    "href": "labs/lab_5.html#overview",
+    "title": "Lab 5: Z-score Standardization in SPSS",
     "section": "Overview",
-    "text": "Overview\nIn lecture and in the textbook (Chapter 4, Variability), you learned that variability describes how spread out or clustered together a set of scores is. In this lab you will use SPSS to compute and interpret the four measures of variability covered in the chapter:\n\nthe range\nthe interquartile range (IQR)\nthe variance\nthe standard deviation\n\nYou will also learn how to visualize variability with boxplots and histograms.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab you should be able to:\n\nEnter or import data into SPSS and produce descriptive statistics.\nCompute the range and interquartile range using SPSS and explain why the IQR is often a better description of variability than the range.\nCompute variance and standard deviation for a set of scores using SPSS’s Descriptives procedure.\nExplain why SPSS’s default variance/standard deviation formulas divide by \\(n-1\\) rather than \\(N\\), and connect this to the concept of degrees of freedom.\nUse boxplots and histograms to visualize variability.\nProduce and interpret a complete descriptive summary (mean and standard deviation, or median and IQR) for a real data set, written in APA style."
+    "text": "Overview\nAn employer is interested in identifying the top five most extroverted individuals from either assessment in the pool of applicants. Importantly the employer cant select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to \\(z-scores\\) to allow direct comparison.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you will be able to:\n\nUse SPSS to compute \\(z-scores\\) for two different assessments.\nUse SPSS to identify the top five most extroverted individuals based on \\(z-scores\\)."
   },
   {
-    "objectID": "labs/lab_4.html#importing-data",
-    "href": "labs/lab_4.html#importing-data",
-    "title": "Lab 4: Measuring Variability",
-    "section": "Importing Data",
-    "text": "Importing Data\n\n\n\n\n\n\nBefore You Begin\n\n\n\nDownload the data set from here then import it to SPSS. To import the data set, follow these steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file, and click OK on the import wizard (accept the default settings)."
+    "objectID": "labs/lab_5.html#part-1-the-data",
+    "href": "labs/lab_5.html#part-1-the-data",
+    "title": "Lab 5: Z-score Standardization in SPSS",
+    "section": "Part 1 — The Data",
+    "text": "Part 1 — The Data\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThe tables below show the raw scores for the two extroversion assessments. The first assessment is a 10-item questionnaire with a maximum score of 20, while the second assessment is a 20-item questionnaire with a maximum score of 200.\n\nExtroversion Assessment 1\n\n\nApplicant\nScore\n\n\n\n\n1\n17\n\n\n2\n8\n\n\n3\n9\n\n\n4\n9\n\n\n5\n16\n\n\n6\n4\n\n\n7\n5\n\n\n\n\nExtroversion Assessment 2\n\n\nApplicant\nScore\n\n\n\n\n8\n149\n\n\n9\n99\n\n\n10\n192\n\n\n11\n61\n\n\n12\n62\n\n\n13\n138\n\n\n14\n184\n\n\n\n\n\n\nEntering the Variables: Open SPSS Statistics on your lab computer. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank Data Editor window with a grid of empty cells. Make sure you are under variable view\n\nRow 1: extScore\n\nClick the first cell in row 1, “Name” column. Type: extScore\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (the scores are whole numbers).\nClick the Label cell. Type: Extroversion Score\nClick the Measure cell. Click the dropdown arrow and select Scale.\n\n\n\nRow 2: assessNum\n\nClick the empty cell in row 2, “Name” column. Type: extScore\nLeave Type as the default (Numeric).\nSet the Decimals to 0.\nSet the Label to Assessment Number\nSet the Measure to nominal.\n\nIf you entered everything as per the instructions up to this point, the variable view will appear as follows:\n\n\n\n\n\nEntering the Data: After creating the variables, switch to Data View by clicking the tab at the bottom of the SPSS window. You will see a grid with two columns: extScore and assessNum. Enter the data from the tables above into the appropriate columns. For example, for Applicant 1, enter 17 in the extScore column and 1 in the assessNum column. Continue entering all the data for both assessments. Your completed data view should look like this:\n\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint 1\n\n\n\n\nWhy did we record the variable assessNum as a nominal variable in the data set even though its entries are numbers? \nA student suggested that converting the scores to percentages without finding \\(z-scores\\) would be sufficient to allow for a direct comparison between the two assessments. Do you agree or disagree with this suggestion? Why or why not?"
   },
   {
-    "objectID": "labs/lab_4.html#part-1-why-we-measure-variability",
-    "href": "labs/lab_4.html#part-1-why-we-measure-variability",
-    "title": "Lab 4: Measuring Variability",
-    "section": "Part 1 — Why We Measure Variability",
-    "text": "Part 1 — Why We Measure Variability\nRecall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:\n\nHow spread out the distribution is — are scores clustered close together or scattered widely?\nHow well a single score represents the whole distribution — the more variability there is, the less confidence we can place in any one score (or sample) as being representative of the group.\n\nThe textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind — you’ll be asked to reason about it below.\n\n\n\n\n\n\nCheckpoint 1\n\n\n\nWithout opening SPSS, which of the following would you expect to have more variability, and why?\n\nThe ages of students in a single 4th-grade classroom. \nThe ages of visitors at a public shopping mall. \n\nJot down your reasoning before moving on."
+    "objectID": "labs/lab_5.html#part-2-the-z-score-conversion",
+    "href": "labs/lab_5.html#part-2-the-z-score-conversion",
+    "title": "Lab 5: Z-score Standardization in SPSS",
+    "section": "Part 2 — The z-score Conversion",
+    "text": "Part 2 — The z-score Conversion\nAlthough we have one dataset, we will first need to program SPSS to treat the two assessments as separate datasets since the assessments are different. To do this, we will use the Split File function in SPSS. Follow the steps below:\n\nClick Data &gt; Split File &gt; Organize output by groups &gt; Select assessNum &gt; Click OK.\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nHighlight the column label extScore and click the arrow to move it to the Variable(s) box.\nClick the Save standardized values as variables checkbox.\nClick OK.\n\nThe output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main dataset called ZextScore. This new variable contains the \\(z-scores\\) for each applicant’s extroversion score. The data view will now look like this:\n\n\n\n\n\n\nCheckpoint 2\n\n\n\n\nBased on the computed \\(z-scores\\), which applicants are the top five most extroverted individuals? List their applicant numbers and \\(z-scores\\)."
   },
   {
-    "objectID": "labs/lab_4.html#part-2-the-range",
-    "href": "labs/lab_4.html#part-2-the-range",
-    "title": "Lab 4: Measuring Variability",
-    "section": "Part 2 — The Range",
-    "text": "Part 2 — The Range\nThe range is the distance between the largest and smallest score in a distribution:\n\\[\\text{range} = X_{max} - X_{min}\\]\nIt is the simplest measure of variability, but it is also unreliable because it is based on only the two most extreme scores and ignores everything in between.\n\nGet the range in SPSS\n\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nMove QuizScore into the Variable(s) box.\nClick Options… and check Range, Minimum, and Maximum, then click Continue.\nClick OK.\n\nLook at the SPSS Output Viewer. You should see a table listing N, Range, Minimum, and Maximum for QuizScore.\n\n\n\n\n\n\nCheckpoint 2\n\n\n\n\nWhat range does SPSS report for this data set? Confirm it by hand using the formula \\(\\text{Range} = X_{max} - X_{min}\\). \nSuppose the quiz score of 32 in the data set were changed to 65, with everything else staying the same. Recompute the range by hand. What happened to the range, and what does this tell you about a weakness of using the range as a measure of variability? \n\n\n\n\nNOTE: Please DO NOT close the output window! You can just click on the main file showing the variables and data when you are ready to continue with the other analyses."
-  },
-  {
-    "objectID": "labs/lab_4.html#part-3-quartiles-and-the-interquartile-range-iqr",
-    "href": "labs/lab_4.html#part-3-quartiles-and-the-interquartile-range-iqr",
-    "title": "Lab 4: Measuring Variability",
-    "section": "Part 3 — Quartiles and the Interquartile Range (IQR)",
-    "text": "Part 3 — Quartiles and the Interquartile Range (IQR)\nBecause the range is so sensitive to extreme scores, researchers often prefer the interquartile range, which describes the spread of just the middle 50% of the distribution (between the 25th percentile, \\(Q_1\\), and the 75th percentile, \\(Q_3\\)):\n\\[IQR = Q_3 - Q_1\\]\nThe IQR trims off the top 25% and bottom 25% of scores, so a few unusually high or low scores do not distort it the way they distort the range.\n\nGet Quartiles in SPSS\nThere are two common ways to get the IQR in SPSS. Try both so you can see how they relate to one another.\nMethod A — Frequencies\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove QuizScore into the Variable(s) box. (You can uncheck “Display frequency tables” if you don’t want the full table.)\nClick Statistics…, and under Percentile Values check Quartiles. Click Continue, then OK.\nSPSS reports the 25th, 50th, and 75th percentiles (\\(Q_1\\), the median, and \\(Q_3\\)). Use the formula \\(IQR = Q_3 - Q_1\\) to calculate the \\(IQR\\).\n\nMethod B — Explore\n\nAnalyze &gt; Descriptive Statistics &gt; Explore.\nMove QuizScore into the Dependent List.\nUnder Display, choose Statistics. Click OK.\nLook at the Descriptives table — SPSS directly labels a row Interquartile Range.\n\n\n\n\n\n\n\nCheckpoint 3\n\n\n\n\nWhat value did SPSS report for \\(Q_1\\), \\(Q_3\\) QuizScore? What \\(IQR\\) value did you get by using the formula \\(\\text{Range}=Q_1 - Q_3\\)?\nDid Method A and Method B give you exactly the same \\(IQR\\)? (They may differ slightly — SPSS offers several algorithms for calculating percentiles. This is worth noticing, but don’t worry about resolving the discrepancy for this lab.) \nCompare the \\(IQR\\) to the \\(Range\\) for this same variable (QuizScore). Which value is larger, and why does that make sense?"
-  },
-  {
-    "objectID": "labs/lab_4.html#part-4-standard-deviation-and-variance",
-    "href": "labs/lab_4.html#part-4-standard-deviation-and-variance",
-    "title": "Lab 4: Measuring Variability",
-    "section": "Part 4 — Standard Deviation and Variance",
-    "text": "Part 4 — Standard Deviation and Variance\nStandard deviation is the most important and most commonly used measure of variability. Conceptually, it measures the standard (average) distance between each score and the mean. The variance is the average of the squared deviations; the standard deviation is simply the square root of the variance, which brings the measure back into the original units of the data.\nBoth statistics are built from the sum of squared deviations, or \\(SS\\). We obtain SS by subtracting the mean from each score, squaring the difference (deviation), the summing all squared deviations. Mathematically, this is abbreviated as;\n\\[SS = \\Sigma(X - \\bar{X})^2.\\]\nPopulation formulas (use \\(\\mu\\) for the mean and divide by \\(N\\)). The Greek letter \\(\\sigma^2\\) means population variance while \\(\\sigma\\) means population standard deviation.\n\\[\\sigma^2 = \\frac{SS}{N} \\qquad \\sigma = \\sqrt{\\frac{SS}{N}}\\]\nSample formulas (use \\(M\\) for the mean and divide by \\(n - 1\\) instead of \\(n\\)). The notation \\(s^2\\) means sample variance while \\(s\\) means sample standard deviation.\n\\[s^2 = \\frac{SS}{n-1} \\qquad s = \\sqrt{\\frac{SS}{n-1}}\\]\n\n\n\n\n\n\nWhy n − 1? Degrees of Freedom\n\n\n\nA sample mean is calculated from the sample, which places a restriction on the scores: once you know the mean and all but one score, the last score is no longer free to vary — it is fully determined. Only \\(n - 1\\) of the \\(n\\) scores are truly free to vary, so a sample has \\(df = n - 1\\) degrees of freedom. Dividing \\(SS\\) by \\(n-1\\) (rather than \\(n\\)) slightly increases the resulting value, correcting for the fact that a sample’s variability tends to underestimate the population’s variability. This correction makes sample variance an accurate, unbiased estimator of the population variance.\nThis is exactly what SPSS’s Descriptives procedure does by default — it always computes the sample formulas (\\(n-1\\) in the denominator), because SPSS assumes your data are a sample unless you tell it otherwise. Keep this in mind whenever you are working with data that represent an entire population.\n\n\n\n\nPart 4a — Standard Deviation for a Sample\nWe want to find the standard deviation (and other statistics) for the variable Quiz score. By default, SPSS computes the sample standard deviation (i.e., divides the \\(SS\\) by \\(n-1\\)).\nFollow these steps to find the sample standard deviation for the variable QuizScore:\n\nAnalyze &gt; Descriptive Statistics &gt; Descriptives.\nMove QuizScore into the variables box, click Options…, and check Mean, Variance and Std. deviation. Click Continue, then OK.\n\n\n\n\n\n\n\nCheckpoint 4\n\n\n\n\nWhat sample mean (\\(M\\)), variance (\\(s^2\\)), and standard deviation (\\(s\\)) does SPSS report? What does the standard deviation tell you about the Quiz scores? \nIn a sentence or two, explain in your own words why we divide by \\(n-1\\) for a sample but by \\(N\\) for a population. \n\n\n\n\n\n\nPart 4b — Comparing Variability by Group (Sex)\nSuppose we wanted to answer the question, “Do Quiz scores for female students spread out more than Quiz scores for male students?’\n\nGo to Analyze &gt; Descriptive Statistics &gt; Explore.\nMove QuizScore into the ‘Dependent List’ box. Move Sex into the ‘Factor List’ box — this tells SPSS to split all output by male vs. female.\nClick the ‘Statistics’ button and make sure ‘Descriptives’ is checked (this gives you variance, std deviation, min, max, and range for each group). Select std deviation. Click ‘continue’.\n\n\n\n\n\n\n\nCheckpoint 5\n\n\n\n\nWhat sample standard deviation (\\(s\\)) does SPSS report for each group? \nWhat is a possible explanation for the discrepancy in std deviations? (Note: there can be multiple correct answers here)."
-  },
-  {
-    "objectID": "labs/lab_4.html#part-5-visualizing-variability",
-    "href": "labs/lab_4.html#part-5-visualizing-variability",
-    "title": "Lab 4: Measuring Variability",
-    "section": "Part 5 — Visualizing Variability",
-    "text": "Part 5 — Visualizing Variability\nNumbers alone don’t always give you an intuitive feel for variability. Sometimes, graphs can be the tool to communicate the insights. Box plots and histograms are among the commonly used graphs to visualize variability of a numerical variable.\n\nBoxplots (relate to the IQR)\nTo create a boxplot for the variable QuizScore, follow these steps: 1. Graphs &gt; Legacy Dialogs &gt; Boxplot… 2. Choose Simple, and Summaries of separate variables. Click Define. 3. Move QuizScore into Boxes Represent. Click OK.\nThe box itself spans from \\(Q_1\\) to \\(Q_3\\) (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers.\n\n\nHistograms (relate to the standard deviation)\nTo create a histogram for the variable QuizScore, follow these steps: 1. Graphs &gt; Legacy Dialogs &gt; Histogram… 2. Move QuizScore into the Variable box. 3. Check Display normal curve, then click OK.\nRecall the rule of thumb from the chapter: roughly 70% of scores in a distribution fall within one standard deviation of the mean, and roughly 95% fall within two standard deviations.\n\n\n\n\n\n\nCheckpoint 6\n\n\n\n\nIn your boxplot, does the box (the IQR) look wide or narrow relative to the whiskers? What does that tell you about where most of the QuizScores are concentrated? \nLook at your boxplot. Does SPSS flag any scores as outliers (shown as individual dots/asterisks beyond the whiskers)? If so, which score(s)?\nBased on your histogram, how would you describe the spread of the QuizScores?\nHow do box plots and histograms differ, and what specific information can be derived exclusively from each?"
-  },
-  {
-    "objectID": "labs/lab_4.html#part-6-putting-it-all-together-a-full-descriptive-report",
-    "href": "labs/lab_4.html#part-6-putting-it-all-together-a-full-descriptive-report",
-    "title": "Lab 4: Measuring Variability",
-    "section": "Part 6 — Putting It All Together: A Full Descriptive Report",
-    "text": "Part 6 — Putting It All Together: A Full Descriptive Report\nA real research report almost never presents just one statistic in isolation — central tendency and variability are reported together (e.g., “\\(M = 12.45\\), \\(SD = 3.70\\)” or, for skewed data, the median accompanied by the IQR).\nUsing SPSS, produce all of the following for the variable TextMessages, representing the average number of text messages a student sent per day. - Mean and Median - Standard deviation and variance - Range - Interquartile Range - Boxplot - A histogram with the normal curve overlay.\n\n\n\n\n\n\n\nCheckpoint 7 (Comprehensive)\n\n\n\nWrite one APA-style sentence summarizing the central tendency and variability of the TextMessages, following the format from the chapter, e.g.: *“The daily number of text messages were, on average, moderate and fairly variable (M = , SD =* ).” Fill in your own values."
+    "objectID": "labs/lab_5.html#submission-checklist",
+    "href": "labs/lab_5.html#submission-checklist",
+    "title": "Lab 5: Z-score Standardization in SPSS",
+    "section": "Submission Checklist",
+    "text": "Submission Checklist\n\nA saved SPSS data (.sav) file showing the variables and data (includes \\(z-scores\\)).\nSPSS output file (.spv) showing the analyses performed.\nCompleted responses for all checkpoints in the lab. You may print a PDF from the website and hand-write your responses or use a digital annotator tool."
   },
   {
     "objectID": "course-faq.html",
@@ -630,17 +677,6 @@
     "crumbs": [
       "Course information",
       "Syllabus"
-    ]
-  },
-  {
-    "objectID": "labs/lab_2.html#part-d-analyzing-multiple-variables",
-    "href": "labs/lab_2.html#part-d-analyzing-multiple-variables",
-    "title": "Lab 2: Descriptive Statistics - Central Tendency & Data Visualization",
-    "section": "Part D — Analyzing Multiple Variables",
-    "text": "Part D — Analyzing Multiple Variables\nAlthough analyzing variables separately is useful, the complexity of life often require us to look at multiple variables together. For example, we may want to know if students who sleep more hours have lower test anxiety scores. To do this, we can use a scatterplot to visualize the relationship between two continuous variables.\nHere is how to create a scatterplot for sleep hours vs test anxiety scores in SPSS:\n\nGraphs &gt; Chart Builder.\nSelect Scatter/Dot from the gallery, then drag the simple scatter icon to the chart preview area.\nDrag Sleep_Hours_Prior_Night to the x-axis and Test_Anxiety_Score to the y-axis. Click OK. Keep the scatterplot in your output.\n\nWe may also want to compare the mean test anxiety scores by coping strategy. To do this, we can use a bar chart to visualize the mean test anxiety scores for each coping strategy.\n\nGraphs &gt; Chart Builder.\nSelect Bar from the gallery, then drag the simple bar icon to the chart preview\nDrag Primary_Coping_Strategy to the x-axis and Test_Anxiety_Score to the y-axis. Click OK. By default, SPSS will calculate the mean for each group. Keep the bar chart in your output.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nBased on the scatterplot, is there a relationship between sleep hours and test anxiety scores?\nBased on the bar chart, which coping strategy is associated with the lowest mean test anxiety score?\nSave your SPSS output file as Lab_2_Output_YourLastName.spv.",
-    "crumbs": [
-      "Labs",
-      "Lab 2"
     ]
   }
 ]
