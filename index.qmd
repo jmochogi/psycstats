@@ -10,12 +10,12 @@ Learn approaches for analyzing data drawn from psychology settings, such as surv
 
 # Class Meetings
 
-|             |                      |                |
-|-------------|----------------------|----------------|
-| **Lecture** | Mon 02:00 - 02:50 pm | Williams 203  |
-| **Lecture** | Wed 02:00 - 02:50 pm | Williams 203  |
-| **Lab**     | Th 02:00 - 02:50 pm  | Williams 203  |
-| **Lecture** | Fri 02:00 - 02:50 pm | Williams 203  |
+|             |                      |              |
+|-------------|----------------------|--------------|
+| **Lecture** | Mon 02:00 - 02:50 pm | Williams 203 |
+| **Lecture** | Wed 02:00 - 02:50 pm | Williams 203 |
+| **Lab**     | Th 02:00 - 02:50 pm  | Williams 203 |
+| **Lecture** | Fri 02:00 - 02:50 pm | Williams 203 |
 
 # Teaching Team
 
@@ -34,26 +34,23 @@ Learn approaches for analyzing data drawn from psychology settings, such as surv
 
 ## Teaching Assistant
 
-
 The Teaching Assistant (TA) for this class is Andrew Burkhardt (you can call him Andrew). Andrew is pursuing a bachelor’s degree in psychology with a minor in neuroscience. He transferred to Ithaca College last year and is now in his senior year. His future goal is to become a clinical psychologist.
+
+| Office hours | Location |
+|------------------------------------|------------------------------------|
+| Tue & Thr: 4.00-5.00 am | Williams 209E |
+
 
 Andrew loves cats and has one called Maple! Here are some photos:
 
-::: {layout-ncol=3}
-
+::: {layout-ncol="3"}
 ![Andrew & Maple](img/cat2.png)
-
 :::
 
-
-
-
-::: {layout-ncol=3}
+::: {layout-ncol="3"}
 ![](img/cat1.png)
-
 
 ![](img/cat3.png)
 
 ![](img/cat4.png)
-
 :::
