@@ -14,22 +14,26 @@ execute:
   echo: true
 ---
 
-**Deliverables:** completed responses, SPSS data (`.sav`) and output (`.spv)` files, and a word or pdf document with answers to the take-home lab exercises.
+**Deliverables:** 
+- SPSS data (`.sav`) file from SPSS.
+- An output (`.spv)` files from SPSS.   
+- A word or pdf document with answers to the take-home lab exercises at the end of the lab. The document must include images of your SPSS output tables and graphs where necessary.
 
 ## PART A - Overview
 
-In lecture and in the textbook (Chapter 4, *Variability*), you learned that variability describes how spread out or clustered together a set of scores is. In this lab, you will use **SPSS** to compute and interpret the four measures of variability covered in the chapter:
+In lecture and in the textbook (Chapter 4, *Variability*), we learned that variability describes how spread out or clustered together a set of scores is. In this lab, you will use **SPSS** to generate the four measures of variability covered in the chapter:
 
 - the **range**
 - the **interquartile range (IQR)**
 - the **variance**
 - the **standard deviation**
 
-You will also learn about commonly used tools to visualize data variability of a continuous variable.
+You will also learn about commonly used tools to visualize data variability of a continuous variable and how to report variability in APA style.
 
 ## The Data
 
-A psychologist is interested in understanding reaction time and how much reaction times vary from person to person. To investigate this, the psychologist asked 120 participants to complete a Stroop task, a commonly used task in psychology that measures how quickly people can respond when they encounter conflicting information. The variable Stroop_RT_ms records each participant’s reaction time in milliseconds, with larger values indicating slower responses. Download the dataset from \[this link\] () then import it to SPSS. To import the data set, follow these steps:
+A psychologist is interested in understanding reaction time and how much reaction times vary from person to person. To investigate this, the psychologist asked 120 participants to complete a Stroop task, a commonly used task in psychology that measures how quickly people can respond when they encounter conflicting information. The variable Stroop_RT_ms records each participant’s reaction time in milliseconds, with larger values indicating slower responses. 
+Download the dataset from [this link](datasets/lab_3_data.csv) then import it to SPSS. To import the data set, follow these steps:
 
 **File \> Import Data \> CSV Data...**, browse to the file, and click **OK** on the import wizard (accept the default settings).
 
@@ -153,7 +157,7 @@ Follow these steps to find the sample standard deviation for the variable `Stroo
 1.  **Analyze \> Descriptive Statistics \> Descriptives**.
 2.  Move `Stroop_RT_ms` into the variables box, click **Options...**, and check **Mean**, **Variance** and **Std. deviation**. Click **Continue**, then **OK**.
 
-::: {.callout-tip title="Checkpoint 4"}
+::: {.callout-tip title="Checkpoint "}
 1.  What sample mean ($M$), variance ($s^2$), and standard deviation ($s$) does SPSS report?
 2.  What does the standard deviation tell you about the spread of the `Stroop_RT_ms` scores?
 :::
@@ -189,7 +193,7 @@ The box itself spans from $Q_1$ to $Q_3$ (the IQR), with a line in the middle re
 
 Create a histogram for `Stroop_RT_ms`. The steps are similar to those for a box plot. Let your instructor know if you need help with this. Once you have your histogram, you can add a normal curve overlay to help visualize how the distribution compares to a normal distribution.
 
-::: {.callout-tip title="Checkpoint 6"}
+::: {.callout-tip title="Checkpoint"}
 1.  In your boxplot, does the box (the IQR) look wide or narrow relative to the whiskers? What does that tell you about where most of the `Stroop_RT_ms` are concentrated?
 2.  Look at your boxplot. Does SPSS flag any scores as outliers (shown as individual dots/asterisks beyond the whiskers)? If so, which score(s) are these?
 3.  Based on your histogram, how would you describe the spread of the `Stroop_RT_ms`?
