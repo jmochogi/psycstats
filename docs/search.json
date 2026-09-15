@@ -440,7 +440,7 @@
     "href": "labs/lab_3.html#why-we-measure-variability",
     "title": "Lab 3: Measuring Variability",
     "section": "Why We Measure Variability",
-    "text": "Why We Measure Variability\nRecall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:\n\nHow spread out the distribution is — are scores clustered close together or scattered widely?\nHow well a single score represents the whole distribution — the more variability there is, the less confidence we can place in any one score (or sample) as being representative of the group.\n\nThe textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind.\n\n\n\n\n\n\nCheckpoint\n\n\n\nWithout opening SPSS, which of the following would you expect to have more variability, and why?\n\nThe ages of students in a single 4th-grade classroom.\nThe ages of visitors at a public shopping mall.",
+    "text": "Why We Measure Variability\nRecall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:\n\nHow spread out the scores are — are scores clustered close together or scattered widely?\nHow well a single score represents the whole distribution — the more variability there is, the less confidence we can place in any one statistic (or sample) as being representative of the group.\n\nThe textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind.\n\n\n\n\n\n\nCheckpoint\n\n\n\nWithout opening SPSS, which of the following would you expect to have more variability, and why?\n\nThe ages of students in a single 4th-grade classroom.\nThe ages of visitors at a public shopping mall.",
     "crumbs": [
       "Labs",
       "Lab 3"
@@ -451,7 +451,7 @@
     "href": "labs/lab_3.html#part-b-the-range",
     "title": "Lab 3: Measuring Variability",
     "section": "Part B — The Range",
-    "text": "Part B — The Range\nThe range is the distance between the largest and smallest score in a distribution:\n\\[\\text{range} = X_{max} - X_{min}\\]\nIt is the simplest measure of variability, but it is also unreliable because it is based on only the two most extreme scores and ignores everything in between.\n\nGet the range in SPSS\n\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nMove Stroop_RT_ms into the Variable(s) box.\nClick Options… and check Range, Minimum, and Maximum, then click Continue.\nClick OK.\n\nLook at the SPSS Output Viewer. You should see a table listing N, Range, Minimum, and Maximum for Stroop_RT_ms.\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat range does SPSS report for this data set? Confirm it by hand using the formula \\(\\text{Range} = X_{max} - X_{min}\\).\nSuppose the quiz score of 32 in the data set were changed to 65, with everything else staying the same. Recompute the range by hand. What happened to the range, and what does this tell you about a weakness of using the range as a measure of variability?\n\n\n\n\nNOTE: Please DO NOT close the output window! You can just click on the main file showing the variables and data when you are ready to continue with the other analyses.",
+    "text": "Part B — The Range\nThe range is the distance between the largest and smallest score in a distribution:\n\\[\\text{Range} = X_{max} - X_{min}\\]\nIt is the simplest measure of variability, but it is also unreliable because it is based on only the two most extreme scores and ignores everything in between.\n\nGet the Range in SPSS\n\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nMove Stroop_RT_ms into the Variable(s) box.\nClick Options… and check Range, Minimum, and Maximum, then click Continue.\nClick OK.\n\nLook at the SPSS Output Viewer. You should see a table listing N, Range, Minimum, and Maximum for Stroop_RT_ms.\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat range does SPSS report for this data set? Confirm it by hand using the formula \\(\\text{Range} = X_{max} - X_{min}\\).\nSuppose the quiz score of 32 in the data set were changed to 65, with everything else staying the same. Recompute the range by hand. What happened to the range, and what does this tell you about a weakness of using the range as a measure of variability?\n\n\n\n\nNOTE: Please DO NOT close the output window! You can just click on the main file showing the variables and data when you are ready to continue with the other analyses.",
     "crumbs": [
       "Labs",
       "Lab 3"
@@ -484,7 +484,7 @@
     "href": "labs/lab_3.html#part-d-visualizing-variability",
     "title": "Lab 3: Measuring Variability",
     "section": "Part D — Visualizing Variability",
-    "text": "Part D — Visualizing Variability\nNumbers alone don’t always give you an intuitive feel for variability. Sometimes, graphs can be better tools to communicate the insights. Box plots and histograms are among the commonly used graphs to visualize variability of a continuous variable.\n\nBoxplots in SPSS\nTo create a boxplot for the variable Stroop_RT_ms, follow these steps: 1. Graphs &gt; Chart Builder 2. From the gallery list, choose Box plots, then drag the simple box plot icon to the chart preview area. Drag Stroop_RT_ms to the y-axis and click OK.\nThe box itself spans from \\(Q_1\\) to \\(Q_3\\) (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers. Any outliers are indicated with a dot or asterisk beyond the whiskers.\n\n\nHistograms (relate to the standard deviation)\nCreate a histogram for Stroop_RT_ms. The steps are similar to those for a box plot. Let your instructor know if you need help with this. Once you have your histogram, you can add a normal curve overlay to help visualize how the distribution compares to a normal distribution.\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nIn your boxplot, does the box (the IQR) look wide or narrow relative to the whiskers? What does that tell you about where most of the Stroop_RT_ms are concentrated?\nLook at your boxplot. Does SPSS flag any scores as outliers (shown as individual dots/asterisks beyond the whiskers)? If so, which score(s) are these?\nBased on your histogram, how would you describe the spread of the Stroop_RT_ms?\nHow do box plots and histograms differ, and what specific information can be derived exclusively from each?",
+    "text": "Part D — Visualizing Variability\nNumbers alone may not always give you an intuitive feel for variability. Sometimes, graphs can be better tools to communicate the insights. Box plots and histograms are among the commonly used graphs to visualize variability of a continuous variable.\n\nBoxplots in SPSS\nTo create a boxplot for the variable Stroop_RT_ms, follow these steps: 1. Graphs &gt; Chart Builder 2. From the gallery list, choose Box plots, then drag the simple box plot icon to the chart preview area. Drag Stroop_RT_ms to the y-axis and click OK.\nThe box itself spans from \\(Q_1\\) to \\(Q_3\\) (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers. Any outliers are indicated with a dot or asterisk beyond the whiskers.\n\n\nHistograms in SPSS\nCreate a histogram for Stroop_RT_ms. The steps are similar to those for a box plot. Let your instructor know if you need help with this. Once you have your histogram, you can add a normal curve overlay to help visualize how the distribution compares to a normal distribution.\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nDescribe the distribution of the Stroop_RT_ms scores. Be sure to talk about outliers, middle 50%, and the median.\nBased on your histogram, how would you describe the spread of the Stroop_RT_ms?\nHow do box plots and histograms differ, and what specific information can be derived exclusively from each?",
     "crumbs": [
       "Labs",
       "Lab 3"
@@ -506,7 +506,7 @@
     "href": "labs/lab_3.html#take-home-lab-exercises",
     "title": "Lab 3: Measuring Variability",
     "section": "Take-Home Lab Exercises",
-    "text": "Take-Home Lab Exercises",
+    "text": "Take-Home Lab Exercises\n\nHow spread out are the ages of the participants in this study? Use SPSS to compute any two different statistics to measure variability for the variable Age. Based on the two statistics, describe the variability of the ages in your own words.\nCreate a histogram and a box plot for the variable Age. Describe the distribution of ages, based on the box plot and the histogram.\nHow does the distribution of Stroop_RT_ms scores differ by Gender? Make side-by-side box plots (Gender on x-axis) to compare the distribution of Stroop_RT_ms by Gender. Describe your findings.\nDoes the variability of Stroop_RT_ms differ by age group? Use SPSS to split the data into two groups: participants younger than 25 and participants 25 or older. Then, compute the standard deviation for each group. Compare the variability of Stroop_RT_ms between the two age groups and describe your findings in APA style.",
     "crumbs": [
       "Labs",
       "Lab 3"
@@ -677,6 +677,17 @@
     "crumbs": [
       "Course information",
       "Syllabus"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#submission-checklist",
+    "href": "labs/lab_3.html#submission-checklist",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Submission Checklist",
+    "text": "Submission Checklist\n\nA saved SPSS data file with correct value labels and measurement levels. Saving format: Lab_3_Data_YourLastName.sav.\nSPSS output containing all the analyses performed. Save format: Lab_3_Output_YourLastName.spv.\nCompleted responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
     ]
   }
 ]

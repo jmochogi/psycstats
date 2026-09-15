@@ -51,8 +51,8 @@ Make sure the measurement scales are set as follows:
 
 Recall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:
 
-1.  **How spread out the distribution is** — are scores clustered close together or scattered widely?
-2.  **How well a single score represents the whole distribution** — the more variability there is, the less confidence we can place in any one score (or sample) as being representative of the group.
+1.  **How spread out the scores are** — are scores clustered close together or scattered widely?
+2.  **How well a single score represents the whole distribution** — the more variability there is, the less confidence we can place in any one statistic (or sample) as being representative of the group.
 
 The textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind.
 
@@ -69,11 +69,11 @@ Without opening SPSS, which of the following would you expect to have **more** v
 
 The **range** is the distance between the largest and smallest score in a distribution:
 
-$$\text{range} = X_{max} - X_{min}$$
+$$\text{Range} = X_{max} - X_{min}$$
 
 It is the simplest measure of variability, but it is also **unreliable** because it is based on only the two most extreme scores and ignores everything in between.
 
-### Get the range in SPSS
+### Get the Range in SPSS
 
 1.  Click **Analyze \> Descriptive Statistics \> Descriptives**.
 2.  Move `Stroop_RT_ms` into the **Variable(s)** box.
@@ -182,7 +182,7 @@ Suppose we wanted to answer the question, "Do `Stroop_RT_ms` scores for females 
 
 ## Part D — Visualizing Variability
 
-Numbers alone don't always give you an intuitive feel for variability. Sometimes, graphs can be better tools to communicate the insights. **Box plots** and **histograms** are among the commonly used graphs to visualize variability of a continuous variable.
+Numbers alone may not always give you an intuitive feel for variability. Sometimes, graphs can be better tools to communicate the insights. **Box plots** and **histograms** are among the commonly used graphs to visualize variability of a continuous variable.
 
 ### Boxplots in SPSS
 
@@ -190,15 +190,14 @@ To create a boxplot for the variable `Stroop_RT_ms`, follow these steps: 1. **Gr
 
 The box itself spans from $Q_1$ to $Q_3$ (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers. Any outliers are indicated with a dot or asterisk beyond the whiskers.
 
-### Histograms (relate to the standard deviation)
+### Histograms in SPSS
 
 Create a histogram for `Stroop_RT_ms`. The steps are similar to those for a box plot. Let your instructor know if you need help with this. Once you have your histogram, you can add a normal curve overlay to help visualize how the distribution compares to a normal distribution.
 
 ::: {.callout-tip title="Checkpoint"}
-1.  In your boxplot, does the box (the IQR) look wide or narrow relative to the whiskers? What does that tell you about where most of the `Stroop_RT_ms` are concentrated?
-2.  Look at your boxplot. Does SPSS flag any scores as outliers (shown as individual dots/asterisks beyond the whiskers)? If so, which score(s) are these?
-3.  Based on your histogram, how would you describe the spread of the `Stroop_RT_ms`?
-4.  How do box plots and histograms differ, and what specific information can be derived exclusively from each?
+1.  Describe the distribution of the `Stroop_RT_ms` scores. Be sure to talk about outliers, middle 50%, and the median.
+2.  Based on your histogram, how would you describe the spread of the `Stroop_RT_ms`?
+3.  How do box plots and histograms differ, and what specific information can be derived exclusively from each?
 :::
 
 ------------------------------------------------------------------------
@@ -219,4 +218,13 @@ Write one APA-style sentence summarizing the central tendency and variability of
 
 ## Take-Home Lab Exercises
 
-1.  
+1. How spread out are the ages of the participants in this study? Use SPSS to compute any two different statistics to measure variability for the variable `Age`. Based on the two statistics, describe the variability of the ages in your own words.
+2. Create a histogram and a box plot for the variable `Age`. Describe the distribution of ages, based on the box plot and the histogram.
+3. How does the distribution of `Stroop_RT_ms` scores differ by Gender? Make side-by-side box plots (Gender on x-axis) to compare the distribution of `Stroop_RT_ms` by `Gender`. Describe your findings.
+4. Does the variability of `Stroop_RT_ms` differ by age group? Use SPSS to split the data into two groups: participants younger than 25 and participants 25 or older. Then, compute the standard deviation for each group. Compare the variability of `Stroop_RT_ms` between the two age groups and describe your findings in APA style.
+
+## Submission Checklist
+
+- [ ] A saved SPSS data file with correct value labels and measurement levels. Saving format: `Lab_3_Data_YourLastName.sav`.
+- [ ] SPSS output containing all the analyses performed. Save format: `Lab_3_Output_YourLastName.spv`. 
+- [ ] Completed responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.
