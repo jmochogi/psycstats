@@ -219,9 +219,14 @@ Write one APA-style sentence summarizing the central tendency and variability of
 ## Take-Home Lab Exercises
 
 1. How spread out are the ages of the participants in this study? Use SPSS to compute any two different statistics to measure variability for the variable `Age`. Based on the two statistics, describe the variability of the ages in your own words.
+
 2. Create a histogram and a box plot for the variable `Age`. Describe the distribution of ages, based on the box plot and the histogram.
-3. How does the distribution of `Stroop_RT_ms` scores differ by Gender? Make side-by-side box plots (Gender on x-axis) to compare the distribution of `Stroop_RT_ms` by `Gender`. Describe your findings.
-4. Does the variability of `Stroop_RT_ms` differ by age group? Use SPSS to split the data into two groups: participants younger than 25 and participants 25 or older. Then, compute the standard deviation for each group. Compare the variability of `Stroop_RT_ms` between the two age groups and describe your findings in APA style.
+
+3. How does the distribution of `Stroop_RT_ms` scores differ by gender? Create side-by-side box plots, with Gender on the x-axis, to compare the distributions of `Stroop_RT_ms` scores across genders. Describe your findings, including any differences in center, variability, and outliers.
+
+4. Does the variability of `Stroop_RT_ms` differ by age group? Use SPSS to split the data into two groups: participants **younger than 25** and participants **25 or older**. Then, calculate statistics of your choice for each group that will help you compare the variability of `Stroop_RT_ms` scores. Describe your findings in APA style.
+
+**Note:** Look up how to split the data in SPSS if you are not sure how to do this.
 
 ## Submission Checklist
 
