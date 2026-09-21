@@ -77,8 +77,8 @@ website:
             text: Lab 2
           - href: labs/lab_3.qmd
             text: Lab 3
-          #- href: labs/lab_4.qmd
-            #text: Lab 4            
+          - href: labs/lab_4.qmd
+            text: Lab 4            
           #- href: labs/lab_5.qmd
             #text: Lab 5
           #- href: labs/lab_6.qmd

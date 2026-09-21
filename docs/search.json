@@ -513,39 +513,103 @@
     ]
   },
   {
-    "objectID": "labs/lab_5.html",
-    "href": "labs/lab_5.html",
-    "title": "Lab 5: Z-score Standardization in SPSS",
-    "section": "",
-    "text": "Student Information\n\n\n\nName: ________________________________\nDate: ________________________________\nEstimated time: 45–60 minutes\nDeliverables: completed responses (checkpoints), SPSS output showing analyses, a saved .sav file."
-  },
-  {
-    "objectID": "labs/lab_5.html#overview",
-    "href": "labs/lab_5.html#overview",
-    "title": "Lab 5: Z-score Standardization in SPSS",
-    "section": "Overview",
-    "text": "Overview\nAn employer is interested in identifying the top five most extroverted individuals from either assessment in the pool of applicants. Importantly the employer cant select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to \\(z-scores\\) to allow direct comparison.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you will be able to:\n\nUse SPSS to compute \\(z-scores\\) for two different assessments.\nUse SPSS to identify the top five most extroverted individuals based on \\(z-scores\\)."
-  },
-  {
-    "objectID": "labs/lab_5.html#part-1-the-data",
-    "href": "labs/lab_5.html#part-1-the-data",
-    "title": "Lab 5: Z-score Standardization in SPSS",
-    "section": "Part 1 — The Data",
-    "text": "Part 1 — The Data\n\n\n\n\n\n\nBefore You Begin\n\n\n\nThe tables below show the raw scores for the two extroversion assessments. The first assessment is a 10-item questionnaire with a maximum score of 20, while the second assessment is a 20-item questionnaire with a maximum score of 200.\n\nExtroversion Assessment 1\n\n\nApplicant\nScore\n\n\n\n\n1\n17\n\n\n2\n8\n\n\n3\n9\n\n\n4\n9\n\n\n5\n16\n\n\n6\n4\n\n\n7\n5\n\n\n\n\nExtroversion Assessment 2\n\n\nApplicant\nScore\n\n\n\n\n8\n149\n\n\n9\n99\n\n\n10\n192\n\n\n11\n61\n\n\n12\n62\n\n\n13\n138\n\n\n14\n184\n\n\n\n\n\n\nEntering the Variables: Open SPSS Statistics on your lab computer. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank Data Editor window with a grid of empty cells. Make sure you are under variable view\n\nRow 1: extScore\n\nClick the first cell in row 1, “Name” column. Type: extScore\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (the scores are whole numbers).\nClick the Label cell. Type: Extroversion Score\nClick the Measure cell. Click the dropdown arrow and select Scale.\n\n\n\nRow 2: assessNum\n\nClick the empty cell in row 2, “Name” column. Type: extScore\nLeave Type as the default (Numeric).\nSet the Decimals to 0.\nSet the Label to Assessment Number\nSet the Measure to nominal.\n\nIf you entered everything as per the instructions up to this point, the variable view will appear as follows:\n\n\n\n\n\nEntering the Data: After creating the variables, switch to Data View by clicking the tab at the bottom of the SPSS window. You will see a grid with two columns: extScore and assessNum. Enter the data from the tables above into the appropriate columns. For example, for Applicant 1, enter 17 in the extScore column and 1 in the assessNum column. Continue entering all the data for both assessments. Your completed data view should look like this:\n\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint 1\n\n\n\n\nWhy did we record the variable assessNum as a nominal variable in the data set even though its entries are numbers? \nA student suggested that converting the scores to percentages without finding \\(z-scores\\) would be sufficient to allow for a direct comparison between the two assessments. Do you agree or disagree with this suggestion? Why or why not?"
-  },
-  {
-    "objectID": "labs/lab_5.html#part-2-the-z-score-conversion",
-    "href": "labs/lab_5.html#part-2-the-z-score-conversion",
-    "title": "Lab 5: Z-score Standardization in SPSS",
-    "section": "Part 2 — The z-score Conversion",
-    "text": "Part 2 — The z-score Conversion\nAlthough we have one dataset, we will first need to program SPSS to treat the two assessments as separate datasets since the assessments are different. To do this, we will use the Split File function in SPSS. Follow the steps below:\n\nClick Data &gt; Split File &gt; Organize output by groups &gt; Select assessNum &gt; Click OK.\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nHighlight the column label extScore and click the arrow to move it to the Variable(s) box.\nClick the Save standardized values as variables checkbox.\nClick OK.\n\nThe output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main dataset called ZextScore. This new variable contains the \\(z-scores\\) for each applicant’s extroversion score. The data view will now look like this:\n\n\n\n\n\n\nCheckpoint 2\n\n\n\n\nBased on the computed \\(z-scores\\), which applicants are the top five most extroverted individuals? List their applicant numbers and \\(z-scores\\)."
-  },
-  {
-    "objectID": "labs/lab_5.html#submission-checklist",
-    "href": "labs/lab_5.html#submission-checklist",
-    "title": "Lab 5: Z-score Standardization in SPSS",
+    "objectID": "labs/lab_3.html#submission-checklist",
+    "href": "labs/lab_3.html#submission-checklist",
+    "title": "Lab 3: Measuring Variability",
     "section": "Submission Checklist",
-    "text": "Submission Checklist\n\nA saved SPSS data (.sav) file showing the variables and data (includes \\(z-scores\\)).\nSPSS output file (.spv) showing the analyses performed.\nCompleted responses for all checkpoints in the lab. You may print a PDF from the website and hand-write your responses or use a digital annotator tool."
+    "text": "Submission Checklist\n\nA saved SPSS data file with correct value labels and measurement levels. Saving format: Lab_3_Data_YourLastName.sav.\nSPSS output containing all the analyses performed. Save format: Lab_3_Output_YourLastName.spv.\nCompleted responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html",
+    "href": "labs/lab_4.html",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "",
+    "text": "An employer is interested in identifying the top five most extroverted individuals from either assessment in the pool of applicants. Five hundred applicants from New York and New York and New Jersey took two different assessments as listed below. Note that the full version of the questionnaires referenced below are much longer and measure a wide range of personality traits, but for the purposes of this lab, we will focus on the extroversion scores only.\n\nThe Big Five Inventory (BFI) — an 8-item questionnaire with a maximum score of 40.\nThe Eysenck Personality Inventory (EPI) — a 12-item questionnaire with a maximum score of 24.\n\nNote that the employer can’t select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to \\(z-scores\\) to allow direct comparison.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nUse SPSS to compute \\(z-scores\\) for two different assessments.\nUse SPSS to identify the top five most extroverted individuals based on \\(z-scores\\).",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#overview",
+    "href": "labs/lab_4.html#overview",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "",
+    "text": "An employer is interested in identifying the top five most extroverted individuals from either assessment in the pool of applicants. Five hundred applicants from New York and New York and New Jersey took two different assessments as listed below. Note that the full version of the questionnaires referenced below are much longer and measure a wide range of personality traits, but for the purposes of this lab, we will focus on the extroversion scores only.\n\nThe Big Five Inventory (BFI) — an 8-item questionnaire with a maximum score of 40.\nThe Eysenck Personality Inventory (EPI) — a 12-item questionnaire with a maximum score of 24.\n\nNote that the employer can’t select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to \\(z-scores\\) to allow direct comparison.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nUse SPSS to compute \\(z-scores\\) for two different assessments.\nUse SPSS to identify the top five most extroverted individuals based on \\(z-scores\\).",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#part-1-the-data",
+    "href": "labs/lab_4.html#part-1-the-data",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Part 1 — The Data",
+    "text": "Part 1 — The Data\nThe data set for today’s lab are available on the following link:\nLab 4 Data\nDownload the data and use SPSS to open them. Then import it to SPSS by following these steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file location, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows:\n\nApplicant_ID = Nominal\nSex = Nominal\nAge = Scale\nState = Nominal\nAssessment_Type = Nominal\nExtroversion_Score = Scale\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nClick on the Variable View and the Data View tabs at the bottom of the SPSS window. Ensure that the variables and the data display correctly. They should appear as shown in the screenshots below.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#part-2-the-z-score-conversion",
+    "href": "labs/lab_4.html#part-2-the-z-score-conversion",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Part 2 — The z-score Conversion",
+    "text": "Part 2 — The z-score Conversion\nAlthough we have one data set, we will first need to program SPSS to treat the two assessments as separate data sets since the assessments are different. To do this, we will use the Split File function in SPSS. Follow the steps below:\n\nClick Data &gt; Split File &gt; Organize output by groups &gt; Select ‘Assessment_Type’ &gt; Click OK.\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nHighlight the column label Extroversion_Score and click the arrow to move it to the Variable(s) box.\nClick the Save standardized values as variables check box.\nClick OK.\n\nThe output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main data set called ZextScore. This new variable contains the \\(z-scores\\) for each applicant’s extroversion score.\nYou can now order the scores to identify the top 10 most extroverted individuals. To do this, follow the steps below:\n\nGo to Data &gt; Sort Cases.\nMove ZextScore` into the Sort by box.\nSelect Descending (high to low) and\nClick OK.\n\n\n\n\n\n\n\nCheckpoint 2\n\n\n\nWho are the top ten most extroverted individuals. Record their Applicant_ID’s and ZextScore.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#part-3-characteristics-of-z-scores",
+    "href": "labs/lab_4.html#part-3-characteristics-of-z-scores",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Part 3 — Characteristics of Z-scores",
+    "text": "Part 3 — Characteristics of Z-scores\n\nMean and Standard Deviation\nWe want to explore the mean and standard deviation of the \\(z-scores\\) for each assessment. To do this, follow the steps below:\nSTEPS FOR FINDING DESCRIPTIVE STATISTICS FOR Z-SCORES FROM EACH ASSESSMENT\n\n\nExamining the Distribution of Z-scores\nThere is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compre to the histograms of the corresponding \\(z-scores\\).",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#part-4-the-standard-normal-distribution",
+    "href": "labs/lab_4.html#part-4-the-standard-normal-distribution",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Part 4 — The Standard Normal Distribution",
+    "text": "Part 4 — The Standard Normal Distribution\nThe standard normal distribution is a special case of the normal distribution with a mean of 0 and a standard deviation of 1. It is a theoretical distribution that researchers commonly use to examine how well a set of data fits the normal distribution. Below is a screenshot of the standard normal distribution.\n\n\n\n\n\n\n\nSource: National Library of Medicine\n\n\n\n\n\n\n\n\nImportant Notes about the Standard Normal Distribution\n\n\n\n\nThe mean, median, and mode are all equal to 0 (center of the distribution).\nThe distribution is bell-shaped and symmetric about the mean.\nThe standard deviation is equal to 1.\n95% of the data falls within 2 standard deviations; while 99.7% (nearly all data) falls within 3 standard deviations of the mean.\nThe further you go from the mean in either direction, the less likely you are to find data points in that region. Data that that are more than 2 sd’s from the mean are very unlikely while those beyond 3 standard deviations can be considered outliers.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#take-home-lab-exercises",
+    "href": "labs/lab_4.html#take-home-lab-exercises",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Take-Home Lab Exercises",
+    "text": "Take-Home Lab Exercises\n\nMake a box plot for the Age variable. Based on this box plot, a student claims that the distribution is “normally distributed”. Would you agree with this claim? Why or not?\nUse SPSS to find the top 5 most extroverted females in the data. Record their Applicant_IDs and describe the steps you took in SPSS to find them.\nUsing SPSS, find the 10 most extroverted individuals from New Jersey. Record their Applicant_ID and describe the steps you took in SPSS to solve this problem.\nSuppose we want to find the top 10 most extroverted individuals aged between 20 and 30 years old (inclusive). Use SPSS to solve this problem and describe your steps.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#submission-checklist",
+    "href": "labs/lab_4.html#submission-checklist",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Submission Checklist",
+    "text": "Submission Checklist\n\nA saved SPSS data (.sav) file showing the variables and data (includes \\(z-scores\\)).\nSPSS output file (.spv) showing the analyses performed.\nCompleted responses for all checkpoints in the lab. Remember that SPSS output tables and graphs can be copied and pasted into a word document.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
   },
   {
     "objectID": "course-faq.html",
@@ -677,17 +741,6 @@
     "crumbs": [
       "Course information",
       "Syllabus"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#submission-checklist",
-    "href": "labs/lab_3.html#submission-checklist",
-    "title": "Lab 3: Measuring Variability",
-    "section": "Submission Checklist",
-    "text": "Submission Checklist\n\nA saved SPSS data file with correct value labels and measurement levels. Saving format: Lab_3_Data_YourLastName.sav.\nSPSS output containing all the analyses performed. Save format: Lab_3_Output_YourLastName.spv.\nCompleted responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
     ]
   }
 ]

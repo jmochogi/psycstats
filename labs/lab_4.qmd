@@ -1,0 +1,116 @@
+---
+title: "Lab 4: Z-score Standardization in SPSS" 
+subtitle: "Comparing Extroversion Scores from Different Scales"
+format:
+  html:
+    toc: true
+    number-sections: false
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    pdf-engine: xelatex
+execute:
+  echo: true
+---
+
+## Overview
+
+An employer is interested in identifying the top five most extroverted individuals from either assessment in the pool of applicants. Five hundred applicants from New York and New York and New Jersey took two different assessments as listed below. Note that the full version of the questionnaires referenced below are much longer and measure a wide range of personality traits, but for the purposes of this lab, we will focus on the extroversion scores only.
+
+- **The Big Five Inventory (BFI)** — an 8-item questionnaire with a maximum score of 40.
+- **The Eysenck Personality Inventory (EPI)** — a 12-item questionnaire with a maximum score of 24.
+
+Note that the employer can't select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to $z-scores$ to allow direct comparison.
+
+::: {.callout-note title="Learning Objectives"}
+By the end of this lab, you should be able to:
+
+- Use SPSS to compute $z-scores$ for two different assessments.
+- Use SPSS to identify the top five most extroverted individuals based on $z-scores$.
+:::
+
+## Part 1 — The Data
+
+The data set for today's lab are available on the following link:
+
+[Lab 4 Data](datasets/personality.csv)
+
+Download the data and use SPSS to open them. Then import it to SPSS by following these steps:
+
+**File \> Import Data \> CSV Data...**, browse to the file location, and click **OK** on the import wizard (accept the default settings).
+
+Make sure the measurement scales are set as follows:
+
+- `Applicant_ID` = Nominal
+- `Sex` = Nominal
+- `Age` = Scale
+- `State` = Nominal
+- `Assessment_Type` = Nominal
+- `Extroversion_Score` = Scale
+
+::: {.callout-tip title="Checkpoint"}
+Click on the **Variable View** and the **Data View** tabs at the bottom of the SPSS window. Ensure that the variables and the data display correctly. They should appear as shown in the screenshots below.
+:::
+
+## Part 2 — The z-score Conversion
+
+Although we have one data set, we will first need to program SPSS to treat the two assessments as separate data sets since the assessments are different. To do this, we will use the `Split File` function in SPSS. Follow the steps below:
+
+1.  Click **Data** \> **Split File** \> **Organize output by groups** \> **Select** 'Assessment_Type' \> Click **OK**.
+2.  Click **Analyze** \> **Descriptive Statistics** \> **Descriptives**.
+3.  Highlight the column label **Extroversion_Score** and click the arrow to move it to the **Variable(s)** box.
+4.  Click the **Save standardized values as variables** check box.
+5.  Click **OK**.
+
+The output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main data set called `ZextScore`. This new variable contains the $z-scores$ for each applicant's extroversion score.
+
+You can now order the scores to identify the top 10 most extroverted individuals. To do this, follow the steps below:
+
+- Go to **Data** \> **Sort Cases**.
+- Move ZextScore\` into the **Sort by** box.
+- Select **Descending** (high to low) and
+- Click **OK**.
+
+::: {.callout-tip title="Checkpoint 2"}
+Who are the top ten most extroverted individuals. Record their `Applicant_ID`'s and `ZextScore`.
+:::
+
+## Part 3 — Characteristics of Z-scores
+
+### Mean and Standard Deviation
+
+We want to explore the **mean** and **standard deviation** of the $z-scores$ for each assessment. To do this, follow the steps below:
+
+STEPS FOR FINDING DESCRIPTIVE STATISTICS FOR Z-SCORES FROM EACH ASSESSMENT
+
+### Examining the Distribution of Z-scores
+
+There is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compre to the histograms of the corresponding $z-scores$.
+
+## Part 4 — The Standard Normal Distribution
+
+The standard normal distribution is a special case of the **normal distribution** with a mean of 0 and a standard deviation of 1. It is a theoretical distribution that researchers commonly use to examine how well a set of data fits the normal distribution. Below is a screenshot of the standard normal distribution.
+
+[![Source: National Library of Medicine](images/lab4_im1.png){fig-align="center" width="519"}](https://www.nlm.nih.gov/oet/ed/stats/02-800.html)
+
+::: {.callout-note title="Important Notes about the Standard Normal Distribution"}
+- The mean, median, and mode are all equal to 0 (center of the distribution).
+- The distribution is bell-shaped and symmetric about the mean.
+- The standard deviation is equal to 1.
+- 95% of the data falls within 2 standard deviations; while 99.7% (nearly all data) falls within 3 standard deviations of the mean.
+- The further you go from the mean in either direction, the less likely you are to find data points in that region. Data that that are more than 2 sd's from the mean are very unlikely while those beyond 3 standard deviations can be considered outliers.
+:::
+
+## Take-Home Lab Exercises
+
+1.  Make a box plot for the `Age` variable. Based on this box plot, a student claims that the distribution is "normally distributed". Would you agree with this claim? Why or not?
+2.  Use SPSS to find the top 5 most extroverted females in the data. Record their `Applicant_ID`s and describe the steps you took in SPSS to find them.
+3.  Using SPSS, find the 10 most extroverted individuals from New Jersey. Record their `Applicant_ID` and describe the steps you took in SPSS to solve this problem.
+4.  Suppose we want to find the top 10 most extroverted individuals aged between 20 and 30 years old (inclusive). Use SPSS to solve this problem and describe your steps.
+
+## Submission Checklist
+
+- [ ] A saved SPSS data (.sav) file showing the variables and data (includes $z-scores$).
+- [ ] SPSS output file (.spv) showing the analyses performed.
+- [ ] Completed responses for all checkpoints in the lab. Remember that SPSS output tables and graphs can be copied and pasted into a word document.
