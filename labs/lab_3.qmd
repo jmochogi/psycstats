@@ -14,9 +14,7 @@ execute:
   echo: true
 ---
 
-**Deliverables:** 
-- SPSS data (`.sav`) file from SPSS.
-- An output (`.spv)` files from SPSS.   
+**Deliverables:** - SPSS data (`.sav`) file from SPSS. - An output (`.spv)` files from SPSS.\
 - A word or pdf document with answers to the take-home lab exercises at the end of the lab. The document must include images of your SPSS output tables and graphs where necessary.
 
 ## PART A - Overview
@@ -32,7 +30,7 @@ You will also learn about commonly used tools to visualize data variability of a
 
 ## The Data
 
-A psychologist is interested in understanding reaction time and how much reaction times vary from person to person. To investigate this, the psychologist asked 120 participants to complete a Stroop task, a commonly used task in psychology that measures how quickly people can respond when they encounter conflicting information. The variable Stroop_RT_ms records each participant’s reaction time in milliseconds, with larger values indicating slower responses. 
+A psychologist is interested in understanding reaction time and how much reaction times vary from person to person. To investigate this, the psychologist asked 120 participants to complete a Stroop task, a commonly used task in psychology that measures how quickly people can respond when they encounter conflicting information. The variable Stroop_RT_ms records each participant’s reaction time in milliseconds, with larger values indicating slower responses.
 
 Download the dataset from [this link](datasets/lab_3_data.csv) then import it to SPSS. To import the data set, follow these steps:
 
@@ -185,10 +183,10 @@ Numbers alone may not always give you an intuitive feel for variability. Sometim
 
 ### Box plots in SPSS
 
-To create a boxplot for the variable `Stroop_RT_ms`, follow these steps: 
+To create a boxplot for the variable `Stroop_RT_ms`, follow these steps:
 
-- **Graphs \> Chart Builder** 
-- From the gallery list, choose **Box plots**, then drag the **simple box plot** icon to the chart preview area. 
+- **Graphs \> Chart Builder**
+- From the gallery list, choose **Box plots**, then drag the **simple box plot** icon to the chart preview area.
 - Next, drag `Stroop_RT_ms` to the y-axis.
 - **OK**.
 
@@ -222,18 +220,18 @@ Write one APA-style sentence summarizing the central tendency and variability of
 
 ## Take-Home Lab Exercises
 
-1. How spread out are the ages of the participants in this study? Use SPSS to compute any two different statistics to measure variability for the variable `Age`. Based on the two statistics, describe the variability of the ages in your own words.
+1.  How spread out are the ages of the participants in this study? Use SPSS to compute any two different statistics to measure variability for the variable `Age`. Based on the two statistics, describe the variability of the ages in your own words.
 
-2. Create a histogram and a box plot for the variable `Age`. Describe the distribution of ages, based on the box plot and the histogram.
+2.  Create a histogram and a box plot for the variable `Age`. Describe the distribution of ages, based on the box plot and the histogram.
 
-3. How does the distribution of `Stroop_RT_ms` scores differ by gender? Create side-by-side box plots, with Gender on the x-axis, to compare the distributions of `Stroop_RT_ms` scores across genders. Describe your findings, including any differences in center, variability, and outliers.
+3.  How does the distribution of `Stroop_RT_ms` scores differ by gender? Create side-by-side box plots, with Gender on the x-axis, to compare the distributions of `Stroop_RT_ms` scores across genders. Describe your findings, including any differences in center, variability, and outliers.
 
-4. Does the variability of `Stroop_RT_ms` differ by age group? Use SPSS to split the data into two groups: participants **younger than 25** and participants **25 or older**. Then, calculate statistics of your choice for each group that will help you compare the variability of `Stroop_RT_ms` scores. Describe your findings in APA style.
+4.  Does the variability of `Stroop_RT_ms` differ by age group? Use SPSS to split the data into two groups: participants **younger than 25** and participants **25 or older**. Then, calculate statistics of your choice for each group that will help you compare the variability of `Stroop_RT_ms` scores. Describe your findings in APA style.
 
 **Note:** Look up how to split the data in SPSS if you are not sure how to do this.
 
 ## Submission Checklist
 
 - [ ] A saved SPSS data file with correct value labels and measurement levels. Saving format: `Lab_3_Data_YourLastName.sav`.
-- [ ] SPSS output containing all the analyses performed. Save format: `Lab_3_Output_YourLastName.spv`. 
+- [ ] SPSS output containing all the analyses performed. Save format: `Lab_3_Output_YourLastName.spv`.
 - [ ] Completed responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.

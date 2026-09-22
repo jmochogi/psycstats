@@ -16,18 +16,22 @@ execute:
 
 ## Overview
 
-An employer is interested in identifying the top five most extroverted individuals from either assessment in the pool of applicants. Five hundred applicants from New York and New York and New Jersey took two different assessments as listed below. Note that the full version of the questionnaires referenced below are much longer and measure a wide range of personality traits, but for the purposes of this lab, we will focus on the extroversion scores only.
+An employer is interested in identifying the ten most extroverted individuals from a pool of applicants. To do this, 500 applicants from New York and New Jersey completed two different personality assessments, as described below.
 
 - **The Big Five Inventory (BFI)** — an 8-item questionnaire with a maximum score of 40.
 - **The Eysenck Personality Inventory (EPI)** — a 12-item questionnaire with a maximum score of 24.
+
+The full versions of these questionnaires are much longer and measure a wide range of personality traits. However, for the purposes of this lab, we will focus only on the extroversion scores from each assessment.
 
 Note that the employer can't select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to $z-scores$ to allow direct comparison.
 
 ::: {.callout-note title="Learning Objectives"}
 By the end of this lab, you should be able to:
 
-- Use SPSS to compute $z-scores$ for two different assessments.
-- Use SPSS to identify the top five most extroverted individuals based on $z-scores$.
+- Use SPSS to generate $z-scores$.
+- Use SPSS to sort data and identify the top/bottom scores.
+- Examine the characteristics of $z-scores$ and their distributions.
+- Describe the characteristics of the standard normal distribution and compare it to Z-scores.
 :::
 
 ## Part 1 — The Data
@@ -63,17 +67,21 @@ Although we have one data set, we will first need to program SPSS to treat the t
 4.  Click the **Save standardized values as variables** check box.
 5.  Click **OK**.
 
-The output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main data set called `ZextScore`. This new variable contains the $z-scores$ for each applicant's extroversion score.
+The output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main data set called `ZExtroversion_Score`. This new variable contains the $z-scores$ for each applicant's extroversion score.
 
 You can now order the scores to identify the top 10 most extroverted individuals. To do this, follow the steps below:
 
 - Go to **Data** \> **Sort Cases**.
-- Move ZextScore\` into the **Sort by** box.
+- Move `ZExtroversion_Score` into the **Sort by** box.
 - Select **Descending** (high to low) and
 - Click **OK**.
 
+Alternatively, you can highlight the `ZExtroversion_Score` column in the data view, right click then choose **Sort Descending**. See below:
+
+![](images/lab4_im4.png){fig-align="center" width="552"}
+
 ::: {.callout-tip title="Checkpoint 2"}
-Who are the top ten most extroverted individuals. Record their `Applicant_ID`'s and `ZextScore`.
+Who are the top ten most extroverted individuals. Record their `Applicant_ID`'s and `ZExtroversion_Scores`.
 :::
 
 ## Part 3 — Characteristics of Z-scores
@@ -82,11 +90,37 @@ Who are the top ten most extroverted individuals. Record their `Applicant_ID`'s 
 
 We want to explore the **mean** and **standard deviation** of the $z-scores$ for each assessment. To do this, follow the steps below:
 
-STEPS FOR FINDING DESCRIPTIVE STATISTICS FOR Z-SCORES FROM EACH ASSESSMENT
+- Go to **Analyze** \> **Descriptive Statistics**\>**Explore**
+- Move `Assessment_Type` into the **Factor List** and `ZExtroversion_Score` into the **Dependent List**.
+- Select **Statistics**
 
-### Examining the Distribution of Z-scores
+Your set up should look as shown below:
 
-There is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compre to the histograms of the corresponding $z-scores$.
+![](images/lab4_im2.png){fig-align="center" width="552"}
+
+- Click **OK**.
+
+::: {.callout-tip title="Checkpoint "}
+What do you notice about the mean and standard deviation of the $z-scores$? Would you expect this to be the case every time we convert any set of scores to Z-scores? Explain.
+:::
+
+### Examining the Distributions (Shape) of Z-scores
+
+There is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compare them to the histograms of the corresponding $z-scores$.
+
+- Go to **Graphs** \> **Chart Builder** \> **Histogram**.
+
+- Move `Extroversion_Score` into the **Variable** box and `Assessment_Type` into the **Panel** box under `Rows`. Your set up should look as shown below:
+
+  ![](images/lab4_im3.png){fig-align="center" width="539"}
+
+- Click **OK**.
+
+Now repeat the above process but this time use `ZExtroversion_Score` instead of `Extroversion_Score`. Your set up should look as shown below:
+
+::: {.callout-tip title="\"Checkpoint"}
+How would you describe the distribution of the original extroversion scores for each assessment? How do these compare to the distribution of the $z-scores$?
+:::
 
 ## Part 4 — The Standard Normal Distribution
 
@@ -104,13 +138,15 @@ The standard normal distribution is a special case of the **normal distribution*
 
 ## Take-Home Lab Exercises
 
-1.  Make a box plot for the `Age` variable. Based on this box plot, a student claims that the distribution is "normally distributed". Would you agree with this claim? Why or not?
-2.  Use SPSS to find the top 5 most extroverted females in the data. Record their `Applicant_ID`s and describe the steps you took in SPSS to find them.
+Before beginning the lab, you will need to undo the **split file** option that was enabled earlier by going to **Data** \> **Split File** \> **Analyze all cases, do not create groups** \> **OK**. Some exercises here may require use of **split file**, so you will need to repeat the steps above to split the file again when necessary.
+
+1.  Make a box plot to visualize the `Age` variable. Based on this box plot, a student claims that the ages of the applicants are "normally distributed". Would you agree with this claim? Why or why not?
+2.  Use SPSS to find the top 10 most extroverted females in the data. Record their `Applicant_ID'`s and describe the steps you took in SPSS to find them.
 3.  Using SPSS, find the 10 most extroverted individuals from New Jersey. Record their `Applicant_ID` and describe the steps you took in SPSS to solve this problem.
-4.  Suppose we want to find the top 10 most extroverted individuals aged between 20 and 30 years old (inclusive). Use SPSS to solve this problem and describe your steps.
+4.  Suppose we want to find the 10 most extroverted individuals aged between 20 and 30 years old (inclusive). Use SPSS to solve this problem and briefly describe your steps.
 
 ## Submission Checklist
 
 - [ ] A saved SPSS data (.sav) file showing the variables and data (includes $z-scores$).
 - [ ] SPSS output file (.spv) showing the analyses performed.
-- [ ] Completed responses for all checkpoints in the lab. Remember that SPSS output tables and graphs can be copied and pasted into a word document.
+- [ ] Completed responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.

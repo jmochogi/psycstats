@@ -99,11 +99,10 @@ window.Quarto = {
 
 <meta property="og:title" content="Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology">
 <meta property="og:description" content="Comparing Extroversion Scores from Different Scales">
-<meta property="og:image" content="https://jmochogi.github.io/psycstats/labs/images/lab4_im1.png">
+<meta property="og:image" content="https://jmochogi.github.io/psycstats/labs/images/lab4_im4.png">
 <meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
-<meta property="og:image:alt" content="Source: National Library of Medicine">
-<meta property="og:image:height" content="928">
-<meta property="og:image:width" content="1058">
+<meta property="og:image:height" content="894">
+<meta property="og:image:width" content="1476">
 <meta name="twitter:title" content="Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology">
 <meta name="twitter:description" content="Comparing Extroversion Scores from Different Scales">
 <meta name="twitter:image" content="https://jmochogi.github.io/psycstats/labs/img/twitter-card.png">
@@ -248,7 +247,7 @@ window.Quarto = {
   <li><a href="#part-3-characteristics-of-z-scores" id="toc-part-3-characteristics-of-z-scores" class="nav-link" data-scroll-target="#part-3-characteristics-of-z-scores">Part 3 — Characteristics of Z-scores</a>
   <ul class="collapse">
   <li><a href="#mean-and-standard-deviation" id="toc-mean-and-standard-deviation" class="nav-link" data-scroll-target="#mean-and-standard-deviation">Mean and Standard Deviation</a></li>
-  <li><a href="#examining-the-distribution-of-z-scores" id="toc-examining-the-distribution-of-z-scores" class="nav-link" data-scroll-target="#examining-the-distribution-of-z-scores">Examining the Distribution of Z-scores</a></li>
+  <li><a href="#examining-the-distributions-shape-of-z-scores" id="toc-examining-the-distributions-shape-of-z-scores" class="nav-link" data-scroll-target="#examining-the-distributions-shape-of-z-scores">Examining the Distributions (Shape) of Z-scores</a></li>
   </ul></li>
   <li><a href="#part-4-the-standard-normal-distribution" id="toc-part-4-the-standard-normal-distribution" class="nav-link" data-scroll-target="#part-4-the-standard-normal-distribution">Part 4 — The Standard Normal Distribution</a></li>
   <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises" class="nav-link" data-scroll-target="#take-home-lab-exercises">Take-Home Lab Exercises</a></li>
@@ -281,11 +280,12 @@ window.Quarto = {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>An employer is interested in identifying the top five most extroverted individuals from either assessment in the pool of applicants. Five hundred applicants from New York and New York and New Jersey took two different assessments as listed below. Note that the full version of the questionnaires referenced below are much longer and measure a wide range of personality traits, but for the purposes of this lab, we will focus on the extroversion scores only.</p>
+<p>An employer is interested in identifying the ten most extroverted individuals from a pool of applicants. To do this, 500 applicants from New York and New Jersey completed two different personality assessments, as described below.</p>
 <ul>
 <li><strong>The Big Five Inventory (BFI)</strong> — an 8-item questionnaire with a maximum score of 40.</li>
 <li><strong>The Eysenck Personality Inventory (EPI)</strong> — a 12-item questionnaire with a maximum score of 24.</li>
 </ul>
+<p>The full versions of these questionnaires are much longer and measure a wide range of personality traits. However, for the purposes of this lab, we will focus only on the extroversion scores from each assessment.</p>
 <p>Note that the employer can’t select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to <span class="math inline">\(z-scores\)</span> to allow direct comparison.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Learning Objectives">
 <div class="callout-header d-flex align-content-center">
@@ -299,8 +299,10 @@ Learning Objectives
 <div class="callout-body-container callout-body">
 <p>By the end of this lab, you should be able to:</p>
 <ul>
-<li>Use SPSS to compute <span class="math inline">\(z-scores\)</span> for two different assessments.</li>
-<li>Use SPSS to identify the top five most extroverted individuals based on <span class="math inline">\(z-scores\)</span>.</li>
+<li>Use SPSS to generate <span class="math inline">\(z-scores\)</span>.</li>
+<li>Use SPSS to sort data and identify the top/bottom scores.</li>
+<li>Examine the characteristics of <span class="math inline">\(z-scores\)</span> and their distributions.</li>
+<li>Describe the characteristics of the standard normal distribution and compare it to Z-scores.</li>
 </ul>
 </div>
 </div>
@@ -344,14 +346,20 @@ Checkpoint
 <li>Click the <strong>Save standardized values as variables</strong> check box.</li>
 <li>Click <strong>OK</strong>.</li>
 </ol>
-<p>The output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main data set called <code>ZextScore</code>. This new variable contains the <span class="math inline">\(z-scores\)</span> for each applicant’s extroversion score.</p>
+<p>The output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main data set called <code>ZExtroversion_Score</code>. This new variable contains the <span class="math inline">\(z-scores\)</span> for each applicant’s extroversion score.</p>
 <p>You can now order the scores to identify the top 10 most extroverted individuals. To do this, follow the steps below:</p>
 <ul>
 <li>Go to <strong>Data</strong> &gt; <strong>Sort Cases</strong>.</li>
-<li>Move ZextScore` into the <strong>Sort by</strong> box.</li>
+<li>Move <code>ZExtroversion_Score</code> into the <strong>Sort by</strong> box.</li>
 <li>Select <strong>Descending</strong> (high to low) and</li>
 <li>Click <strong>OK</strong>.</li>
 </ul>
+<p>Alternatively, you can highlight the <code>ZExtroversion_Score</code> column in the data view, right click then choose <strong>Sort Descending</strong>. See below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab4_im4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="552"></p>
+</figure>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 2">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -362,7 +370,7 @@ Checkpoint 2
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Who are the top ten most extroverted individuals. Record their <code>Applicant_ID</code>’s and <code>ZextScore</code>.</p>
+<p>Who are the top ten most extroverted individuals. Record their <code>Applicant_ID</code>’s and <code>ZExtroversion_Scores</code>.</p>
 </div>
 </div>
 </section>
@@ -371,11 +379,61 @@ Checkpoint 2
 <section id="mean-and-standard-deviation" class="level3">
 <h3 class="anchored" data-anchor-id="mean-and-standard-deviation">Mean and Standard Deviation</h3>
 <p>We want to explore the <strong>mean</strong> and <strong>standard deviation</strong> of the <span class="math inline">\(z-scores\)</span> for each assessment. To do this, follow the steps below:</p>
-<p>STEPS FOR FINDING DESCRIPTIVE STATISTICS FOR Z-SCORES FROM EACH ASSESSMENT</p>
+<ul>
+<li>Go to <strong>Analyze</strong> &gt; <strong>Descriptive Statistics</strong>&gt;<strong>Explore</strong></li>
+<li>Move <code>Assessment_Type</code> into the <strong>Factor List</strong> and <code>ZExtroversion_Score</code> into the <strong>Dependent List</strong>.</li>
+<li>Select <strong>Statistics</strong></li>
+</ul>
+<p>Your set up should look as shown below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab4_im2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="552"></p>
+</figure>
+</div>
+<ul>
+<li>Click <strong>OK</strong>.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint ">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>What do you notice about the mean and standard deviation of the <span class="math inline">\(z-scores\)</span>? Would you expect this to be the case every time we convert any set of scores to Z-scores? Explain.</p>
+</div>
+</div>
 </section>
-<section id="examining-the-distribution-of-z-scores" class="level3">
-<h3 class="anchored" data-anchor-id="examining-the-distribution-of-z-scores">Examining the Distribution of Z-scores</h3>
-<p>There is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compre to the histograms of the corresponding <span class="math inline">\(z-scores\)</span>.</p>
+<section id="examining-the-distributions-shape-of-z-scores" class="level3">
+<h3 class="anchored" data-anchor-id="examining-the-distributions-shape-of-z-scores">Examining the Distributions (Shape) of Z-scores</h3>
+<p>There is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compare them to the histograms of the corresponding <span class="math inline">\(z-scores\)</span>.</p>
+<ul>
+<li><p>Go to <strong>Graphs</strong> &gt; <strong>Chart Builder</strong> &gt; <strong>Histogram</strong>.</p></li>
+<li><p>Move <code>Extroversion_Score</code> into the <strong>Variable</strong> box and <code>Assessment_Type</code> into the <strong>Panel</strong> box under <code>Rows</code>. Your set up should look as shown below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab4_im3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="539"></p>
+</figure>
+</div></li>
+<li><p>Click <strong>OK</strong>.</p></li>
+</ul>
+<p>Now repeat the above process but this time use <code>ZExtroversion_Score</code> instead of <code>Extroversion_Score</code>. Your set up should look as shown below:</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="&quot;Checkpoint">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+“Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>How would you describe the distribution of the original extroversion scores for each assessment? How do these compare to the distribution of the <span class="math inline">\(z-scores\)</span>?</p>
+</div>
+</div>
 </section>
 </section>
 <section id="part-4-the-standard-normal-distribution" class="level2">
@@ -413,11 +471,12 @@ Important Notes about the Standard Normal Distribution
 </section>
 <section id="take-home-lab-exercises" class="level2">
 <h2 class="anchored" data-anchor-id="take-home-lab-exercises">Take-Home Lab Exercises</h2>
+<p>Before beginning the lab, you will need to undo the <strong>split file</strong> option that was enabled earlier by going to <strong>Data</strong> &gt; <strong>Split File</strong> &gt; <strong>Analyze all cases, do not create groups</strong> &gt; <strong>OK</strong>. Some exercises here may require use of <strong>split file</strong>, so you will need to repeat the steps above to split the file again when necessary.</p>
 <ol type="1">
-<li>Make a box plot for the <code>Age</code> variable. Based on this box plot, a student claims that the distribution is “normally distributed”. Would you agree with this claim? Why or not?</li>
-<li>Use SPSS to find the top 5 most extroverted females in the data. Record their <code>Applicant_ID</code>s and describe the steps you took in SPSS to find them.</li>
+<li>Make a box plot to visualize the <code>Age</code> variable. Based on this box plot, a student claims that the ages of the applicants are “normally distributed”. Would you agree with this claim? Why or why not?</li>
+<li>Use SPSS to find the top 10 most extroverted females in the data. Record their <code>Applicant_ID'</code>s and describe the steps you took in SPSS to find them.</li>
 <li>Using SPSS, find the 10 most extroverted individuals from New Jersey. Record their <code>Applicant_ID</code> and describe the steps you took in SPSS to solve this problem.</li>
-<li>Suppose we want to find the top 10 most extroverted individuals aged between 20 and 30 years old (inclusive). Use SPSS to solve this problem and describe your steps.</li>
+<li>Suppose we want to find the 10 most extroverted individuals aged between 20 and 30 years old (inclusive). Use SPSS to solve this problem and briefly describe your steps.</li>
 </ol>
 </section>
 <section id="submission-checklist" class="level2">
@@ -425,7 +484,7 @@ Important Notes about the Standard Normal Distribution
 <ul class="task-list">
 <li><label><input type="checkbox">A saved SPSS data (.sav) file showing the variables and data (includes <span class="math inline">\(z-scores\)</span>).</label></li>
 <li><label><input type="checkbox">SPSS output file (.spv) showing the analyses performed.</label></li>
-<li><label><input type="checkbox">Completed responses for all checkpoints in the lab. Remember that SPSS output tables and graphs can be copied and pasted into a word document.</label></li>
+<li><label><input type="checkbox">Completed responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.</label></li>
 </ul>
 
 
