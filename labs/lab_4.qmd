@@ -61,13 +61,20 @@ Click on the **Variable View** and the **Data View** tabs at the bottom of the S
 
 Although we have one data set, we will first need to program SPSS to treat the two assessments as separate data sets since the assessments are different. To do this, we will use the `Split File` function in SPSS. Follow the steps below:
 
-1.  Click **Data** \> **Split File** \> **Organize output by groups** \> **Select** 'Assessment_Type' \> Click **OK**.
-2.  Click **Analyze** \> **Descriptive Statistics** \> **Descriptives**.
+- Click **Data** \> **Split File** \> Select **Compare groups** 
+- Send `Assessment_Type` into the **Group Based on** box 
+- Click **OK**.
+
+After you split a file in that manner, any analysis you perform will be done separately for each assessment.
+
+Now, we will use SPSS to convert the extroversion scores to $z-scores$. Follow the steps below:
+
+- Click **Analyze** \> **Descriptive Statistics** \> **Descriptives**.
 3.  Highlight the column label **Extroversion_Score** and click the arrow to move it to the **Variable(s)** box.
 4.  Click the **Save standardized values as variables** check box.
 5.  Click **OK**.
 
-The output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main data set called `ZExtroversion_Score`. This new variable contains the $z-scores$ for each applicant's extroversion score.
+A new column (variable) in the main data set called `ZExtroversion_Score` should appear. This new variable contains the $z-scores$ for each applicant's extroversion score. Importantly, the $Z-scores$ are calculated separately for each assessment, so they are now comparable across the two assessments.
 
 You can now order the scores to identify the top 10 most extroverted individuals. To do this, follow the steps below:
 
@@ -81,7 +88,7 @@ Alternatively, you can highlight the `ZExtroversion_Score` column in the data vi
 ![](images/lab4_im4.png){fig-align="center" width="552"}
 
 ::: {.callout-tip title="Checkpoint 2"}
-Who are the top ten most extroverted individuals. Record their `Applicant_ID`'s and `ZExtroversion_Scores`.
+Who are the top ten most extroverted individuals? Record their `Applicant_ID`'s, the assessment they took (BFI or EPI) and `ZExtroversion_Scores`.
 :::
 
 ## Part 3 — Characteristics of Z-scores

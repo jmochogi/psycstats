@@ -339,14 +339,22 @@ Checkpoint
 <section id="part-2-the-z-score-conversion" class="level2">
 <h2 class="anchored" data-anchor-id="part-2-the-z-score-conversion">Part 2 — The z-score Conversion</h2>
 <p>Although we have one data set, we will first need to program SPSS to treat the two assessments as separate data sets since the assessments are different. To do this, we will use the <code>Split File</code> function in SPSS. Follow the steps below:</p>
-<ol type="1">
-<li>Click <strong>Data</strong> &gt; <strong>Split File</strong> &gt; <strong>Organize output by groups</strong> &gt; <strong>Select</strong> ‘Assessment_Type’ &gt; Click <strong>OK</strong>.</li>
+<ul>
+<li>Click <strong>Data</strong> &gt; <strong>Split File</strong> &gt; Select <strong>Compare groups</strong></li>
+<li>Send <code>Assessment_Type</code> into the <strong>Group Based on</strong> box</li>
+<li>Click <strong>OK</strong>.</li>
+</ul>
+<p>After you split a file in that manner, any analysis you perform will be done separately for each assessment.</p>
+<p>Now, we will use SPSS to convert the extroversion scores to <span class="math inline">\(z-scores\)</span>. Follow the steps below:</p>
+<ul>
 <li>Click <strong>Analyze</strong> &gt; <strong>Descriptive Statistics</strong> &gt; <strong>Descriptives</strong>.</li>
+</ul>
+<ol start="3" type="1">
 <li>Highlight the column label <strong>Extroversion_Score</strong> and click the arrow to move it to the <strong>Variable(s)</strong> box.</li>
 <li>Click the <strong>Save standardized values as variables</strong> check box.</li>
 <li>Click <strong>OK</strong>.</li>
 </ol>
-<p>The output will produce the usual SPSS output window with the descriptive statistics for each assessment, as well as a new column (variable) in the main data set called <code>ZExtroversion_Score</code>. This new variable contains the <span class="math inline">\(z-scores\)</span> for each applicant’s extroversion score.</p>
+<p>A new column (variable) in the main data set called <code>ZExtroversion_Score</code> should appear. This new variable contains the <span class="math inline">\(z-scores\)</span> for each applicant’s extroversion score. Importantly, the <span class="math inline">\(Z-scores\)</span> are calculated separately for each assessment, so they are now comparable across the two assessments.</p>
 <p>You can now order the scores to identify the top 10 most extroverted individuals. To do this, follow the steps below:</p>
 <ul>
 <li>Go to <strong>Data</strong> &gt; <strong>Sort Cases</strong>.</li>
@@ -370,7 +378,7 @@ Checkpoint 2
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Who are the top ten most extroverted individuals. Record their <code>Applicant_ID</code>’s and <code>ZExtroversion_Scores</code>.</p>
+<p>Who are the top ten most extroverted individuals? Record their <code>Applicant_ID</code>’s, the assessment they took (BFI or EPI) and <code>ZExtroversion_Scores</code>.</p>
 </div>
 </div>
 </section>
