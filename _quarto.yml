@@ -119,8 +119,8 @@ website:
         contents:
           - href: Downloads/sample_projects.qmd
             text: Sample Projects
-          #- href: Downloads/datasets.qmd
-           # text: Datasets
+          - href: Downloads/templates.qmd
+            text: Project Templates
           #- href: Downloads/templates.qmd
             #text: Templates
   page-footer:
