@@ -7,9 +7,9 @@ format:
 
 # Project Overview
 
-The goal of this project is for you to demonstrate your ability to apply the statistical concepts and techniques we have covered in this course to a meaningful psychological research question. You will work with a real-world psychology dataset and use statistical reasoning to explore relationships, differences, patterns, or other phenomena that are relevant to psychology. You are **not** expected to conduct an exhaustive analysis by generating every statistic or visualization we have learned in the course. Instead, I expect you to demonstrate your ability to ask meaningful research questions and answer them using carefully selected statistical analysis techniques and tools. All analyses must be conducted in **SPSS**.
+The goal of this project is for you to demonstrate your ability to apply the statistical concepts and techniques we have covered in this course to a meaningful psychological research problem. You will work with a real-world psychology dataset and use statistical reasoning to explore relationships, differences, patterns, or other phenomena that are relevant to psychology. You are **not** expected to conduct an exhaustive analysis by generating every statistic or visualization we have learned in the course. Instead, I expect you to demonstrate your ability to ask meaningful research questions and answer them using carefully selected descriptive statistical analysis techniques and tools. All analyses must be conducted in **SPSS**.
 
-Your group will select a psychology dataset from the [**Journal of Open Psychology Data**](https://openpsychologydata.metajnl.com/), which publishes openly accessible datasets associated with psychological research. After selecting a dataset, your group will investigate and become familiar with the study from which the data originated. You should consider questions such as: Who participated in the study? How was the sample obtained? What population might the researchers have been interested in? What variables were collected, and what types of variables are they? What psychological concepts or constructs are being measured? Your team will then identify a research topic or goal and develop **two research questions** directly related to that topic. You will answer these questions by conducting appropriate statistical analyses of the dataset in SPSS. Your analyses should include both **numerical summary statistics** (such as mans, medians, etc) and **data visualizations** (histograms, bar graphs, etc), and the statistics and visualizations you choose should complement one another and be appropriately connected to help tell a coherent statistical story about the data.
+Your group will select a psychology dataset from the [**Journal of Open Psychology Data**](https://openpsychologydata.metajnl.com/), which publishes openly accessible datasets associated with psychological research. After selecting a dataset, your group will investigate and become familiar with the study from which the data originated. You should consider questions such as: Who participated in the study? How was the sample obtained? What population might the researchers have been interested in? What variables were collected, and what types of variables are they? What psychological concepts or constructs are being measured? Your team will then identify a research topic or goal and develop **two research questions** directly related to that topic. You will answer these questions by conducting appropriate statistical analyses of the dataset in SPSS. Your analyses should include both **numerical summary statistics** (such as mans, medians, etc) and **data visualizations** (scatter plots, box plots, bar graphs, etc), and the statistics and visualizations you choose should complement one another and be appropriately connected to help tell a coherent story about your topic and questions.
 
 # Research Topic and Questions
 
@@ -67,19 +67,23 @@ Your project report should be written in a clear and concise manner, and should 
 
 ## Abstract
 
-The abstract should be a brief summary of your research topic, questions, data, methods, and findings. It should be no more than 250 words. It is best to write the abstract after you are done with all the other parts of the project.
+The abstract should be a brief summary of your research topic, questions, data, methods, and main findings. It should be no more than 350 words. It is best to write the abstract after you are done with all the other parts of the project.
+
+Click on the following link to read an example of a well written abstract:
+
+[Sample Abstract](https://cornerstone.lib.mnsu.edu/urs/2022/poster-session-01/4/)
 
 ## Introduction
 
-The introduction section introduces your topic and provides the background. In this section, you will need to provide a rationale for your chosen topic and/.or questions and describe why we should care. Possible benefits of your study should be included. Consider citing a few articles in the introduction section to help you make your case.
+The introduction section introduces your topic and provides the background. In this section, you will need to provide a rationale for your chosen topic and/or questions and describe why we should care. Consider citing a few articles in the introduction section to help you make your case.
 
 ## Research Questions
 
-Write down two research questions that you will answer as part of your study. Both questions should address your research topic. In other words, you should not have questions that are unrelated as this might suggest you are doing two different studies in one. The variables of interest should be clearly identified in each question.
+Write down two to three research questions that you will answer as part of your study. Both questions should address your research topic. In other words, you should not have questions that are unrelated as this might suggest you are doing two different studies in one. The variables of interest should be clearly identified in each question.
 
 ## Literature Review
 
-Find 5 to 7 articles about your topic, read and synthesize them to show what previous researchers have done on that topic. If the articles were empirical studies, you need to state the rationale for the study, the methods used (e.g. experimental, observational), findings, etc. The goal is to situate your own study in the context of existing studies/literature.
+Find 5 to 7 articles about your topic, read and synthesize them to show what previous researchers have done on that topic. If the articles were empirical studies, you need to state the rationale for the study, the methods used (e.g. experimental, observational, mixed methods), findings, etc. The goal is to situate your own study in the context of existing studies/literature.
 
 ## Methods
 
@@ -87,11 +91,11 @@ The methods section should describe the data and the methods used to analyze the
 
 ### Sample and Sampling Method
 
-Describe your sample and its characteristics. How large is the sample and how was it collected (e.g., what instruments were used)? What is the target population? What sampling method was used and how does this impact whether or not the sample is representative of the population? <br> ***Note that*** since you are using existing data that you did not collect, I will allow you to speculate on some of the data collection techniques as long as the speculation seems reasonable. You will do this only when you cannot fine enough information in the documentation for the data set of your choice.
+Describe your sample and its characteristics. Who are the participants and how many are they? What are their demographics? What data were collected and how were these data collected? e.g., surveys etc). What is the target population ? What sampling method was used and how does this impact whether or not the sample is representative of the population? <br> ***Note that*** since you are using existing data that you did not collect, I will allow you to speculate on some of the data collection techniques as long as the speculation seems reasonable. You will do this only when you cannot find enough information in the documentation for the data set of your choice.
 
 ### Data Analysis Techniques
 
-Describe the data analysis techniques that are used to answer each of your research questions. This section should include a description of the **variables** used in the analysis, their types (continuous vs discrete), and how their measurement levels (nominal, ordinal, etc.). You should also describe any data tranformations (preprocessing) that was done before the analysis. Finally, you should describe the statistical tools used to analyze the data (e.g., summary statistics, visualizations, scatter plots , etc.) and why they are appropriate for your research questions.
+Describe the data analysis techniques that you used to answer each of your research questions. This section should include a description of the **variables** used in the analysis, their types (continuous vs discrete), and how their measurement levels (nominal, ordinal, etc.). You should also describe any data transformations (pre-processing) that was done before the analysis. Finally, you should describe the statistical tools used to analyze the data (e.g., frequency tables, summary statistics, scatter plots , etc.) and why they are appropriate for your research questions.
 
 ## Data Analysis and Results
 
@@ -107,41 +111,41 @@ All sources used should be cited both in text and listed under references. Use t
 
 # Grading Rubric
 
-The project will be graded out of 100 points. The following rubric will be used to grade the project.
+The project will be graded out of 100 points. The following rubric will be used:
 
 ### Quality of Written Report
 
-+----------+-----------------------------------------------------------------------------------------------------+
-| Points   | Description                                                                                         |
-+==========+=====================================================================================================+
-| 10       | - Organization and structure are good, report is easy to follow and interesting to read.            |
-|          |                                                                                                     |
-|          | - No grammatical errors/typos.                                                                      |
-|          |                                                                                                     |
-|          | - Graphs are well labelled and incorporated into the body of the report alongside software outputs. |
-|          |                                                                                                     |
-|          | - References provided in PA format.                                                                 |
-+----------+-----------------------------------------------------------------------------------------------------+
-| 9        | - A few minor grammatical, spelling, and/or formatting errors.                                      |
-|          |                                                                                                     |
-|          | - Minor APA formatting errors.                                                                      |
-+----------+-----------------------------------------------------------------------------------------------------+
-| 8        | - Missing introduction/rational or a fair amount of grammatical, spelling errors.                   |
-|          |                                                                                                     |
-|          | - Incomplete reference list or missing some citations.                                              |
-+----------+-----------------------------------------------------------------------------------------------------+
-| 6        | - Report is not well-structured.                                                                    |
-|          |                                                                                                     |
-|          | - Discussion is difficult to follow.                                                                |
-+----------+-----------------------------------------------------------------------------------------------------+
-| 4        | - Graphs/software output not included in the body of the report.                                    |
-|          |                                                                                                     |
-|          | - Structure of report is sloppy.                                                                    |
-|          |                                                                                                     |
-|          | - No apparent proofreading.                                                                         |
-+----------+-----------------------------------------------------------------------------------------------------+
-| \< 4     | - Even more problematic (e.g., no citations at all).                                                |
-+----------+-----------------------------------------------------------------------------------------------------+
++-----------+-----------------------------------------------------------------------------------------------------+
+| Points    | Description                                                                                         |
++===========+=====================================================================================================+
+| 10        | - Organization and structure are good, report is easy to follow and interesting to read.            |
+|           |                                                                                                     |
+|           | - No grammatical errors/typos.                                                                      |
+|           |                                                                                                     |
+|           | - Graphs are well labelled and incorporated into the body of the report alongside software outputs. |
+|           |                                                                                                     |
+|           | - References provided in PA format.                                                                 |
++-----------+-----------------------------------------------------------------------------------------------------+
+| 9         | - A few minor grammatical, spelling, and/or formatting errors.                                      |
+|           |                                                                                                     |
+|           | - Minor APA formatting errors.                                                                      |
++-----------+-----------------------------------------------------------------------------------------------------+
+| 8         | - Missing introduction/rational or a fair amount of grammatical, spelling errors.                   |
+|           |                                                                                                     |
+|           | - Incomplete reference list or missing some citations.                                              |
++-----------+-----------------------------------------------------------------------------------------------------+
+| 6         | - Report is not well-structured.                                                                    |
+|           |                                                                                                     |
+|           | - Discussion is difficult to follow.                                                                |
++-----------+-----------------------------------------------------------------------------------------------------+
+| 4         | - Graphs/software output not included in the body of the report.                                    |
+|           |                                                                                                     |
+|           | - Structure of report is sloppy.                                                                    |
+|           |                                                                                                     |
+|           | - No apparent proofreading.                                                                         |
++-----------+-----------------------------------------------------------------------------------------------------+
+| \< 4      | - Even more problematic (e.g., no citations at all).                                                |
++-----------+-----------------------------------------------------------------------------------------------------+
 
 ### Design and Methodology of the Study
 
@@ -211,4 +215,10 @@ The project will be graded out of 100 points. The following rubric will be used 
 | \< 4     | - Even more problematic.                                                                                                 |
 +----------+--------------------------------------------------------------------------------------------------------------------------+
 
-**Note** that the above points total to 75. As a group, your will be graded out of 75. The rest of the points (25) will come from your presentation (each member is expected to take part) and individual contribution to the project (you will complete a project assessment). This means that members in the same group may not earn the same grade.
+**Note** that the above points total to 75. As a group, your will be graded out of 75. The rest of the points (25) will come from your presentation (each member is expected to take part) and individual contribution to the project. Individual contribution will be assessed through my observations of your work during class, and the project self assessment report. This means that members in the same group may not earn the same grade.
+
+## Presentation Guide + 
+
+You will make a poster-style presentation. Several samples are available in the Hallway on the first floor of Williams Hall.
+
+Please consider submitting abstracts for next year's [Whalen Symposium](https://www.ithaca.edu/whalen-symposium) (we will discuss this after your projects are done).
