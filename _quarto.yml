@@ -96,7 +96,7 @@ website:
             
       - section: "Projects"
         contents:
-          - href: project/first-project.qmd
+          - href: projects/first-project.qmd
             text: Project 1
           #- href: project/final-project.qmd
             #text: Project 2
