@@ -17,7 +17,7 @@ Your research topic and Questions should be descriptive in nature (not inferenti
 
 Your research topic is a short statement that describes the general area of interest that your research questions will be addressing. It should be broad enough to allow for multiple research questions to be asked, but specific enough to give a clear idea of what you are interested in. For example, if you are interested in the relationship between income and happiness in the US, your research topic could be "**The relationship between income and happiness in the United States**." This topic could then be used to generate multiple research questions, such as
 
-- ***Question 1:*** What is the nature of a relationship between income and happiness in the US?
+- ***Question 1:*** What is the nature of the relationship between income and happiness in the US?
 
 - ***Question 2:*** How does the relationship between income and happiness vary by age?
 
@@ -115,37 +115,37 @@ The project will be graded out of 100 points. The following rubric will be used:
 
 ### Quality of Written Report
 
-+----------+-----------------------------------------------------------------------------------------------------+
-| Points   | Description                                                                                         |
-+==========+=====================================================================================================+
-| 10       | - Organization and structure are good, report is easy to follow and interesting to read.            |
-|          |                                                                                                     |
-|          | - No grammatical errors/typos.                                                                      |
-|          |                                                                                                     |
-|          | - Graphs are well labelled and incorporated into the body of the report alongside software outputs. |
-|          |                                                                                                     |
-|          | - References provided in PA format.                                                                 |
-+----------+-----------------------------------------------------------------------------------------------------+
-| 9        | - A few minor grammatical, spelling, and/or formatting errors.                                      |
-|          |                                                                                                     |
-|          | - Minor APA formatting errors.                                                                      |
-+----------+-----------------------------------------------------------------------------------------------------+
-| 8        | - Missing introduction/rational or a fair amount of grammatical, spelling errors.                   |
-|          |                                                                                                     |
-|          | - Incomplete reference list or missing some citations.                                              |
-+----------+-----------------------------------------------------------------------------------------------------+
-| 6        | - Report is not well-structured.                                                                    |
-|          |                                                                                                     |
-|          | - Discussion is difficult to follow.                                                                |
-+----------+-----------------------------------------------------------------------------------------------------+
-| 4        | - Graphs/software output not included in the body of the report.                                    |
-|          |                                                                                                     |
-|          | - Structure of report is sloppy.                                                                    |
-|          |                                                                                                     |
-|          | - No apparent proofreading.                                                                         |
-+----------+-----------------------------------------------------------------------------------------------------+
-| \< 4     | - Even more problematic (e.g., no citations at all).                                                |
-+----------+-----------------------------------------------------------------------------------------------------+
++-----------+-----------------------------------------------------------------------------------------------------+
+| Points    | Description                                                                                         |
++===========+=====================================================================================================+
+| 10        | - Organization and structure are good, report is easy to follow and interesting to read.            |
+|           |                                                                                                     |
+|           | - No grammatical errors/typos.                                                                      |
+|           |                                                                                                     |
+|           | - Graphs are well labelled and incorporated into the body of the report alongside software outputs. |
+|           |                                                                                                     |
+|           | - References provided in PA format.                                                                 |
++-----------+-----------------------------------------------------------------------------------------------------+
+| 9         | - A few minor grammatical, spelling, and/or formatting errors.                                      |
+|           |                                                                                                     |
+|           | - Minor APA formatting errors.                                                                      |
++-----------+-----------------------------------------------------------------------------------------------------+
+| 8         | - Missing introduction/rational or a fair amount of grammatical, spelling errors.                   |
+|           |                                                                                                     |
+|           | - Incomplete reference list or missing some citations.                                              |
++-----------+-----------------------------------------------------------------------------------------------------+
+| 6         | - Report is not well-structured.                                                                    |
+|           |                                                                                                     |
+|           | - Discussion is difficult to follow.                                                                |
++-----------+-----------------------------------------------------------------------------------------------------+
+| 4         | - Graphs/software output not included in the body of the report.                                    |
+|           |                                                                                                     |
+|           | - Structure of report is sloppy.                                                                    |
+|           |                                                                                                     |
+|           | - No apparent proofreading.                                                                         |
++-----------+-----------------------------------------------------------------------------------------------------+
+| \< 4      | - Even more problematic (e.g., no citations at all).                                                |
++-----------+-----------------------------------------------------------------------------------------------------+
 
 ### Design and Methodology of the Study
 
@@ -171,31 +171,31 @@ The project will be graded out of 100 points. The following rubric will be used:
 
 ### Analyses and Interpretations
 
-+----------+----------------------------------------------------------------------------------------------------------------------+
-| Points   | Description                                                                                                          |
-+==========+======================================================================================================================+
-| 30 - 35  | - Summary statistics and visualizations are correctly generated, included in the report for both research questions. |
-|          |                                                                                                                      |
-|          | - Provides justification for choice of analysis tools.                                                               |
-|          |                                                                                                                      |
-|          | - Interpretations follow from the analyses and consider issues fro how data were collected.                          |
-|          |                                                                                                                      |
-|          | - Language is clear and precise. Not overly technical.                                                               |
-+----------+----------------------------------------------------------------------------------------------------------------------+
-| 25 - 29  | - Interpretations are vague or imprecise, but seem largely correct and complete.                                     |
-|          |                                                                                                                      |
-|          | - Comments not well integrated or not fully substantiated by analyses.                                               |
-+----------+----------------------------------------------------------------------------------------------------------------------+
-| 20 - 24  | - Insufficient output provided.                                                                                      |
-|          |                                                                                                                      |
-|          | - Major errors in statistics and/or weak interpretation of software outputs.                                         |
-+----------+----------------------------------------------------------------------------------------------------------------------+
-| \< 20    | - Project does not consider two separate questions.                                                                  |
-|          |                                                                                                                      |
-|          | - Analyses are incomplete and/or inappropriate for the data or research questions.                                   |
-|          |                                                                                                                      |
-|          | - Report does not provide interpretations or interpretations are inconsistent and contradictory.                     |
-+----------+----------------------------------------------------------------------------------------------------------------------+
++-----------+----------------------------------------------------------------------------------------------------------------------+
+| Points    | Description                                                                                                          |
++===========+======================================================================================================================+
+| 30 - 35   | - Summary statistics and visualizations are correctly generated, included in the report for both research questions. |
+|           |                                                                                                                      |
+|           | - Provides justification for choice of analysis tools.                                                               |
+|           |                                                                                                                      |
+|           | - Interpretations follow from the analyses and consider issues fro how data were collected.                          |
+|           |                                                                                                                      |
+|           | - Language is clear and precise. Not overly technical.                                                               |
++-----------+----------------------------------------------------------------------------------------------------------------------+
+| 25 - 29   | - Interpretations are vague or imprecise, but seem largely correct and complete.                                     |
+|           |                                                                                                                      |
+|           | - Comments not well integrated or not fully substantiated by analyses.                                               |
++-----------+----------------------------------------------------------------------------------------------------------------------+
+| 20 - 24   | - Insufficient output provided.                                                                                      |
+|           |                                                                                                                      |
+|           | - Major errors in statistics and/or weak interpretation of software outputs.                                         |
++-----------+----------------------------------------------------------------------------------------------------------------------+
+| \< 20     | - Project does not consider two separate questions.                                                                  |
+|           |                                                                                                                      |
+|           | - Analyses are incomplete and/or inappropriate for the data or research questions.                                   |
+|           |                                                                                                                      |
+|           | - Report does not provide interpretations or interpretations are inconsistent and contradictory.                     |
++-----------+----------------------------------------------------------------------------------------------------------------------+
 
 ### Conclusion
 

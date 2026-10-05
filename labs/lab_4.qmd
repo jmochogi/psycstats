@@ -61,8 +61,8 @@ Click on the **Variable View** and the **Data View** tabs at the bottom of the S
 
 Although we have one data set, we will first need to program SPSS to treat the two assessments as separate data sets since the assessments are different. To do this, we will use the `Split File` function in SPSS. Follow the steps below:
 
-- Click **Data** \> **Split File** \> Select **Compare groups** 
-- Send `Assessment_Type` into the **Group Based on** box 
+- Click **Data** \> **Split File** \> Select **Compare groups**
+- Send `Assessment_Type` into the **Group Based on** box
 - Click **OK**.
 
 After you split a file in that manner, any analysis you perform will be done separately for each assessment.
@@ -70,6 +70,7 @@ After you split a file in that manner, any analysis you perform will be done sep
 Now, we will use SPSS to convert the extroversion scores to $z-scores$. Follow the steps below:
 
 - Click **Analyze** \> **Descriptive Statistics** \> **Descriptives**.
+
 3.  Highlight the column label **Extroversion_Score** and click the arrow to move it to the **Variable(s)** box.
 4.  Click the **Save standardized values as variables** check box.
 5.  Click **OK**.
