@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
 
-<title>Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology</title>
+<title>Lab 0: Meet SPSS — Variables, Measurements, &amp; Data Entry – PSYC 20700 - Statistics in Psychology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -53,36 +53,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
+<link rel="stylesheet" href="lab-styles.css" />
 </head>
 
 <body>
@@ -177,7 +149,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_0.html" class="sidebar-item-text sidebar-link">
+  <a href="/labs/lab_0.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 0</span></a>
   </div>
 </li>
@@ -201,7 +173,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_4.html" class="sidebar-item-text sidebar-link active">
+  <a href="/labs/lab_4.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 4</span></a>
   </div>
 </li>
@@ -218,7 +190,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/projects/first-project.html" class="sidebar-item-text sidebar-link">
+  <a href="/Projects/first-project.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project 1</span></a>
   </div>
 </li>
@@ -241,8 +213,8 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Lab 4: Z-score Standardization in SPSS</h1>
-<p class="subtitle lead">Comparing Extroversion Scores from Different Scales</p>
+<h1 class="title">Lab 0: Meet SPSS — Variables, Measurements, &amp; Data Entry</h1>
+<p class="subtitle lead">Introducing SPSS</p>
 </div>
 
 
@@ -262,237 +234,162 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview" id="toc-overview">Overview</a></li>
-  <li><a href="#part-1-the-data" id="toc-part-1-the-data">Part 1 — The Data</a></li>
-  <li><a href="#part-2-the-z-score-conversion" id="toc-part-2-the-z-score-conversion">Part 2 — The z-score Conversion</a></li>
-  <li><a href="#part-3-characteristics-of-z-scores" id="toc-part-3-characteristics-of-z-scores">Part 3 — Characteristics of Z-scores</a>
+  <li><a href="#part-0-spss-interface" id="toc-part-0-spss-interface">Part 0: SPSS Interface</a></li>
+  <li><a href="#part-1-entering-variables" id="toc-part-1-entering-variables">Part 1: Entering Variables</a>
   <ul>
-  <li><a href="#mean-and-standard-deviation" id="toc-mean-and-standard-deviation">Mean and Standard Deviation</a></li>
-  <li><a href="#examining-the-distributions-shape-of-z-scores" id="toc-examining-the-distributions-shape-of-z-scores">Examining the Distributions (Shape) of Z-scores</a></li>
+  <li><a href="#row-1-studentid" id="toc-row-1-studentid">Row 1: StudentID</a></li>
+  <li><a href="#row-2-sex" id="toc-row-2-sex">Row 2: Sex</a></li>
+  <li><a href="#row-3-hours" id="toc-row-3-hours">Row 3: Hours</a></li>
+  <li><a href="#row-4-coffee" id="toc-row-4-coffee">Row 4: Coffee</a></li>
+  <li><a href="#row-5-state" id="toc-row-5-state">Row 5: State</a></li>
+  <li><a href="#row-6-water" id="toc-row-6-water">Row 6: Water</a></li>
   </ul></li>
-  <li><a href="#part-4-the-standard-normal-distribution" id="toc-part-4-the-standard-normal-distribution">Part 4 — The Standard Normal Distribution</a></li>
-  <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises">Take-Home Lab Exercises</a></li>
-  <li><a href="#submission-checklist" id="toc-submission-checklist">Submission Checklist</a></li>
+  <li><a href="#part-2-entering-the-data" id="toc-part-2-entering-the-data">Part 2: Entering the Data</a></li>
+  <li><a href="#part-3-saving-and-retrieving-files" id="toc-part-3-saving-and-retrieving-files">Part 3: Saving and Retrieving Files</a></li>
+  <li><a href="#part-4-running-analyses" id="toc-part-4-running-analyses">Part 4: Running Analyses</a></li>
   </ul>
 </nav>
-<section id="overview" class="level2">
-<h2>Overview</h2>
-<p>An employer is interested in identifying the ten most extroverted individuals from a pool of applicants. To do this, 500 applicants from New York and New Jersey completed two different personality assessments, as described below.</p>
-<ul>
-<li><strong>The Big Five Inventory (BFI)</strong> — an 8-item questionnaire with a maximum score of 40.</li>
-<li><strong>The Eysenck Personality Inventory (EPI)</strong> — a 12-item questionnaire with a maximum score of 24.</li>
-</ul>
-<p>The full versions of these questionnaires are much longer and measure a wide range of personality traits. However, for the purposes of this lab, we will focus only on the extroversion scores from each assessment.</p>
-<p>Note that the employer can’t select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to <span class="math inline">\(z-scores\)</span> to allow direct comparison.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Learning Objectives">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Learning Objectives
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>By the end of this lab, you should be able to:</p>
-<ul>
-<li>Use SPSS to generate <span class="math inline">\(z-scores\)</span>.</li>
-<li>Use SPSS to sort data and identify the top/bottom scores.</li>
-<li>Examine the characteristics of <span class="math inline">\(z-scores\)</span> and their distributions.</li>
-<li>Describe the characteristics of the standard normal distribution and compare it to Z-scores.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="part-1-the-data" class="level2">
-<h2>Part 1 — The Data</h2>
-<p>The data set for today’s lab are available on the following link:</p>
-<p><a href="datasets/personality.csv">Lab 4 Data</a></p>
-<p>Download the data and use SPSS to open them. Then import it to SPSS by following these steps:</p>
-<p><strong>File &gt; Import Data &gt; CSV Data…</strong>, browse to the file location, and click <strong>OK</strong> on the import wizard (accept the default settings).</p>
-<p>Make sure the measurement scales are set as follows:</p>
-<ul>
-<li><code>Applicant_ID</code> = Nominal</li>
-<li><code>Sex</code> = Nominal</li>
-<li><code>Age</code> = Scale</li>
-<li><code>State</code> = Nominal</li>
-<li><code>Assessment_Type</code> = Nominal</li>
-<li><code>Extroversion_Score</code> = Scale</li>
-</ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Click on the <strong>Variable View</strong> and the <strong>Data View</strong> tabs at the bottom of the SPSS window. Ensure that the variables and the data display correctly. They should appear as shown in the screenshots below.</p>
-</div>
-</div>
-</section>
-<section id="part-2-the-z-score-conversion" class="level2">
-<h2>Part 2 — The z-score Conversion</h2>
-<p>Although we have one data set, we will first need to program SPSS to treat the two assessments as separate data sets since the assessments are different. To do this, we will use the <code>Split File</code> function in SPSS. Follow the steps below:</p>
-<ul>
-<li>Click <strong>Data</strong> &gt; <strong>Split File</strong> &gt; Select <strong>Compare groups</strong></li>
-<li>Send <code>Assessment_Type</code> into the <strong>Group Based on</strong> box</li>
-<li>Click <strong>OK</strong>.</li>
-</ul>
-<p>After you split a file in that manner, any analysis you perform will be done separately for each assessment.</p>
-<p>Now, we will use SPSS to convert the extroversion scores to <span class="math inline">\(z-scores\)</span>. Follow the steps below:</p>
-<ul>
-<li>Click <strong>Analyze</strong> &gt; <strong>Descriptive Statistics</strong> &gt; <strong>Descriptives</strong>.</li>
-</ul>
-<ol start="3" type="1">
-<li>Highlight the column label <strong>Extroversion_Score</strong> and click the arrow to move it to the <strong>Variable(s)</strong> box.</li>
-<li>Click the <strong>Save standardized values as variables</strong> check box.</li>
-<li>Click <strong>OK</strong>.</li>
-</ol>
-<p>A new column (variable) in the main data set called <code>ZExtroversion_Score</code> should appear. This new variable contains the <span class="math inline">\(z-scores\)</span> for each applicant’s extroversion score. Importantly, the <span class="math inline">\(Z-scores\)</span> are calculated separately for each assessment, so they are now comparable across the two assessments.</p>
-<p>You can now order the scores to identify the top 10 most extroverted individuals. To do this, follow the steps below:</p>
-<ul>
-<li>Go to <strong>Data</strong> &gt; <strong>Sort Cases</strong>.</li>
-<li>Move <code>ZExtroversion_Score</code> into the <strong>Sort by</strong> box.</li>
-<li>Select <strong>Descending</strong> (high to low) and</li>
-<li>Click <strong>OK</strong>.</li>
-</ul>
-<p>Alternatively, you can highlight the <code>ZExtroversion_Score</code> column in the data view, right click then choose <strong>Sort Descending</strong>. See below:</p>
+<p><strong>Before you start:</strong> Open SPSS Statistics on your lab computer or personal computer if you have the software installed. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank <strong>Data Editor</strong> window with a grid of empty cells.</p>
+<hr />
+<section id="part-0-spss-interface" class="level2">
+<h2>Part 0: SPSS Interface</h2>
+<p>Look at the bottom of the SPSS window. You’ll see <strong>Data View</strong> and <strong>Variable View</strong> options. See below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img src="images/lab4_im4.png" class="img-fluid quarto-figure quarto-figure-center" width="552" /></p>
-</figure>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 2">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint 2
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Who are the top ten most extroverted individuals? Record their <code>Applicant_ID</code>’s, the assessment they took (BFI or EPI) and <code>ZExtroversion_Scores</code>.</p>
-</div>
-</div>
-</section>
-<section id="part-3-characteristics-of-z-scores" class="level2">
-<h2>Part 3 — Characteristics of Z-scores</h2>
-<section id="mean-and-standard-deviation" class="level3">
-<h3>Mean and Standard Deviation</h3>
-<p>We want to explore the <strong>mean</strong> and <strong>standard deviation</strong> of the <span class="math inline">\(z-scores\)</span> for each assessment. To do this, follow the steps below:</p>
-<ul>
-<li>Go to <strong>Analyze</strong> &gt; <strong>Descriptive Statistics</strong>&gt;<strong>Explore</strong></li>
-<li>Move <code>Assessment_Type</code> into the <strong>Factor List</strong> and <code>ZExtroversion_Score</code> into the <strong>Dependent List</strong>.</li>
-<li>Select <strong>Statistics</strong></li>
-</ul>
-<p>Your set up should look as shown below:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img src="images/lab4_im2.png" class="img-fluid quarto-figure quarto-figure-center" width="552" /></p>
+<p><img src="images/im3.png" class="img-fluid quarto-figure quarto-figure-center" width="1000" /></p>
 </figure>
 </div>
 <ul>
-<li>Click <strong>OK</strong>.</li>
+<li><strong>Data View</strong> — this is where you type in the data/scores. Each row represents <strong>one</strong> individual and each column represents <strong>one</strong> variable.</li>
+<li><strong>Variable View</strong> — this is where you describe each variable <em>before</em> you enter any scores.</li>
 </ul>
-<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint ">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Checkpoint
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>What do you notice about the mean and standard deviation of the <span class="math inline">\(z-scores\)</span>? Would you expect this to be the case every time we convert any set of scores to Z-scores? Explain.</p>
-</div>
-</div>
+<p>There is also a separate window called the <strong>Output Viewer</strong> — it doesn’t exist yet, but it will pop up automatically the first time you run an analysis (not today!). That’s where your results/tables/graphs etc appear.</p>
+<p><strong>Rule for today:</strong> we always set up a variable in <strong>Variable View</strong> <em>before</em> typing any scores for it in <strong>Data View</strong>. This mirrors Chapter 1’s point that researchers must define how something will be measured (operationalized) before they collect data.</p>
+<hr />
 </section>
-<section id="examining-the-distributions-shape-of-z-scores" class="level3">
-<h3>Examining the Distributions (Shape) of Z-scores</h3>
-<p>There is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compare them to the histograms of the corresponding <span class="math inline">\(z-scores\)</span>.</p>
+<section id="part-1-entering-variables" class="level2">
+<h2>Part 1: Entering Variables</h2>
+<p>You’re going to enter data from a classroom mini-survey of 8 students (the survey we conducted yesterday).</p>
 <ul>
-<li><p>Go to <strong>Graphs</strong> &gt; <strong>Chart Builder</strong> &gt; <strong>Histogram</strong>.</p></li>
-<li><p>Move <code>Extroversion_Score</code> into the <strong>Variable</strong> box and <code>Assessment_Type</code> into the <strong>Panel</strong> box under <code>Rows</code>. Your set up should look as shown below:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img src="images/lab4_im3.png" class="img-fluid quarto-figure quarto-figure-center" width="539" /></p>
-</figure>
-</div></li>
-<li><p>Click <strong>OK</strong>.</p></li>
+<li><p>Click the <strong>Variable View</strong> tab. You’ll see rows (one per variable) and columns including <strong>Name</strong>, <strong>Type</strong>, <strong>Decimals</strong>, <strong>Label</strong>, <strong>Values</strong>, and <strong>Measure</strong>.</p></li>
+<li><p>Follow the following steps to enter the variables:</p></li>
 </ul>
-<p>Now repeat the above process but this time use <code>ZExtroversion_Score</code> instead of <code>Extroversion_Score</code>. Your set up should look as shown below:</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="&quot;Checkpoint">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-“Checkpoint
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>How would you describe the distribution of the original extroversion scores for each assessment? How do these compare to the distribution of the <span class="math inline">\(z-scores\)</span>?</p>
-</div>
-</div>
-</section>
-</section>
-<section id="part-4-the-standard-normal-distribution" class="level2">
-<h2>Part 4 — The Standard Normal Distribution</h2>
-<p>The standard normal distribution is a special case of the <strong>normal distribution</strong> with a mean of 0 and a standard deviation of 1. It is a theoretical distribution that researchers commonly use to examine how well a set of data fits the normal distribution. Below is a screenshot of the standard normal distribution.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://www.nlm.nih.gov/oet/ed/stats/02-800.html"><img src="images/lab4_im1.png" class="img-fluid quarto-figure quarto-figure-center" width="519" alt="Source: National Library of Medicine" /></a></p>
-</figure>
-</div>
-<figcaption>Source: National Library of Medicine</figcaption>
-</figure>
-</div>
-<div class="callout callout-style-default callout-note callout-titled" title="Important Notes about the Standard Normal Distribution">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class='callout-icon'></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important Notes about the Standard Normal Distribution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>The mean, median, and mode are all equal to 0 (center of the distribution).</li>
-<li>The distribution is bell-shaped and symmetric about the mean.</li>
-<li>The standard deviation is equal to 1.</li>
-<li>95% of the data falls within 2 standard deviations; while 99.7% (nearly all data) falls within 3 standard deviations of the mean.</li>
-<li>The further you go from the mean in either direction, the less likely you are to find data points in that region. Data that that are more than 2 sd’s from the mean are very unlikely while those beyond 3 standard deviations can be considered outliers.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="take-home-lab-exercises" class="level2">
-<h2>Take-Home Lab Exercises</h2>
-<p>Before beginning the lab, you will need to undo the <strong>split file</strong> option that was enabled earlier by going to <strong>Data</strong> &gt; <strong>Split File</strong> &gt; <strong>Analyze all cases, do not create groups</strong> &gt; <strong>OK</strong>. Some exercises here may require use of <strong>split file</strong>, so you will need to repeat the steps above to split the file again when necessary.</p>
+<section id="row-1-studentid" class="level3">
+<h3>Row 1: StudentID</h3>
 <ol type="1">
-<li>Make a box plot to visualize the <code>Age</code> variable. Based on this box plot, a student claims that the ages of the applicants are “normally distributed”. Would you agree with this claim? Why or why not?</li>
-<li>Use SPSS to find the top 10 most extroverted females in the data. Record their <code>Applicant_ID'</code>s and describe the steps you took in SPSS to find them.</li>
-<li>Using SPSS, find the 10 most extroverted individuals from New Jersey. Record their <code>Applicant_ID</code> and describe the steps you took in SPSS to solve this problem.</li>
-<li>Suppose we want to find the 10 most extroverted individuals aged between 20 and 30 years old (inclusive). Use SPSS to solve this problem and briefly describe your steps.</li>
+<li>Click the first empty cell in <strong>row 1, “Name” column</strong>. Type: <code>StudentID</code></li>
+<li>Leave <strong>Type</strong> as the default (Numeric).</li>
+<li>Click the <strong>Decimals</strong> cell for this row. Change it to <code>0</code> (an ID number has no decimal places).</li>
+<li>Click the <strong>Label</strong> cell. Type: <code>Student identifier</code></li>
+<li>Click the <strong>Measure</strong> cell. Click the dropdown arrow and select <strong>Nominal</strong>.
+<ul>
+<li><em>Why nominal?</em> An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.</li>
+</ul></li>
 </ol>
 </section>
-<section id="submission-checklist" class="level2">
-<h2>Submission Checklist</h2>
-<ul class="task-list">
-<li><label><input type="checkbox" />A saved SPSS data (.sav) file showing the variables and data (includes <span class="math inline">\(z-scores\)</span>).</label></li>
-<li><label><input type="checkbox" />SPSS output file (.spv) showing the analyses performed.</label></li>
-<li><label><input type="checkbox" />Completed responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.</label></li>
-</ul>
+<section id="row-2-sex" class="level3">
+<h3>Row 2: Sex</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Sex</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Student's sex</code></li>
+<li><strong>Values:</strong> Click the Values cell, then click the small gray <strong>…</strong> button that appears on the right side of the cell. A “Value Labels” dialog opens. Click the <code>+</code> sign to add values.
+<ul>
+<li>In the <strong>Value</strong> box, type <code>1</code>. In the <strong>Label</strong> box, type <code>Female</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>2</code>, Label <code>Male</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>3</code>, Label <code>Other</code>.</li>
+<li>Click <strong>OK</strong>.</li>
+</ul></li>
+<li><strong>Measure:</strong> select <code>Nominal</code>.</li>
+</ol>
+</section>
+<section id="row-3-hours" class="level3">
+<h3>Row 3: Hours</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Hours</code></li>
+<li><strong>Decimals:</strong> set to <code>0</code></li>
+<li><strong>Label:</strong> <code>Number of hours slept</code></li>
+<li><strong>Measure:</strong> select <code>Scale</code>.</li>
+</ol>
+</section>
+<section id="row-4-coffee" class="level3">
+<h3>Row 4: Coffee</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Coffee</code></li>
+<li><strong>Decimals:</strong> set to <code>0</code></li>
+<li><strong>Label:</strong> <code>Coffee cups per day.</code></li>
+<li><strong>Measure:</strong> select <code>Scale</code>.</li>
+</ol>
+</section>
+<section id="row-5-state" class="level3">
+<h3>Row 5: State</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>State</code></li>
+<li><strong>Type:</strong> Click on the grey three <code>...</code> dots on the right of the cell then choose <code>String</code>. The string string option allows you to enter non-numeric information. With this option, numerals are interpreted as characters.</li>
+<li><strong>Width:</strong> Use 10.</li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Student's state</code></li>
+<li><strong>Values:</strong> Click the Values cell, then click the three <strong>…</strong> dots that appears on the right side of the cell. A “Value Labels” dialog opens. Click the <code>+</code> sign to add values.
+<ul>
+<li>In the <strong>Value</strong> box, type <code>NY</code>. In the <strong>Label</strong> box, type <code>New York</code>. Click <strong>Add</strong>.</li>
+<li>Continue until all states in the data are entered.</li>
+<li>Click <strong>OK</strong>.</li>
+</ul></li>
+<li><strong>Measure:</strong> select <code>Nominal</code>.</li>
+</ol>
+</section>
+<section id="row-6-water" class="level3">
+<h3>Row 6: Water</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Water</code></li>
+<li>Type: Leave as <code>Numeric</code></li>
+<li><strong>Decimals:</strong> Use <code>1</code> decimal to entries such as 2.5 liters.</li>
+<li><strong>Label:</strong> <code>Daily water consumption.</code></li>
+<li><strong>Measure:</strong> select <strong>Scale</strong>.</li>
+</ol>
+<p>If you did everything correctly, your variable view screen should look as follows:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img src="images/im2.png" class="img-fluid quarto-figure quarto-figure-center" /></p>
+</figure>
+</div>
+<hr />
+</section>
+</section>
+<section id="part-2-entering-the-data" class="level2">
+<h2>Part 2: Entering the Data</h2>
+<p>The second step after setting up variables is to enter the data themselves. Click the <strong>Data View</strong> tab on the bottom of the SPSS window. The 6 column headers created (StudentID, Sex, etc) should appear, this time round as columns, as shown below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img src="images/im1.png" class="img-fluid quarto-figure quarto-figure-center" width="600" /></p>
+</figure>
+</div>
+<p>Now enter the data accordingly. See the class activity for Wed 8/26 in OneNote.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In Data View, the Sex variable will still show plain numbers (1, 2, 3) unless you turn on value labels. To check your coding: go to the <strong>View</strong> menu (top menu bar) → <strong>Grid Lines</strong> → click <strong>Value Labels</strong>. The columns should now display the named values instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.</p>
+</div>
+</div>
+<hr />
+</section>
+<section id="part-3-saving-and-retrieving-files" class="level2">
+<h2>Part 3: Saving and Retrieving Files</h2>
+<p><strong>Save your file:</strong> File → Save As → File name it <code>Lab_0_YourLastName.sav</code> → save it in a convenient location for you, preferably the desktop.</p>
+<p>Now, close the program and try to navigate to the file you just saved. When you find it, double clikc to make sure it is opening at it should. Next time you need this file, this is what you will doRelax and slow down! We will run analyses in the next lab.</p>
+</section>
+<section id="part-4-running-analyses" class="level2">
+<h2>Part 4: Running Analyses</h2>
+<p>Kudos if you made it this far! In the next lab, we will perform some data analysis (basic descriptive statistics).</p>
 <div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uZXh0">Project 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1wcmV2">Lab 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMQ==">Course information</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pbmRleC5odG1sT3ZlcnZpZXc=">Overview</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3lsbGFidXMuaHRtbFN5bGxhYnVz">Syllabus</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3VwcG9ydC5odG1sU3VwcG9ydA==">Support</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2UtZmFxLmh0bWxGQVE=">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMg==">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8wLmh0bWxMYWItMA==">Lab 0</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8xLmh0bWxMYWItMQ==">Lab 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8yLmh0bWxMYWItMg==">Lab 2</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8zLmh0bWxMYWItMw==">Lab 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl80Lmh0bWxMYWItNA==">Lab 4</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMw==">Projects</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9wcm9qZWN0cy9maXJzdC1wcm9qZWN0Lmh0bWxQcm9qZWN0LTE=">Project 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tNA==">Exam Review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUxhYnM=">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUxhYi00">Lab 4</span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uZXh0">Lab 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1wcmV2">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMQ==">Course information</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pbmRleC5odG1sT3ZlcnZpZXc=">Overview</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3lsbGFidXMuaHRtbFN5bGxhYnVz">Syllabus</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3VwcG9ydC5odG1sU3VwcG9ydA==">Support</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2UtZmFxLmh0bWxGQVE=">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMg==">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8wLmh0bWxMYWItMA==">Lab 0</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8xLmh0bWxMYWItMQ==">Lab 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8yLmh0bWxMYWItMg==">Lab 2</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8zLmh0bWxMYWItMw==">Lab 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl80Lmh0bWxMYWItNA==">Lab 4</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMw==">Projects</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9Qcm9qZWN0cy9maXJzdC1wcm9qZWN0Lmh0bWxQcm9qZWN0LTE=">Project 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tNA==">Exam Review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUxhYnM=">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUxhYi0w">Lab 0</span></p>
 <div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWxlZnQ=">
 <p>© Copyright 2026, Joash Geteregechi</p>
 </div>
@@ -501,7 +398,7 @@ Important Notes about the Standard Normal Distribution
 </div>
 </div>
 <div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Comparing Extroversion Scores from Different Scales</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Comparing Extroversion Scores from Different Scales</span></p>
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Lab 0: Meet SPSS — Variables, Measurements, &amp; Data Entry – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Lab 0: Meet SPSS — Variables, Measurements, &amp; Data Entry – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Lab 0: Meet SPSS — Variables, Measurements, &amp; Data Entry – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Introducing SPSS</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Introducing SPSS</span></p>
 </div>
 </section>
 
@@ -925,13 +822,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a  href="/labs/lab_3.html" class="pagination-link" aria-label="Lab 3">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 3</span>
+      <a  href="/course-faq.html" class="pagination-link" aria-label="FAQ">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">FAQ</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a  href="/projects/first-project.html" class="pagination-link" aria-label="Project 1">
-        <span class="nav-page-text">Project 1</span> <i class="bi bi-arrow-right-short"></i>
+      <a  href="/labs/lab_1.html" class="pagination-link" aria-label="Lab 1">
+        <span class="nav-page-text">Lab 1</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

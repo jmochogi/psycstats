@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<head>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.36">
 
-<meta charset="utf-8" />
-<meta name="generator" content="quarto-1.6.36" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology</title>
@@ -24,7 +22,24 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-<!-- htmldependencies:E3FAD763 -->
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Projects/first-project.html" rel="next">
+<link href="../labs/lab_3.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d9ea220ee908cb7322d1b5aeb522d8d4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-65ae455a2e4e78411e26450ecfc10254.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -83,24 +98,30 @@ window.Quarto = {
 };
 </script>
 
+<meta property="og:title" content="Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology">
+<meta property="og:description" content="Comparing Extroversion Scores from Different Scales">
+<meta property="og:image" content="https://jmochogi.github.io/psycstats/labs/images/lab4_im4.png">
+<meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
+<meta property="og:image:height" content="894">
+<meta property="og:image:width" content="1476">
+<meta name="twitter:title" content="Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology">
+<meta name="twitter:description" content="Comparing Extroversion Scores from Different Scales">
+<meta name="twitter:image" content="https://jmochogi.github.io/psycstats/labs/img/twitter-card.png">
+<meta name="twitter:creator" content="@jmochogi">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body>
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn"
-      data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" 
-      aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
-      onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <h1 class="quarto-secondary-nav-title no-breadcrumbs"></h1>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" role="link"
-        aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
-        onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_0.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_4.html">Lab 4</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
@@ -113,15 +134,15 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="/index.html" class="sidebar-logo-link">
-      <img src="/img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"/>
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/jmochogi/psycstats"  title="GitHub repository" class="quarto-navigation-tool px-1" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
-    <a href="https://calendly.com/jmochogi/20min"  title="Office hours" class="quarto-navigation-tool px-1" aria-label="Office hours"><i class="bi bi-life-preserver"></i></a>
-    <a href="https://canvas.ithaca.edu/"  title="Canvas Discussions" class="quarto-navigation-tool px-1" aria-label="Canvas Discussions"><i class="bi bi-chat-dots-fill"></i></a>
-    <a href="https://ithaca.zoom.us/j/3364817575?pwd=WlA1S3hJWWZNTTFoWUVaZlA1clhtdz09"  title="Zoom link" class="quarto-navigation-tool px-1" aria-label="Zoom link"><i class="bi bi-camera-reels-fill"></i></a>
-    <a href="https://canvas.ithaca.edu/"  title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-check-square-fill"></i></a>
+    <a href="https://github.com/jmochogi/psycstats" title="GitHub repository" class="quarto-navigation-tool px-1" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
+    <a href="https://calendly.com/jmochogi/20min" title="Office hours" class="quarto-navigation-tool px-1" aria-label="Office hours"><i class="bi bi-life-preserver"></i></a>
+    <a href="https://canvas.ithaca.edu/" title="Canvas Discussions" class="quarto-navigation-tool px-1" aria-label="Canvas Discussions"><i class="bi bi-chat-dots-fill"></i></a>
+    <a href="https://ithaca.zoom.us/j/3364817575?pwd=WlA1S3hJWWZNTTFoWUVaZlA1clhtdz09" title="Zoom link" class="quarto-navigation-tool px-1" aria-label="Zoom link"><i class="bi bi-camera-reels-fill"></i></a>
+    <a href="https://canvas.ithaca.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-check-square-fill"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -133,7 +154,7 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1"  role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">Course information</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -142,25 +163,25 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Overview</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/course-syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/course-support.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-support.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Support</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/course-faq.html" class="sidebar-item-text sidebar-link">
+  <a href="../course-faq.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">FAQ</span></a>
   </div>
 </li>
@@ -168,7 +189,7 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2"  role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Labs</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -177,31 +198,31 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_0.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_0.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 0</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_1.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_2.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 2</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_3.html" class="sidebar-item-text sidebar-link">
+  <a href="../labs/lab_3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Lab 3</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/labs/lab_4.html" class="sidebar-item-text sidebar-link active">
+  <a href="../labs/lab_4.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lab 4</span></a>
   </div>
 </li>
@@ -209,7 +230,7 @@ window.Quarto = {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3"  role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Projects</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -218,7 +239,7 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="/projects/first-project.html" class="sidebar-item-text sidebar-link">
+  <a href="../Projects/first-project.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Project 1</span></a>
   </div>
 </li>
@@ -231,15 +252,31 @@ window.Quarto = {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" ></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <div id="quarto-toc-target"></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#part-1-the-data" id="toc-part-1-the-data" class="nav-link" data-scroll-target="#part-1-the-data">Part 1 — The Data</a></li>
+  <li><a href="#part-2-the-z-score-conversion" id="toc-part-2-the-z-score-conversion" class="nav-link" data-scroll-target="#part-2-the-z-score-conversion">Part 2 — The z-score Conversion</a></li>
+  <li><a href="#part-3-characteristics-of-z-scores" id="toc-part-3-characteristics-of-z-scores" class="nav-link" data-scroll-target="#part-3-characteristics-of-z-scores">Part 3 — Characteristics of Z-scores</a>
+  <ul class="collapse">
+  <li><a href="#mean-and-standard-deviation" id="toc-mean-and-standard-deviation" class="nav-link" data-scroll-target="#mean-and-standard-deviation">Mean and Standard Deviation</a></li>
+  <li><a href="#examining-the-distributions-shape-of-z-scores" id="toc-examining-the-distributions-shape-of-z-scores" class="nav-link" data-scroll-target="#examining-the-distributions-shape-of-z-scores">Examining the Distributions (Shape) of Z-scores</a></li>
+  </ul></li>
+  <li><a href="#part-4-the-standard-normal-distribution" id="toc-part-4-the-standard-normal-distribution" class="nav-link" data-scroll-target="#part-4-the-standard-normal-distribution">Part 4 — The Standard Normal Distribution</a></li>
+  <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises" class="nav-link" data-scroll-target="#take-home-lab-exercises">Take-Home Lab Exercises</a></li>
+  <li><a href="#submission-checklist" id="toc-submission-checklist" class="nav-link" data-scroll-target="#submission-checklist">Submission Checklist</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_4.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_0.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_4.html">Lab 4</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Lab 4: Z-score Standardization in SPSS</h1>
 <p class="subtitle lead">Comparing Extroversion Scores from Different Scales</p>
@@ -258,25 +295,9 @@ window.Quarto = {
 
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#overview" id="toc-overview">Overview</a></li>
-  <li><a href="#part-1-the-data" id="toc-part-1-the-data">Part 1 — The Data</a></li>
-  <li><a href="#part-2-the-z-score-conversion" id="toc-part-2-the-z-score-conversion">Part 2 — The z-score Conversion</a></li>
-  <li><a href="#part-3-characteristics-of-z-scores" id="toc-part-3-characteristics-of-z-scores">Part 3 — Characteristics of Z-scores</a>
-  <ul>
-  <li><a href="#mean-and-standard-deviation" id="toc-mean-and-standard-deviation">Mean and Standard Deviation</a></li>
-  <li><a href="#examining-the-distributions-shape-of-z-scores" id="toc-examining-the-distributions-shape-of-z-scores">Examining the Distributions (Shape) of Z-scores</a></li>
-  </ul></li>
-  <li><a href="#part-4-the-standard-normal-distribution" id="toc-part-4-the-standard-normal-distribution">Part 4 — The Standard Normal Distribution</a></li>
-  <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises">Take-Home Lab Exercises</a></li>
-  <li><a href="#submission-checklist" id="toc-submission-checklist">Submission Checklist</a></li>
-  </ul>
-</nav>
+
 <section id="overview" class="level2">
-<h2>Overview</h2>
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>An employer is interested in identifying the ten most extroverted individuals from a pool of applicants. To do this, 500 applicants from New York and New Jersey completed two different personality assessments, as described below.</p>
 <ul>
 <li><strong>The Big Five Inventory (BFI)</strong> — an 8-item questionnaire with a maximum score of 40.</li>
@@ -287,7 +308,7 @@ window.Quarto = {
 <div class="callout callout-style-default callout-note callout-titled" title="Learning Objectives">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Learning Objectives
@@ -305,7 +326,7 @@ Learning Objectives
 </div>
 </section>
 <section id="part-1-the-data" class="level2">
-<h2>Part 1 — The Data</h2>
+<h2 class="anchored" data-anchor-id="part-1-the-data">Part 1 — The Data</h2>
 <p>The data set for today’s lab are available on the following link:</p>
 <p><a href="datasets/personality.csv">Lab 4 Data</a></p>
 <p>Download the data and use SPSS to open them. Then import it to SPSS by following these steps:</p>
@@ -322,7 +343,7 @@ Learning Objectives
 <div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Checkpoint
@@ -334,7 +355,7 @@ Checkpoint
 </div>
 </section>
 <section id="part-2-the-z-score-conversion" class="level2">
-<h2>Part 2 — The z-score Conversion</h2>
+<h2 class="anchored" data-anchor-id="part-2-the-z-score-conversion">Part 2 — The z-score Conversion</h2>
 <p>Although we have one data set, we will first need to program SPSS to treat the two assessments as separate data sets since the assessments are different. To do this, we will use the <code>Split File</code> function in SPSS. Follow the steps below:</p>
 <ul>
 <li>Click <strong>Data</strong> &gt; <strong>Split File</strong> &gt; Select <strong>Compare groups</strong></li>
@@ -361,14 +382,14 @@ Checkpoint
 </ul>
 <p>Alternatively, you can highlight the <code>ZExtroversion_Score</code> column in the data view, right click then choose <strong>Sort Descending</strong>. See below:</p>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img src="images/lab4_im4.png" class="img-fluid quarto-figure quarto-figure-center" width="552" /></p>
+<figure class="figure">
+<p><img src="images/lab4_im4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="552"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint 2">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Checkpoint 2
@@ -380,9 +401,9 @@ Checkpoint 2
 </div>
 </section>
 <section id="part-3-characteristics-of-z-scores" class="level2">
-<h2>Part 3 — Characteristics of Z-scores</h2>
+<h2 class="anchored" data-anchor-id="part-3-characteristics-of-z-scores">Part 3 — Characteristics of Z-scores</h2>
 <section id="mean-and-standard-deviation" class="level3">
-<h3>Mean and Standard Deviation</h3>
+<h3 class="anchored" data-anchor-id="mean-and-standard-deviation">Mean and Standard Deviation</h3>
 <p>We want to explore the <strong>mean</strong> and <strong>standard deviation</strong> of the <span class="math inline">\(z-scores\)</span> for each assessment. To do this, follow the steps below:</p>
 <ul>
 <li>Go to <strong>Analyze</strong> &gt; <strong>Descriptive Statistics</strong>&gt;<strong>Explore</strong></li>
@@ -391,8 +412,8 @@ Checkpoint 2
 </ul>
 <p>Your set up should look as shown below:</p>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img src="images/lab4_im2.png" class="img-fluid quarto-figure quarto-figure-center" width="552" /></p>
+<figure class="figure">
+<p><img src="images/lab4_im2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="552"></p>
 </figure>
 </div>
 <ul>
@@ -401,7 +422,7 @@ Checkpoint 2
 <div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint ">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Checkpoint
@@ -413,14 +434,14 @@ Checkpoint
 </div>
 </section>
 <section id="examining-the-distributions-shape-of-z-scores" class="level3">
-<h3>Examining the Distributions (Shape) of Z-scores</h3>
+<h3 class="anchored" data-anchor-id="examining-the-distributions-shape-of-z-scores">Examining the Distributions (Shape) of Z-scores</h3>
 <p>There is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compare them to the histograms of the corresponding <span class="math inline">\(z-scores\)</span>.</p>
 <ul>
 <li><p>Go to <strong>Graphs</strong> &gt; <strong>Chart Builder</strong> &gt; <strong>Histogram</strong>.</p></li>
 <li><p>Move <code>Extroversion_Score</code> into the <strong>Variable</strong> box and <code>Assessment_Type</code> into the <strong>Panel</strong> box under <code>Rows</code>. Your set up should look as shown below:</p>
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img src="images/lab4_im3.png" class="img-fluid quarto-figure quarto-figure-center" width="539" /></p>
+<figure class="figure">
+<p><img src="images/lab4_im3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="539"></p>
 </figure>
 </div></li>
 <li><p>Click <strong>OK</strong>.</p></li>
@@ -429,7 +450,7 @@ Checkpoint
 <div class="callout callout-style-default callout-tip callout-titled" title="&quot;Checkpoint">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 “Checkpoint
@@ -442,13 +463,13 @@ Checkpoint
 </section>
 </section>
 <section id="part-4-the-standard-normal-distribution" class="level2">
-<h2>Part 4 — The Standard Normal Distribution</h2>
+<h2 class="anchored" data-anchor-id="part-4-the-standard-normal-distribution">Part 4 — The Standard Normal Distribution</h2>
 <p>The standard normal distribution is a special case of the <strong>normal distribution</strong> with a mean of 0 and a standard deviation of 1. It is a theoretical distribution that researchers commonly use to examine how well a set of data fits the normal distribution. Below is a screenshot of the standard normal distribution.</p>
 <div class="quarto-figure quarto-figure-center">
-<figure>
+<figure class="figure">
 <div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://www.nlm.nih.gov/oet/ed/stats/02-800.html"><img src="images/lab4_im1.png" class="img-fluid quarto-figure quarto-figure-center" width="519" alt="Source: National Library of Medicine" /></a></p>
+<figure class="figure">
+<p><a href="https://www.nlm.nih.gov/oet/ed/stats/02-800.html"><img src="images/lab4_im1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="519" alt="Source: National Library of Medicine"></a></p>
 </figure>
 </div>
 <figcaption>Source: National Library of Medicine</figcaption>
@@ -457,7 +478,7 @@ Checkpoint
 <div class="callout callout-style-default callout-note callout-titled" title="Important Notes about the Standard Normal Distribution">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class='callout-icon'></i>
+<i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Important Notes about the Standard Normal Distribution
@@ -475,7 +496,7 @@ Important Notes about the Standard Normal Distribution
 </div>
 </section>
 <section id="take-home-lab-exercises" class="level2">
-<h2>Take-Home Lab Exercises</h2>
+<h2 class="anchored" data-anchor-id="take-home-lab-exercises">Take-Home Lab Exercises</h2>
 <p>Before beginning the lab, you will need to undo the <strong>split file</strong> option that was enabled earlier by going to <strong>Data</strong> &gt; <strong>Split File</strong> &gt; <strong>Analyze all cases, do not create groups</strong> &gt; <strong>OK</strong>. Some exercises here may require use of <strong>split file</strong>, so you will need to repeat the steps above to split the file again when necessary.</p>
 <ol type="1">
 <li>Make a box plot to visualize the <code>Age</code> variable. Based on this box plot, a student claims that the ages of the applicants are “normally distributed”. Would you agree with this claim? Why or why not?</li>
@@ -485,28 +506,18 @@ Important Notes about the Standard Normal Distribution
 </ol>
 </section>
 <section id="submission-checklist" class="level2">
-<h2>Submission Checklist</h2>
+<h2 class="anchored" data-anchor-id="submission-checklist">Submission Checklist</h2>
 <ul class="task-list">
-<li><label><input type="checkbox" />A saved SPSS data (.sav) file showing the variables and data (includes <span class="math inline">\(z-scores\)</span>).</label></li>
-<li><label><input type="checkbox" />SPSS output file (.spv) showing the analyses performed.</label></li>
-<li><label><input type="checkbox" />Completed responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.</label></li>
+<li><label><input type="checkbox">A saved SPSS data (.sav) file showing the variables and data (includes <span class="math inline">\(z-scores\)</span>).</label></li>
+<li><label><input type="checkbox">SPSS output file (.spv) showing the analyses performed.</label></li>
+<li><label><input type="checkbox">Completed responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.</label></li>
 </ul>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uZXh0">Project 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1wcmV2">Lab 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMQ==">Course information</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9pbmRleC5odG1sT3ZlcnZpZXc=">Overview</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3lsbGFidXMuaHRtbFN5bGxhYnVz">Syllabus</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2Utc3VwcG9ydC5odG1sU3VwcG9ydA==">Support</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9jb3Vyc2UtZmFxLmh0bWxGQVE=">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMg==">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8wLmh0bWxMYWItMA==">Lab 0</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8xLmh0bWxMYWItMQ==">Lab 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8yLmh0bWxMYWItMg==">Lab 2</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl8zLmh0bWxMYWItMw==">Lab 3</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9sYWJzL2xhYl80Lmh0bWxMYWItNA==">Lab 4</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMw==">Projects</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9wcm9qZWN0cy9maXJzdC1wcm9qZWN0Lmh0bWxQcm9qZWN0LTE=">Project 1</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tNA==">Exam Review</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUxhYnM=">Labs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUxhYi00">Lab 4</span></p>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWxlZnQ=">
-<p>© Copyright 2026, Joash Geteregechi</p>
-</div>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLXJpZ2h0">
-<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
-</div>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Lab 4: Z-score Standardization in SPSS – PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">PSYC 20700 - Statistics in Psychology</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Comparing Extroversion Scores from Different Scales</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Comparing Extroversion Scores from Different Scales</span></p>
-</div>
+
+
 </section>
 
 </main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -925,12 +936,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a  href="/labs/lab_3.html" class="pagination-link" aria-label="Lab 3">
+      <a href="../labs/lab_3.html" class="pagination-link" aria-label="Lab 3">
         <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 3</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a  href="/projects/first-project.html" class="pagination-link" aria-label="Project 1">
+      <a href="../Projects/first-project.html" class="pagination-link" aria-label="Project 1">
         <span class="nav-page-text">Project 1</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
@@ -939,17 +950,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      <div class='footer-contents'>&copy; Copyright 2026, Joash Geteregechi</div>  
-    </div>   
+<p>© Copyright 2026, Joash Geteregechi</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      <div class='footer-contents'>This page is built with [Quarto](https://quarto.org/).</div>  
-    </div>
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
   </div>
 </footer>
 
-</body>
 
-</html>
+
+
+</body></html>
