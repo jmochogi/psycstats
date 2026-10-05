@@ -4,5 +4,8 @@ format: html
 ---
 
 ## [Project One Template](./project_1_template.docx){target="_blank"}
+
+```{=html}
 <!--
 ## [Sample Project Two](./sample_p2.pdf)-->
+```
