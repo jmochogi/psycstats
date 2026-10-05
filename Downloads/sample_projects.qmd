@@ -3,5 +3,5 @@ title: "Sample Projects"
 format: html
 ---
 
-## [Sample Project One](./sample_p1.pdf)
+## [Sample Project One](./sample_p1.pdf){target="_blank"}
 ## [Sample Project Two](./sample_p2.pdf)
