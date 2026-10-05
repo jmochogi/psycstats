@@ -9,7 +9,7 @@ format:
 
 The goal of this project is for you to demonstrate your ability to apply the statistical concepts and techniques we have covered in this course to a meaningful psychological research problem. You will work with a real-world psychology dataset and use statistical reasoning to explore relationships, differences, patterns, or other phenomena that are relevant to psychology. You are **not** expected to conduct an exhaustive analysis by generating every statistic or visualization we have learned in the course. Instead, I expect you to demonstrate your ability to ask meaningful research questions and answer them using carefully selected descriptive statistical analysis techniques and tools. All analyses must be conducted in **SPSS**.
 
-Your group will select a psychology dataset from the [**Journal of Open Psychology Data**](https://openpsychologydata.metajnl.com/), which publishes openly accessible datasets associated with psychological research. After selecting a dataset, your group will investigate and become familiar with the study from which the data originated. You should consider questions such as: Who participated in the study? How was the sample obtained? What population might the researchers have been interested in? What variables were collected, and what types of variables are they? What psychological concepts or constructs are being measured? Your team will then identify a research topic or goal and develop **two research questions** directly related to that topic. You will answer these questions by conducting appropriate statistical analyses of the dataset in SPSS. Your analyses should include both **numerical summary statistics** (such as mans, medians, etc) and **data visualizations** (scatter plots, box plots, bar graphs, etc), and the statistics and visualizations you choose should complement one another and be appropriately connected to help tell a coherent story about your topic and questions.
+Your group will select a psychology dataset from the [**Journal of Open Psychology Data**](https://openpsychologydata.metajnl.com/){target="_blank"}, which publishes openly accessible datasets associated with psychological research. After selecting a dataset, your group will investigate and become familiar with the study from which the data originated. You should consider questions such as: Who participated in the study? How was the sample obtained? What population might the researchers have been interested in? What variables were collected, and what types of variables are they? What psychological concepts or constructs are being measured? Your team will then identify a research topic or goal and develop **two research questions** directly related to that topic. You will answer these questions by conducting appropriate statistical analyses of the dataset in SPSS. Your analyses should include both **numerical summary statistics** (such as means, medians, etc) and **data visualizations** (scatter plots, box plots, bar graphs, etc), and the statistics and visualizations you choose should complement one another and be appropriately connected to help tell a coherent story about your topic and questions.
 
 # Research Topic and Questions
 
@@ -27,7 +27,7 @@ Your research topic and questions often determine the kinds of data that you nee
 
 # The Data
 
-The important thing to know is that **the [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/)** is primarily a catalog of data papers, not a single downloadable-data repository. Each article describes a particular psychology dataset and tells you where the actual files are hosted. The journal specifically publishes papers describing datasets with high reuse potential.
+The important thing to know is that **the [Journal of Open Psychology Data](https://openpsychologydata.metajnl.com/){target="_blank"}** is primarily a catalog of data papers, not a single downloadable-data repository. Each article describes a particular psychology dataset and tells you where the actual files are hosted. The journal specifically publishes papers describing datasets with high reuse potential.
 
 Follow these steps to find a dataset:
 
@@ -115,37 +115,37 @@ The project will be graded out of 100 points. The following rubric will be used:
 
 ### Quality of Written Report
 
-+--------+-----------------------------------------------------------------------------------------------------+
-| Points | Description                                                                                         |
-+========+=====================================================================================================+
-| 10     | - Organization and structure are good, report is easy to follow and interesting to read.            |
-|        |                                                                                                     |
-|        | - No grammatical errors/typos.                                                                      |
-|        |                                                                                                     |
-|        | - Graphs are well labelled and incorporated into the body of the report alongside software outputs. |
-|        |                                                                                                     |
-|        | - References provided in PA format.                                                                 |
-+--------+-----------------------------------------------------------------------------------------------------+
-| 9      | - A few minor grammatical, spelling, and/or formatting errors.                                      |
-|        |                                                                                                     |
-|        | - Minor APA formatting errors.                                                                      |
-+--------+-----------------------------------------------------------------------------------------------------+
-| 8      | - Missing introduction/rational or a fair amount of grammatical, spelling errors.                   |
-|        |                                                                                                     |
-|        | - Incomplete reference list or missing some citations.                                              |
-+--------+-----------------------------------------------------------------------------------------------------+
-| 6      | - Report is not well-structured.                                                                    |
-|        |                                                                                                     |
-|        | - Discussion is difficult to follow.                                                                |
-+--------+-----------------------------------------------------------------------------------------------------+
-| 4      | - Graphs/software output not included in the body of the report.                                    |
-|        |                                                                                                     |
-|        | - Structure of report is sloppy.                                                                    |
-|        |                                                                                                     |
-|        | - No apparent proofreading.                                                                         |
-+--------+-----------------------------------------------------------------------------------------------------+
-| \< 4   | - Even more problematic (e.g., no citations at all).                                                |
-+--------+-----------------------------------------------------------------------------------------------------+
++----------+-----------------------------------------------------------------------------------------------------+
+| Points   | Description                                                                                         |
++==========+=====================================================================================================+
+| 10       | - Organization and structure are good, report is easy to follow and interesting to read.            |
+|          |                                                                                                     |
+|          | - No grammatical errors/typos.                                                                      |
+|          |                                                                                                     |
+|          | - Graphs are well labelled and incorporated into the body of the report alongside software outputs. |
+|          |                                                                                                     |
+|          | - References provided in PA format.                                                                 |
++----------+-----------------------------------------------------------------------------------------------------+
+| 9        | - A few minor grammatical, spelling, and/or formatting errors.                                      |
+|          |                                                                                                     |
+|          | - Minor APA formatting errors.                                                                      |
++----------+-----------------------------------------------------------------------------------------------------+
+| 8        | - Missing introduction/rational or a fair amount of grammatical, spelling errors.                   |
+|          |                                                                                                     |
+|          | - Incomplete reference list or missing some citations.                                              |
++----------+-----------------------------------------------------------------------------------------------------+
+| 6        | - Report is not well-structured.                                                                    |
+|          |                                                                                                     |
+|          | - Discussion is difficult to follow.                                                                |
++----------+-----------------------------------------------------------------------------------------------------+
+| 4        | - Graphs/software output not included in the body of the report.                                    |
+|          |                                                                                                     |
+|          | - Structure of report is sloppy.                                                                    |
+|          |                                                                                                     |
+|          | - No apparent proofreading.                                                                         |
++----------+-----------------------------------------------------------------------------------------------------+
+| \< 4     | - Even more problematic (e.g., no citations at all).                                                |
++----------+-----------------------------------------------------------------------------------------------------+
 
 ### Design and Methodology of the Study
 
@@ -171,49 +171,49 @@ The project will be graded out of 100 points. The following rubric will be used:
 
 ### Analyses and Interpretations
 
-+---------+----------------------------------------------------------------------------------------------------------------------+
-| Points  | Description                                                                                                          |
-+=========+======================================================================================================================+
-| 30 - 35 | - Summary statistics and visualizations are correctly generated, included in the report for both research questions. |
-|         |                                                                                                                      |
-|         | - Provides justification for choice of analysis tools.                                                               |
-|         |                                                                                                                      |
-|         | - Interpretations follow from the analyses and consider issues fro how data were collected.                          |
-|         |                                                                                                                      |
-|         | - Language is clear and precise. Not overly technical.                                                               |
-+---------+----------------------------------------------------------------------------------------------------------------------+
-| 25 - 29 | - Interpretations are vague or imprecise, but seem largely correct and complete.                                     |
-|         |                                                                                                                      |
-|         | - Comments not well integrated or not fully substantiated by analyses.                                               |
-+---------+----------------------------------------------------------------------------------------------------------------------+
-| 20 - 24 | - Insufficient output provided.                                                                                      |
-|         |                                                                                                                      |
-|         | - Major errors in statistics and/or weak interpretation of software outputs.                                         |
-+---------+----------------------------------------------------------------------------------------------------------------------+
-| \< 20   | - Project does not consider two separate questions.                                                                  |
-|         |                                                                                                                      |
-|         | - Analyses are incomplete and/or inappropriate for the data or research questions.                                   |
-|         |                                                                                                                      |
-|         | - Report does not provide interpretations or interpretations are inconsistent and contradictory.                     |
-+---------+----------------------------------------------------------------------------------------------------------------------+
++----------+----------------------------------------------------------------------------------------------------------------------+
+| Points   | Description                                                                                                          |
++==========+======================================================================================================================+
+| 30 - 35  | - Summary statistics and visualizations are correctly generated, included in the report for both research questions. |
+|          |                                                                                                                      |
+|          | - Provides justification for choice of analysis tools.                                                               |
+|          |                                                                                                                      |
+|          | - Interpretations follow from the analyses and consider issues fro how data were collected.                          |
+|          |                                                                                                                      |
+|          | - Language is clear and precise. Not overly technical.                                                               |
++----------+----------------------------------------------------------------------------------------------------------------------+
+| 25 - 29  | - Interpretations are vague or imprecise, but seem largely correct and complete.                                     |
+|          |                                                                                                                      |
+|          | - Comments not well integrated or not fully substantiated by analyses.                                               |
++----------+----------------------------------------------------------------------------------------------------------------------+
+| 20 - 24  | - Insufficient output provided.                                                                                      |
+|          |                                                                                                                      |
+|          | - Major errors in statistics and/or weak interpretation of software outputs.                                         |
++----------+----------------------------------------------------------------------------------------------------------------------+
+| \< 20    | - Project does not consider two separate questions.                                                                  |
+|          |                                                                                                                      |
+|          | - Analyses are incomplete and/or inappropriate for the data or research questions.                                   |
+|          |                                                                                                                      |
+|          | - Report does not provide interpretations or interpretations are inconsistent and contradictory.                     |
++----------+----------------------------------------------------------------------------------------------------------------------+
 
 ### Conclusion
 
-+--------+--------------------------------------------------------------------------------------------------------------------------+
-| Points | Description                                                                                                              |
-+========+==========================================================================================================================+
-| 8 - 10 | - Discussion summarizes the study, including methods, key findings, implications, and considerations of future research. |
-|        |                                                                                                                          |
-|        | - Ties to existing literature as reported in the literature review section.                                              |
-|        |                                                                                                                          |
-|        | - Highlights any limitations and suggestions for future improvement.                                                     |
-+--------+--------------------------------------------------------------------------------------------------------------------------+
-| 6 - 7  | - Conclusion lacks one of the important components.                                                                      |
-+--------+--------------------------------------------------------------------------------------------------------------------------+
-| 4 - 5  | - Conclusion lacks multiple components and is generally hard to follow.                                                  |
-+--------+--------------------------------------------------------------------------------------------------------------------------+
-| \< 4   | - Even more problematic.                                                                                                 |
-+--------+--------------------------------------------------------------------------------------------------------------------------+
++----------+--------------------------------------------------------------------------------------------------------------------------+
+| Points   | Description                                                                                                              |
++==========+==========================================================================================================================+
+| 8 - 10   | - Discussion summarizes the study, including methods, key findings, implications, and considerations of future research. |
+|          |                                                                                                                          |
+|          | - Ties to existing literature as reported in the literature review section.                                              |
+|          |                                                                                                                          |
+|          | - Highlights any limitations and suggestions for future improvement.                                                     |
++----------+--------------------------------------------------------------------------------------------------------------------------+
+| 6 - 7    | - Conclusion lacks one of the important components.                                                                      |
++----------+--------------------------------------------------------------------------------------------------------------------------+
+| 4 - 5    | - Conclusion lacks multiple components and is generally hard to follow.                                                  |
++----------+--------------------------------------------------------------------------------------------------------------------------+
+| \< 4     | - Even more problematic.                                                                                                 |
++----------+--------------------------------------------------------------------------------------------------------------------------+
 
 **Note** that the above points total to 75. As a group, your will be graded out of 75. The rest of the points (25) will come from your presentation (each member is expected to take part) and individual contribution to the project. Individual contribution will be assessed through my observations of your work during class, and the project self assessment report. This means that members in the same group may not earn the same grade.
 
