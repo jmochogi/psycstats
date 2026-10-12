@@ -38,12 +38,9 @@ e.  Give the scale of measurement (nominal, ordinal, interval, ratio) for each v
 
     \clearpage
 
-
 ## Question 2 - Frequency Distributions & Central Tendency
 
-The following scores are the ages for a random sample of $n=32$ drivers who were issued parking tickets in Chicago during 2019. Determine the best interval width and place the scores in a grouped frequency distribution table. From looking at your table,
-does it appear that tickets are issued equally across
-age groups?
+The following scores are the ages for a random sample of $n=32$ drivers who were issued parking tickets in Chicago during 2019.
 
 $$          
 \begin{array}{cccccccc}
@@ -54,13 +51,13 @@ $$
 \end{array}
 $$
 
-a.  Create a grouped frequency table to organize the data. Use classes: 19–26, 27-34, etc and be sure to include a cumulative frequency column. \vspace{2cm}
+a.  Create a grouped frequency table to organize the data. Use classes: 19–26, 27-34, etc and be sure to include a cumulative frequency column. \vspace{6cm}
 
 b.  Describe the distribution of the data based on the frequency table. From looking at your table, does it appear that tickets are issued equally across age groups? \vspace{2cm}
-
+\newpage
 c.  Using the **frequency table** estimate the median score. Explain how you used the table to find the median. \vspace{1.2 in}
 
-d. Suppose the score of 64 was a typo and should be 46. Without doing doing any calculations, explain how this change would affect the ***mean***, the ***median***, and the ***standard deviation***. In particular, state whether these statistics will increase, decrease, or stay the same and give a reason. \vspace{3cm}
+d.  Suppose the score of 64 was a typo and should be 46. Without doing doing any calculations, explain how this change would affect the ***mean***, the ***median***, and the ***standard deviation***. In particular, state whether these statistics will increase, decrease, or stay the same and give a reason. \vspace{3cm}
 
 \vspace{3cm}
 
@@ -75,14 +72,13 @@ $$
 57 & 30 & 45 & 95 & 39 & 53 & 28 & 20 \\
 \end{array}$$
 
-a. Calculate the standard deviation for the scores and interpret its meaning in context of the scores. Be sure to show all mathematical work. \vspace{4 in}
+a.  Calculate the standard deviation for the scores and interpret its meaning in context of the scores. Be sure to show all mathematical work. \vspace{4 in}
 
-a.  Calculate the first ($Q_1$), second ($Q_2$), and the third quartiles ($Q_3$) for the scores. \clearpage
+b.  Calculate the first ($Q_1$), second ($Q_2$), and the third quartiles ($Q_3$) for the scores. \clearpage
 
-b.  Use the $1.5\times IQR$ rule to determine if there are any suspected outliers among the eight scores. \vspace{2 in}
+c.  Use the $1.5\times IQR$ rule to determine if there are any suspected outliers among the eight scores. \vspace{2 in}
 
-c.  Sketch a box plot to visualize the distribution of the scores. Be sure to use an appropriate scale so your plot is reasonable. \vspace{1.5 in}
-
+d.  Sketch a box plot to visualize the distribution of the scores. Be sure to use an appropriate scale so your plot is reasonable. \vspace{1.5 in}
 
 \clearpage
 
@@ -90,19 +86,12 @@ c.  Sketch a box plot to visualize the distribution of the scores. Be sure to us
 
 A researcher is interested in the effects of a “smart drug” on performance on a standardized intelligence test. It is known that the population mean and standard deviation for this test are $\mu=200$ and $\sigma=45$ respectively.
 
-
-a. Emma, a participant who receives the drug subsequently earns a score of $X = 220$. Should the researcher be convinced that Emma's score is appreciably different from the mean? Explain your answer.
+a.  Emma, a participant who receives the drug subsequently earns a score of $X = 220$. Should the researcher be convinced that Emma's score is appreciably different from the mean? Explain your answer.
 
 \vspace{6cm}
 
 b.  Eric, who also took the drug, scored $X = 198$ on another version of the test. The population mean and standard deviation on this version are $\mu=180$ and $\sigma=30$ respectively. Who between Emma and Eric performed better relative to their respective populations? Explain your answer. \clearpage
 
-c. Recall that a **sampling distribution for the mean** is the set of all possible samples of size *n* and their means. For a sampling distribution of size $n=49$ test takers (original test version with $\mu=200$ and $\sigma=45$), what would be the *expected mean* and *standard error*? Sketch and label the distribution. \vspace{2in}
+c.  Recall that a **sampling distribution for the mean** is the set of all possible samples of size *n* and their means. For a sampling distribution of size $n=49$ test takers (original test version with $\mu=200$ and $\sigma=45$), what would be the *expected mean* and *standard error*? Sketch and label the distribution. \vspace{2in}
 
-d. Suppose the researcher takes a random sample of $n=49$ people and gives them the drug followed by the test. The sample mean test score for these 49 people is found to be $M = 215$. Would you consider this mean to be unusual? Justify your answer. \vspace{3cm}
-
-
-
-
-
-
+d.  Suppose the researcher takes a random sample of $n=49$ people and gives them the drug followed by the test. The sample mean test score for these 49 people is found to be $M = 215$. Would you consider this mean to be unusual? Justify your answer. \vspace{3cm}
