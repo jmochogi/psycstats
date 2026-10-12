@@ -109,9 +109,9 @@ website:
            # text: Problem Set 2
        
       - section: "Exam Review"
-        #contents:
-          #- href: exam-review/exam-1-review.qmd
-            #text: Exam 1
+        contents:
+          - href: exam-review/exam-1-review.qmd
+            text: Exam 1
           #- href: exam-review/exam-2-review.qmd
             #text: Exam 2
       

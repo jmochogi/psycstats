@@ -117,6 +117,61 @@
     ]
   },
   {
+    "objectID": "exam-review/exam-1-review.html",
+    "href": "exam-review/exam-1-review.html",
+    "title": "PSYC 207 Fall 2026",
+    "section": "",
+    "text": "A behavioral science research team wants to evaluate the effectiveness of different stress-management interventions in reducing perceived stress among adults. To conduct the experiment, 150 adults aged 18–55 years from NYC were randomly selected from individuals enrolled in a community behavioral health research program. The participants were randomly assigned to one of three intervention groups: mindfulness-based training, cognitive behavioral therapy (CBT), or stress-management education, with 50 participants assigned to each group.\nThe researchers measured participants’ perceived stress levels before and after a four-week intervention using a standardized psychological stress scale ranging from 0 to 40, with higher scores indicating greater perceived stress. At the end of the four weeks, participants in the mindfulness-based training group had an average stress score of 18, compared with 16 among participants in the CBT group and 22 among participants in the stress-management education group. The researchers also collected information on each participant’s gender (male/female), highest level of education completed (high school, bachelor’s degree, or graduate degree), and average number of hours of sleep per night.\nThe researchers wanted to determine whether the type of intervention had an effect on participants’ perceived stress levels after four weeks.\n\nIdentify the sample and the population of interest in the above study. \nClassify the study method as Descriptive, Correlational, Experimental, or quasi-experimental. Explain your reasoning. \nIdentify any one parameter and its associated statistic in the study, stating the specific values for each if known.\nList all the variables in the study and identify each variable as discrete or continuous. \nGive the scale of measurement (nominal, ordinal, interval, ratio) for each variable identified in part (d) above.",
+    "crumbs": [
+      "Exam Review",
+      "Exam 1"
+    ]
+  },
+  {
+    "objectID": "exam-review/exam-1-review.html#question-1---data-study-design",
+    "href": "exam-review/exam-1-review.html#question-1---data-study-design",
+    "title": "PSYC 207 Fall 2026",
+    "section": "",
+    "text": "A behavioral science research team wants to evaluate the effectiveness of different stress-management interventions in reducing perceived stress among adults. To conduct the experiment, 150 adults aged 18–55 years from NYC were randomly selected from individuals enrolled in a community behavioral health research program. The participants were randomly assigned to one of three intervention groups: mindfulness-based training, cognitive behavioral therapy (CBT), or stress-management education, with 50 participants assigned to each group.\nThe researchers measured participants’ perceived stress levels before and after a four-week intervention using a standardized psychological stress scale ranging from 0 to 40, with higher scores indicating greater perceived stress. At the end of the four weeks, participants in the mindfulness-based training group had an average stress score of 18, compared with 16 among participants in the CBT group and 22 among participants in the stress-management education group. The researchers also collected information on each participant’s gender (male/female), highest level of education completed (high school, bachelor’s degree, or graduate degree), and average number of hours of sleep per night.\nThe researchers wanted to determine whether the type of intervention had an effect on participants’ perceived stress levels after four weeks.\n\nIdentify the sample and the population of interest in the above study. \nClassify the study method as Descriptive, Correlational, Experimental, or quasi-experimental. Explain your reasoning. \nIdentify any one parameter and its associated statistic in the study, stating the specific values for each if known.\nList all the variables in the study and identify each variable as discrete or continuous. \nGive the scale of measurement (nominal, ordinal, interval, ratio) for each variable identified in part (d) above.",
+    "crumbs": [
+      "Exam Review",
+      "Exam 1"
+    ]
+  },
+  {
+    "objectID": "exam-review/exam-1-review.html#question-2---frequency-distributions-central-tendency",
+    "href": "exam-review/exam-1-review.html#question-2---frequency-distributions-central-tendency",
+    "title": "PSYC 207 Fall 2026",
+    "section": "Question 2 - Frequency Distributions & Central Tendency",
+    "text": "Question 2 - Frequency Distributions & Central Tendency\nThe following scores are the ages for a random sample of \\(n=32\\) drivers who were issued parking tickets in Chicago during 2019. Determine the best interval width and place the scores in a grouped frequency distribution table. From looking at your table, does it appear that tickets are issued equally across age groups?\n\\[          \n\\begin{array}{cccccccc}\n57 & 30 & 45 & 59 & 39 & 53 & 28 & 19 \\\\\n34 & 21 & 34 & 38 & 52 & 29 & 64 & 39 \\\\\n22 & 44 & 46 & 26 & 56 & 20 & 33 & 58 \\\\\n32 & 25 & 48 & 22 & 51 & 26 & 63 & 51\n\\end{array}\n\\]\n\nCreate a grouped frequency table to organize the data. Use classes: 19–26, 27-34, etc and be sure to include a cumulative frequency column. \nDescribe the distribution of the data based on the frequency table. From looking at your table, does it appear that tickets are issued equally across age groups? \nUsing the frequency table estimate the median score. Explain how you used the table to find the median. \nSuppose the score of 64 was a typo and should be 46. Without doing doing any calculations, explain how this change would affect the mean, the median, and the standard deviation. In particular, state whether these statistics will increase, decrease, or stay the same and give a reason.",
+    "crumbs": [
+      "Exam Review",
+      "Exam 1"
+    ]
+  },
+  {
+    "objectID": "exam-review/exam-1-review.html#question-3---variability",
+    "href": "exam-review/exam-1-review.html#question-3---variability",
+    "title": "PSYC 207 Fall 2026",
+    "section": "Question 3 - Variability",
+    "text": "Question 3 - Variability\nConsider a small population of 8 students with the following scores on a recent exam:\n\\[\n\\begin{array}{cccccccc}\n57 & 30 & 45 & 95 & 39 & 53 & 28 & 20 \\\\\n\\end{array}\\]\n\nCalculate the standard deviation for the scores and interpret its meaning in context of the scores. Be sure to show all mathematical work. \nCalculate the first (\\(Q_1\\)), second (\\(Q_2\\)), and the third quartiles (\\(Q_3\\)) for the scores. \nUse the \\(1.5\\times IQR\\) rule to determine if there are any suspected outliers among the eight scores. \nSketch a box plot to visualize the distribution of the scores. Be sure to use an appropriate scale so your plot is reasonable.",
+    "crumbs": [
+      "Exam Review",
+      "Exam 1"
+    ]
+  },
+  {
+    "objectID": "exam-review/exam-1-review.html#question-4---z-scores-and-central-limit-theorem",
+    "href": "exam-review/exam-1-review.html#question-4---z-scores-and-central-limit-theorem",
+    "title": "PSYC 207 Fall 2026",
+    "section": "Question 4 - Z-Scores and Central Limit Theorem",
+    "text": "Question 4 - Z-Scores and Central Limit Theorem\nA researcher is interested in the effects of a “smart drug” on performance on a standardized intelligence test. It is known that the population mean and standard deviation for this test are \\(\\mu=200\\) and \\(\\sigma=45\\) respectively.\n\nEmma, a participant who receives the drug subsequently earns a score of \\(X = 220\\). Should the researcher be convinced that Emma’s score is appreciably different from the mean? Explain your answer.\n\n\nEric, who also took the drug, scored \\(X = 198\\) on another version of the test. The population mean and standard deviation on this version are \\(\\mu=180\\) and \\(\\sigma=30\\) respectively. Who between Emma and Eric performed better relative to their respective populations? Explain your answer. \nRecall that a sampling distribution for the mean is the set of all possible samples of size n and their means. For a sampling distribution of size \\(n=49\\) test takers (original test version with \\(\\mu=200\\) and \\(\\sigma=45\\)), what would be the expected mean and standard error? Sketch and label the distribution. \nSuppose the researcher takes a random sample of \\(n=49\\) people and gives them the drug followed by the test. The sample mean test score for these 49 people is found to be \\(M = 215\\). Would you consider this mean to be unusual? Justify your answer.",
+    "crumbs": [
+      "Exam Review",
+      "Exam 1"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "PSYC 207: Statistics in Psychology",
@@ -731,6 +786,48 @@
       "Projects",
       "Project 1"
     ]
+  },
+  {
+    "objectID": "exam-review/exam-2-review.html",
+    "href": "exam-review/exam-2-review.html",
+    "title": "Exam 2 Review",
+    "section": "",
+    "text": "Warning: package 'dials' was built under R version 4.6.1\nMuch of the material on this review is based on statistical inference methods including hypothesis testing and confidence intervals using simulation-based methods (randomization tests and bootstrapping). Most of the material was covered starting the week before spring break to mid April, 2026. Hypotheses tests will be based on a discernibility level of 0.05 (5%).\nBe sure to try these problems on your own before coming for the review session."
+  },
+  {
+    "objectID": "exam-review/exam-2-review.html#problem-1",
+    "href": "exam-review/exam-2-review.html#problem-1",
+    "title": "Exam 2 Review",
+    "section": "Problem 1",
+    "text": "Problem 1\nWe have discussed various types of statistical inference methods including:\n\nA: Inference for difference in two proportions (lab 6 & 7)\nB: Inference for difference in two means (labs 8)\nC: Inference for a single mean (lab 9)\nD: Inference for a single proportion (OneNote Activity 4/10)\n\nRead the following scenario carefully and answer the questions that follow.\nA company designs workplace environments to improve employee productivity and well-being. Employees are provided with different types of office setups (e.g., open-plan spaces, private offices, standing desks, relaxation areas), and managers conduct experiments to determine which setups lead to the best outcomes.\nFor each of the following research questions, identify the predictor and response variables, parameter of interest, inference method (choose from list above), then state the hypotheses.\n\nResearch Question: Do employees in private offices exhibit different overall job satisfaction levels compared to employees in open-plan spaces?  Setup: Employees are randomly assigned to one of two workspace environments: private offices or open-plan spaces. After 3 months, each employee’s job satisfaction level is measured on a scale of 0 to 100.\n\nPredictor and response variables: \nParameter of interest: \nAppropriate Inference method: \nNull and Alternative Hypotheses: \n\nResearch Question: Is the proportion of employees in open-plan workspaces who experience high work-related stress lower than the 25% reported in a previous study?  Setup: Employees working in open-plan work spaces completed a survey asking whether or not they experienced high work-related stress. It was found that 27% experienced high work-related stress. \n\nPredictor and response variables: \nParameter of interest: \nAppropriate Inference method: \nNull and Alternative Hypotheses: \n\nResearch Question: Is the average job satisfaction score (on a scale of 0-100) for employees working in private offices different from one reported in a previous study (75%)?  Setup: Employees working in private offices completed a job satisfaction survey and on average the value was 71%. \n\nPredictor and response variables: \nParameter of interest: \nAppropriate Inference method: \nNull and Alternative Hypotheses: \n\nResearch Question: Is there an association between office space type (open-plan or private offices) and overall stress levels (High vs Low)?  Setup: Over a 3-month period, the researchers measure the average stress levels (High or Low) of employees in private offices and those in open-space offices. \n\nPredictor and response variables: \nParameter of interest: \nAppropriate Inference method: \nNull and Alternative Hypotheses:"
+  },
+  {
+    "objectID": "exam-review/exam-2-review.html#problem-2",
+    "href": "exam-review/exam-2-review.html#problem-2",
+    "title": "Exam 2 Review",
+    "section": "Problem 2",
+    "text": "Problem 2\nHelen saw a commercial on TV claiming that Domino’s restaurant has the fastest pizza delivery times in her area. She decided to check this claim by running a hypothesis test comparing delivery times for Domino’s and Papa John’s. She took a random sample of several of the two restaurants in her home area and found the average delivery times to be 17.5 minutes for Domino’s and 19.6 minutes for Papa John’s. She also summarized the data as shown on the following side-by-side box plots:\n\n\n\n\n\n\n\n\n\n\nBased on the side-by-side box plots above, comment on the distribution of the average delivery times for the two pizza restaurants. \nFind the relevant observed statistic for the scenario described above. \nState the null and alternative hypotheses in words and in symbols. \nHelen generated 1,000 simulations of the statistic under the null model and created the histogram shown below. Each bin is 0.5 minutes wide.\n\n\n\n\n\n\n\n\n\nEstimate of the P-value (show/explain work) and write down the conclusion for your hypothesis test in context. \n\n\nThe histogram below shows the bootstrap distribution for the statistic of interest. The distribution was generated by re-sampling from the original sample.\n\n\n\n\n\n\n\n\n\n\nUse the histogram to find the 95% confidence interval. Be sure to give a detailed explanation on how you arrived at your answer."
+  },
+  {
+    "objectID": "exam-review/exam-2-review.html#problem-3",
+    "href": "exam-review/exam-2-review.html#problem-3",
+    "title": "Exam 2 Review",
+    "section": "Problem 3",
+    "text": "Problem 3\nBack in 2021, a poll found that 1 in 5 adults (20%) living in Seattle, Washington, supported proposals to reduce police department budgets (“defund the police”). A researcher decided to investigate this claim by surveying 650 randomly selected Seattle residents. It was found that 159 of the 650 respondents supported defunding the police.\n\nWhat is the parameter of interest in this scenario? Calculate the observed statistic. \nWrite the appropriate null and alternative hypotheses (in words and symbols) to test the claim. \nDescribe the setup of a simulation model and the steps for its implementation to generate the null distribution. Also explain how to obtain a p-value based on the simulated data. \nThe histogram below shows the distribution of 1,000 simulated statistics under the null hypothesis. Each bin is 0.01 units wide.\n\n\n\n\n\n\n\n\n\n\n\nEstimate the p-value using the histogram then write your conclusion for the hypothesis test in context. Be sure to show/explain your work. \n\n\nUse the bootstrap distribution below (bin width is 0.01) to estimate the 95% confidence interval. Interpret the interval and state whether it supports the conclusion reached under the hypothesis test. Explain."
+  },
+  {
+    "objectID": "exam-review/exam-2-review.html#problem-4",
+    "href": "exam-review/exam-2-review.html#problem-4",
+    "title": "Exam 2 Review",
+    "section": "Problem 4",
+    "text": "Problem 4\nThe Airlines data set from the Stat2Data package contains information on over 10,000 commercial flights operated by Delta and American Airlines. A business analyst wants to conduct a statistical analysis to determine whether the proportion of arrival delays differs between the two airlines. The table below summarizes the arrival status (delayed or on time) by airline:\n\n\n\nAirline\nDelayed\nOnTime\nTotal\n\n\n\n\nDelta\n659\n2344\n3003\n\n\nAmerican\n1450\n5880\n7330\n\n\nTotal\n2109\n8224\n10333\n\n\n\n\nIdentify the population and parameter of interest in this scenario. Also, calculate the observed statistic. \nState the null and alternative hypotheses in words and in symbols. \nThe histogram below shows the distribution of 1500 simulated statistics under the null hypothesis. Each bin is 0.005 wide.\n\n\n\n\n\n\n\n\n\n\n\nUse the histogram to estimate the p-value (show/explain work) then write your conclusion for the hypothesis test in context. \n\n\nThe histogram below shows the bootstrap distribution for the statistic of interest. The distribution was generated by re-sampling from the original sample. The numbers on each bin represent the counts for the bin. Each bin is 0.005 units wide.\n\n\n\n\n\n\n\n\n\n\n\nUse the histogram to estimate the 95% confidence interval. Show/explain your work. \nInterpret the confidence interval in context. Does this interval support the findings under the hypothesis testing part? Explain."
+  },
+  {
+    "objectID": "exam-review/exam-2-review.html#problem-5",
+    "href": "exam-review/exam-2-review.html#problem-5",
+    "title": "Exam 2 Review",
+    "section": "Problem 5",
+    "text": "Problem 5\nThe average (mean) ACT score for students at a certain college is believed to be 31. A random sample of 100 students produced a sample mean of 30. We want to determine, via simulation-based hypothesis testing, whether this data provides strong evidence that the true average ACT score at this college is lower than 31.\n\nIdentify the population, parameter, sample, and the observed statistic in this scenario. \nState the null and alternative hypotheses in words and symbols. \nDescribe the setup of a simulation model and the steps for its implementation to generate the null distribution. Also explain how to obtain a p-value based on the simulated data. \nThe histogram below shows the distribution of 1,000 simulated statistics under the null hypothesis. Use the histogram to estimate the P-value then write your conclusion in context.\n\n\n\n\n\n\n\n\n\nSuppose we generate a confidence interval to estimate the true ACT score, would you expect 31 to be inside or outside the interval? Why?"
   },
   {
     "objectID": "course-faq.html",

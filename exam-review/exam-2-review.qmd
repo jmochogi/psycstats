@@ -1,0 +1,363 @@
+---
+title: "Exam 2 Review"
+format:
+  html: default
+  pdf: default
+execute:
+  echo: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: load-packages
+#| message: false
+library(tidyverse)
+library(tidymodels)
+library(openintro)
+library(readxl)
+library(dplyr)
+library(infer)
+library(Stat2Data)
+theme_set(theme_minimal(base_size = 12))
+```
+
+```{r, incldue=FALSE}
+Pizza_Data <- read_excel("/Users/joashmochogi/Desktop/websites/intermediate-stats/exam-review/datasets/Pizza_Data.xls")
+```
+
+```{r}
+Pizza_Data <- Pizza_Data |>
+  mutate(Papa_J = ifelse(Restaurant == "Papa_J", 1, 0))
+```
+
+Much of the material on this review is based on statistical inference methods including hypothesis testing and confidence intervals using simulation-based methods (randomization tests and bootstrapping). Most of the material was covered starting the week before spring break to mid April, 2026. Hypotheses tests will be based on a discernibility level of 0.05 (5%).
+
+Be sure to try these problems on your own before coming for the review session.
+
+## Problem 1
+
+We have discussed various types of statistical inference methods including:
+
+-   A: Inference for difference in two proportions (lab 6 & 7)
+
+-   B: Inference for difference in two means (labs 8)
+
+-   C: Inference for a single mean (lab 9)
+
+-   D: Inference for a single proportion (OneNote Activity 4/10)
+
+Read the following scenario carefully and answer the questions that follow.
+
+A company designs workplace environments to improve employee productivity and well-being. Employees are provided with different types of office setups (e.g., open-plan spaces, private offices, standing desks, relaxation areas), and managers conduct experiments to determine which setups lead to the best outcomes.
+
+For each of the following research questions, identify the predictor and response variables, parameter of interest, inference method (choose from list above), then state the hypotheses.
+
+a.  **Research Question:** Do employees in private offices exhibit different overall job satisfaction levels compared to employees in open-plan spaces?<br>  **Setup:** Employees are randomly assigned to one of two workspace environments: private offices or open-plan spaces. After 3 months, each employee’s job satisfaction level is measured on a scale of 0 to 100.
+
+    \vspace{1.5in}
+
+    -   Predictor and response variables: \vspace{1in}
+
+    -   Parameter of interest: \vspace{1in}
+
+    -   Appropriate Inference method: \vspace{1in}
+
+    -   Null and Alternative Hypotheses: \vspace{1in}
+
+b.  **Research Question**: Is the proportion of employees in open-plan workspaces who experience high work-related stress lower than the 25% reported in a previous study? <br> **Setup:** Employees working in open-plan work spaces completed a survey asking whether or not they experienced high work-related stress. It was found that 27% experienced high work-related stress. \vspace{.1in}
+
+    -   Predictor and response variables: \vspace{1in}
+
+    -   Parameter of interest: \vspace{1 in}
+
+    -   Appropriate Inference method: \vspace{1 in}
+
+    -   Null and Alternative Hypotheses: \vspace{1 in}
+
+c.  **Research Question:** Is the average job satisfaction score (on a scale of 0-100) for employees working in private offices different from one reported in a previous study (75%)? <br> **Setup:** Employees working in private offices completed a job satisfaction survey and on average the value was 71%. \vspace{.1in}
+
+    -   Predictor and response variables: \vspace{1in}
+
+    -   Parameter of interest: \vspace{1in}
+
+    -   Appropriate Inference method: \vspace{1in}
+
+    -   Null and Alternative Hypotheses: \vspace{1.5in}
+
+d.  **Research Question:** Is there an association between office space type (open-plan or private offices) and overall stress levels (High vs Low)? <br> **Setup:** Over a 3-month period, the researchers measure the average stress levels (High or Low) of employees in private offices and those in open-space offices. \vspace{.1in}
+
+    -   Predictor and response variables: \vspace{1in}
+
+    -   Parameter of interest: \vspace{1in}
+
+    -   Appropriate Inference method: \vspace{1in}
+
+    -   Null and Alternative Hypotheses: \vspace{1.5in}
+
+\clearpage
+
+## Problem 2
+
+Helen saw a commercial on TV claiming that Domino's restaurant has the fastest pizza delivery times in her area. She decided to check this claim by running a hypothesis test comparing delivery times for Domino's and Papa John's. She took a random sample of several of the two restaurants in her home area and found the average delivery times to be 17.5 minutes for Domino's and 19.6 minutes for Papa John's. She also summarized the data as shown on the following side-by-side box plots:
+
+```{r}
+Pizza_Data %>% 
+  ggplot(aes(x = Restaurant, y = Delivery_time, fill=Restaurant)) +
+  geom_boxplot() +
+  labs(title = "Side-by-side box plots for Average pizza delivery times",
+       x = "Pizza Place",
+       y = "Delivery Time (minutes)") +
+  theme_linedraw()
+```
+
+a.  Based on the side-by-side box plots above, comment on the distribution of the average delivery times for the two pizza restaurants. \vspace{1.2 in}
+
+b.  Find the relevant ***observed statistic*** for the scenario described above. \vspace{1.2 in}
+
+c.  State the null and alternative hypotheses in words and in symbols. \vspace{1.2 in}
+
+d.  Helen generated 1,000 simulations of the statistic under the null model and created the histogram shown below. Each bin is 0.5 minutes wide.
+
+    ```{r}
+    set.seed(12)
+    Pizza_Data |>
+      specify(Delivery_time ~ Restaurant) |>
+      hypothesize(null = "independence") |>
+      generate(reps = 1000, type = "permute") |>
+      calculate(stat= "diff in means", order=c("Papa_J", "Dominos")) |>
+    	ggplot(aes(x = stat)) +
+      geom_histogram(binwidth = 0.5, color = "black", fill = "lightgray") +
+      labs(title = "Histogram of 1000 Simulations under Null Hypothesis",
+           x = "Stat",
+           y = "Frequency")+
+      #geom_vline(xintercept = 2.1, color = "red") +
+    theme_linedraw()
+    ```
+
+    Estimate of the P-value (show/explain work) and write down the conclusion for your hypothesis test in context. \vspace{1.5 in}
+
+\clearpage
+
+e.  The histogram below shows the bootstrap distribution for the statistic of interest. The distribution was generated by re-sampling from the original sample.
+
+    ```{r}
+    set.seed(13)
+    Pizza_Data |>
+      specify(Delivery_time ~ Restaurant) |>
+      generate(reps = 500, type = "bootstrap") |>
+      calculate(stat= "diff in means", order=c("Papa_J", "Dominos")) |>
+    	ggplot(aes(x = stat)) +
+      geom_histogram(binwidth = 0.5, color = "black", fill = "lightgray") +
+      labs(title = "Histogram of 500 Simulations via Bootstrapping",
+           x = "Stat",
+           y = "Frequency")+
+    theme_linedraw()
+    ```
+
+    -   Use the histogram to find the 95% confidence interval. Be sure to give a detailed explanation on how you arrived at your answer. \vspace{1.5 in}
+
+\clearpage
+
+## Problem 3
+
+Back in 2021, a poll found that 1 in 5 adults (20%) living in Seattle, Washington, supported proposals to reduce police department budgets (“defund the police”). A researcher decided to investigate this claim by surveying 650 randomly selected Seattle residents. It was found that 159 of the 650 respondents supported defunding the police.
+
+a.  What is the parameter of interest in this scenario? Calculate the observed statistic. \vspace{1.2 in}
+
+b.  Write the appropriate null and alternative hypotheses (in words and symbols) to test the claim. \vspace{1.2 in}
+
+c.  Describe the setup of a simulation model and the steps for its implementation to generate the null distribution. Also explain how to obtain a p-value based on the simulated data. \clearpage
+
+d.  The histogram below shows the distribution of 1,000 simulated statistics under the null hypothesis. Each bin is 0.01 units wide.
+
+```{r, include=FALSE}
+# Create the dataset
+police_data <- tibble(
+  view = c(rep("Support", 159), rep("Do not support", 491))
+)
+```
+
+```{r, include=FALSE}
+# Generate the null distribution
+set.seed(14)
+null_distribution <- police_data |>
+  specify(response = view, success = "Support") |>
+  hypothesize(null = "point", p = 0.20) |>
+  generate(reps = 1000, type = "draw") |>
+  calculate(stat = "prop")
+```
+
+```{r, echo=FALSE}
+# Plot the null distribution
+null_distribution |>
+  ggplot(aes(x = stat)) +
+  geom_histogram(binwidth = 0.01, color = "black", fill = "lightgray") +
+  labs(title = "Histogram of 1000 Simulations under Null Hypothesis",
+       x = "stat",
+       y = "Frequency") +
+  theme_linedraw()
+```
+
+-   Estimate the p-value using the histogram then write your conclusion for the hypothesis test in context. Be sure to show/explain your work. \vspace{2.9 in}
+
+e.  Use the bootstrap distribution below (bin width is 0.01) to estimate the 95% confidence interval. Interpret the interval and state whether it supports the conclusion reached under the hypothesis test. Explain.
+
+```{r}
+set.seed(1433)
+boot_distribution <- police_data |>
+  specify(response = view, success = "Support") |>
+  generate(reps = 400, type = "bootstrap") |>
+  calculate(stat = "prop")
+
+```
+
+```{r}
+boot_distribution |>
+  ggplot(aes(x = stat)) +
+  geom_histogram(binwidth = 0.01, color = "black", fill = "lightgray") +
+  labs(title = "Histogram of 400 simulated stats from the sample",
+       x = "stat",
+       y = "Frequency") +
+  theme_linedraw()
+```
+
+\clearpage
+
+## Problem 4
+
+The `Airlines` data set from the `Stat2Data` package contains information on over 10,000 commercial flights operated by Delta and American Airlines. A business analyst wants to conduct a statistical analysis to determine whether the proportion of arrival delays differs between the two airlines. The table below summarizes the arrival status (delayed or on time) by airline:
+
+```{r, include=FALSE}
+data(Airlines)
+```
+
+| Airline  | Delayed | OnTime | Total |
+|----------|---------|--------|-------|
+| Delta    | 659     | 2344   | 3003  |
+| American | 1450    | 5880   | 7330  |
+| Total    | 2109    | 8224   | 10333 |
+
+```{r, echo=FALSE, include=FALSE}
+Airlines |>
+  drop_na(OnTime, airline) |>
+  count(airline, OnTime) |>
+  group_by(airline)|>
+  mutate(prop=n/sum(n))
+```
+
+a.  Identify the *population* and *parameter of interest* in this scenario. Also, calculate the *observed statistic*. \vspace{1.2 in}
+
+b.  State the null and alternative hypotheses in words and in symbols. \vspace{1.5 in}
+
+c.  The histogram below shows the distribution of 1500 simulated statistics under the null hypothesis. Each bin is 0.005 wide.
+
+```{r, include=FALSE}
+# Generate the null distribution
+set.seed(15)
+null_distribution_airlines <- Airlines |>
+  drop_na(OnTime, airline) |>
+  specify(OnTime ~ airline, success = "no")|>
+  hypothesize(null = "independence") |>
+  generate(reps = 1500, type = "permute") |>
+  calculate(stat = "diff in props", order = c("Delta", "American"))
+```
+
+```{r, echo=FALSE, warnings=FALSE, message=FALSE}
+# Plot the null distribution
+null_distribution_airlines |>
+  ggplot(aes(x = stat)) +
+  geom_histogram(binwidth = 0.005, color = "black", fill = "lightgray") +
+  geom_text(stat = "bin", binwidth = 0.005,
+            aes(label = after_stat(ifelse(count > 0, count, ""))),
+            vjust = -0.5, size = 3) +
+  labs(title = "Histogram of 1500 Simulated statistics under the null hypothesis",
+       x = "stat",
+       y = "") +
+  theme_linedraw()
+```
+
+-   Use the histogram to estimate the *p-value* (show/explain work) then write your conclusion for the hypothesis test in context. \vspace{2.8 in}
+
+d.  The histogram below shows the bootstrap distribution for the statistic of interest. The distribution was generated by re-sampling from the original sample. The numbers on each bin represent the counts for the bin. Each bin is 0.005 units wide.
+
+```{r, include=FALSE}
+# Generate the bootstrap distribution
+set.seed(16)
+bootstrap_distribution_airlines <- Airlines |>
+  drop_na(OnTime, airline) |>
+  specify(OnTime ~ airline, success = "no") |>
+  generate(reps = 500, type = "bootstrap") |>
+  calculate(stat = "diff in props", order = c("Delta", "American"))
+```
+
+```{r, echo=FALSE, warnings=FALSE, message=FALSE}
+# Plot the bootstrap distribution
+bootstrap_distribution_airlines |>
+  ggplot(aes(x = stat)) +
+  geom_histogram(binwidth = 0.005, color = "black", fill = "lightgray") +
+  geom_text(stat = "bin", 
+            aes(label = after_stat(count)), 
+            vjust = -0.5, 
+            binwidth = 0.005,
+            size = 3) +
+  labs(title = "Histogram of 500 Simulations via Bootstrapping",
+       x = "Stat",
+       y = "Frequency") +
+  theme_linedraw()
+```
+
+-   Use the histogram to estimate the 95% confidence interval. Show/explain your work. \vspace{2.3 in}
+
+-   Interpret the confidence interval in context. Does this interval support the findings under the hypothesis testing part? Explain. \vspace{1.5 in}
+
+## Problem 5
+
+The average (mean) ACT score for students at a certain college is believed to be 31. A random sample of 100 students produced a sample mean of 30. We want to determine, via simulation-based hypothesis testing, whether this data provides strong evidence that the true average ACT score at this college is lower than 31.
+
+a.  Identify the population, parameter, sample, and the observed statistic in this scenario. \vspace{1 in}
+
+b.  State the null and alternative hypotheses in words and symbols. \vspace{1.5 in}
+
+c.  Describe the setup of a simulation model and the steps for its implementation to generate the null distribution. Also explain how to obtain a p-value based on the simulated data. \vspace{3 in}
+
+d.  The histogram below shows the distribution of 1,000 simulated statistics under the null hypothesis. Use the histogram to estimate the P-value then write your conclusion in context.
+
+    ```{r, include=FALSE}
+    set.seed(123)
+
+    scores <- rnorm(100)
+    scores <- (scores - mean(scores)) / sd(scores) * 6 + 30
+    act_data <- tibble(
+      ACT_score = round(scores))
+
+    ```
+
+    ```{r, include=FALSE}
+    set.seed(142)
+    null_dist<- act_data|>
+      specify(response=ACT_score)|>
+      hypothesize(null="point", mu=31)|>
+      generate(reps=1000, type="bootstrap")|>
+      calculate(stat="mean")
+      
+    ```
+
+    ```{r}
+    null_dist |>
+      ggplot(aes(x = stat)) +
+      geom_histogram(binwidth = .25, color = "black", fill = "lightgray") +
+      geom_text(stat = "bin", 
+                aes(label = after_stat(count)), 
+                vjust = -0.5, 
+                binwidth = 0.25,
+                size = 3) +
+      labs(title = "Histogram of 1000 simulated statistics under the null hypothesis",
+           x = "Stat",
+           y = "Count") +
+      theme_linedraw()
+    ```
+
+    \vspace{2.5 in}
+
+e.  Suppose we generate a confidence interval to estimate the true ACT score, would you expect 31 to be inside or outside the interval? Why?
