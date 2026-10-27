@@ -671,62 +671,29 @@
     "href": "labs/lab_5.html",
     "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
     "section": "",
-    "text": "In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the calculations and interpret the results.\nHere is the scenario:\nA fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a weight loss program with financial incentives is 15 pounds over a 4-month period. The fitness center wants to see if their program leads to a different average weight loss than this known population mean.\nTo investigate this, the center recruited 38 individuals who wanted to lose weight and randomly assigned them to either a incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for a population mean.\nPerform a one-sample t-test in SPSS.\nInterpret the results of a one-sample t-test in the context of a research question.",
+    "text": "In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the analyses and interpret the results.\nHere is the research question we will be investigating:\n\n\n\n\n\n\nResearch Question\n\n\n\nDoes the new weight loss program with financial incentives result in a significantly different average weight loss over a 4-month period compared to the standard population average of 10 pounds?\n\n\nHere is the scenario to that we will be working with:\nA fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a standard weight loss programs is 10 pounds over a 4-month period. The fitness center wants to see if their program, which includes financial incentives, leads to a different average weight loss than this known population mean (10 lbs).\nStudy Design: The researchers recruited 38 individuals who wanted to lose weight and randomly assigned them to either an incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for a population mean.\nPerform a one-sample t-test in SPSS.\nInterpret the results of a one-sample t-test in the context of a research question.\n\n\n\n\n\nNull Hypothesis: The average weight loss for individuals in the incentive group is still equal to 10 pounds.\nIn symbols: \\(H_0: \\mu = 10\\)\nAlternative Hypothesis: The average weight loss for individuals in the incentive group is different from 10 pounds.\nIn symbols: \\(H_1: \\mu \\neq 10\\)\n\n\n\nThere are two main assumptions to consider before running a one-sample t-test:\n\nIndependence: The individuals in the sample are independent of each other. This means that there is no predictable relationship between one individual and another. This is generally satisfied if the data were collected through random sampling or random assignment. The data in this lab were collected through random assignment, so we can assume that the independence assumption is satisfied.\nNormality: The sampled population must be normal. This assumption is necessary part of the math underlying t-tests. Violating this assumption has little practical impact especially if the sample size is sufficiently large (often at least 30). Our sample size is 38, which is sufficiently large to satisfy this assumption.",
     "crumbs": [
       "Labs",
       "Lab 5"
     ]
   },
   {
-    "objectID": "labs/lab_5.html#overview-scenario",
-    "href": "labs/lab_5.html#overview-scenario",
+    "objectID": "labs/lab_5.html#part-1-scenario-overview",
+    "href": "labs/lab_5.html#part-1-scenario-overview",
     "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
     "section": "",
-    "text": "In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the calculations and interpret the results.\nHere is the scenario:\nA fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a weight loss program with financial incentives is 15 pounds over a 4-month period. The fitness center wants to see if their program leads to a different average weight loss than this known population mean.\nTo investigate this, the center recruited 38 individuals who wanted to lose weight and randomly assigned them to either a incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for a population mean.\nPerform a one-sample t-test in SPSS.\nInterpret the results of a one-sample t-test in the context of a research question.",
+    "text": "In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the analyses and interpret the results.\nHere is the research question we will be investigating:\n\n\n\n\n\n\nResearch Question\n\n\n\nDoes the new weight loss program with financial incentives result in a significantly different average weight loss over a 4-month period compared to the standard population average of 10 pounds?\n\n\nHere is the scenario to that we will be working with:\nA fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a standard weight loss programs is 10 pounds over a 4-month period. The fitness center wants to see if their program, which includes financial incentives, leads to a different average weight loss than this known population mean (10 lbs).\nStudy Design: The researchers recruited 38 individuals who wanted to lose weight and randomly assigned them to either an incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for a population mean.\nPerform a one-sample t-test in SPSS.\nInterpret the results of a one-sample t-test in the context of a research question.\n\n\n\n\n\nNull Hypothesis: The average weight loss for individuals in the incentive group is still equal to 10 pounds.\nIn symbols: \\(H_0: \\mu = 10\\)\nAlternative Hypothesis: The average weight loss for individuals in the incentive group is different from 10 pounds.\nIn symbols: \\(H_1: \\mu \\neq 10\\)\n\n\n\nThere are two main assumptions to consider before running a one-sample t-test:\n\nIndependence: The individuals in the sample are independent of each other. This means that there is no predictable relationship between one individual and another. This is generally satisfied if the data were collected through random sampling or random assignment. The data in this lab were collected through random assignment, so we can assume that the independence assumption is satisfied.\nNormality: The sampled population must be normal. This assumption is necessary part of the math underlying t-tests. Violating this assumption has little practical impact especially if the sample size is sufficiently large (often at least 30). Our sample size is 38, which is sufficiently large to satisfy this assumption.",
     "crumbs": [
       "Labs",
       "Lab 5"
     ]
   },
   {
-    "objectID": "labs/lab_5.html#part-1-the-data-hypotheses",
-    "href": "labs/lab_5.html#part-1-the-data-hypotheses",
+    "objectID": "labs/lab_5.html#part-2-the-data",
+    "href": "labs/lab_5.html#part-2-the-data",
     "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "Part 1 — The Data & Hypotheses",
-    "text": "Part 1 — The Data & Hypotheses",
-    "crumbs": [
-      "Labs",
-      "Lab 5"
-    ]
-  },
-  {
-    "objectID": "labs/lab_5.html#the-data",
-    "href": "labs/lab_5.html#the-data",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "The Data",
-    "text": "The Data\nThe data collected is available in the following link:\nWeight Loss Data.\nDownload the data and import them into SPSS.\nFile &gt; Import Data &gt; CSV Data…, browse to the file location, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows and that there are 38 rows:\n\nWeightLoss = Scale\nGroup = Nominal\nMonth7Loss = Scale\n\n\n\n\n\n\n\nvariable Description\n\n\n\nThe variable description is as follows:\n\nGroup = Whether someone was in the Incentive or Control group.- WeightLoss = The amount of weight lost by each individual\nWeightloss = The amount of weight lost by each individual at the 4-month follow-up.\nMonth7Loss = The amount of weight lost by each individual at the 7-month follow-up",
-    "crumbs": [
-      "Labs",
-      "Lab 5"
-    ]
-  },
-  {
-    "objectID": "labs/lab_5.html#stating-hypotheses",
-    "href": "labs/lab_5.html#stating-hypotheses",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "Stating Hypotheses",
-    "text": "Stating Hypotheses\nNull Hypothesis: The average weight loss for individuals in the incentive group is still equal to 15 pounds.\nIn symbols: \\(H_0: \\mu = 15\\)\nAlternative Hypothesis: The average weight loss for individuals in the incentive group is different from 15 pounds.\nIn symbols: \\(H_1: \\mu \\neq 15\\)",
-    "crumbs": [
-      "Labs",
-      "Lab 5"
-    ]
-  },
-  {
-    "objectID": "labs/lab_5.html#part-2-data-filtering",
-    "href": "labs/lab_5.html#part-2-data-filtering",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "Part 2 — Data Filtering",
-    "text": "Part 2 — Data Filtering\nWe are only interested in the individuals in the incentive group for this lab. One way to isolate the incentive group is to use the Split into files feature in SPSS. Here are the steps:\nData &gt; Split into Files. The following window will pop up:\n\n\n\n\n\nSend the Group variable into the Split Cases by box, then click on Browse to specify the file location then click OK.\nNext, navigate to the file location in your computer and open the file named Incentive.sav. Notice that this file contains only members of the incentive group and their weight loss variables.",
+    "section": "Part 2: The Data",
+    "text": "Part 2: The Data\n\nImporting Data into SPSS\nThe data set is available in the following link. Download the data.\nWeight Loss Data.\nAfter downloading the dataset, import it into SPSS, using the following steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file location, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows WeightLoss = Scale, Group = Nominal, Month7Loss = Scale.\nSee the screenshot below for reference:\n\n\n\n\n\n\n\n\n\n\n\nvariable Description\n\n\n\nThe variable description is as follows:\n\nGroup = Whether someone was in the Incentive or Control group.- WeightLoss = The amount of weight lost by each individual\nWeightloss = The amount of weight lost by each individual at the 4-month follow-up.\nMonth7Loss = The amount of weight lost by each individual at the 7-month follow-up\n\n\n\nClick on data view to confirm that you have 38 individuals in the data set. The WeightLoss variable is calculated as the difference between the weight before and after the 4-month period. Negative values (e.g., case 14) indicate that the individual gained weight.\n\n\nData Filtering\nWe are only interested in the individuals in the incentive group for this lab. One way to isolate the incentive group is to use the Split into files feature in SPSS. Here are the steps:\nData &gt; Split into Files. The following window will pop up:\n\n\n\n\n\nSend the Group variable into the Split Cases by box, then click on Browse to specify the file location then click OK.\nNext, navigate to the file location in your computer and open the file named Incentive.sav. This file contains members of the incentive group and their weight loss variables. This is the data we will use for the one-sample t-test.",
     "crumbs": [
       "Labs",
       "Lab 5"
@@ -736,8 +703,8 @@
     "objectID": "labs/lab_5.html#part-3-exploratory-analysis",
     "href": "labs/lab_5.html#part-3-exploratory-analysis",
     "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "Part 3 — Exploratory Analysis",
-    "text": "Part 3 — Exploratory Analysis\nBefore running the t-test, we will perform some exploratory analysis to understand the data better. We can start by exploring the spread of the data using a box plot:\nRun the following steps:\nGraphs &gt; Chart Builder &gt; Boxplot. Move WeightLoss into the Y-axis box. Click OK.\n\n\n\n\n\n\nCheckpoint\n\n\n\nBased on the box plot, how would you describe the spread and shape of the WeightLoss variable for the incentive group? Are there any suspected outliers?\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nGenerate a histogram to visualize the distribution of the WeightLoss variable. What aspects of the distribution can discern based on the histogram that you cannot discern from the box plot?\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nCalculate the summary statistics (mean, median, standard deviation, minimum, maximum) for the WeightLoss variable. Comments on the range and standard deviation.",
+    "section": "Part 3: Exploratory Analysis",
+    "text": "Part 3: Exploratory Analysis\nBefore running the t-test, we will perform some exploratory analysis to understand the data better. We can start by exploring the spread of the data using a box plot:\nRun the following steps:\nGraphs &gt; Chart Builder &gt; Box plot. Move WeightLoss into the Y-axis box. Click OK.\nThe box plot as shown below should appear in the output window:\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nBased on the box plot, how would you describe the spread and shape of the WeightLoss variable for the incentive group? Are there any suspected outliers?\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nGenerate a histogram to visualize the distribution of the WeightLoss variable. What characteristics of the distribution are visible in the histogram that cannot be easily detected in the box plot?\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nCalculate summary statistics (e.g., mean, etc) to examine the central tendency and spread of the WeightLoss variable.",
     "crumbs": [
       "Labs",
       "Lab 5"
@@ -747,8 +714,19 @@
     "objectID": "labs/lab_5.html#part-4-running-the-t-test",
     "href": "labs/lab_5.html#part-4-running-the-t-test",
     "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "Part 4 — Running the t-test",
-    "text": "Part 4 — Running the t-test\nTo run the one-sample t-test, follow these steps:\n\nAnalysis &gt; Compare Means and Proportions &gt; One-Sample T Test.\nMove WeightLoss variable into the Test Variable(s) box.\nEnter 15 in the Test Value box. Make sure the “Estimate effect size” checkbox is checked.\nClick on Options and check that the confidence interval is set to 95%. Click Continue.\nClick OK.\n\n\nOutput Interpretation\nThe output will provide you with the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval, among others.\nHere is an APA-style interpretation of the results:",
+    "section": "Part 4: Running the t-test",
+    "text": "Part 4: Running the t-test\nTo run the one-sample t-test, follow these steps:\n\nAnalysis &gt; Compare Means and Proportions &gt; One-Sample T Test.\nMove WeightLoss variable into the Test Variable(s) box.\nEnter 15 in the Test Value box. Make sure the “Estimate effect size” check box is checked.\nClick on Options and check that the confidence interval is set to 95%. Click Continue.\nClick OK.\n\nThe following tables should pop up in the output window:\n\n\n\n\n\nThe output shows both summary statistics and the results of the one-sample t-test. The summary statistics include the mean, standard deviation, and standard error. The t-test results (second table) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval.\nThe P-value measures the chance of obtaining an average weight loss of 15 lbs or more extreme if the null hypothesis (average = 10 lbs) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis and conclude that the average weight loss for individuals in the incentive group is significantly different (higher) from 10 pounds.",
+    "crumbs": [
+      "Labs",
+      "Lab 5"
+    ]
+  },
+  {
+    "objectID": "labs/lab_5.html#part-5-output-interpretation",
+    "href": "labs/lab_5.html#part-5-output-interpretation",
+    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "section": "Part 5: Output Interpretation",
+    "text": "Part 5: Output Interpretation\nThe output above provides you with the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval, among others.\nIn scientific literature, you would see the one sample t-test results above reported in a manner similar to the following:\n\n\n\n\n\n\nAPA-style Write-up\n\n\n\nThe participants had an average weight loss of \\(M = 15.68\\) lbs with \\(SD = 9.41\\) lbs over the four-month period during which they were offered financial incentives. Statistical analysis indicates that the mean weight loss was significantly higher than population mean of 10 lbs, \\(t\\)(17) = 2.486, \\(p\\) = .024, \\(d\\) = .603, 95% CI [.836, 10.517].\n\n\nPlease see end of chapter 9 in the textbook for more details and examples on APA-style reporting of t-test results.\nNOTE: The confidence interval is interpreted as follows: We are 95% confident that the true mean weight loss for individuals in the incentive group is between .836 and 10.517 pounds. It is strongly recommended that results of hypothesis tests be reported with confidence intervals when possible. Confidence intervals provide more information than a simple p-value and are more informative for decision-making.",
     "crumbs": [
       "Labs",
       "Lab 5"
@@ -759,7 +737,7 @@
     "href": "labs/lab_5.html#take-home-lab-exercises",
     "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
     "section": "Take-Home Lab Exercises",
-    "text": "Take-Home Lab Exercises\nTBD",
+    "text": "Take-Home Lab Exercises\nIn today’s lab exercise, you will perform a one-sample t-test to determine if the average weight loss at the seventh month for individuals in the incentive group is significantly different from 10 lbs. Recall that the financial incentives were only given during the first four months, so if the weight loss is not maintained, we would have further evidence that the financial incentives were effective in the short term but not in the long term.\n\nQuestion 1\nCreate a box plot to visualize the weight loss 3 months after the initial 4 months (Month7Loss). How would you describe the spread and shape of the Month7Loss variable for the incentive group? Are there any suspected outliers?\n\n\nQuestion 2\nCreate a histogram to visualize the distribution of the Month7Loss variable. What characteristics of the distribution are visible in the histogram that cannot be easily detected in the box plot?\n\n\nQuestion 3\nRun a one-sample t-test to determine if the average weight loss at the seventh month for individuals in the incentive group is significantly different from 10 lbs. Look at the output and answer the following questions:\n\nWhat is the P-value for the two-sided test? What does this mean in the context of the research question?\nWhat is the 95% confidence interval for the mean weight loss at the seventh month? How would you interpret this confidence interval in the context of the research question?\nWhat is the effect size (Cohen’s d) for this test? How would you interpret this effect size in the context of the research question?\n\n\n\nQuestion 4\nWrite an APA-style interpretation of the results of the one-sample t-test for the Month7Loss variable. Be sure to include the mean, standard deviation, t-statistic, degrees of freedom, p-value, effect size, and confidence interval in your interpretation.",
     "crumbs": [
       "Labs",
       "Lab 5"

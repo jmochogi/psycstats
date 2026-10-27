@@ -100,10 +100,10 @@ window.Quarto = {
 
 <meta property="og:title" content="Lab 5: Inference for a Single Mean: One Sample t-test – PSYC 20700 - Statistics in Psychology">
 <meta property="og:description" content="Homepage for PSYC 207 - Statistics in Psychology, Fall 2026.">
-<meta property="og:image" content="https://jmochogi.github.io/psycstats/labs/images/lab5im1.png">
+<meta property="og:image" content="https://jmochogi.github.io/psycstats/labs/images/lab5im2.png">
 <meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
-<meta property="og:image:height" content="1022">
-<meta property="og:image:width" content="1574">
+<meta property="og:image:height" content="208">
+<meta property="og:image:width" content="1844">
 <meta name="twitter:title" content="Lab 5: Inference for a Single Mean: One Sample t-test – PSYC 20700 - Statistics in Psychology">
 <meta name="twitter:description" content="Homepage for PSYC 207 - Statistics in Psychology, Fall 2026.">
 <meta name="twitter:image" content="https://jmochogi.github.io/psycstats/labs/img/twitter-card.png">
@@ -301,17 +301,26 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#overview-scenario" id="toc-overview-scenario" class="nav-link active" data-scroll-target="#overview-scenario">Overview Scenario</a></li>
-  <li><a href="#part-1-the-data-hypotheses" id="toc-part-1-the-data-hypotheses" class="nav-link" data-scroll-target="#part-1-the-data-hypotheses">Part 1 — The Data &amp; Hypotheses</a></li>
-  <li><a href="#the-data" id="toc-the-data" class="nav-link" data-scroll-target="#the-data">The Data</a></li>
-  <li><a href="#stating-hypotheses" id="toc-stating-hypotheses" class="nav-link" data-scroll-target="#stating-hypotheses">Stating Hypotheses</a></li>
-  <li><a href="#part-2-data-filtering" id="toc-part-2-data-filtering" class="nav-link" data-scroll-target="#part-2-data-filtering">Part 2 — Data Filtering</a></li>
-  <li><a href="#part-3-exploratory-analysis" id="toc-part-3-exploratory-analysis" class="nav-link" data-scroll-target="#part-3-exploratory-analysis">Part 3 — Exploratory Analysis</a></li>
-  <li><a href="#part-4-running-the-t-test" id="toc-part-4-running-the-t-test" class="nav-link" data-scroll-target="#part-4-running-the-t-test">Part 4 — Running the t-test</a>
+  <li><a href="#part-1-scenario-overview" id="toc-part-1-scenario-overview" class="nav-link active" data-scroll-target="#part-1-scenario-overview">Part 1: Scenario &amp; Overview</a>
   <ul class="collapse">
-  <li><a href="#output-interpretation" id="toc-output-interpretation" class="nav-link" data-scroll-target="#output-interpretation">Output Interpretation</a></li>
+  <li><a href="#stating-hypotheses" id="toc-stating-hypotheses" class="nav-link" data-scroll-target="#stating-hypotheses">Stating Hypotheses</a></li>
+  <li><a href="#checking-assumptions" id="toc-checking-assumptions" class="nav-link" data-scroll-target="#checking-assumptions">Checking Assumptions</a></li>
   </ul></li>
-  <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises" class="nav-link" data-scroll-target="#take-home-lab-exercises">Take-Home Lab Exercises</a></li>
+  <li><a href="#part-2-the-data" id="toc-part-2-the-data" class="nav-link" data-scroll-target="#part-2-the-data">Part 2: The Data</a>
+  <ul class="collapse">
+  <li><a href="#importing-data-into-spss" id="toc-importing-data-into-spss" class="nav-link" data-scroll-target="#importing-data-into-spss">Importing Data into SPSS</a></li>
+  <li><a href="#data-filtering" id="toc-data-filtering" class="nav-link" data-scroll-target="#data-filtering">Data Filtering</a></li>
+  </ul></li>
+  <li><a href="#part-3-exploratory-analysis" id="toc-part-3-exploratory-analysis" class="nav-link" data-scroll-target="#part-3-exploratory-analysis">Part 3: Exploratory Analysis</a></li>
+  <li><a href="#part-4-running-the-t-test" id="toc-part-4-running-the-t-test" class="nav-link" data-scroll-target="#part-4-running-the-t-test">Part 4: Running the t-test</a></li>
+  <li><a href="#part-5-output-interpretation" id="toc-part-5-output-interpretation" class="nav-link" data-scroll-target="#part-5-output-interpretation">Part 5: Output Interpretation</a></li>
+  <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises" class="nav-link" data-scroll-target="#take-home-lab-exercises">Take-Home Lab Exercises</a>
+  <ul class="collapse">
+  <li><a href="#question-1" id="toc-question-1" class="nav-link" data-scroll-target="#question-1">Question 1</a></li>
+  <li><a href="#question-2" id="toc-question-2" class="nav-link" data-scroll-target="#question-2">Question 2</a></li>
+  <li><a href="#question-3" id="toc-question-3" class="nav-link" data-scroll-target="#question-3">Question 3</a></li>
+  <li><a href="#question-4" id="toc-question-4" class="nav-link" data-scroll-target="#question-4">Question 4</a></li>
+  </ul></li>
   <li><a href="#submission-checklist" id="toc-submission-checklist" class="nav-link" data-scroll-target="#submission-checklist">Submission Checklist</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_5.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -338,12 +347,26 @@ window.Quarto = {
 </header>
 
 
-<section id="overview-scenario" class="level2">
-<h2 class="anchored" data-anchor-id="overview-scenario">Overview Scenario</h2>
-<p>In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the calculations and interpret the results.</p>
-<p>Here is the scenario:</p>
-<p>A fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a weight loss program with financial incentives is 15 pounds over a 4-month period. The fitness center wants to see if their program leads to a different average weight loss than this known population mean.</p>
-<p>To investigate this, the center recruited 38 individuals who wanted to lose weight and randomly assigned them to either a incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.</p>
+<section id="part-1-scenario-overview" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-scenario-overview">Part 1: Scenario &amp; Overview</h2>
+<p>In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the analyses and interpret the results.</p>
+<p>Here is the research question we will be investigating:</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Research Question">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Research Question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Does the new weight loss program with financial incentives result in a significantly different average weight loss over a 4-month period compared to the standard population average of 10 pounds?</p>
+</div>
+</div>
+<p>Here is the scenario to that we will be working with:</p>
+<p>A fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a standard weight loss programs is 10 pounds over a 4-month period. The fitness center wants to see if their program, which includes financial incentives, leads to a different average weight loss than this known population mean (10 lbs).</p>
+<p>Study Design: The researchers recruited 38 individuals who wanted to lose weight and randomly assigned them to either an incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Learning Objectives">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -362,22 +385,37 @@ Learning Objectives
 </ul>
 </div>
 </div>
+<section id="stating-hypotheses" class="level3">
+<h3 class="anchored" data-anchor-id="stating-hypotheses">Stating Hypotheses</h3>
+<p>Null Hypothesis: The average weight loss for individuals in the incentive group is still equal to 10 pounds.</p>
+<p>In symbols: <span class="math inline">\(H_0: \mu = 10\)</span></p>
+<p>Alternative Hypothesis: The average weight loss for individuals in the incentive group is different from 10 pounds.</p>
+<p>In symbols: <span class="math inline">\(H_1: \mu \neq 10\)</span></p>
 </section>
-<section id="part-1-the-data-hypotheses" class="level2">
-<h2 class="anchored" data-anchor-id="part-1-the-data-hypotheses">Part 1 — The Data &amp; Hypotheses</h2>
-</section>
-<section id="the-data" class="level2">
-<h2 class="anchored" data-anchor-id="the-data">The Data</h2>
-<p>The data collected is available in the following link:</p>
-<p><a href="datasets/weightLossIncentive.csv">Weight Loss Data</a>.</p>
-<p>Download the data and import them into SPSS.</p>
-<p><strong>File &gt; Import Data &gt; CSV Data…</strong>, browse to the file location, and click <strong>OK</strong> on the import wizard (accept the default settings).</p>
-<p>Make sure the measurement scales are set as follows and that there are 38 rows:</p>
+<section id="checking-assumptions" class="level3">
+<h3 class="anchored" data-anchor-id="checking-assumptions">Checking Assumptions</h3>
+<p>There are two main assumptions to consider before running a one-sample t-test:</p>
 <ul>
-<li><code>WeightLoss</code> = Scale</li>
-<li><code>Group</code> = Nominal</li>
-<li><code>Month7Loss</code> = Scale</li>
+<li><p>Independence: The individuals in the sample are independent of each other. This means that there is no predictable relationship between one individual and another. This is generally satisfied if the data were collected through random sampling or random assignment. The data in this lab were collected through random assignment, so we can assume that the independence assumption is satisfied.</p></li>
+<li><p>Normality: The sampled population must be normal. This assumption is necessary part of the math underlying t-tests. Violating this assumption has little practical impact especially if the sample size is sufficiently large (often at least 30). Our sample size is 38, which is sufficiently large to satisfy this assumption.</p></li>
 </ul>
+</section>
+</section>
+<section id="part-2-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-the-data">Part 2: The Data</h2>
+<section id="importing-data-into-spss" class="level3">
+<h3 class="anchored" data-anchor-id="importing-data-into-spss">Importing Data into SPSS</h3>
+<p>The data set is available in the following link. Download the data.</p>
+<p><a href="datasets/weightLossIncentive.csv">Weight Loss Data</a>.</p>
+<p>After downloading the dataset, import it into SPSS, using the following steps:</p>
+<p><strong>File &gt; Import Data &gt; CSV Data…</strong>, browse to the file location, and click <strong>OK</strong> on the import wizard (accept the default settings).</p>
+<p>Make sure the measurement scales are set as follows <code>WeightLoss</code> = Scale, <code>Group</code> = Nominal, <code>Month7Loss</code> = Scale.</p>
+<p>See the screenshot below for reference:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab5im2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="739"></p>
+</figure>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled" title="variable Description">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -396,16 +434,10 @@ variable Description
 </ul>
 </div>
 </div>
+<p>Click on data view to confirm that you have 38 individuals in the data set. The <code>WeightLoss</code> variable is calculated as the difference between the weight before and after the 4-month period. Negative values (e.g., case 14) indicate that the individual gained weight.</p>
 </section>
-<section id="stating-hypotheses" class="level2">
-<h2 class="anchored" data-anchor-id="stating-hypotheses">Stating Hypotheses</h2>
-<p>Null Hypothesis: The average weight loss for individuals in the incentive group is still equal to 15 pounds.</p>
-<p>In symbols: <span class="math inline">\(H_0: \mu = 15\)</span></p>
-<p>Alternative Hypothesis: The average weight loss for individuals in the incentive group is different from 15 pounds.</p>
-<p>In symbols: <span class="math inline">\(H_1: \mu \neq 15\)</span></p>
-</section>
-<section id="part-2-data-filtering" class="level2">
-<h2 class="anchored" data-anchor-id="part-2-data-filtering">Part 2 — Data Filtering</h2>
+<section id="data-filtering" class="level3">
+<h3 class="anchored" data-anchor-id="data-filtering">Data Filtering</h3>
 <p>We are only interested in the individuals in the incentive group for this lab. One way to isolate the incentive group is to use the <strong>Split into files</strong> feature in SPSS. Here are the steps:</p>
 <p>Data &gt; Split into Files. The following window will pop up:</p>
 <div class="quarto-figure quarto-figure-center">
@@ -414,13 +446,20 @@ variable Description
 </figure>
 </div>
 <p>Send the <code>Group</code> variable into the <strong>Split Cases by</strong> box, then click on <strong>Browse</strong> to specify the file location then click <strong>OK</strong>.</p>
-<p>Next, navigate to the file location in your computer and open the file named <code>Incentive.sav</code>. Notice that this file contains only members of the incentive group and their weight loss variables.</p>
+<p>Next, navigate to the file location in your computer and open the file named <code>Incentive.sav</code>. This file contains members of the incentive group and their weight loss variables. This is the data we will use for the one-sample t-test.</p>
+</section>
 </section>
 <section id="part-3-exploratory-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="part-3-exploratory-analysis">Part 3 — Exploratory Analysis</h2>
+<h2 class="anchored" data-anchor-id="part-3-exploratory-analysis">Part 3: Exploratory Analysis</h2>
 <p>Before running the t-test, we will perform some exploratory analysis to understand the data better. We can start by exploring the spread of the data using a box plot:</p>
 <p>Run the following steps:</p>
-<p>Graphs &gt; Chart Builder &gt; Boxplot. Move <code>WeightLoss</code> into the <strong>Y-axis</strong> box. Click <strong>OK</strong>.</p>
+<p>Graphs &gt; Chart Builder &gt; Box plot. Move <code>WeightLoss</code> into the <strong>Y-axis</strong> box. Click <strong>OK</strong>.</p>
+<p>The box plot as shown below should appear in the output window:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab5im3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint ">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -444,7 +483,7 @@ Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Generate a histogram to visualize the distribution of the <code>WeightLoss</code> variable. What aspects of the distribution can discern based on the histogram that you cannot discern from the box plot?</p>
+<p>Generate a histogram to visualize the distribution of the <code>WeightLoss</code> variable. What characteristics of the distribution are visible in the histogram that cannot be easily detected in the box plot?</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint ">
@@ -457,29 +496,73 @@ Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Calculate the summary statistics (mean, median, standard deviation, minimum, maximum) for the <code>WeightLoss</code> variable. Comments on the range and standard deviation.</p>
+<p>Calculate summary statistics (e.g., mean, etc) to examine the central tendency and spread of the <code>WeightLoss</code> variable.</p>
 </div>
 </div>
 </section>
 <section id="part-4-running-the-t-test" class="level2">
-<h2 class="anchored" data-anchor-id="part-4-running-the-t-test">Part 4 — Running the t-test</h2>
+<h2 class="anchored" data-anchor-id="part-4-running-the-t-test">Part 4: Running the t-test</h2>
 <p>To run the one-sample t-test, follow these steps:</p>
 <ul>
 <li>Analysis &gt; Compare Means and Proportions &gt; One-Sample T Test.</li>
 <li>Move <code>WeightLoss</code> variable into the <strong>Test Variable(s)</strong> box.</li>
-<li>Enter <code>15</code> in the <strong>Test Value</strong> box. Make sure the “Estimate effect size” checkbox is checked.</li>
+<li>Enter <code>15</code> in the <strong>Test Value</strong> box. Make sure the “Estimate effect size” check box is checked.</li>
 <li>Click on <strong>Options</strong> and check that the confidence interval is set to 95%. Click <strong>Continue</strong>.</li>
 <li>Click <strong>OK</strong>.</li>
 </ul>
-<section id="output-interpretation" class="level3">
-<h3 class="anchored" data-anchor-id="output-interpretation">Output Interpretation</h3>
-<p>The output will provide you with the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval, among others.</p>
-<p>Here is an APA-style interpretation of the results:</p>
+<p>The following tables should pop up in the output window:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab5im4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="750"></p>
+</figure>
+</div>
+<p>The output shows both summary statistics and the results of the one-sample t-test. The summary statistics include the mean, standard deviation, and standard error. The t-test results (second table) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval.</p>
+<p>The P-value measures the chance of obtaining an average weight loss of 15 lbs or more extreme if the null hypothesis (average = 10 lbs) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis and conclude that the average weight loss for individuals in the incentive group is significantly different (higher) from 10 pounds.</p>
 </section>
+<section id="part-5-output-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="part-5-output-interpretation">Part 5: Output Interpretation</h2>
+<p>The output above provides you with the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval, among others.</p>
+<p>In scientific literature, you would see the one sample t-test results above reported in a manner similar to the following:</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="APA-style Write-up">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+APA-style Write-up
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The participants had an average weight loss of <span class="math inline">\(M = 15.68\)</span> lbs with <span class="math inline">\(SD = 9.41\)</span> lbs over the four-month period during which they were offered financial incentives. Statistical analysis indicates that the mean weight loss was significantly higher than population mean of 10 lbs, <span class="math inline">\(t\)</span>(17) = 2.486, <span class="math inline">\(p\)</span> = .024, <span class="math inline">\(d\)</span> = .603, 95% CI [.836, 10.517].</p>
+</div>
+</div>
+<p>Please see end of chapter 9 in the textbook for more details and examples on APA-style reporting of t-test results.</p>
+<p><strong>NOTE:</strong> The confidence interval is interpreted as follows: We are 95% confident that the true mean weight loss for individuals in the incentive group is between .836 and 10.517 pounds. It is strongly recommended that results of hypothesis tests be reported with confidence intervals when possible. Confidence intervals provide more information than a simple p-value and are more informative for decision-making.</p>
 </section>
 <section id="take-home-lab-exercises" class="level2">
 <h2 class="anchored" data-anchor-id="take-home-lab-exercises">Take-Home Lab Exercises</h2>
-<p>TBD</p>
+<p>In today’s lab exercise, you will perform a one-sample t-test to determine if the average weight loss at the seventh month for individuals in the incentive group is significantly different from 10 lbs. Recall that the financial incentives were only given during the first four months, so if the weight loss is not maintained, we would have further evidence that the financial incentives were effective in the short term but not in the long term.</p>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
+<p>Create a box plot to visualize the weight loss 3 months after the initial 4 months (<code>Month7Loss</code>). How would you describe the spread and shape of the <code>Month7Loss</code> variable for the incentive group? Are there any suspected outliers?</p>
+</section>
+<section id="question-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
+<p>Create a histogram to visualize the distribution of the <code>Month7Loss</code> variable. What characteristics of the distribution are visible in the histogram that cannot be easily detected in the box plot?</p>
+</section>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
+<p>Run a one-sample t-test to determine if the average weight loss at the seventh month for individuals in the incentive group is significantly different from 10 lbs. Look at the output and answer the following questions:</p>
+<ol type="a">
+<li><p>What is the P-value for the two-sided test? What does this mean in the context of the research question?</p></li>
+<li><p>What is the 95% confidence interval for the mean weight loss at the seventh month? How would you interpret this confidence interval in the context of the research question?</p></li>
+<li><p>What is the effect size (Cohen’s d) for this test? How would you interpret this effect size in the context of the research question?</p></li>
+</ol>
+</section>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
+<p>Write an APA-style interpretation of the results of the one-sample t-test for the <code>Month7Loss</code> variable. Be sure to include the mean, standard deviation, t-statistic, degrees of freedom, p-value, effect size, and confidence interval in your interpretation.</p>
+</section>
 </section>
 <section id="submission-checklist" class="level2">
 <h2 class="anchored" data-anchor-id="submission-checklist">Submission Checklist</h2>
