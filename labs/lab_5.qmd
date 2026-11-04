@@ -137,7 +137,7 @@ To run the one-sample t-test, follow these steps:
 
 - Analysis \> Compare Means and Proportions \> One-Sample T Test. 
 - Move `WeightLoss` variable into the **Test Variable(s)** box. 
-- Enter `15` in the **Test Value** box. Make sure the "Estimate effect size" check box is checked.
+- Enter `10` in the **Test Value** box. Make sure the "Estimate effect size" check box is checked.
 - Click on **Options** and check that the confidence interval is set to 95%. Click **Continue**.
 - Click **OK**.
 
@@ -148,7 +148,7 @@ The following tables should pop up in the output window:
 The output shows both summary statistics and the results of the one-sample t-test. The summary statistics include the mean, standard deviation, and standard error. The t-test results (second table) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval.
 
 
-The P-value measures the chance of obtaining an average weight loss of 15 lbs or more extreme if the null hypothesis (average = 10 lbs) is true. 
+The P-value measures the chance of obtaining an average weight loss of 15 lbs or more extreme if the null hypothesis (average = 10 lbs) is true.
 Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis and conclude that the average weight loss for individuals in the incentive group is significantly different (higher) from 10 pounds.
 
 ## Part 5: Output Interpretation

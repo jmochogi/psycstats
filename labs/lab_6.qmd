@@ -137,7 +137,7 @@ We can create a side-by-side box plot to visualize the distribution of the `Weig
 - Graphs \> Chart Builder \> Boxplot.
 - Select the **Simple Boxplot** from the gallery and drag the plot into the **preview** window. 
 - Drag the `WeightLoss` variable into the **Y-axis** box and the `Group` variable into the **X-axis** box.
-- Click **OK**. 
+- Click **OK**.
 
 
 ::: {.callout-tip title="Checkpoint "}
