@@ -139,12 +139,16 @@ We can create a side-by-side box plot to visualize the distribution of the `Weig
 - Drag the `WeightLoss` variable into the **Y-axis** box and the `Group` variable into the **X-axis** box.
 - Click **OK**.
 
+Yous should see the following box plot in the output window:
+
+![](images/lab6im6.png){fig-align="center" width="600"}
 
 ::: {.callout-tip title="Checkpoint "}
-Describe the spread and shape of the `WeightLoss` variable for both groups. Are there any suspected outliers in either group?
+How does the spread of the weight lost at the fourth month (`WeightLoss` variable) compare between the incentive (Group 1) and control (Group 0) groups?
 :::
 
 -------------------
+
 ## Part 4: Running the t-test
 
 To run the independent samples t-test, follow these steps:
@@ -162,10 +166,51 @@ The following tables should pop up in the output window:
 
 ![](images/lab6im5.png){fig-align="center" width="750"}
 
-The output shows both summary statistics and the results of the independent samples t-test. The summary statistics include the mean, standard deviation, and standard error. The t-test results (second table) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval. In this case, we will use the first row that assumes equal variances.
-
-The P-value measures the chance of obtaining an average difference in weight loss of 11.75 or more extreme if the null hypothesis (average difference = 0) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis which states that there is no difference in average weight loss between the incentive and the control groups. This means that the data provides string evidence that the difference in average weight loss between the incentive and the control groups is statistically significant. In other words, the average weight loss for individuals in the incentive group is significantly higher than the average weight loss for individuals in the control group. 
-
 ------------
 ## Part 5: Output Interpretation
+
+The output shows both summary statistics (mean, standard deviation, and standard error) for each group and the results of the independent samples t-test. The t-test results (second table, first row) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval. In this case, we use the first row because it assumes equal variances.
+
+The P-value measures the chance (or probability) of obtaining a difference in average weight loss of 11.75 lbs or more extreme if the null hypothesis (average difference = 0) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis and conclude that the data provides strong evidence to suggest that there is a difference in average weight loss between individuals who get incentives and those who don't. In particular, individuals who get incentives lose more weight on average than those who do not.
+
+The 95% confidence interval for the difference in average weight loss between the two groups is [-18.033 to -6.05] lbs. This means that we are 95% confident that the true difference in average weight loss between the two groups is between -18.033 lbs and -6.05 lbs. Since this confidence interval does not include 0, it provides further evidence to reject the null hypothesis.
+
+::: {.callout-tip title="APA-style Write-up"}
+"A research report typically presents the descriptive statistics followed by the results of the hypothesis test and the measures of effect size (inferential statistics)." - See p. 343 of the textbook.
+
+Here is how to write up the results of the independent samples t-test for our scenario above:
+
+The participants who received financial incentives lost  more weight $(M = 15.68, SD = 9.41)$ than those who did not receive financial incentives $(M = 3.92, SD = 9.10)$. The mean difference was significant, $t(36) = -3.805, p < .001, d = -1.27$.
+:::
+
+## Take-Home Lab Exercises
+
+In today's lab exercises, you will perform an **independent samples T-test** as demonstrated in the above exploration work.
+
+The **research question** being examined is whether in the general population, there is a difference in average weight loss at the seventh month (`Month7Loss`) between individuals who receive incentives and those who don't.
+
+### Question 1
+What is the population of interest in the scenario? State the null and the alternative hypotheses in words and in symbols.
+
+### Question 2
+
+Create side-by-side box plots to visualize the distribution of the weight loss at the seventh month (`Month7Loss`) for the incentive and the non-incentive groups. How do these distributions compare?
+
+### Question 3
+
+Run an independent samples t-test to test the whether, in the overall population, there is a difference in average weight loss at the seventh month between the incentive group and the non incentive group.
+
+a) What is the P-value for the two-sided test? What does this mean in the context of the research question?
+
+b) State and interpret the 95% confidence interval for this scenario.
+
+c) What is the effect size (Cohen's d) for this test? To find this, please check the table near the bottom of your t-test output. How would you interpret this effect size in the context of the scenario at hand?
+
+### Question 4
+
+Write an APA-style interpretation of the results of the independent samples t-test performed in exercise 3 above.
+
+
+
+
 

@@ -321,7 +321,15 @@ window.Quarto = {
   <li><a href="#summary-statistics" id="toc-summary-statistics" class="nav-link" data-scroll-target="#summary-statistics">Summary Statistics</a></li>
   <li><a href="#visualizations" id="toc-visualizations" class="nav-link" data-scroll-target="#visualizations">Visualizations</a></li>
   </ul></li>
+  <li><a href="#part-4-running-the-t-test" id="toc-part-4-running-the-t-test" class="nav-link" data-scroll-target="#part-4-running-the-t-test">Part 4: Running the t-test</a></li>
   <li><a href="#part-5-output-interpretation" id="toc-part-5-output-interpretation" class="nav-link" data-scroll-target="#part-5-output-interpretation">Part 5: Output Interpretation</a></li>
+  <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises" class="nav-link" data-scroll-target="#take-home-lab-exercises">Take-Home Lab Exercises</a>
+  <ul class="collapse">
+  <li><a href="#question-1" id="toc-question-1" class="nav-link" data-scroll-target="#question-1">Question 1</a></li>
+  <li><a href="#question-2" id="toc-question-2" class="nav-link" data-scroll-target="#question-2">Question 2</a></li>
+  <li><a href="#question-3" id="toc-question-3" class="nav-link" data-scroll-target="#question-3">Question 3</a></li>
+  <li><a href="#question-4" id="toc-question-4" class="nav-link" data-scroll-target="#question-4">Question 4</a></li>
+  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_6.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -493,6 +501,12 @@ Output Interpretation
 <li>Drag the <code>WeightLoss</code> variable into the <strong>Y-axis</strong> box and the <code>Group</code> variable into the <strong>X-axis</strong> box.</li>
 <li>Click <strong>OK</strong>.</li>
 </ul>
+<p>Yous should see the following box plot in the output window:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab6im6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint ">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -503,49 +517,84 @@ Checkpoint
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Describe the spread and shape of the <code>WeightLoss</code> variable for both groups. Are there any suspected outliers in either group?</p>
+<p>How does the spread of the weight lost at the fourth month (<code>WeightLoss</code> variable) compare between the incentive (Group 1) and control (Group 0) groups?</p>
 </div>
 </div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 27%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>## Part 4: Running the t-test</td>
-</tr>
-<tr class="even">
-<td>To run the independent samples t-test, follow these steps:</td>
-</tr>
-<tr class="odd">
-<td>- Analysis &gt; Compare Means and Proportions &gt; Independent Samples T Test. - Send the <code>WeightLoss</code> variable into the <strong>Test Variable(s)</strong> box and the <code>Group</code> variable into the <strong>Grouping Variable</strong> box. See below:</td>
-</tr>
-<tr class="even">
-<td><img src="images/lab6im4.png" class="img-fluid quarto-figure quarto-figure-center" width="600"></td>
-</tr>
-<tr class="odd">
-<td>- Next, click on <strong>Define Groups</strong> and enter 0 for Group 1 and 1 for Group 2. - Click <strong>Continue</strong>.</td>
-</tr>
-<tr class="even">
-<td>The following tables should pop up in the output window:</td>
-</tr>
-<tr class="odd">
-<td><img src="images/lab6im5.png" class="img-fluid quarto-figure quarto-figure-center" width="750"></td>
-</tr>
-<tr class="even">
-<td>The output shows both summary statistics and the results of the independent samples t-test. The summary statistics include the mean, standard deviation, and standard error. The t-test results (second table) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval. In this case, we will use the first row that assumes equal variances.</td>
-</tr>
-<tr class="odd">
-<td>The P-value measures the chance of obtaining an average difference in weight loss of 11.75 or more extreme if the null hypothesis (average difference = 0) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis which states that there is no difference in average weight loss between the incentive and the control groups. This means that the data provides string evidence that the difference in average weight loss between the incentive and the control groups is statistically significant. In other words, the average weight loss for individuals in the incentive group is significantly higher than the average weight loss for individuals in the control group.</td>
-</tr>
-</tbody>
-</table>
+<hr>
 </section>
+</section>
+<section id="part-4-running-the-t-test" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-running-the-t-test">Part 4: Running the t-test</h2>
+<p>To run the independent samples t-test, follow these steps:</p>
+<ul>
+<li>Analysis &gt; Compare Means and Proportions &gt; Independent Samples T Test.</li>
+<li>Send the <code>WeightLoss</code> variable into the <strong>Test Variable(s)</strong> box and the <code>Group</code> variable into the <strong>Grouping Variable</strong> box. See below:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab6im4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+<ul>
+<li>Next, click on <strong>Define Groups</strong> and enter 0 for Group 1 and 1 for Group 2.</li>
+<li>Click <strong>Continue</strong>.</li>
+</ul>
+<p>The following tables should pop up in the output window:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab6im5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="750"></p>
+</figure>
+</div>
+<hr>
 </section>
 <section id="part-5-output-interpretation" class="level2">
 <h2 class="anchored" data-anchor-id="part-5-output-interpretation">Part 5: Output Interpretation</h2>
+<p>The output shows both summary statistics (mean, standard deviation, and standard error) for each group and the results of the independent samples t-test. The t-test results (second table, first row) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval. In this case, we use the first row because it assumes equal variances.</p>
+<p>The P-value measures the chance (or probability) of obtaining a difference in average weight loss of 11.75 lbs or more extreme if the null hypothesis (average difference = 0) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis and conclude that the data provides strong evidence to suggest that there is a difference in average weight loss between individuals who get incentives and those who don’t. In particular, individuals who get incentives lose more weight on average than those who do not.</p>
+<p>The 95% confidence interval for the difference in average weight loss between the two groups is [-18.033 to -6.05] lbs. This means that we are 95% confident that the true difference in average weight loss between the two groups is between -18.033 lbs and -6.05 lbs. Since this confidence interval does not include 0, it provides further evidence to reject the null hypothesis.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="APA-style Write-up">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+APA-style Write-up
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>“A research report typically presents the descriptive statistics followed by the results of the hypothesis test and the measures of effect size (inferential statistics).” - See p.&nbsp;343 of the textbook.</p>
+<p>Here is how to write up the results of the independent samples t-test for our scenario above:</p>
+<p>The participants who received financial incentives lost more weight <span class="math inline">\((M = 15.68, SD = 9.41)\)</span> than those who did not receive financial incentives <span class="math inline">\((M = 3.92, SD = 9.10)\)</span>. The mean difference was significant, <span class="math inline">\(t(36) = -3.805, p &lt; .001, d = -1.27\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="take-home-lab-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-lab-exercises">Take-Home Lab Exercises</h2>
+<p>In today’s lab exercises, you will perform an <strong>independent samples T-test</strong> as demonstrated in the above exploration work.</p>
+<p>The <strong>research question</strong> being examined is whether in the general population, there is a difference in average weight loss at the seventh month (<code>Month7Loss</code>) between individuals who receive incentives and those who don’t.</p>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
+<p>What is the population of interest in the scenario? State the null and the alternative hypotheses in words and in symbols.</p>
+</section>
+<section id="question-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
+<p>Create side-by-side box plots to visualize the distribution of the weight loss at the seventh month (<code>Month7Loss</code>) for the incentive and the non-incentive groups. How do these distributions compare?</p>
+</section>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
+<p>Run an independent samples t-test to test the whether, in the overall population, there is a difference in average weight loss at the seventh month between the incentive group and the non incentive group.</p>
+<ol type="a">
+<li><p>What is the P-value for the two-sided test? What does this mean in the context of the research question?</p></li>
+<li><p>State and interpret the 95% confidence interval for this scenario.</p></li>
+<li><p>What is the effect size (Cohen’s d) for this test? To find this, please check the table near the bottom of your t-test output. How would you interpret this effect size in the context of the scenario at hand?</p></li>
+</ol>
+</section>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
+<p>Write an APA-style interpretation of the results of the independent samples t-test performed in exercise 3 above.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
