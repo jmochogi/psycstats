@@ -1,5 +1,5 @@
 ---
-title: "Lab 6: Inference for a Two Independent Means: Independent Samples t-test" 
+title: "Lab 6: Inference for Two Independent Means: Independent Samples t-test" 
 format:
   html:
     toc: true
