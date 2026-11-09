@@ -98,8 +98,8 @@ website:
         contents:
           - href: Projects/first-project.qmd
             text: Project 1
-          #- href: project/final-project.qmd
-            #text: Project 2
+          - href: project/second-project.qmd
+            text: Project 2
             
       #- section: "Problem Sets"
        # contents:

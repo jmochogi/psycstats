@@ -194,399 +194,212 @@
     ]
   },
   {
-    "objectID": "labs/lab_4.html",
-    "href": "labs/lab_4.html",
-    "title": "Lab 4: Z-score Standardization in SPSS",
+    "objectID": "Projects/first-project.html",
+    "href": "Projects/first-project.html",
+    "title": "Project One",
     "section": "",
-    "text": "An employer is interested in identifying the ten most extroverted individuals from a pool of applicants. To do this, 500 applicants from New York and New Jersey completed two different personality assessments, as described below.\n\nThe Big Five Inventory (BFI) — an 8-item questionnaire with a maximum score of 40.\nThe Eysenck Personality Inventory (EPI) — a 12-item questionnaire with a maximum score of 24.\n\nThe full versions of these questionnaires are much longer and measure a wide range of personality traits. However, for the purposes of this lab, we will focus only on the extroversion scores from each assessment.\nNote that the employer can’t select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to \\(z-scores\\) to allow direct comparison.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nUse SPSS to generate \\(z-scores\\).\nUse SPSS to sort data and identify the top/bottom scores.\nExamine the characteristics of \\(z-scores\\) and their distributions.\nDescribe the characteristics of the standard normal distribution and compare it to Z-scores.",
+    "text": "The goal of this project is for you to demonstrate your ability to apply the statistical concepts and techniques we have covered in this course to a meaningful psychological research problem. You will work with a real-world psychology dataset and use statistical reasoning to explore relationships, differences, patterns, or other phenomena that are relevant to psychology. You are not expected to conduct an exhaustive analysis by generating every statistic or visualization we have learned in the course. Instead, I expect you to demonstrate your ability to ask meaningful research questions and answer them using carefully selected descriptive statistical analysis techniques and tools. All analyses must be conducted in SPSS.\nYour group will select a psychology dataset from the Journal of Open Psychology Data, which publishes openly accessible datasets associated with psychological research. After selecting a dataset, your group will investigate and become familiar with the study from which the data originated. You should consider questions such as: Who participated in the study? How was the sample obtained? What population might the researchers have been interested in? What variables were collected, and what types of variables are they? What psychological concepts or constructs are being measured? Your team will then identify a research topic or goal and develop two research questions directly related to that topic. You will answer these questions by conducting appropriate statistical analyses of the dataset in SPSS. Your analyses should include both numerical summary statistics (such as means, medians, etc) and data visualizations (scatter plots, box plots, bar graphs, etc), and the statistics and visualizations you choose should complement one another and be appropriately connected to help tell a coherent story about your topic and questions.",
     "crumbs": [
-      "Labs",
-      "Lab 4"
+      "Projects",
+      "Project 1"
     ]
   },
   {
-    "objectID": "labs/lab_4.html#overview",
-    "href": "labs/lab_4.html#overview",
-    "title": "Lab 4: Z-score Standardization in SPSS",
+    "objectID": "Projects/first-project.html#other-data-sources",
+    "href": "Projects/first-project.html#other-data-sources",
+    "title": "Project One",
+    "section": "Other Data Sources",
+    "text": "Other Data Sources\nThe following data sources are not specific to psychology but you may explore them to see if there is any data that fits your needs.\n\nKaggle: This is a platform for predictive modeling and analytics competitions in which companies and researchers post data and statisticians and data miners from all over the world compete to produce the best models.\nOpenintro website: Most of these data sets can be loaded into your work space as long as the openintro package is installed and running. I recommend you use this option if you are new to R and RStudio.\nFiveThirtyEight: This is an American website that does opinion poll analysis on politics, economics, and sports in the United States. 538 shares their data sets, related articles, and code.",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/first-project.html#abstract",
+    "href": "Projects/first-project.html#abstract",
+    "title": "Project One",
+    "section": "Abstract",
+    "text": "Abstract\nThe abstract should be a brief summary of your research topic, questions, data, methods, and main findings. It should be no more than 350 words. It is best to write the abstract after you are done with all the other parts of the project.\nClick on the following link to read an example of a well written abstract:\nSample Abstract",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/first-project.html#introduction",
+    "href": "Projects/first-project.html#introduction",
+    "title": "Project One",
+    "section": "Introduction",
+    "text": "Introduction\nThe introduction section introduces your topic and provides the background. In this section, you will need to provide a rationale for your chosen topic and/or questions and describe why we should care. Consider citing a few articles in the introduction section to help you make your case.",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/first-project.html#research-questions",
+    "href": "Projects/first-project.html#research-questions",
+    "title": "Project One",
+    "section": "Research Questions",
+    "text": "Research Questions\nWrite down two to three research questions that you will answer as part of your study. Both questions should address your research topic. In other words, you should not have questions that are unrelated as this might suggest you are doing two different studies in one. The variables of interest should be clearly identified in each question.",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/first-project.html#literature-review",
+    "href": "Projects/first-project.html#literature-review",
+    "title": "Project One",
+    "section": "Literature Review",
+    "text": "Literature Review\nFind 5 to 7 articles about your topic, read and synthesize them to show what previous researchers have done on that topic. If the articles were empirical studies, you need to state the rationale for the study, the methods used (e.g. experimental, observational, mixed methods), findings, etc. The goal is to situate your own study in the context of existing studies/literature.",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/first-project.html#methods",
+    "href": "Projects/first-project.html#methods",
+    "title": "Project One",
+    "section": "Methods",
+    "text": "Methods\nThe methods section should describe the data and the methods used to analyze the data. This section should include the following subsections:\n\nSample and Sampling Method\nDescribe your sample and its characteristics. Who are the participants and how many are they? What are their demographics? What data were collected and how were these data collected? e.g., surveys etc). What is the target population ? What sampling method was used and how does this impact whether or not the sample is representative of the population?  Note that since you are using existing data that you did not collect, I will allow you to speculate on some of the data collection techniques as long as the speculation seems reasonable. You will do this only when you cannot find enough information in the documentation for the data set of your choice.\n\n\nData Analysis Techniques\nDescribe the data analysis techniques that you used to answer each of your research questions. This section should include a description of the variables used in the analysis, their types (continuous vs discrete), and how their measurement levels (nominal, ordinal, etc.). You should also describe any data transformations (pre-processing) that was done before the analysis. Finally, you should describe the statistical tools used to analyze the data (e.g., frequency tables, summary statistics, scatter plots , etc.) and why they are appropriate for your research questions.",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/first-project.html#data-analysis-and-results",
+    "href": "Projects/first-project.html#data-analysis-and-results",
+    "title": "Project One",
+    "section": "Data Analysis and Results",
+    "text": "Data Analysis and Results\nThis section includes the actual analyses discussed under methodology section above. Each analysis tool should be accompanied by an interpretation and discussion in light of the research questions. Numerical summary statistics and visualizations, however nice they may be, do not have much meaning on their own. You as the author of the report must give them meaning through the interpretations that you make. The analysis and interpretations of outputs should be organized by research question.",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/first-project.html#conclusion",
+    "href": "Projects/first-project.html#conclusion",
+    "title": "Project One",
+    "section": "Conclusion",
+    "text": "Conclusion\nFinally, you will need to write a conclusion of your report. In the conclusion, you want to briefly restate what you set out to do and how you went about it. Give some brief summary on the data used, data explorations/analyses performed and the results obtained. What insights did you draw from your analyses? Do your findings agree with existing literature? Are there any surprises? Discuss the potential implications of your work (i.e., what practical consequences does your study have?) Lastly, reflect on possible limitations of your study and how future similar studies might be better designed.",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/first-project.html#references",
+    "href": "Projects/first-project.html#references",
+    "title": "Project One",
+    "section": "References",
+    "text": "References\nAll sources used should be cited both in text and listed under references. Use the APA format. You may find the APA referencing guide on this link.",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "Projects/first-project.html#presentation-guide",
+    "href": "Projects/first-project.html#presentation-guide",
+    "title": "Project One",
+    "section": "Presentation Guide +",
+    "text": "Presentation Guide +\nYou will make a poster-style presentation. Several samples are available in the Hallway on the first floor of Williams Hall.\nPlease consider submitting abstracts for next year’s Whalen Symposium (we will discuss this after your projects are done).",
+    "crumbs": [
+      "Projects",
+      "Project 1"
+    ]
+  },
+  {
+    "objectID": "labs/lab_5.html",
+    "href": "labs/lab_5.html",
+    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
     "section": "",
-    "text": "An employer is interested in identifying the ten most extroverted individuals from a pool of applicants. To do this, 500 applicants from New York and New Jersey completed two different personality assessments, as described below.\n\nThe Big Five Inventory (BFI) — an 8-item questionnaire with a maximum score of 40.\nThe Eysenck Personality Inventory (EPI) — a 12-item questionnaire with a maximum score of 24.\n\nThe full versions of these questionnaires are much longer and measure a wide range of personality traits. However, for the purposes of this lab, we will focus only on the extroversion scores from each assessment.\nNote that the employer can’t select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to \\(z-scores\\) to allow direct comparison.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nUse SPSS to generate \\(z-scores\\).\nUse SPSS to sort data and identify the top/bottom scores.\nExamine the characteristics of \\(z-scores\\) and their distributions.\nDescribe the characteristics of the standard normal distribution and compare it to Z-scores.",
+    "text": "In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the analyses and interpret the results.\nHere is the research question we will be investigating:\n\n\n\n\n\n\nResearch Question\n\n\n\nDoes the new weight loss program with financial incentives result in a significantly different average weight loss over a 4-month period compared to the standard population average of 10 pounds?\n\n\nHere is the scenario to that we will be working with:\nA fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a standard weight loss programs is 10 pounds over a 4-month period. The fitness center wants to see if their program, which includes financial incentives, leads to a different average weight loss than this known population mean (10 lbs).\nStudy Design: The researchers recruited 38 individuals who wanted to lose weight and randomly assigned them to either an incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for a population mean.\nPerform a one-sample t-test in SPSS.\nInterpret the results of a one-sample t-test in the context of a research question.\n\n\n\n\n\nNull Hypothesis: The average weight loss for individuals in the incentive group is still equal to 10 pounds.\nIn symbols: \\(H_0: \\mu = 10\\)\nAlternative Hypothesis: The average weight loss for individuals in the incentive group is different from 10 pounds.\nIn symbols: \\(H_1: \\mu \\neq 10\\)\n\n\n\nThere are two main assumptions to consider before running a one-sample t-test:\n\nIndependence: The individuals in the sample are independent of each other. This means that there is no predictable relationship between one individual and another. This is generally satisfied if the data were collected through random sampling or random assignment. The data in this lab were collected through random assignment, so we can assume that the independence assumption is satisfied.\nNormality: The sampled population must be normal. This assumption is necessary part of the math underlying t-tests. Violating this assumption has little practical impact especially if the sample size is sufficiently large (often at least 30). Our sample size is 38, which is sufficiently large to satisfy this assumption.",
     "crumbs": [
       "Labs",
-      "Lab 4"
+      "Lab 5"
     ]
   },
   {
-    "objectID": "labs/lab_4.html#part-1-the-data",
-    "href": "labs/lab_4.html#part-1-the-data",
-    "title": "Lab 4: Z-score Standardization in SPSS",
-    "section": "Part 1 — The Data",
-    "text": "Part 1 — The Data\nThe data set for today’s lab are available on the following link:\nLab 4 Data\nDownload the data and use SPSS to open them. Then import it to SPSS by following these steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file location, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows:\n\nApplicant_ID = Nominal\nSex = Nominal\nAge = Scale\nState = Nominal\nAssessment_Type = Nominal\nExtroversion_Score = Scale\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nClick on the Variable View and the Data View tabs at the bottom of the SPSS window. Ensure that the variables and the data display correctly. They should appear as shown in the screenshots below.",
+    "objectID": "labs/lab_5.html#part-1-scenario-overview",
+    "href": "labs/lab_5.html#part-1-scenario-overview",
+    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "section": "",
+    "text": "In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the analyses and interpret the results.\nHere is the research question we will be investigating:\n\n\n\n\n\n\nResearch Question\n\n\n\nDoes the new weight loss program with financial incentives result in a significantly different average weight loss over a 4-month period compared to the standard population average of 10 pounds?\n\n\nHere is the scenario to that we will be working with:\nA fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a standard weight loss programs is 10 pounds over a 4-month period. The fitness center wants to see if their program, which includes financial incentives, leads to a different average weight loss than this known population mean (10 lbs).\nStudy Design: The researchers recruited 38 individuals who wanted to lose weight and randomly assigned them to either an incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for a population mean.\nPerform a one-sample t-test in SPSS.\nInterpret the results of a one-sample t-test in the context of a research question.\n\n\n\n\n\nNull Hypothesis: The average weight loss for individuals in the incentive group is still equal to 10 pounds.\nIn symbols: \\(H_0: \\mu = 10\\)\nAlternative Hypothesis: The average weight loss for individuals in the incentive group is different from 10 pounds.\nIn symbols: \\(H_1: \\mu \\neq 10\\)\n\n\n\nThere are two main assumptions to consider before running a one-sample t-test:\n\nIndependence: The individuals in the sample are independent of each other. This means that there is no predictable relationship between one individual and another. This is generally satisfied if the data were collected through random sampling or random assignment. The data in this lab were collected through random assignment, so we can assume that the independence assumption is satisfied.\nNormality: The sampled population must be normal. This assumption is necessary part of the math underlying t-tests. Violating this assumption has little practical impact especially if the sample size is sufficiently large (often at least 30). Our sample size is 38, which is sufficiently large to satisfy this assumption.",
     "crumbs": [
       "Labs",
-      "Lab 4"
+      "Lab 5"
     ]
   },
   {
-    "objectID": "labs/lab_4.html#part-2-the-z-score-conversion",
-    "href": "labs/lab_4.html#part-2-the-z-score-conversion",
-    "title": "Lab 4: Z-score Standardization in SPSS",
-    "section": "Part 2 — The z-score Conversion",
-    "text": "Part 2 — The z-score Conversion\nAlthough we have one data set, we will first need to program SPSS to treat the two assessments as separate data sets since the assessments are different. To do this, we will use the Split File function in SPSS. Follow the steps below:\n\nClick Data &gt; Split File &gt; Select Compare groups\nSend Assessment_Type into the Group Based on box\nClick OK.\n\nAfter you split a file in that manner, any analysis you perform will be done separately for each assessment.\nNow, we will use SPSS to convert the extroversion scores to \\(z-scores\\). Follow the steps below:\n\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\n\n\nHighlight the column label Extroversion_Score and click the arrow to move it to the Variable(s) box.\nClick the Save standardized values as variables check box.\nClick OK.\n\nA new column (variable) in the main data set called ZExtroversion_Score should appear. This new variable contains the \\(z-scores\\) for each applicant’s extroversion score. Importantly, the \\(Z-scores\\) are calculated separately for each assessment, so they are now comparable across the two assessments.\nYou can now order the scores to identify the top 10 most extroverted individuals. To do this, follow the steps below:\n\nGo to Data &gt; Sort Cases.\nMove ZExtroversion_Score into the Sort by box.\nSelect Descending (high to low) and\nClick OK.\n\nAlternatively, you can highlight the ZExtroversion_Score column in the data view, right click then choose Sort Descending. See below:\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint 2\n\n\n\nWho are the top ten most extroverted individuals? Record their Applicant_ID’s, the assessment they took (BFI or EPI) and ZExtroversion_Scores.",
+    "objectID": "labs/lab_5.html#part-2-the-data",
+    "href": "labs/lab_5.html#part-2-the-data",
+    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "section": "Part 2: The Data",
+    "text": "Part 2: The Data\n\nImporting Data into SPSS\nThe data set is available in the following link. Download the data.\nWeight Loss Data.\nAfter downloading the dataset, import it into SPSS, using the following steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file location, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows WeightLoss = Scale, Group = Nominal, Month7Loss = Scale.\nSee the screenshot below for reference:\n\n\n\n\n\n\n\n\n\n\n\nvariable Description\n\n\n\nThe variable description is as follows:\n\nGroup = Whether someone was in the Incentive or Control group.- WeightLoss = The amount of weight lost by each individual\nWeightloss = The amount of weight lost by each individual at the 4-month follow-up.\nMonth7Loss = The amount of weight lost by each individual at the 7-month follow-up\n\n\n\nClick on data view to confirm that you have 38 individuals in the data set. The WeightLoss variable is calculated as the difference between the weight before and after the 4-month period. Negative values (e.g., case 14) indicate that the individual gained weight.\n\n\nData Filtering\nWe are only interested in the individuals in the incentive group for this lab. One way to isolate the incentive group is to use the Split into files feature in SPSS. Here are the steps:\nData &gt; Split into Files. The following window will pop up:\n\n\n\n\n\nSend the Group variable into the Split Cases by box, then click on Browse to specify the file location then click OK.\nNext, navigate to the file location in your computer and open the file named Incentive.sav. This file contains members of the incentive group and their weight loss variables. This is the data we will use for the one-sample t-test.",
     "crumbs": [
       "Labs",
-      "Lab 4"
+      "Lab 5"
     ]
   },
   {
-    "objectID": "labs/lab_4.html#part-3-characteristics-of-z-scores",
-    "href": "labs/lab_4.html#part-3-characteristics-of-z-scores",
-    "title": "Lab 4: Z-score Standardization in SPSS",
-    "section": "Part 3 — Characteristics of Z-scores",
-    "text": "Part 3 — Characteristics of Z-scores\n\nMean and Standard Deviation\nWe want to explore the mean and standard deviation of the \\(z-scores\\) for each assessment. To do this, follow the steps below:\n\nGo to Analyze &gt; Descriptive Statistics&gt;Explore\nMove Assessment_Type into the Factor List and ZExtroversion_Score into the Dependent List.\nSelect Statistics\n\nYour set up should look as shown below:\n\n\n\n\n\n\nClick OK.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nWhat do you notice about the mean and standard deviation of the \\(z-scores\\)? Would you expect this to be the case every time we convert any set of scores to Z-scores? Explain.\n\n\n\n\nExamining the Distributions (Shape) of Z-scores\nThere is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compare them to the histograms of the corresponding \\(z-scores\\).\n\nGo to Graphs &gt; Chart Builder &gt; Histogram.\nMove Extroversion_Score into the Variable box and Assessment_Type into the Panel box under Rows. Your set up should look as shown below:\n\n\n\n\n\nClick OK.\n\nNow repeat the above process but this time use ZExtroversion_Score instead of Extroversion_Score. Your set up should look as shown below:\n\n\n\n\n\n\n“Checkpoint\n\n\n\nHow would you describe the distribution of the original extroversion scores for each assessment? How do these compare to the distribution of the \\(z-scores\\)?",
+    "objectID": "labs/lab_5.html#part-3-exploratory-analysis",
+    "href": "labs/lab_5.html#part-3-exploratory-analysis",
+    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "section": "Part 3: Exploratory Analysis",
+    "text": "Part 3: Exploratory Analysis\nBefore running the t-test, we will perform some exploratory analysis to understand the data better. We can start by exploring the spread of the data using a box plot:\nRun the following steps:\nGraphs &gt; Chart Builder &gt; Box plot. Move WeightLoss into the Y-axis box. Click OK.\nThe box plot as shown below should appear in the output window:\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nBased on the box plot, how would you describe the spread and shape of the WeightLoss variable for the incentive group? Are there any suspected outliers?\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nGenerate a histogram to visualize the distribution of the WeightLoss variable. What characteristics of the distribution are visible in the histogram that cannot be easily detected in the box plot?\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nCalculate summary statistics (e.g., mean, etc) to examine the central tendency and spread of the WeightLoss variable.",
     "crumbs": [
       "Labs",
-      "Lab 4"
+      "Lab 5"
     ]
   },
   {
-    "objectID": "labs/lab_4.html#part-4-the-standard-normal-distribution",
-    "href": "labs/lab_4.html#part-4-the-standard-normal-distribution",
-    "title": "Lab 4: Z-score Standardization in SPSS",
-    "section": "Part 4 — The Standard Normal Distribution",
-    "text": "Part 4 — The Standard Normal Distribution\nThe standard normal distribution is a special case of the normal distribution with a mean of 0 and a standard deviation of 1. It is a theoretical distribution that researchers commonly use to examine how well a set of data fits the normal distribution. Below is a screenshot of the standard normal distribution.\n\n\n\n\n\n\n\nSource: National Library of Medicine\n\n\n\n\n\n\n\n\nImportant Notes about the Standard Normal Distribution\n\n\n\n\nThe mean, median, and mode are all equal to 0 (center of the distribution).\nThe distribution is bell-shaped and symmetric about the mean.\nThe standard deviation is equal to 1.\n95% of the data falls within 2 standard deviations; while 99.7% (nearly all data) falls within 3 standard deviations of the mean.\nThe further you go from the mean in either direction, the less likely you are to find data points in that region. Data that that are more than 2 sd’s from the mean are very unlikely while those beyond 3 standard deviations can be considered outliers.",
+    "objectID": "labs/lab_5.html#part-4-running-the-t-test",
+    "href": "labs/lab_5.html#part-4-running-the-t-test",
+    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "section": "Part 4: Running the t-test",
+    "text": "Part 4: Running the t-test\nTo run the one-sample t-test, follow these steps:\n\nAnalysis &gt; Compare Means and Proportions &gt; One-Sample T Test.\nMove WeightLoss variable into the Test Variable(s) box.\nEnter 10 in the Test Value box. Make sure the “Estimate effect size” check box is checked.\nClick on Options and check that the confidence interval is set to 95%. Click Continue.\nClick OK.\n\nThe following tables should pop up in the output window:\n\n\n\n\n\nThe output shows both summary statistics and the results of the one-sample t-test. The summary statistics include the mean, standard deviation, and standard error. The t-test results (second table) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval.\nThe P-value measures the chance of obtaining an average weight loss of 15 lbs or more extreme if the null hypothesis (average = 10 lbs) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis and conclude that the average weight loss for individuals in the incentive group is significantly different (higher) from 10 pounds.",
     "crumbs": [
       "Labs",
-      "Lab 4"
+      "Lab 5"
     ]
   },
   {
-    "objectID": "labs/lab_4.html#take-home-lab-exercises",
-    "href": "labs/lab_4.html#take-home-lab-exercises",
-    "title": "Lab 4: Z-score Standardization in SPSS",
+    "objectID": "labs/lab_5.html#part-5-output-interpretation",
+    "href": "labs/lab_5.html#part-5-output-interpretation",
+    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "section": "Part 5: Output Interpretation",
+    "text": "Part 5: Output Interpretation\nThe output above provides you with the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval, among others.\nIn scientific literature, you would see the one sample t-test results above reported in a manner similar to the following:\n\n\n\n\n\n\nAPA-style Write-up\n\n\n\nThe participants had an average weight loss of \\(M = 15.68\\) lbs with \\(SD = 9.41\\) lbs over the four-month period during which they were offered financial incentives. Statistical analysis indicates that the mean weight loss was significantly higher than population mean of 10 lbs, \\(t\\)(17) = 2.486, \\(p\\) = .024, \\(d\\) = .603, 95% CI [.836, 10.517].\n\n\nPlease see end of chapter 9 in the textbook for more details and examples on APA-style reporting of t-test results.\nNOTE: The confidence interval is interpreted as follows: We are 95% confident that the true mean weight loss for individuals in the incentive group is between .836 and 10.517 pounds. It is strongly recommended that results of hypothesis tests be reported with confidence intervals when possible. Confidence intervals provide more information than a simple p-value and are more informative for decision-making.",
+    "crumbs": [
+      "Labs",
+      "Lab 5"
+    ]
+  },
+  {
+    "objectID": "labs/lab_5.html#take-home-lab-exercises",
+    "href": "labs/lab_5.html#take-home-lab-exercises",
+    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
     "section": "Take-Home Lab Exercises",
-    "text": "Take-Home Lab Exercises\nBefore beginning the lab, you will need to undo the split file option that was enabled earlier by going to Data &gt; Split File &gt; Analyze all cases, do not create groups &gt; OK. Some exercises here may require use of split file, so you will need to repeat the steps above to split the file again when necessary.\n\nMake a box plot to visualize the Age variable. Based on this box plot, a student claims that the ages of the applicants are “normally distributed”. Would you agree with this claim? Why or why not?\nUse SPSS to find the top 10 most extroverted females in the data. Record their Applicant_ID's and describe the steps you took in SPSS to find them.\nUsing SPSS, find the 10 most extroverted individuals from New Jersey. Record their Applicant_ID and describe the steps you took in SPSS to solve this problem.\nSuppose we want to find the 10 most extroverted individuals aged between 20 and 30 years old (inclusive). Use SPSS to solve this problem and briefly describe your steps.",
+    "text": "Take-Home Lab Exercises\nIn today’s lab exercise, you will perform a one-sample t-test to determine if the average weight loss at the seventh month for individuals in the incentive group is significantly different from 10 lbs. Recall that the financial incentives were only given during the first four months, so if the weight loss is not maintained, we would have further evidence that the financial incentives were effective in the short term but not in the long term.\n\nQuestion 1\nCreate a box plot to visualize the weight loss 3 months after the initial 4 months (Month7Loss). How would you describe the spread and shape of the Month7Loss variable for the incentive group? Are there any suspected outliers?\n\n\nQuestion 2\nCreate a histogram to visualize the distribution of the Month7Loss variable. What characteristics of the distribution are visible in the histogram that cannot be easily detected in the box plot?\n\n\nQuestion 3\nRun a one-sample t-test to determine if the average weight loss at the seventh month for individuals in the incentive group is significantly different from 10 lbs. Look at the output and answer the following questions:\n\nWhat is the P-value for the two-sided test? What does this mean in the context of the research question?\nWhat is the 95% confidence interval for the mean weight loss at the seventh month? How would you interpret this confidence interval in the context of the research question?\nWhat is the effect size (Cohen’s d) for this test? How would you interpret this effect size in the context of the research question?\n\n\n\nQuestion 4\nWrite an APA-style interpretation of the results of the one-sample t-test for the Month7Loss variable. Be sure to include the mean, standard deviation, t-statistic, degrees of freedom, p-value, effect size, and confidence interval in your interpretation.",
     "crumbs": [
       "Labs",
-      "Lab 4"
+      "Lab 5"
     ]
   },
   {
-    "objectID": "labs/lab_4.html#submission-checklist",
-    "href": "labs/lab_4.html#submission-checklist",
-    "title": "Lab 4: Z-score Standardization in SPSS",
+    "objectID": "labs/lab_5.html#submission-checklist",
+    "href": "labs/lab_5.html#submission-checklist",
+    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
     "section": "Submission Checklist",
     "text": "Submission Checklist\n\nA saved SPSS data (.sav) file showing the variables and data (includes \\(z-scores\\)).\nSPSS output file (.spv) showing the analyses performed.\nCompleted responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.",
     "crumbs": [
       "Labs",
-      "Lab 4"
-    ]
-  },
-  {
-    "objectID": "labs/lab_6.html#part-1-scenario-overview",
-    "href": "labs/lab_6.html#part-1-scenario-overview",
-    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
-    "section": "Part 1: Scenario & Overview",
-    "text": "Part 1: Scenario & Overview\nIn the previous lab, we performed a one-sample t-test to determine if the average weight loss for individuals in the incentive group was significantly different from the known population mean of 10 pounds. In this lab, we will perform a two-sample t-test to determine if there is a significant difference in average weight loss between the incentive group and the control group.\nHere is the research question we will be investigating:\n\n\n\n\n\n\nResearch Question\n\n\n\nDoes the new weight loss program with financial incentives result in a significantly higher average weight loss than the traditional weight loss program without financial incentives?\n\n\nHere is the scenario to that we will be working with:\nA fitness center wants to determine if using financial incentives is associated with greater weight loss among participants. The fitness center has a new weight loss program that offers financial incentives to individuals who meet their weight loss goals. The center wants to determine if the new program is more effective than the traditional weight loss program that does not offer financial incentives.\nStudy Design: The researchers recruited 38 individuals who wanted to lose weight and randomly assigned them to either an incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for an independent samples t-test.\nPerform an independent samples t-test in SPSS.\nInterpret the results of an independent samples t-test in APA style.\n\n\n\n\nStating Hypotheses\nNull Hypothesis: There is no difference in average weight loss between individuals in the incentive group and the control group.\nIn symbols: \\(H_0: \\mu_1-\\mu_2 = 0\\)\nAlternative Hypothesis: There is a difference in average weight loss between individuals in the incentive group and the control group.\nIn symbols: \\(H_1: \\mu_1-\\mu_2 \\neq 0\\)\n\n\nChecking Assumptions\nThere are two main assumptions to consider before running a one-sample t-test:\n\nIndependence: The individuals in the study must be independent, meaning that each participant or observation belongs to only one group. In this study, the individuals were randomly assigned to either the incentive or control group, so this assumption is satisfied.\nNormality: The distribution of the dependent variable (weight loss) should be approximately normal for each group. We will check this assumption using visualizations and summary statistics in the next section. With large samples (n &gt; 30), the t-test is robust to violations of normality, but with smaller samples, it is important to check this assumption.\nNo Significant Outliers: The dependent variable should not have any significant outliers. We will check for outliers using box plots in the next section.\nHomogeneity of Variance: The variance of the dependent variable (weight in this case) should be approximately equal for both groups.",
-    "crumbs": [
-      "Labs",
-      "Lab 6"
-    ]
-  },
-  {
-    "objectID": "labs/lab_6.html#part-2-the-data",
-    "href": "labs/lab_6.html#part-2-the-data",
-    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
-    "section": "Part 2: The Data",
-    "text": "Part 2: The Data\n\nImporting Data into SPSS\nThe data set is available in the following link. Download the data.\nWeightLoss.\nAfter downloading the dataset, import it into SPSS, using the following steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file location, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows: WeightLoss = Scale, Group = Nominal, Month7Loss = Scale.\nSee the screenshot below for reference:\n\n\n\n\n\n\n\n\n\n\n\nvariable Description\n\n\n\nThe variable description is as follows:\n\nGroup = Whether someone was in the Incentive or Control group. 0=Control group, 1=Incentive group.\nWeightloss = The amount of weight lost by each individual at the 4-month follow-up.\nMonth7Loss = The amount of weight lost by each individual at the 7-month follow-up\n\n\n\nClick on data view to confirm that you have 38 individuals in the data set. The WeightLoss variable is calculated as the difference between the weight before and after the 4-month period. Negative values (e.g., case 14) indicate that the individual gained weight.\nThe goal is to determine if the average initial weight loss (Weightloss) for individuals in the incentive group is significantly different from the average weight loss for individuals in the control group.",
-    "crumbs": [
-      "Labs",
-      "Lab 6"
-    ]
-  },
-  {
-    "objectID": "labs/lab_6.html#part-3-exploratory-analysis",
-    "href": "labs/lab_6.html#part-3-exploratory-analysis",
-    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
-    "section": "Part 3: Exploratory Analysis",
-    "text": "Part 3: Exploratory Analysis\nBefore running the t-test, we will perform some exploratory analysis to understand any patterns/trends in the data.\n\nSummary Statistics\nFirst, we want to generate a table of summary statistics for the WeightLoss variable. Run the following steps:\nAnalyze &gt; Compare Means and Proportions &gt; Means.\nThe following dialog box should appear:\n\n\n\n\n\nSend the WeightLoss variable into the Dependent List box and the Group variable into the Independent List box. See below:\n\n\n\n\n\nClick OK.\nOptionally, you may click on Options during the variable selection to select step above for additional summary statistics (e.g., median, range, etc.) to include in the output.\nYou should see the following table in the output window:\n\n\n\n\n\n\n\n\n\n\n\nOutput Interpretation\n\n\n\nThe table shows the the individuals in the control group (recorded as 0) on average lost \\(M = 3.921\\) lbs with \\(SD = 9.1\\) lbs, while the individuals in the incentive group (recorded as 1) on average lost \\(M = 15.68\\) lbs with \\(SD = 9.41\\) lbs. Based on this information, we can see that the variance in weight loss is similar between the two groups, hence satisfying the assumption of homogeneity of variance.\n\n\n\n\nVisualizations\nWe can create a side-by-side box plot to visualize the distribution of the WeightLoss variable for both groups. Run the following steps:\n\nGraphs &gt; Chart Builder &gt; Boxplot.\nSelect the Simple Boxplot from the gallery and drag the plot into the preview window.\nDrag the WeightLoss variable into the Y-axis box and the Group variable into the X-axis box.\nClick OK.\n\nYous should see the following box plot in the output window:\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nHow does the spread of the weight lost at the fourth month (WeightLoss variable) compare between the incentive (Group 1) and control (Group 0) groups?",
-    "crumbs": [
-      "Labs",
-      "Lab 6"
-    ]
-  },
-  {
-    "objectID": "labs/lab_6.html#part-5-output-interpretation",
-    "href": "labs/lab_6.html#part-5-output-interpretation",
-    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
-    "section": "Part 5: Output Interpretation",
-    "text": "Part 5: Output Interpretation\nThe output shows both summary statistics (mean, standard deviation, and standard error) for each group and the results of the independent samples t-test. The t-test results (second table, first row) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval. In this case, we use the first row because it assumes equal variances.\nThe P-value measures the chance (or probability) of obtaining a difference in average weight loss of 11.75 lbs or more extreme if the null hypothesis (average difference = 0) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis and conclude that the data provides strong evidence to suggest that there is a difference in average weight loss between individuals who get incentives and those who don’t. In particular, individuals who get incentives lose more weight on average than those who do not.\nThe 95% confidence interval for the difference in average weight loss between the two groups is [-18.033 to -6.05] lbs. This means that we are 95% confident that the true difference in average weight loss between the two groups is between -18.033 lbs and -6.05 lbs. Since this confidence interval does not include 0, it provides further evidence to reject the null hypothesis.\n\n\n\n\n\n\nAPA-style Write-up\n\n\n\n“A research report typically presents the descriptive statistics followed by the results of the hypothesis test and the measures of effect size (inferential statistics).” - See p. 343 of the textbook.\nHere is how to write up the results of the independent samples t-test for our scenario above:\nThe participants who received financial incentives lost more weight \\((M = 15.68, SD = 9.41)\\) than those who did not receive financial incentives \\((M = 3.92, SD = 9.10)\\). The mean difference was significant, \\(t(36) = -3.805, p &lt; .001, d = -1.27\\).",
-    "crumbs": [
-      "Labs",
-      "Lab 6"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html",
-    "href": "labs/lab_3.html",
-    "title": "Lab 3: Measuring Variability",
-    "section": "",
-    "text": "Deliverables: - SPSS data (.sav) file from SPSS. - An output (.spv) files from SPSS.\n- A word or pdf document with answers to the take-home lab exercises at the end of the lab. The document must include images of your SPSS output tables and graphs where necessary.",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#part-a---overview",
-    "href": "labs/lab_3.html#part-a---overview",
-    "title": "Lab 3: Measuring Variability",
-    "section": "PART A - Overview",
-    "text": "PART A - Overview\nIn lecture and in the textbook (Chapter 4, Variability), we learned that variability describes how spread out or clustered together a set of scores is. In this lab, you will use SPSS to generate the four measures of variability covered in the chapter:\n\nthe range\nthe interquartile range (IQR)\nthe variance\nthe standard deviation\n\nYou will also learn about commonly used tools to visualize data variability of a continuous variable and how to report variability in APA style.",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#the-data",
-    "href": "labs/lab_3.html#the-data",
-    "title": "Lab 3: Measuring Variability",
-    "section": "The Data",
-    "text": "The Data\nA psychologist is interested in understanding reaction time and how much reaction times vary from person to person. To investigate this, the psychologist asked 120 participants to complete a Stroop task, a commonly used task in psychology that measures how quickly people can respond when they encounter conflicting information. The variable Stroop_RT_ms records each participant’s reaction time in milliseconds, with larger values indicating slower responses.\nDownload the dataset from this link then import it to SPSS. To import the data set, follow these steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows:\n\nStroop_RT_ms = Scale\nGender = Nominal\nAge = Scale\nParticipantID = Nominal",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#why-we-measure-variability",
-    "href": "labs/lab_3.html#why-we-measure-variability",
-    "title": "Lab 3: Measuring Variability",
-    "section": "Why We Measure Variability",
-    "text": "Why We Measure Variability\nRecall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:\n\nHow spread out the scores are — are scores clustered close together or scattered widely?\nHow well a single score represents the whole distribution — the more variability there is, the less confidence we can place in any one statistic (or sample) as being representative of the group.\n\nThe textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind.\n\n\n\n\n\n\nCheckpoint\n\n\n\nWithout opening SPSS, which of the following would you expect to have more variability, and why?\n\nThe ages of students in a single 4th-grade classroom.\nThe ages of visitors at a public shopping mall.",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#part-b-the-range",
-    "href": "labs/lab_3.html#part-b-the-range",
-    "title": "Lab 3: Measuring Variability",
-    "section": "Part B — The Range",
-    "text": "Part B — The Range\nThe range is the distance between the largest and smallest score in a distribution:\n\\[\\text{Range} = X_{max} - X_{min}\\]\nIt is the simplest measure of variability, but it is also unreliable because it is based on only the two most extreme scores and ignores everything in between.\n\nGet the Range in SPSS\n\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nMove Stroop_RT_ms into the Variable(s) box.\nClick Options… and check Range, Minimum, and Maximum, then click Continue.\nClick OK.\n\nLook at the SPSS Output Viewer. You should see a table listing N, Range, Minimum, and Maximum for Stroop_RT_ms.\n\n\n\n\n\n\nCheckpoint\n\n\n\nWhat range does SPSS report for this data set? Confirm it by hand using the formula \\(\\text{Range} = X_{max} - X_{min}\\).\n\n\n\nNOTE: Please DO NOT close the output window! You can just click on the main file showing the variables and data when you are ready to continue with the other analyses.",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#part-c-quartiles-and-the-interquartile-range-iqr",
-    "href": "labs/lab_3.html#part-c-quartiles-and-the-interquartile-range-iqr",
-    "title": "Lab 3: Measuring Variability",
-    "section": "Part C — Quartiles and the Interquartile Range (IQR)",
-    "text": "Part C — Quartiles and the Interquartile Range (IQR)\nBecause the range is so sensitive to extreme scores, researchers often prefer the interquartile range, which describes the spread of just the middle 50% of the distribution (between the 25th percentile, \\(Q_1\\), and the 75th percentile, \\(Q_3\\)):\n\\[IQR = Q_3 - Q_1\\]\nThe IQR trims off the top 25% and bottom 25% of scores, so a few unusually high or low scores do not distort it the way they distort the range.\n\nGetting Quartiles in SPSS\nThere are two common ways to get the IQR in SPSS. Try both so you can see how they relate to one another.\nMethod A — Frequencies\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Stroop_RT_ms into the Variable(s) box. (Uncheck “Display frequency tables” if you don’t want the full table.)\nClick Statistics…, and under Percentile Values check Quartiles. Click Continue, then OK.\nSPSS reports the 25th, 50th, and 75th percentiles (\\(Q_1\\), the median, and \\(Q_3\\)). Use the formula \\(IQR = Q_3 - Q_1\\) to calculate the \\(IQR\\).\n\nMethod B — Explore\n\nAnalyze &gt; Descriptive Statistics &gt; Explore.\nMove Stroop_RT_ms into the Dependent List.\nUnder Display, choose Statistics. Click OK.\nLook at the Descriptives table — SPSS directly labels a row Interquartile Range.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat value did SPSS report for \\(Q_1\\), \\(Q_3\\) Stroop_RT_ms? What \\(IQR\\) value did you get by using the formula \\(\\text{Range}=Q_1 - Q_3\\)?\nDid Method A and Method B give you exactly the same \\(IQR\\)? (They may differ slightly — SPSS offers several algorithms for calculating percentiles. This is worth noticing, but don’t worry about resolving the discrepancy for this lab.)\nCompare the \\(IQR\\) to the \\(Range\\) for this same variable (Stroop_RT_ms). Which value is larger, and why does that make sense?",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#part-c-standard-deviation-and-variance",
-    "href": "labs/lab_3.html#part-c-standard-deviation-and-variance",
-    "title": "Lab 3: Measuring Variability",
-    "section": "Part C — Standard Deviation and Variance",
-    "text": "Part C — Standard Deviation and Variance\nStandard deviation is perhaps the most important and most commonly used measure of variability. Conceptually, it measures the standard (average) distance between each score and the mean. The variance is the average of the squared deviations; the standard deviation is simply the square root of the variance, which brings the measure back into the original units of the data.\nBoth statistics are built from the sum of squared deviations, or \\(SS\\). We obtain SS by subtracting the mean from each score, squaring the difference (deviation), the summing all squared deviations. Mathematically, this is abbreviated as;\n\\[SS = \\Sigma(X - \\bar{X})^2.\\]\nPopulation formulas (use \\(\\mu\\) for the mean and divide by \\(N\\)). The Greek letter \\(\\sigma^2\\) means population variance while \\(\\sigma\\) means population standard deviation.\n\\[\\sigma^2 = \\frac{SS}{N} \\qquad \\sigma = \\sqrt{\\frac{SS}{N}}\\]\nSample formulas (use \\(M\\) for the mean and divide by \\(n - 1\\) instead of \\(n\\)). The notation \\(s^2\\) means sample variance while \\(s\\) means sample standard deviation.\n\\[s^2 = \\frac{SS}{n-1} \\qquad s = \\sqrt{\\frac{SS}{n-1}}\\]\n\n\n\n\n\n\nWhy n − 1? Degrees of Freedom\n\n\n\nA sample mean is calculated from the sample, which places a restriction on the scores: once you know the mean and all but one score, the last score is no longer free to vary — it is fully determined. Only \\(n - 1\\) of the \\(n\\) scores are truly free to vary, so a sample has \\(df = n - 1\\) degrees of freedom. Dividing \\(SS\\) by \\(n-1\\) (rather than \\(n\\)) slightly increases the resulting value, correcting for the fact that a sample’s variability tends to underestimate the population’s variability. This correction makes sample variance an accurate, unbiased estimator of the population variance.\nThis is exactly what SPSS’s Descriptives procedure does by default — it always computes the sample formulas (\\(n-1\\) in the denominator), because SPSS assumes your data are a sample unless you tell it otherwise. Keep this in mind whenever you are working with data that represent an entire population.\n\n\n\n\nStandard Deviation for a Sample\nWe want to find the standard deviation (and other statistics) for the variable Stroop_RT_ms. By default, SPSS computes the sample standard deviation (i.e., divides the \\(SS\\) by \\(n-1\\)).\nFollow these steps to find the sample standard deviation for the variable Stroop_RT_ms:\n\nAnalyze &gt; Descriptive Statistics &gt; Descriptives.\nMove Stroop_RT_ms into the variables box, click Options…, and check Mean, Variance and Std. deviation. Click Continue, then OK.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat sample mean (\\(M\\)), variance (\\(s^2\\)), and standard deviation (\\(s\\)) does SPSS report?\nWhat does the standard deviation tell you about the spread of the Stroop_RT_ms scores?\n\n\n\n\n\n\nComparing Variability by Group (Sex)\nSuppose we wanted to answer the question, “Do Stroop_RT_ms scores for females spread out more than Stroop_RT_ms scores for male students?\n\nGo to Analyze &gt; Descriptive Statistics &gt; Explore.\nMove Stroop_RT_ms into the ‘Dependent List’ box. Move Sex into the ‘Factor List’ box — this tells SPSS to split all output by male vs. female.\nClick the ‘Statistics’ button and make sure ‘Descriptives’ is checked (this gives you variance, std deviation, min, max, and range for each group). Select std deviation. Click ‘continue’.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat sample standard deviation (\\(s\\)) does SPSS report for each group?\nWhat is a possible explanation for the discrepancy in std deviations? (Note: there can be multiple correct answers here).",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#part-d-visualizing-variability",
-    "href": "labs/lab_3.html#part-d-visualizing-variability",
-    "title": "Lab 3: Measuring Variability",
-    "section": "Part D — Visualizing Variability",
-    "text": "Part D — Visualizing Variability\nNumbers alone may not always give you an intuitive feel for variability. Sometimes, graphs can be better tools to communicate the insights. Box plots and histograms are among the commonly used graphs to visualize variability of a continuous variable.\n\nBox plots in SPSS\nTo create a boxplot for the variable Stroop_RT_ms, follow these steps:\n\nGraphs &gt; Chart Builder\nFrom the gallery list, choose Box plots, then drag the simple box plot icon to the chart preview area.\nNext, drag Stroop_RT_ms to the y-axis.\nOK.\n\nThe box itself spans from \\(Q_1\\) to \\(Q_3\\) (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers. Any outliers are indicated with a dot or asterisk beyond the whiskers.\n\n\nHistograms in SPSS\nCreate a histogram for Stroop_RT_ms. The steps are similar to those for a box plot. Let your instructor know if you need help with this. Once you have your histogram, you can add a normal curve overlay to help visualize how the distribution compares to a normal distribution.\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nDescribe the distribution of the Stroop_RT_ms scores. Be sure to talk about outliers, middle 50%, and the median.\nBased on your histogram, how would you describe the spread of the Stroop_RT_ms?\nHow do box plots and histograms differ, and what specific information can be derived exclusively from each?",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#part-e-apa-style-reporting",
-    "href": "labs/lab_3.html#part-e-apa-style-reporting",
-    "title": "Lab 3: Measuring Variability",
-    "section": "Part E — APA-Style Reporting",
-    "text": "Part E — APA-Style Reporting\nIn journals following the APA style, the standard deviation (abbreviated as SD) and the mean (abbreviated as M) are reported in parentheses after the mean, e.g., \\(M = 12.45\\), \\(SD = 3.70\\). For skewed data, the median is reported with the IQR, e.g., \\(Mdn = 12.45\\), \\(IQR = 3.70\\).). Here is an example of a paragraph that reports the mean and standard deviation for a hypothetical memory recall test:\n\nFemale respondents displayed higher memory recall (M = 12.45, SD = 3.70) than male respondents (M = 10.20, SD = 2.80).\n\n\n\n\n\n\n\n\n“Checkpoint\n\n\n\nWrite one APA-style sentence summarizing the central tendency and variability of the Stroop_RT_ms. In your paragraph, compare the variability of Stroop_RT_ms for males and females.",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#take-home-lab-exercises",
-    "href": "labs/lab_3.html#take-home-lab-exercises",
-    "title": "Lab 3: Measuring Variability",
-    "section": "Take-Home Lab Exercises",
-    "text": "Take-Home Lab Exercises\n\nHow spread out are the ages of the participants in this study? Use SPSS to compute any two different statistics to measure variability for the variable Age. Based on the two statistics, describe the variability of the ages in your own words.\nCreate a histogram and a box plot for the variable Age. Describe the distribution of ages, based on the box plot and the histogram.\nHow does the distribution of Stroop_RT_ms scores differ by gender? Create side-by-side box plots, with Gender on the x-axis, to compare the distributions of Stroop_RT_ms scores across genders. Describe your findings, including any differences in center, variability, and outliers.\nDoes the variability of Stroop_RT_ms differ by age group? Use SPSS to split the data into two groups: participants younger than 25 and participants 25 or older. Then, calculate statistics of your choice for each group that will help you compare the variability of Stroop_RT_ms scores. Describe your findings in APA style.\n\nNote: Look up how to split the data in SPSS if you are not sure how to do this.",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_3.html#submission-checklist",
-    "href": "labs/lab_3.html#submission-checklist",
-    "title": "Lab 3: Measuring Variability",
-    "section": "Submission Checklist",
-    "text": "Submission Checklist\n\nA saved SPSS data file with correct value labels and measurement levels. Saving format: Lab_3_Data_YourLastName.sav.\nSPSS output containing all the analyses performed. Save format: Lab_3_Output_YourLastName.spv.\nCompleted responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.",
-    "crumbs": [
-      "Labs",
-      "Lab 3"
-    ]
-  },
-  {
-    "objectID": "labs/lab_0.html",
-    "href": "labs/lab_0.html",
-    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
-    "section": "",
-    "text": "Before you start: Open SPSS Statistics on your lab computer or personal computer if you have the software installed. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank Data Editor window with a grid of empty cells.",
-    "crumbs": [
-      "Labs",
-      "Lab 0"
-    ]
-  },
-  {
-    "objectID": "labs/lab_0.html#part-0-spss-interface",
-    "href": "labs/lab_0.html#part-0-spss-interface",
-    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
-    "section": "Part 0: SPSS Interface",
-    "text": "Part 0: SPSS Interface\nLook at the bottom of the SPSS window. You’ll see Data View and Variable View options. See below:\n\n\n\n\n\n\nData View — this is where you type in the data/scores. Each row represents one individual and each column represents one variable.\nVariable View — this is where you describe each variable before you enter any scores.\n\nThere is also a separate window called the Output Viewer — it doesn’t exist yet, but it will pop up automatically the first time you run an analysis (not today!). That’s where your results/tables/graphs etc appear.\nRule for today: we always set up a variable in Variable View before typing any scores for it in Data View. This mirrors Chapter 1’s point that researchers must define how something will be measured (operationalized) before they collect data.",
-    "crumbs": [
-      "Labs",
-      "Lab 0"
-    ]
-  },
-  {
-    "objectID": "labs/lab_0.html#part-1-entering-variables",
-    "href": "labs/lab_0.html#part-1-entering-variables",
-    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
-    "section": "Part 1: Entering Variables",
-    "text": "Part 1: Entering Variables\nYou’re going to enter data from a classroom mini-survey of 8 students (the survey we conducted yesterday).\n\nClick the Variable View tab. You’ll see rows (one per variable) and columns including Name, Type, Decimals, Label, Values, and Measure.\nFollow the following steps to enter the variables:\n\n\nRow 1: StudentID\n\nClick the first empty cell in row 1, “Name” column. Type: StudentID\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (an ID number has no decimal places).\nClick the Label cell. Type: Student identifier\nClick the Measure cell. Click the dropdown arrow and select Nominal.\n\nWhy nominal? An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.\n\n\n\n\nRow 2: Sex\n\nName: Sex\nDecimals: 0\nLabel: Student's sex\nValues: Click the Values cell, then click the small gray … button that appears on the right side of the cell. A “Value Labels” dialog opens. Click the + sign to add values.\n\nIn the Value box, type 1. In the Label box, type Female. Click Add.\nValue 2, Label Male. Click Add.\nValue 3, Label Other.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 3: Hours\n\nName: Hours\nDecimals: set to 0\nLabel: Number of hours slept\nMeasure: select Scale.\n\n\n\nRow 4: Coffee\n\nName: Coffee\nDecimals: set to 0\nLabel: Coffee cups per day.\nMeasure: select Scale.\n\n\n\nRow 5: State\n\nName: State\nType: Click on the grey three ... dots on the right of the cell then choose String. The string string option allows you to enter non-numeric information. With this option, numerals are interpreted as characters.\nWidth: Use 10.\nDecimals: 0\nLabel: Student's state\nValues: Click the Values cell, then click the three … dots that appears on the right side of the cell. A “Value Labels” dialog opens. Click the + sign to add values.\n\nIn the Value box, type NY. In the Label box, type New York. Click Add.\nContinue until all states in the data are entered.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 6: Water\n\nName: Water\nType: Leave as Numeric\nDecimals: Use 1 decimal to entries such as 2.5 liters.\nLabel: Daily water consumption.\nMeasure: select Scale.\n\nIf you did everything correctly, your variable view screen should look as follows:",
-    "crumbs": [
-      "Labs",
-      "Lab 0"
-    ]
-  },
-  {
-    "objectID": "labs/lab_0.html#part-2-entering-the-data",
-    "href": "labs/lab_0.html#part-2-entering-the-data",
-    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
-    "section": "Part 2: Entering the Data",
-    "text": "Part 2: Entering the Data\nThe second step after setting up variables is to enter the data themselves. Click the Data View tab on the bottom of the SPSS window. The 6 column headers created (StudentID, Sex, etc) should appear, this time round as columns, as shown below:\n\n\n\n\n\nNow enter the data accordingly. See the class activity for Wed 8/26 in OneNote.\n\n\n\n\n\n\nTip\n\n\n\nIn Data View, the Sex variable will still show plain numbers (1, 2, 3) unless you turn on value labels. To check your coding: go to the View menu (top menu bar) → Grid Lines → click Value Labels. The columns should now display the named values instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.",
-    "crumbs": [
-      "Labs",
-      "Lab 0"
-    ]
-  },
-  {
-    "objectID": "labs/lab_0.html#part-3-saving-and-retrieving-files",
-    "href": "labs/lab_0.html#part-3-saving-and-retrieving-files",
-    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
-    "section": "Part 3: Saving and Retrieving Files",
-    "text": "Part 3: Saving and Retrieving Files\nSave your file: File → Save As → File name it Lab_0_YourLastName.sav → save it in a convenient location for you, preferably the desktop.\nNow, close the program and try to navigate to the file you just saved. When you find it, double clikc to make sure it is opening at it should. Next time you need this file, this is what you will doRelax and slow down! We will run analyses in the next lab.",
-    "crumbs": [
-      "Labs",
-      "Lab 0"
-    ]
-  },
-  {
-    "objectID": "labs/lab_0.html#part-4-running-analyses",
-    "href": "labs/lab_0.html#part-4-running-analyses",
-    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
-    "section": "Part 4: Running Analyses",
-    "text": "Part 4: Running Analyses\nKudos if you made it this far! In the next lab, we will perform some data analysis (basic descriptive statistics).",
-    "crumbs": [
-      "Labs",
-      "Lab 0"
-    ]
-  },
-  {
-    "objectID": "labs/lab_1.html",
-    "href": "labs/lab_1.html",
-    "title": "Lab 1: Frequency Distributions & Visualizations",
-    "section": "",
-    "text": "In this lab, you will be introduced to methods of data organization and visualization using SPSS. You will learn how to create a dataset, enter data, and generate frequency tables and graphs for both nominal (or ordinal) and scale variables. These are important beginning skills for analyzing data in behavioral sciences.",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab_1.html#overview",
-    "href": "labs/lab_1.html#overview",
-    "title": "Lab 1: Frequency Distributions & Visualizations",
-    "section": "",
-    "text": "In this lab, you will be introduced to methods of data organization and visualization using SPSS. You will learn how to create a dataset, enter data, and generate frequency tables and graphs for both nominal (or ordinal) and scale variables. These are important beginning skills for analyzing data in behavioral sciences.",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab_1.html#part-1-build-your-variable-view",
-    "href": "labs/lab_1.html#part-1-build-your-variable-view",
-    "title": "Lab 1: Frequency Distributions & Visualizations",
-    "section": "Part 1: Build Your Variable View",
-    "text": "Part 1: Build Your Variable View\nOpen SPSS and create a new dataset. Click the Variable View tab and add the following 6 variables, one per row. For each one, follow these exact steps.\n\nRow 1: StudentID\n\nClick the empty cell in row 1, “Name” column. Type: StudentID\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (an ID number has no decimal places).\nClick the Label cell. Type: Student identifier\nClick the Measure cell. Click the dropdown arrow and select Nominal.\n\nWhy nominal? An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3.\n\n\n\n\nRow 2: Major\n\nName: Major\nDecimals: 0\nLabel: Academic major\nValues: Click the Values cell, then click the small gray … button that appears on the right side of the cell. A “Value Labels” dialog should open.\n\nClick the + sign to show Value box, and type 1. In the Label box, type Psychology. Click Add.\nValue 2, Label Biology. Click Add.\nValue 3, Label Business. Click Add.\nValue 4, Label Undecided. Click Add.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 3: ClassYear\n\nName: ClassYear\nDecimals: 0\nLabel: Year in school\nValues: same process as above —\n\n1 = Freshman, 2 = Sophomore, 3 = Junior, 4 = Senior (Add after each one, then OK)\n\nMeasure: select Ordinal.\n\nWhy ordinal and not nominal? Unlike majors, Freshman → Senior is an ordered sequence.\n\n\n\n\nRow 4: StudyHours\n\nName: StudyHours\nDecimals: change to 1 (allow one decimal place, e.g., 8.5)\nLabel: Hours spent studying per week\nValues: leave blank (this variable’s numbers are real quantities, not category codes — nothing to label)\nMeasure: select Scale.\n\nWhy Scale? This is a continuous variable with a meaningful zero (0 hours studied means no studying at all), so it meets the textbook’s definition of a ratio scale. Recall that SPSS collapses interval and ratio into one category named Scale.\n\n\n\n\nRow 5: NetflixHours\n\nName: NetflixHrs\nDecimals: 1\nLabel: Hours spent streaming video per week\nValues: leave blank\nMeasure: select Scale.\n\n\n\nRow 6: StressLevel\n\nName: Stress\nDecimals: 0\nLabel: Self-rated stress, 1 (low) to 10 (high)\nValues: leave blank for now — we’ll come back to this one in the discussion question below.\nMeasure: select Scale for now (we’ll revisit whether this is the right call)\n\n\n\n\n\n\n\nNote on SPSS’s Measure column\n\n\n\nThe textbook describes four scales of measurement (nominal, ordinal, interval, ratio) but SPSS collapses the last two into one “Scale” category.",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab_1.html#part-2-enter-the-data",
-    "href": "labs/lab_1.html#part-2-enter-the-data",
-    "title": "Lab 1: Frequency Distributions & Visualizations",
-    "section": "Part 2: Enter the Data",
-    "text": "Part 2: Enter the Data\nClick the Data View tab. Your 6 column headers (StudentID, Major, etc.) should already be there from Part 1. Type the following, one row per student — click a cell, type the number, press Tab or Enter to move to the next cell.\n\n\n\nStudentID\nMajor\nClassYear\nStudyHours\nNetflixHrs\nStress\n\n\n\n\n1\n1\n2\n12.5\n6.0\n7\n\n\n2\n3\n4\n6.0\n10.5\n5\n\n\n3\n2\n1\n15.0\n3.5\n8\n\n\n4\n4\n1\n8.5\n9.0\n6\n\n\n5\n1\n3\n10.0\n5.5\n4\n\n\n6\n2\n4\n18.5\n2.0\n9\n\n\n7\n3\n2\n7.5\n12.0\n5\n\n\n8\n1\n4\n11.0\n4\n6\n\n\n9\n4\n3\n9.5\n8.0\n7\n\n\n10\n2\n2\n13.0\n6.5\n8\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nIn Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the View menu (top menu bar) → click Value Labels. The columns should now display “Freshman”, “Sophomore,” etc. instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.\n\n\nSave your file now: File → Save As → name it Lab_1_YourLastName.sav → Note the location you saved your file.",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab_1.html#part-3-run-your-first-outputdata-analyses",
-    "href": "labs/lab_1.html#part-3-run-your-first-outputdata-analyses",
-    "title": "Lab 1: Frequency Distributions & Visualizations",
-    "section": "Part 3: Run Your First Output/Data Analyses",
-    "text": "Part 3: Run Your First Output/Data Analyses\nIn this section, you’ll run two basic analyses in SPSS: a frequency table for a nominal variable, and summary statistics for a scale variable. Note that the output will appear in a separate window called the Output Viewer and that this output will have to be saved just like the data file.\n\nFrequency table for a nominal variable\n\nGo to the menu bar and click Analyze → Descriptive Statistics → Frequencies. See below\n\nIn the dialog box on the left, click Academic Major, then click the arrow button in the middle to move Academic Major into the Variable(s) box on the right. Make sure the box that says “Display Frequency tables” is checked. See below:\n\nNext, click OK.\nThe Output Viewer window opens with a table showing how many students fall into each major category, and what percentage each represents.\n\n\n\nVisualizing a Nominal (or Ordinal) Variable\nThe common tools used to visualize the distribution of nominal or ordinal variables are bar graphs or pie charts. To create a bar graph for the variable Major, follow the steps steps below:\n\nAnalyze → Descriptive Statistics → Frequencies. In the dialog box, select Academic Major and move it to the Variable(s) box.\nClick Charts on the right side of the dialog box. In the new dialog box, select Bar charts and click Continue.\nC OK. A bar graph will appear in the Output Viewer. The same procedure can be followed to create a pie chart by selecting Pie charts instead of Bar charts in the Charts dialog box.\n\nIt is often helpful to have percentages displayed on the vertical axis instead of the raw frequencies. To do this, select the percentages option under the Frequency Charts pop up box (step 2 above).\n\n\nFrequency Table for a Scale Variable\nWe want to create a table that summarizes the variable StudyHours. Follow these steps:\n\nMenu bar: Analyze → Descriptive Statistics → Frequencies. If Academic Major is still on the right box, click on it and click the back arrow to move it back to the left.\nNow move StudyHours into the “Variable(s)” box as earlier. Make sure the Display frequency tables box is checked.\nClick OK. A frequency table appears in the Output Viewer showing each study hour and the corresponding frequency.\n\n\n\n\n\n\n\nCaution\n\n\n\nWhen working with larger data sets, a frequency table on this kind is not helpful. We can use a grouped frequency table instead. Although the grouped frequency table loses some information, it is easier to read and interpret when we have a large number of unique values.\n\n\nAlthough our data set is fairly small (n=10), we can still use it to demonstrate the process of creating a grouped frequency table for StudyHours, we will begin by transforming the variable to create three bins (5-10, 11-15, 16-20) as follows:\n\nMenu bar: tranform → Recode into Different Variable.\nMove the Variable StudyHours into the Input Variable → Output Variable box as shown below:\n\nIn the Output Variable section under name, write StudyHoursGroup (no spaces). In the Label field, write Study Hours Group (spaces allowed) then click Change.\nNext, click Old and New Values. The following window will appear:\n\nStart by checking the box that says Output variables are strings.\nIn the Old Value section, select Range and type 5 in the first box and 10 in the second box as shown in the screenshot above. In the New Value section, write 5-10.\nClick Add.\nTo create the next bin, enter 11 and 15 as earlier, then write 11-15 under New Value, then click Add. Repeat this for 16-20.\nClick Continue to return to the previous window, then click OK.\n\nTake a look at the data window and you should see the new variable you just created called StudyHoursGroup.\nTo create a frequency table, we follow the steps from earlier:\n\nAnalyze → Descriptive Statistics → Frequencies.\nMove the variable StudyHoursGroup into the “Variable(s)” box. Make sure the Display frequency tables box is checked. You may want to click on Charts and select None.\nClick OK. A frequency table appears in the Output Viewer showing how many students fall into each study hour group.\n\n\n\nVisualizing a Scale Variable\nThere are various graphs that can be used to visualize the distribution of a scale variable. The most common ones are histograms, boxplots, dotplots, and stem-and-leaf plots. Histograms are good for showing the shape of the distribution, boxplots are good for showing the shape of the distributions as well as locations of the median, quartiles, and if there are any outliers.\nFor this lab, we will creat a histogram to visualize the distribution of StudyHours. Here are the steps:\n\nMenu bar: Analyze → Descriptive Statistics → Frequencies. Move the variable StudyHours into the “Variable(s)” box. Uncheck the box Display frequency tables (we do not need the table).\nClick Charts on the right side of the dialog box. In the new dialog box, select Histograms and click Continue.\nClick OK. A histogram appears in the Output Viewer showing the distribution of StudyHours.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nBased on the histogram, what can you say about the distribution of the study hours? Is the histogram roughly symmetric, skewed to the left, or skewed to the right?\n\n\nSave your output file: File → Save As → name it Lab_1_Output_YourLastName.spv → Note the location you saved your file.",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab_1.html#take-home-lab-exercises",
-    "href": "labs/lab_1.html#take-home-lab-exercises",
-    "title": "Lab 1: Frequency Distributions & Visualizations",
-    "section": "Take-Home Lab Exercises",
-    "text": "Take-Home Lab Exercises\nAnswer the following questions based on your SPSS output (more analyses may be required). Include screenshots of the relevant software outputs (e.g., frequency tables, bar graphs, histograms) in your report. Your report should be typed (Times New Roman, Font size 12, double spaced). The lab is graded out of 20 points. Ten points are for the 2 SPSS outputs and ten points are for your written responses to the questions below.\n\n(Frequency tables, 2 points.) Create a frequency table for the variable ClassYear. Based on the table, answer the following questions:\n\nWhat is the most common class year(s) among the students in this dataset?\nWhat percentage of students are either Freshmen or Sophomores?\n\n(Bar Graph, 2 points.) Create a bar graph for the variable ClassYear. Based on the graph, answer the following questions:\n\nWhich year has the highest number of students?\nWhich year has the lowest number of students?\n\n(Frequency Tables, 4 points.) Create a grouped frequency table for the variable NetflixHours using the groups 0-4, 5-9, 10-14. Based on the table, answer the following questions:\n\nWhat is the most common range of hours spent streaming video per week?\nWhat percentage of students spend more than 10 hours per week streaming video?\n\n(Histogram, 2 points.) Create a histogram for the variable NetflixHours. Based on the histogram, what can you say about the distribution of the hours students spent streaming?",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
-    ]
-  },
-  {
-    "objectID": "labs/lab_1.html#submission-checklist",
-    "href": "labs/lab_1.html#submission-checklist",
-    "title": "Lab 1: Frequency Distributions & Visualizations",
-    "section": "Submission Checklist",
-    "text": "Submission Checklist\n\nA saved SPSS data file (.sav) with correct variables alongside their specifications, and correctly entered data.\nSPSS output file (.spv) showing the analyses performed, including frequency tables, bar graphs, grouped frequency tables, and histograms.\nCompleted responses for Questions 1—4 above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include screenshots of the relevant software outputs (e.g., frequency tables).",
-    "crumbs": [
-      "Labs",
-      "Lab 1"
+      "Lab 5"
     ]
   },
   {
@@ -711,213 +524,492 @@
     ]
   },
   {
-    "objectID": "labs/lab_5.html",
-    "href": "labs/lab_5.html",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "objectID": "labs/lab_1.html",
+    "href": "labs/lab_1.html",
+    "title": "Lab 1: Frequency Distributions & Visualizations",
     "section": "",
-    "text": "In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the analyses and interpret the results.\nHere is the research question we will be investigating:\n\n\n\n\n\n\nResearch Question\n\n\n\nDoes the new weight loss program with financial incentives result in a significantly different average weight loss over a 4-month period compared to the standard population average of 10 pounds?\n\n\nHere is the scenario to that we will be working with:\nA fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a standard weight loss programs is 10 pounds over a 4-month period. The fitness center wants to see if their program, which includes financial incentives, leads to a different average weight loss than this known population mean (10 lbs).\nStudy Design: The researchers recruited 38 individuals who wanted to lose weight and randomly assigned them to either an incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for a population mean.\nPerform a one-sample t-test in SPSS.\nInterpret the results of a one-sample t-test in the context of a research question.\n\n\n\n\n\nNull Hypothesis: The average weight loss for individuals in the incentive group is still equal to 10 pounds.\nIn symbols: \\(H_0: \\mu = 10\\)\nAlternative Hypothesis: The average weight loss for individuals in the incentive group is different from 10 pounds.\nIn symbols: \\(H_1: \\mu \\neq 10\\)\n\n\n\nThere are two main assumptions to consider before running a one-sample t-test:\n\nIndependence: The individuals in the sample are independent of each other. This means that there is no predictable relationship between one individual and another. This is generally satisfied if the data were collected through random sampling or random assignment. The data in this lab were collected through random assignment, so we can assume that the independence assumption is satisfied.\nNormality: The sampled population must be normal. This assumption is necessary part of the math underlying t-tests. Violating this assumption has little practical impact especially if the sample size is sufficiently large (often at least 30). Our sample size is 38, which is sufficiently large to satisfy this assumption.",
+    "text": "In this lab, you will be introduced to methods of data organization and visualization using SPSS. You will learn how to create a dataset, enter data, and generate frequency tables and graphs for both nominal (or ordinal) and scale variables. These are important beginning skills for analyzing data in behavioral sciences.",
     "crumbs": [
       "Labs",
-      "Lab 5"
+      "Lab 1"
     ]
   },
   {
-    "objectID": "labs/lab_5.html#part-1-scenario-overview",
-    "href": "labs/lab_5.html#part-1-scenario-overview",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "objectID": "labs/lab_1.html#overview",
+    "href": "labs/lab_1.html#overview",
+    "title": "Lab 1: Frequency Distributions & Visualizations",
     "section": "",
-    "text": "In this lab, we will explore the use of the t-test to compare a sample mean to a known population mean. We will use SPSS to perform the analyses and interpret the results.\nHere is the research question we will be investigating:\n\n\n\n\n\n\nResearch Question\n\n\n\nDoes the new weight loss program with financial incentives result in a significantly different average weight loss over a 4-month period compared to the standard population average of 10 pounds?\n\n\nHere is the scenario to that we will be working with:\nA fitness center wants to determine if their new weight loss program is effective. It is believed that the average weight loss for individuals who participate in a standard weight loss programs is 10 pounds over a 4-month period. The fitness center wants to see if their program, which includes financial incentives, leads to a different average weight loss than this known population mean (10 lbs).\nStudy Design: The researchers recruited 38 individuals who wanted to lose weight and randomly assigned them to either an incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for a population mean.\nPerform a one-sample t-test in SPSS.\nInterpret the results of a one-sample t-test in the context of a research question.\n\n\n\n\n\nNull Hypothesis: The average weight loss for individuals in the incentive group is still equal to 10 pounds.\nIn symbols: \\(H_0: \\mu = 10\\)\nAlternative Hypothesis: The average weight loss for individuals in the incentive group is different from 10 pounds.\nIn symbols: \\(H_1: \\mu \\neq 10\\)\n\n\n\nThere are two main assumptions to consider before running a one-sample t-test:\n\nIndependence: The individuals in the sample are independent of each other. This means that there is no predictable relationship between one individual and another. This is generally satisfied if the data were collected through random sampling or random assignment. The data in this lab were collected through random assignment, so we can assume that the independence assumption is satisfied.\nNormality: The sampled population must be normal. This assumption is necessary part of the math underlying t-tests. Violating this assumption has little practical impact especially if the sample size is sufficiently large (often at least 30). Our sample size is 38, which is sufficiently large to satisfy this assumption.",
+    "text": "In this lab, you will be introduced to methods of data organization and visualization using SPSS. You will learn how to create a dataset, enter data, and generate frequency tables and graphs for both nominal (or ordinal) and scale variables. These are important beginning skills for analyzing data in behavioral sciences.",
     "crumbs": [
       "Labs",
-      "Lab 5"
+      "Lab 1"
     ]
   },
   {
-    "objectID": "labs/lab_5.html#part-2-the-data",
-    "href": "labs/lab_5.html#part-2-the-data",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "Part 2: The Data",
-    "text": "Part 2: The Data\n\nImporting Data into SPSS\nThe data set is available in the following link. Download the data.\nWeight Loss Data.\nAfter downloading the dataset, import it into SPSS, using the following steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file location, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows WeightLoss = Scale, Group = Nominal, Month7Loss = Scale.\nSee the screenshot below for reference:\n\n\n\n\n\n\n\n\n\n\n\nvariable Description\n\n\n\nThe variable description is as follows:\n\nGroup = Whether someone was in the Incentive or Control group.- WeightLoss = The amount of weight lost by each individual\nWeightloss = The amount of weight lost by each individual at the 4-month follow-up.\nMonth7Loss = The amount of weight lost by each individual at the 7-month follow-up\n\n\n\nClick on data view to confirm that you have 38 individuals in the data set. The WeightLoss variable is calculated as the difference between the weight before and after the 4-month period. Negative values (e.g., case 14) indicate that the individual gained weight.\n\n\nData Filtering\nWe are only interested in the individuals in the incentive group for this lab. One way to isolate the incentive group is to use the Split into files feature in SPSS. Here are the steps:\nData &gt; Split into Files. The following window will pop up:\n\n\n\n\n\nSend the Group variable into the Split Cases by box, then click on Browse to specify the file location then click OK.\nNext, navigate to the file location in your computer and open the file named Incentive.sav. This file contains members of the incentive group and their weight loss variables. This is the data we will use for the one-sample t-test.",
+    "objectID": "labs/lab_1.html#part-1-build-your-variable-view",
+    "href": "labs/lab_1.html#part-1-build-your-variable-view",
+    "title": "Lab 1: Frequency Distributions & Visualizations",
+    "section": "Part 1: Build Your Variable View",
+    "text": "Part 1: Build Your Variable View\nOpen SPSS and create a new dataset. Click the Variable View tab and add the following 6 variables, one per row. For each one, follow these exact steps.\n\nRow 1: StudentID\n\nClick the empty cell in row 1, “Name” column. Type: StudentID\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (an ID number has no decimal places).\nClick the Label cell. Type: Student identifier\nClick the Measure cell. Click the dropdown arrow and select Nominal.\n\nWhy nominal? An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3.\n\n\n\n\nRow 2: Major\n\nName: Major\nDecimals: 0\nLabel: Academic major\nValues: Click the Values cell, then click the small gray … button that appears on the right side of the cell. A “Value Labels” dialog should open.\n\nClick the + sign to show Value box, and type 1. In the Label box, type Psychology. Click Add.\nValue 2, Label Biology. Click Add.\nValue 3, Label Business. Click Add.\nValue 4, Label Undecided. Click Add.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 3: ClassYear\n\nName: ClassYear\nDecimals: 0\nLabel: Year in school\nValues: same process as above —\n\n1 = Freshman, 2 = Sophomore, 3 = Junior, 4 = Senior (Add after each one, then OK)\n\nMeasure: select Ordinal.\n\nWhy ordinal and not nominal? Unlike majors, Freshman → Senior is an ordered sequence.\n\n\n\n\nRow 4: StudyHours\n\nName: StudyHours\nDecimals: change to 1 (allow one decimal place, e.g., 8.5)\nLabel: Hours spent studying per week\nValues: leave blank (this variable’s numbers are real quantities, not category codes — nothing to label)\nMeasure: select Scale.\n\nWhy Scale? This is a continuous variable with a meaningful zero (0 hours studied means no studying at all), so it meets the textbook’s definition of a ratio scale. Recall that SPSS collapses interval and ratio into one category named Scale.\n\n\n\n\nRow 5: NetflixHours\n\nName: NetflixHrs\nDecimals: 1\nLabel: Hours spent streaming video per week\nValues: leave blank\nMeasure: select Scale.\n\n\n\nRow 6: StressLevel\n\nName: Stress\nDecimals: 0\nLabel: Self-rated stress, 1 (low) to 10 (high)\nValues: leave blank for now — we’ll come back to this one in the discussion question below.\nMeasure: select Scale for now (we’ll revisit whether this is the right call)\n\n\n\n\n\n\n\nNote on SPSS’s Measure column\n\n\n\nThe textbook describes four scales of measurement (nominal, ordinal, interval, ratio) but SPSS collapses the last two into one “Scale” category.",
     "crumbs": [
       "Labs",
-      "Lab 5"
+      "Lab 1"
     ]
   },
   {
-    "objectID": "labs/lab_5.html#part-3-exploratory-analysis",
-    "href": "labs/lab_5.html#part-3-exploratory-analysis",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "Part 3: Exploratory Analysis",
-    "text": "Part 3: Exploratory Analysis\nBefore running the t-test, we will perform some exploratory analysis to understand the data better. We can start by exploring the spread of the data using a box plot:\nRun the following steps:\nGraphs &gt; Chart Builder &gt; Box plot. Move WeightLoss into the Y-axis box. Click OK.\nThe box plot as shown below should appear in the output window:\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nBased on the box plot, how would you describe the spread and shape of the WeightLoss variable for the incentive group? Are there any suspected outliers?\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nGenerate a histogram to visualize the distribution of the WeightLoss variable. What characteristics of the distribution are visible in the histogram that cannot be easily detected in the box plot?\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nCalculate summary statistics (e.g., mean, etc) to examine the central tendency and spread of the WeightLoss variable.",
+    "objectID": "labs/lab_1.html#part-2-enter-the-data",
+    "href": "labs/lab_1.html#part-2-enter-the-data",
+    "title": "Lab 1: Frequency Distributions & Visualizations",
+    "section": "Part 2: Enter the Data",
+    "text": "Part 2: Enter the Data\nClick the Data View tab. Your 6 column headers (StudentID, Major, etc.) should already be there from Part 1. Type the following, one row per student — click a cell, type the number, press Tab or Enter to move to the next cell.\n\n\n\nStudentID\nMajor\nClassYear\nStudyHours\nNetflixHrs\nStress\n\n\n\n\n1\n1\n2\n12.5\n6.0\n7\n\n\n2\n3\n4\n6.0\n10.5\n5\n\n\n3\n2\n1\n15.0\n3.5\n8\n\n\n4\n4\n1\n8.5\n9.0\n6\n\n\n5\n1\n3\n10.0\n5.5\n4\n\n\n6\n2\n4\n18.5\n2.0\n9\n\n\n7\n3\n2\n7.5\n12.0\n5\n\n\n8\n1\n4\n11.0\n4\n6\n\n\n9\n4\n3\n9.5\n8.0\n7\n\n\n10\n2\n2\n13.0\n6.5\n8\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nIn Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the View menu (top menu bar) → click Value Labels. The columns should now display “Freshman”, “Sophomore,” etc. instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.\n\n\nSave your file now: File → Save As → name it Lab_1_YourLastName.sav → Note the location you saved your file.",
     "crumbs": [
       "Labs",
-      "Lab 5"
+      "Lab 1"
     ]
   },
   {
-    "objectID": "labs/lab_5.html#part-4-running-the-t-test",
-    "href": "labs/lab_5.html#part-4-running-the-t-test",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "Part 4: Running the t-test",
-    "text": "Part 4: Running the t-test\nTo run the one-sample t-test, follow these steps:\n\nAnalysis &gt; Compare Means and Proportions &gt; One-Sample T Test.\nMove WeightLoss variable into the Test Variable(s) box.\nEnter 10 in the Test Value box. Make sure the “Estimate effect size” check box is checked.\nClick on Options and check that the confidence interval is set to 95%. Click Continue.\nClick OK.\n\nThe following tables should pop up in the output window:\n\n\n\n\n\nThe output shows both summary statistics and the results of the one-sample t-test. The summary statistics include the mean, standard deviation, and standard error. The t-test results (second table) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval.\nThe P-value measures the chance of obtaining an average weight loss of 15 lbs or more extreme if the null hypothesis (average = 10 lbs) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis and conclude that the average weight loss for individuals in the incentive group is significantly different (higher) from 10 pounds.",
+    "objectID": "labs/lab_1.html#part-3-run-your-first-outputdata-analyses",
+    "href": "labs/lab_1.html#part-3-run-your-first-outputdata-analyses",
+    "title": "Lab 1: Frequency Distributions & Visualizations",
+    "section": "Part 3: Run Your First Output/Data Analyses",
+    "text": "Part 3: Run Your First Output/Data Analyses\nIn this section, you’ll run two basic analyses in SPSS: a frequency table for a nominal variable, and summary statistics for a scale variable. Note that the output will appear in a separate window called the Output Viewer and that this output will have to be saved just like the data file.\n\nFrequency table for a nominal variable\n\nGo to the menu bar and click Analyze → Descriptive Statistics → Frequencies. See below\n\nIn the dialog box on the left, click Academic Major, then click the arrow button in the middle to move Academic Major into the Variable(s) box on the right. Make sure the box that says “Display Frequency tables” is checked. See below:\n\nNext, click OK.\nThe Output Viewer window opens with a table showing how many students fall into each major category, and what percentage each represents.\n\n\n\nVisualizing a Nominal (or Ordinal) Variable\nThe common tools used to visualize the distribution of nominal or ordinal variables are bar graphs or pie charts. To create a bar graph for the variable Major, follow the steps steps below:\n\nAnalyze → Descriptive Statistics → Frequencies. In the dialog box, select Academic Major and move it to the Variable(s) box.\nClick Charts on the right side of the dialog box. In the new dialog box, select Bar charts and click Continue.\nC OK. A bar graph will appear in the Output Viewer. The same procedure can be followed to create a pie chart by selecting Pie charts instead of Bar charts in the Charts dialog box.\n\nIt is often helpful to have percentages displayed on the vertical axis instead of the raw frequencies. To do this, select the percentages option under the Frequency Charts pop up box (step 2 above).\n\n\nFrequency Table for a Scale Variable\nWe want to create a table that summarizes the variable StudyHours. Follow these steps:\n\nMenu bar: Analyze → Descriptive Statistics → Frequencies. If Academic Major is still on the right box, click on it and click the back arrow to move it back to the left.\nNow move StudyHours into the “Variable(s)” box as earlier. Make sure the Display frequency tables box is checked.\nClick OK. A frequency table appears in the Output Viewer showing each study hour and the corresponding frequency.\n\n\n\n\n\n\n\nCaution\n\n\n\nWhen working with larger data sets, a frequency table on this kind is not helpful. We can use a grouped frequency table instead. Although the grouped frequency table loses some information, it is easier to read and interpret when we have a large number of unique values.\n\n\nAlthough our data set is fairly small (n=10), we can still use it to demonstrate the process of creating a grouped frequency table for StudyHours, we will begin by transforming the variable to create three bins (5-10, 11-15, 16-20) as follows:\n\nMenu bar: tranform → Recode into Different Variable.\nMove the Variable StudyHours into the Input Variable → Output Variable box as shown below:\n\nIn the Output Variable section under name, write StudyHoursGroup (no spaces). In the Label field, write Study Hours Group (spaces allowed) then click Change.\nNext, click Old and New Values. The following window will appear:\n\nStart by checking the box that says Output variables are strings.\nIn the Old Value section, select Range and type 5 in the first box and 10 in the second box as shown in the screenshot above. In the New Value section, write 5-10.\nClick Add.\nTo create the next bin, enter 11 and 15 as earlier, then write 11-15 under New Value, then click Add. Repeat this for 16-20.\nClick Continue to return to the previous window, then click OK.\n\nTake a look at the data window and you should see the new variable you just created called StudyHoursGroup.\nTo create a frequency table, we follow the steps from earlier:\n\nAnalyze → Descriptive Statistics → Frequencies.\nMove the variable StudyHoursGroup into the “Variable(s)” box. Make sure the Display frequency tables box is checked. You may want to click on Charts and select None.\nClick OK. A frequency table appears in the Output Viewer showing how many students fall into each study hour group.\n\n\n\nVisualizing a Scale Variable\nThere are various graphs that can be used to visualize the distribution of a scale variable. The most common ones are histograms, boxplots, dotplots, and stem-and-leaf plots. Histograms are good for showing the shape of the distribution, boxplots are good for showing the shape of the distributions as well as locations of the median, quartiles, and if there are any outliers.\nFor this lab, we will creat a histogram to visualize the distribution of StudyHours. Here are the steps:\n\nMenu bar: Analyze → Descriptive Statistics → Frequencies. Move the variable StudyHours into the “Variable(s)” box. Uncheck the box Display frequency tables (we do not need the table).\nClick Charts on the right side of the dialog box. In the new dialog box, select Histograms and click Continue.\nClick OK. A histogram appears in the Output Viewer showing the distribution of StudyHours.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nBased on the histogram, what can you say about the distribution of the study hours? Is the histogram roughly symmetric, skewed to the left, or skewed to the right?\n\n\nSave your output file: File → Save As → name it Lab_1_Output_YourLastName.spv → Note the location you saved your file.",
     "crumbs": [
       "Labs",
-      "Lab 5"
+      "Lab 1"
     ]
   },
   {
-    "objectID": "labs/lab_5.html#part-5-output-interpretation",
-    "href": "labs/lab_5.html#part-5-output-interpretation",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
-    "section": "Part 5: Output Interpretation",
-    "text": "Part 5: Output Interpretation\nThe output above provides you with the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval, among others.\nIn scientific literature, you would see the one sample t-test results above reported in a manner similar to the following:\n\n\n\n\n\n\nAPA-style Write-up\n\n\n\nThe participants had an average weight loss of \\(M = 15.68\\) lbs with \\(SD = 9.41\\) lbs over the four-month period during which they were offered financial incentives. Statistical analysis indicates that the mean weight loss was significantly higher than population mean of 10 lbs, \\(t\\)(17) = 2.486, \\(p\\) = .024, \\(d\\) = .603, 95% CI [.836, 10.517].\n\n\nPlease see end of chapter 9 in the textbook for more details and examples on APA-style reporting of t-test results.\nNOTE: The confidence interval is interpreted as follows: We are 95% confident that the true mean weight loss for individuals in the incentive group is between .836 and 10.517 pounds. It is strongly recommended that results of hypothesis tests be reported with confidence intervals when possible. Confidence intervals provide more information than a simple p-value and are more informative for decision-making.",
-    "crumbs": [
-      "Labs",
-      "Lab 5"
-    ]
-  },
-  {
-    "objectID": "labs/lab_5.html#take-home-lab-exercises",
-    "href": "labs/lab_5.html#take-home-lab-exercises",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "objectID": "labs/lab_1.html#take-home-lab-exercises",
+    "href": "labs/lab_1.html#take-home-lab-exercises",
+    "title": "Lab 1: Frequency Distributions & Visualizations",
     "section": "Take-Home Lab Exercises",
-    "text": "Take-Home Lab Exercises\nIn today’s lab exercise, you will perform a one-sample t-test to determine if the average weight loss at the seventh month for individuals in the incentive group is significantly different from 10 lbs. Recall that the financial incentives were only given during the first four months, so if the weight loss is not maintained, we would have further evidence that the financial incentives were effective in the short term but not in the long term.\n\nQuestion 1\nCreate a box plot to visualize the weight loss 3 months after the initial 4 months (Month7Loss). How would you describe the spread and shape of the Month7Loss variable for the incentive group? Are there any suspected outliers?\n\n\nQuestion 2\nCreate a histogram to visualize the distribution of the Month7Loss variable. What characteristics of the distribution are visible in the histogram that cannot be easily detected in the box plot?\n\n\nQuestion 3\nRun a one-sample t-test to determine if the average weight loss at the seventh month for individuals in the incentive group is significantly different from 10 lbs. Look at the output and answer the following questions:\n\nWhat is the P-value for the two-sided test? What does this mean in the context of the research question?\nWhat is the 95% confidence interval for the mean weight loss at the seventh month? How would you interpret this confidence interval in the context of the research question?\nWhat is the effect size (Cohen’s d) for this test? How would you interpret this effect size in the context of the research question?\n\n\n\nQuestion 4\nWrite an APA-style interpretation of the results of the one-sample t-test for the Month7Loss variable. Be sure to include the mean, standard deviation, t-statistic, degrees of freedom, p-value, effect size, and confidence interval in your interpretation.",
+    "text": "Take-Home Lab Exercises\nAnswer the following questions based on your SPSS output (more analyses may be required). Include screenshots of the relevant software outputs (e.g., frequency tables, bar graphs, histograms) in your report. Your report should be typed (Times New Roman, Font size 12, double spaced). The lab is graded out of 20 points. Ten points are for the 2 SPSS outputs and ten points are for your written responses to the questions below.\n\n(Frequency tables, 2 points.) Create a frequency table for the variable ClassYear. Based on the table, answer the following questions:\n\nWhat is the most common class year(s) among the students in this dataset?\nWhat percentage of students are either Freshmen or Sophomores?\n\n(Bar Graph, 2 points.) Create a bar graph for the variable ClassYear. Based on the graph, answer the following questions:\n\nWhich year has the highest number of students?\nWhich year has the lowest number of students?\n\n(Frequency Tables, 4 points.) Create a grouped frequency table for the variable NetflixHours using the groups 0-4, 5-9, 10-14. Based on the table, answer the following questions:\n\nWhat is the most common range of hours spent streaming video per week?\nWhat percentage of students spend more than 10 hours per week streaming video?\n\n(Histogram, 2 points.) Create a histogram for the variable NetflixHours. Based on the histogram, what can you say about the distribution of the hours students spent streaming?",
     "crumbs": [
       "Labs",
-      "Lab 5"
+      "Lab 1"
     ]
   },
   {
-    "objectID": "labs/lab_5.html#submission-checklist",
-    "href": "labs/lab_5.html#submission-checklist",
-    "title": "Lab 5: Inference for a Single Mean: One Sample t-test",
+    "objectID": "labs/lab_1.html#submission-checklist",
+    "href": "labs/lab_1.html#submission-checklist",
+    "title": "Lab 1: Frequency Distributions & Visualizations",
+    "section": "Submission Checklist",
+    "text": "Submission Checklist\n\nA saved SPSS data file (.sav) with correct variables alongside their specifications, and correctly entered data.\nSPSS output file (.spv) showing the analyses performed, including frequency tables, bar graphs, grouped frequency tables, and histograms.\nCompleted responses for Questions 1—4 above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include screenshots of the relevant software outputs (e.g., frequency tables).",
+    "crumbs": [
+      "Labs",
+      "Lab 1"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html",
+    "href": "labs/lab_0.html",
+    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
+    "section": "",
+    "text": "Before you start: Open SPSS Statistics on your lab computer or personal computer if you have the software installed. When it opens, you may see a “What’s New” or “Welcome” dialog box — close it. You should be looking at a blank Data Editor window with a grid of empty cells.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-0-spss-interface",
+    "href": "labs/lab_0.html#part-0-spss-interface",
+    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
+    "section": "Part 0: SPSS Interface",
+    "text": "Part 0: SPSS Interface\nLook at the bottom of the SPSS window. You’ll see Data View and Variable View options. See below:\n\n\n\n\n\n\nData View — this is where you type in the data/scores. Each row represents one individual and each column represents one variable.\nVariable View — this is where you describe each variable before you enter any scores.\n\nThere is also a separate window called the Output Viewer — it doesn’t exist yet, but it will pop up automatically the first time you run an analysis (not today!). That’s where your results/tables/graphs etc appear.\nRule for today: we always set up a variable in Variable View before typing any scores for it in Data View. This mirrors Chapter 1’s point that researchers must define how something will be measured (operationalized) before they collect data.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-1-entering-variables",
+    "href": "labs/lab_0.html#part-1-entering-variables",
+    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
+    "section": "Part 1: Entering Variables",
+    "text": "Part 1: Entering Variables\nYou’re going to enter data from a classroom mini-survey of 8 students (the survey we conducted yesterday).\n\nClick the Variable View tab. You’ll see rows (one per variable) and columns including Name, Type, Decimals, Label, Values, and Measure.\nFollow the following steps to enter the variables:\n\n\nRow 1: StudentID\n\nClick the first empty cell in row 1, “Name” column. Type: StudentID\nLeave Type as the default (Numeric).\nClick the Decimals cell for this row. Change it to 0 (an ID number has no decimal places).\nClick the Label cell. Type: Student identifier\nClick the Measure cell. Click the dropdown arrow and select Nominal.\n\nWhy nominal? An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3. This is exactly the room-number example from the textbook: room numbers are labels, not quantities.\n\n\n\n\nRow 2: Sex\n\nName: Sex\nDecimals: 0\nLabel: Student's sex\nValues: Click the Values cell, then click the small gray … button that appears on the right side of the cell. A “Value Labels” dialog opens. Click the + sign to add values.\n\nIn the Value box, type 1. In the Label box, type Female. Click Add.\nValue 2, Label Male. Click Add.\nValue 3, Label Other.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 3: Hours\n\nName: Hours\nDecimals: set to 0\nLabel: Number of hours slept\nMeasure: select Scale.\n\n\n\nRow 4: Coffee\n\nName: Coffee\nDecimals: set to 0\nLabel: Coffee cups per day.\nMeasure: select Scale.\n\n\n\nRow 5: State\n\nName: State\nType: Click on the grey three ... dots on the right of the cell then choose String. The string string option allows you to enter non-numeric information. With this option, numerals are interpreted as characters.\nWidth: Use 10.\nDecimals: 0\nLabel: Student's state\nValues: Click the Values cell, then click the three … dots that appears on the right side of the cell. A “Value Labels” dialog opens. Click the + sign to add values.\n\nIn the Value box, type NY. In the Label box, type New York. Click Add.\nContinue until all states in the data are entered.\nClick OK.\n\nMeasure: select Nominal.\n\n\n\nRow 6: Water\n\nName: Water\nType: Leave as Numeric\nDecimals: Use 1 decimal to entries such as 2.5 liters.\nLabel: Daily water consumption.\nMeasure: select Scale.\n\nIf you did everything correctly, your variable view screen should look as follows:",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-2-entering-the-data",
+    "href": "labs/lab_0.html#part-2-entering-the-data",
+    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
+    "section": "Part 2: Entering the Data",
+    "text": "Part 2: Entering the Data\nThe second step after setting up variables is to enter the data themselves. Click the Data View tab on the bottom of the SPSS window. The 6 column headers created (StudentID, Sex, etc) should appear, this time round as columns, as shown below:\n\n\n\n\n\nNow enter the data accordingly. See the class activity for Wed 8/26 in OneNote.\n\n\n\n\n\n\nTip\n\n\n\nIn Data View, the Sex variable will still show plain numbers (1, 2, 3) unless you turn on value labels. To check your coding: go to the View menu (top menu bar) → Grid Lines → click Value Labels. The columns should now display the named values instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-3-saving-and-retrieving-files",
+    "href": "labs/lab_0.html#part-3-saving-and-retrieving-files",
+    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
+    "section": "Part 3: Saving and Retrieving Files",
+    "text": "Part 3: Saving and Retrieving Files\nSave your file: File → Save As → File name it Lab_0_YourLastName.sav → save it in a convenient location for you, preferably the desktop.\nNow, close the program and try to navigate to the file you just saved. When you find it, double clikc to make sure it is opening at it should. Next time you need this file, this is what you will doRelax and slow down! We will run analyses in the next lab.",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_0.html#part-4-running-analyses",
+    "href": "labs/lab_0.html#part-4-running-analyses",
+    "title": "Lab 0: Meet SPSS — Variables, Measurements, & Data Entry",
+    "section": "Part 4: Running Analyses",
+    "text": "Part 4: Running Analyses\nKudos if you made it this far! In the next lab, we will perform some data analysis (basic descriptive statistics).",
+    "crumbs": [
+      "Labs",
+      "Lab 0"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html",
+    "href": "labs/lab_3.html",
+    "title": "Lab 3: Measuring Variability",
+    "section": "",
+    "text": "Deliverables: - SPSS data (.sav) file from SPSS. - An output (.spv) files from SPSS.\n- A word or pdf document with answers to the take-home lab exercises at the end of the lab. The document must include images of your SPSS output tables and graphs where necessary.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#part-a---overview",
+    "href": "labs/lab_3.html#part-a---overview",
+    "title": "Lab 3: Measuring Variability",
+    "section": "PART A - Overview",
+    "text": "PART A - Overview\nIn lecture and in the textbook (Chapter 4, Variability), we learned that variability describes how spread out or clustered together a set of scores is. In this lab, you will use SPSS to generate the four measures of variability covered in the chapter:\n\nthe range\nthe interquartile range (IQR)\nthe variance\nthe standard deviation\n\nYou will also learn about commonly used tools to visualize data variability of a continuous variable and how to report variability in APA style.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#the-data",
+    "href": "labs/lab_3.html#the-data",
+    "title": "Lab 3: Measuring Variability",
+    "section": "The Data",
+    "text": "The Data\nA psychologist is interested in understanding reaction time and how much reaction times vary from person to person. To investigate this, the psychologist asked 120 participants to complete a Stroop task, a commonly used task in psychology that measures how quickly people can respond when they encounter conflicting information. The variable Stroop_RT_ms records each participant’s reaction time in milliseconds, with larger values indicating slower responses.\nDownload the dataset from this link then import it to SPSS. To import the data set, follow these steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows:\n\nStroop_RT_ms = Scale\nGender = Nominal\nAge = Scale\nParticipantID = Nominal",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#why-we-measure-variability",
+    "href": "labs/lab_3.html#why-we-measure-variability",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Why We Measure Variability",
+    "text": "Why We Measure Variability\nRecall from the reading: if every score in a distribution were identical, variability would be zero. In practice, scores differ from one another, and a good measure of variability tells us two things:\n\nHow spread out the scores are — are scores clustered close together or scattered widely?\nHow well a single score represents the whole distribution — the more variability there is, the less confidence we can place in any one statistic (or sample) as being representative of the group.\n\nThe textbook illustrates this with adult heights (low variability, tightly clustered around 70 inches) versus adult weights (much higher variability, spread widely around 170 pounds). Keep this contrast in mind.\n\n\n\n\n\n\nCheckpoint\n\n\n\nWithout opening SPSS, which of the following would you expect to have more variability, and why?\n\nThe ages of students in a single 4th-grade classroom.\nThe ages of visitors at a public shopping mall.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#part-b-the-range",
+    "href": "labs/lab_3.html#part-b-the-range",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part B — The Range",
+    "text": "Part B — The Range\nThe range is the distance between the largest and smallest score in a distribution:\n\\[\\text{Range} = X_{max} - X_{min}\\]\nIt is the simplest measure of variability, but it is also unreliable because it is based on only the two most extreme scores and ignores everything in between.\n\nGet the Range in SPSS\n\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\nMove Stroop_RT_ms into the Variable(s) box.\nClick Options… and check Range, Minimum, and Maximum, then click Continue.\nClick OK.\n\nLook at the SPSS Output Viewer. You should see a table listing N, Range, Minimum, and Maximum for Stroop_RT_ms.\n\n\n\n\n\n\nCheckpoint\n\n\n\nWhat range does SPSS report for this data set? Confirm it by hand using the formula \\(\\text{Range} = X_{max} - X_{min}\\).\n\n\n\nNOTE: Please DO NOT close the output window! You can just click on the main file showing the variables and data when you are ready to continue with the other analyses.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#part-c-quartiles-and-the-interquartile-range-iqr",
+    "href": "labs/lab_3.html#part-c-quartiles-and-the-interquartile-range-iqr",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part C — Quartiles and the Interquartile Range (IQR)",
+    "text": "Part C — Quartiles and the Interquartile Range (IQR)\nBecause the range is so sensitive to extreme scores, researchers often prefer the interquartile range, which describes the spread of just the middle 50% of the distribution (between the 25th percentile, \\(Q_1\\), and the 75th percentile, \\(Q_3\\)):\n\\[IQR = Q_3 - Q_1\\]\nThe IQR trims off the top 25% and bottom 25% of scores, so a few unusually high or low scores do not distort it the way they distort the range.\n\nGetting Quartiles in SPSS\nThere are two common ways to get the IQR in SPSS. Try both so you can see how they relate to one another.\nMethod A — Frequencies\n\nAnalyze &gt; Descriptive Statistics &gt; Frequencies.\nMove Stroop_RT_ms into the Variable(s) box. (Uncheck “Display frequency tables” if you don’t want the full table.)\nClick Statistics…, and under Percentile Values check Quartiles. Click Continue, then OK.\nSPSS reports the 25th, 50th, and 75th percentiles (\\(Q_1\\), the median, and \\(Q_3\\)). Use the formula \\(IQR = Q_3 - Q_1\\) to calculate the \\(IQR\\).\n\nMethod B — Explore\n\nAnalyze &gt; Descriptive Statistics &gt; Explore.\nMove Stroop_RT_ms into the Dependent List.\nUnder Display, choose Statistics. Click OK.\nLook at the Descriptives table — SPSS directly labels a row Interquartile Range.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat value did SPSS report for \\(Q_1\\), \\(Q_3\\) Stroop_RT_ms? What \\(IQR\\) value did you get by using the formula \\(\\text{Range}=Q_1 - Q_3\\)?\nDid Method A and Method B give you exactly the same \\(IQR\\)? (They may differ slightly — SPSS offers several algorithms for calculating percentiles. This is worth noticing, but don’t worry about resolving the discrepancy for this lab.)\nCompare the \\(IQR\\) to the \\(Range\\) for this same variable (Stroop_RT_ms). Which value is larger, and why does that make sense?",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#part-c-standard-deviation-and-variance",
+    "href": "labs/lab_3.html#part-c-standard-deviation-and-variance",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part C — Standard Deviation and Variance",
+    "text": "Part C — Standard Deviation and Variance\nStandard deviation is perhaps the most important and most commonly used measure of variability. Conceptually, it measures the standard (average) distance between each score and the mean. The variance is the average of the squared deviations; the standard deviation is simply the square root of the variance, which brings the measure back into the original units of the data.\nBoth statistics are built from the sum of squared deviations, or \\(SS\\). We obtain SS by subtracting the mean from each score, squaring the difference (deviation), the summing all squared deviations. Mathematically, this is abbreviated as;\n\\[SS = \\Sigma(X - \\bar{X})^2.\\]\nPopulation formulas (use \\(\\mu\\) for the mean and divide by \\(N\\)). The Greek letter \\(\\sigma^2\\) means population variance while \\(\\sigma\\) means population standard deviation.\n\\[\\sigma^2 = \\frac{SS}{N} \\qquad \\sigma = \\sqrt{\\frac{SS}{N}}\\]\nSample formulas (use \\(M\\) for the mean and divide by \\(n - 1\\) instead of \\(n\\)). The notation \\(s^2\\) means sample variance while \\(s\\) means sample standard deviation.\n\\[s^2 = \\frac{SS}{n-1} \\qquad s = \\sqrt{\\frac{SS}{n-1}}\\]\n\n\n\n\n\n\nWhy n − 1? Degrees of Freedom\n\n\n\nA sample mean is calculated from the sample, which places a restriction on the scores: once you know the mean and all but one score, the last score is no longer free to vary — it is fully determined. Only \\(n - 1\\) of the \\(n\\) scores are truly free to vary, so a sample has \\(df = n - 1\\) degrees of freedom. Dividing \\(SS\\) by \\(n-1\\) (rather than \\(n\\)) slightly increases the resulting value, correcting for the fact that a sample’s variability tends to underestimate the population’s variability. This correction makes sample variance an accurate, unbiased estimator of the population variance.\nThis is exactly what SPSS’s Descriptives procedure does by default — it always computes the sample formulas (\\(n-1\\) in the denominator), because SPSS assumes your data are a sample unless you tell it otherwise. Keep this in mind whenever you are working with data that represent an entire population.\n\n\n\n\nStandard Deviation for a Sample\nWe want to find the standard deviation (and other statistics) for the variable Stroop_RT_ms. By default, SPSS computes the sample standard deviation (i.e., divides the \\(SS\\) by \\(n-1\\)).\nFollow these steps to find the sample standard deviation for the variable Stroop_RT_ms:\n\nAnalyze &gt; Descriptive Statistics &gt; Descriptives.\nMove Stroop_RT_ms into the variables box, click Options…, and check Mean, Variance and Std. deviation. Click Continue, then OK.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat sample mean (\\(M\\)), variance (\\(s^2\\)), and standard deviation (\\(s\\)) does SPSS report?\nWhat does the standard deviation tell you about the spread of the Stroop_RT_ms scores?\n\n\n\n\n\n\nComparing Variability by Group (Sex)\nSuppose we wanted to answer the question, “Do Stroop_RT_ms scores for females spread out more than Stroop_RT_ms scores for male students?\n\nGo to Analyze &gt; Descriptive Statistics &gt; Explore.\nMove Stroop_RT_ms into the ‘Dependent List’ box. Move Sex into the ‘Factor List’ box — this tells SPSS to split all output by male vs. female.\nClick the ‘Statistics’ button and make sure ‘Descriptives’ is checked (this gives you variance, std deviation, min, max, and range for each group). Select std deviation. Click ‘continue’.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nWhat sample standard deviation (\\(s\\)) does SPSS report for each group?\nWhat is a possible explanation for the discrepancy in std deviations? (Note: there can be multiple correct answers here).",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#part-d-visualizing-variability",
+    "href": "labs/lab_3.html#part-d-visualizing-variability",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part D — Visualizing Variability",
+    "text": "Part D — Visualizing Variability\nNumbers alone may not always give you an intuitive feel for variability. Sometimes, graphs can be better tools to communicate the insights. Box plots and histograms are among the commonly used graphs to visualize variability of a continuous variable.\n\nBox plots in SPSS\nTo create a boxplot for the variable Stroop_RT_ms, follow these steps:\n\nGraphs &gt; Chart Builder\nFrom the gallery list, choose Box plots, then drag the simple box plot icon to the chart preview area.\nNext, drag Stroop_RT_ms to the y-axis.\nOK.\n\nThe box itself spans from \\(Q_1\\) to \\(Q_3\\) (the IQR), with a line in the middle representing the median. Whiskers extend to the most extreme scores that are not flagged as outliers. Any outliers are indicated with a dot or asterisk beyond the whiskers.\n\n\nHistograms in SPSS\nCreate a histogram for Stroop_RT_ms. The steps are similar to those for a box plot. Let your instructor know if you need help with this. Once you have your histogram, you can add a normal curve overlay to help visualize how the distribution compares to a normal distribution.\n\n\n\n\n\n\nCheckpoint\n\n\n\n\nDescribe the distribution of the Stroop_RT_ms scores. Be sure to talk about outliers, middle 50%, and the median.\nBased on your histogram, how would you describe the spread of the Stroop_RT_ms?\nHow do box plots and histograms differ, and what specific information can be derived exclusively from each?",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#part-e-apa-style-reporting",
+    "href": "labs/lab_3.html#part-e-apa-style-reporting",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Part E — APA-Style Reporting",
+    "text": "Part E — APA-Style Reporting\nIn journals following the APA style, the standard deviation (abbreviated as SD) and the mean (abbreviated as M) are reported in parentheses after the mean, e.g., \\(M = 12.45\\), \\(SD = 3.70\\). For skewed data, the median is reported with the IQR, e.g., \\(Mdn = 12.45\\), \\(IQR = 3.70\\).). Here is an example of a paragraph that reports the mean and standard deviation for a hypothetical memory recall test:\n\nFemale respondents displayed higher memory recall (M = 12.45, SD = 3.70) than male respondents (M = 10.20, SD = 2.80).\n\n\n\n\n\n\n\n\n“Checkpoint\n\n\n\nWrite one APA-style sentence summarizing the central tendency and variability of the Stroop_RT_ms. In your paragraph, compare the variability of Stroop_RT_ms for males and females.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#take-home-lab-exercises",
+    "href": "labs/lab_3.html#take-home-lab-exercises",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Take-Home Lab Exercises",
+    "text": "Take-Home Lab Exercises\n\nHow spread out are the ages of the participants in this study? Use SPSS to compute any two different statistics to measure variability for the variable Age. Based on the two statistics, describe the variability of the ages in your own words.\nCreate a histogram and a box plot for the variable Age. Describe the distribution of ages, based on the box plot and the histogram.\nHow does the distribution of Stroop_RT_ms scores differ by gender? Create side-by-side box plots, with Gender on the x-axis, to compare the distributions of Stroop_RT_ms scores across genders. Describe your findings, including any differences in center, variability, and outliers.\nDoes the variability of Stroop_RT_ms differ by age group? Use SPSS to split the data into two groups: participants younger than 25 and participants 25 or older. Then, calculate statistics of your choice for each group that will help you compare the variability of Stroop_RT_ms scores. Describe your findings in APA style.\n\nNote: Look up how to split the data in SPSS if you are not sure how to do this.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_3.html#submission-checklist",
+    "href": "labs/lab_3.html#submission-checklist",
+    "title": "Lab 3: Measuring Variability",
+    "section": "Submission Checklist",
+    "text": "Submission Checklist\n\nA saved SPSS data file with correct value labels and measurement levels. Saving format: Lab_3_Data_YourLastName.sav.\nSPSS output containing all the analyses performed. Save format: Lab_3_Output_YourLastName.spv.\nCompleted responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.",
+    "crumbs": [
+      "Labs",
+      "Lab 3"
+    ]
+  },
+  {
+    "objectID": "labs/lab_6.html#part-1-scenario-overview",
+    "href": "labs/lab_6.html#part-1-scenario-overview",
+    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
+    "section": "Part 1: Scenario & Overview",
+    "text": "Part 1: Scenario & Overview\nIn the previous lab, we performed a one-sample t-test to determine if the average weight loss for individuals in the incentive group was significantly different from the known population mean of 10 pounds. In this lab, we will perform a two-sample t-test to determine if there is a significant difference in average weight loss between the incentive group and the control group.\nHere is the research question we will be investigating:\n\n\n\n\n\n\nResearch Question\n\n\n\nDoes the new weight loss program with financial incentives result in a significantly higher average weight loss than the traditional weight loss program without financial incentives?\n\n\nHere is the scenario to that we will be working with:\nA fitness center wants to determine if using financial incentives is associated with greater weight loss among participants. The fitness center has a new weight loss program that offers financial incentives to individuals who meet their weight loss goals. The center wants to determine if the new program is more effective than the traditional weight loss program that does not offer financial incentives.\nStudy Design: The researchers recruited 38 individuals who wanted to lose weight and randomly assigned them to either an incentive group (given financial incentives) or a control group (not given any financial incentives). After 4 months, the researchers recorded the amount of weight lost (before - after) by each individual. Three months after the initial 4 months, they also recorded the weight lost by each individual again to see if the weight loss was maintained. However, financial incentives were only given during the first 4 months.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nState null and alternative hypotheses for an independent samples t-test.\nPerform an independent samples t-test in SPSS.\nInterpret the results of an independent samples t-test in APA style.\n\n\n\n\nStating Hypotheses\nNull Hypothesis: There is no difference in average weight loss between individuals in the incentive group and the control group.\nIn symbols: \\(H_0: \\mu_1-\\mu_2 = 0\\)\nAlternative Hypothesis: There is a difference in average weight loss between individuals in the incentive group and the control group.\nIn symbols: \\(H_1: \\mu_1-\\mu_2 \\neq 0\\)\n\n\nChecking Assumptions\nThere are two main assumptions to consider before running a one-sample t-test:\n\nIndependence: The individuals in the study must be independent, meaning that each participant or observation belongs to only one group. In this study, the individuals were randomly assigned to either the incentive or control group, so this assumption is satisfied.\nNormality: The distribution of the dependent variable (weight loss) should be approximately normal for each group. We will check this assumption using visualizations and summary statistics in the next section. With large samples (n &gt; 30), the t-test is robust to violations of normality, but with smaller samples, it is important to check this assumption.\nNo Significant Outliers: The dependent variable should not have any significant outliers. We will check for outliers using box plots in the next section.\nHomogeneity of Variance: The variance of the dependent variable (weight in this case) should be approximately equal for both groups.",
+    "crumbs": [
+      "Labs",
+      "Lab 6"
+    ]
+  },
+  {
+    "objectID": "labs/lab_6.html#part-2-the-data",
+    "href": "labs/lab_6.html#part-2-the-data",
+    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
+    "section": "Part 2: The Data",
+    "text": "Part 2: The Data\n\nImporting Data into SPSS\nThe data set is available in the following link. Download the data.\nWeightLoss.\nAfter downloading the dataset, import it into SPSS, using the following steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file location, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows: WeightLoss = Scale, Group = Nominal, Month7Loss = Scale.\nSee the screenshot below for reference:\n\n\n\n\n\n\n\n\n\n\n\nvariable Description\n\n\n\nThe variable description is as follows:\n\nGroup = Whether someone was in the Incentive or Control group. 0=Control group, 1=Incentive group.\nWeightloss = The amount of weight lost by each individual at the 4-month follow-up.\nMonth7Loss = The amount of weight lost by each individual at the 7-month follow-up\n\n\n\nClick on data view to confirm that you have 38 individuals in the data set. The WeightLoss variable is calculated as the difference between the weight before and after the 4-month period. Negative values (e.g., case 14) indicate that the individual gained weight.\nThe goal is to determine if the average initial weight loss (Weightloss) for individuals in the incentive group is significantly different from the average weight loss for individuals in the control group.",
+    "crumbs": [
+      "Labs",
+      "Lab 6"
+    ]
+  },
+  {
+    "objectID": "labs/lab_6.html#part-3-exploratory-analysis",
+    "href": "labs/lab_6.html#part-3-exploratory-analysis",
+    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
+    "section": "Part 3: Exploratory Analysis",
+    "text": "Part 3: Exploratory Analysis\nBefore running the t-test, we will perform some exploratory analysis to understand any patterns/trends in the data.\n\nSummary Statistics\nFirst, we want to generate a table of summary statistics for the WeightLoss variable. Run the following steps:\nAnalyze &gt; Compare Means and Proportions &gt; Means.\nThe following dialog box should appear:\n\n\n\n\n\nSend the WeightLoss variable into the Dependent List box and the Group variable into the Independent List box. See below:\n\n\n\n\n\nClick OK.\nOptionally, you may click on Options during the variable selection to select step above for additional summary statistics (e.g., median, range, etc.) to include in the output.\nYou should see the following table in the output window:\n\n\n\n\n\n\n\n\n\n\n\nOutput Interpretation\n\n\n\nThe table shows the the individuals in the control group (recorded as 0) on average lost \\(M = 3.921\\) lbs with \\(SD = 9.1\\) lbs, while the individuals in the incentive group (recorded as 1) on average lost \\(M = 15.68\\) lbs with \\(SD = 9.41\\) lbs. Based on this information, we can see that the variance in weight loss is similar between the two groups, hence satisfying the assumption of homogeneity of variance.\n\n\n\n\nVisualizations\nWe can create a side-by-side box plot to visualize the distribution of the WeightLoss variable for both groups. Run the following steps:\n\nGraphs &gt; Chart Builder &gt; Boxplot.\nSelect the Simple Boxplot from the gallery and drag the plot into the preview window.\nDrag the WeightLoss variable into the Y-axis box and the Group variable into the X-axis box.\nClick OK.\n\nYous should see the following box plot in the output window:\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nHow does the spread of the weight lost at the fourth month (WeightLoss variable) compare between the incentive (Group 1) and control (Group 0) groups?",
+    "crumbs": [
+      "Labs",
+      "Lab 6"
+    ]
+  },
+  {
+    "objectID": "labs/lab_6.html#part-4-running-the-t-test",
+    "href": "labs/lab_6.html#part-4-running-the-t-test",
+    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
+    "section": "Part 4: Running the t-test",
+    "text": "Part 4: Running the t-test\nTo run the independent samples t-test, follow these steps:\n\nAnalysis &gt; Compare Means and Proportions &gt; Independent Samples T Test.\nSend the WeightLoss variable into the Test Variable(s) box and the Group variable into the Grouping Variable box. See below:\n\n\n\n\n\n\n\nNext, click on Define Groups and enter 0 for Group 1 and 1 for Group 2.\nClick Continue.\n\nThe following tables should pop up in the output window:",
+    "crumbs": [
+      "Labs",
+      "Lab 6"
+    ]
+  },
+  {
+    "objectID": "labs/lab_6.html#part-5-output-interpretation",
+    "href": "labs/lab_6.html#part-5-output-interpretation",
+    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
+    "section": "Part 5: Output Interpretation",
+    "text": "Part 5: Output Interpretation\nThe output shows both summary statistics (mean, standard deviation, and standard error) for each group and the results of the independent samples t-test. The t-test results (second table, first row) include the t-statistic, degrees of freedom, p-value (one-sided and two-sided), and the confidence interval. In this case, we use the first row because it assumes equal variances.\nThe P-value measures the chance (or probability) of obtaining a difference in average weight loss of 11.75 lbs or more extreme if the null hypothesis (average difference = 0) is true. Our obtained P-value is extremely small (less than the significance level of 0.05), so we reject the null hypothesis and conclude that the data provides strong evidence to suggest that there is a difference in average weight loss between individuals who get incentives and those who don’t. In particular, individuals who get incentives lose more weight on average than those who do not.\nThe 95% confidence interval for the difference in average weight loss between the two groups is [-18.033 to -6.05] lbs. This means that we are 95% confident that the true difference in average weight loss between the two groups is between -18.033 lbs and -6.05 lbs. Since this confidence interval does not include 0, it provides further evidence to reject the null hypothesis.\n\n\n\n\n\n\nAPA-style Write-up\n\n\n\n“A research report typically presents the descriptive statistics followed by the results of the hypothesis test and the measures of effect size (inferential statistics).” - See p. 343 of the textbook.\nHere is how to write up the results of the independent samples t-test for our scenario above:\nThe participants who received financial incentives lost more weight \\((M = 15.68, SD = 9.41)\\) than those who did not receive financial incentives \\((M = 3.92, SD = 9.10)\\). The mean difference was significant, \\(t(36) = -3.805, p &lt; .001, d = -1.27\\).",
+    "crumbs": [
+      "Labs",
+      "Lab 6"
+    ]
+  },
+  {
+    "objectID": "labs/lab_6.html#take-home-lab-exercises",
+    "href": "labs/lab_6.html#take-home-lab-exercises",
+    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
+    "section": "Take-Home Lab Exercises",
+    "text": "Take-Home Lab Exercises\nIn today’s lab exercises, you will perform an independent samples T-test as demonstrated in the above exploration work.\nThe research question being examined is whether in the general population, there is a difference in average weight loss at the seventh month (Month7Loss) between individuals who receive incentives and those who don’t.\n\nQuestion 1\nWhat is the population of interest in the scenario? State the null and the alternative hypotheses in words and in symbols.\n\n\nQuestion 2\nCreate side-by-side box plots to visualize the distribution of the weight loss at the seventh month (Month7Loss) for the incentive and the non-incentive groups. How do these distributions compare?\n\n\nQuestion 3\nRun an independent samples t-test to test the whether, in the overall population, there is a difference in average weight loss at the seventh month between the incentive group and the non incentive group.\n\nWhat is the P-value for the two-sided test? What does this mean in the context of the research question?\nState and interpret the 95% confidence interval for this scenario.\nWhat is the effect size (Cohen’s d) for this test? To find this, please check the table near the bottom of your t-test output. How would you interpret this effect size in the context of the scenario at hand?\n\n\n\nQuestion 4\nWrite an APA-style interpretation of the results of the independent samples t-test performed in exercise 3 above.",
+    "crumbs": [
+      "Labs",
+      "Lab 6"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html",
+    "href": "labs/lab_4.html",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "",
+    "text": "An employer is interested in identifying the ten most extroverted individuals from a pool of applicants. To do this, 500 applicants from New York and New Jersey completed two different personality assessments, as described below.\n\nThe Big Five Inventory (BFI) — an 8-item questionnaire with a maximum score of 40.\nThe Eysenck Personality Inventory (EPI) — a 12-item questionnaire with a maximum score of 24.\n\nThe full versions of these questionnaires are much longer and measure a wide range of personality traits. However, for the purposes of this lab, we will focus only on the extroversion scores from each assessment.\nNote that the employer can’t select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to \\(z-scores\\) to allow direct comparison.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nUse SPSS to generate \\(z-scores\\).\nUse SPSS to sort data and identify the top/bottom scores.\nExamine the characteristics of \\(z-scores\\) and their distributions.\nDescribe the characteristics of the standard normal distribution and compare it to Z-scores.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#overview",
+    "href": "labs/lab_4.html#overview",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "",
+    "text": "An employer is interested in identifying the ten most extroverted individuals from a pool of applicants. To do this, 500 applicants from New York and New Jersey completed two different personality assessments, as described below.\n\nThe Big Five Inventory (BFI) — an 8-item questionnaire with a maximum score of 40.\nThe Eysenck Personality Inventory (EPI) — a 12-item questionnaire with a maximum score of 24.\n\nThe full versions of these questionnaires are much longer and measure a wide range of personality traits. However, for the purposes of this lab, we will focus only on the extroversion scores from each assessment.\nNote that the employer can’t select applicants based on raw scores alone, as the two assessments have different scoring scales. To overcome this, we will need to use SPSS to convert the scores to \\(z-scores\\) to allow direct comparison.\n\n\n\n\n\n\nLearning Objectives\n\n\n\nBy the end of this lab, you should be able to:\n\nUse SPSS to generate \\(z-scores\\).\nUse SPSS to sort data and identify the top/bottom scores.\nExamine the characteristics of \\(z-scores\\) and their distributions.\nDescribe the characteristics of the standard normal distribution and compare it to Z-scores.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#part-1-the-data",
+    "href": "labs/lab_4.html#part-1-the-data",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Part 1 — The Data",
+    "text": "Part 1 — The Data\nThe data set for today’s lab are available on the following link:\nLab 4 Data\nDownload the data and use SPSS to open them. Then import it to SPSS by following these steps:\nFile &gt; Import Data &gt; CSV Data…, browse to the file location, and click OK on the import wizard (accept the default settings).\nMake sure the measurement scales are set as follows:\n\nApplicant_ID = Nominal\nSex = Nominal\nAge = Scale\nState = Nominal\nAssessment_Type = Nominal\nExtroversion_Score = Scale\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nClick on the Variable View and the Data View tabs at the bottom of the SPSS window. Ensure that the variables and the data display correctly. They should appear as shown in the screenshots below.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#part-2-the-z-score-conversion",
+    "href": "labs/lab_4.html#part-2-the-z-score-conversion",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Part 2 — The z-score Conversion",
+    "text": "Part 2 — The z-score Conversion\nAlthough we have one data set, we will first need to program SPSS to treat the two assessments as separate data sets since the assessments are different. To do this, we will use the Split File function in SPSS. Follow the steps below:\n\nClick Data &gt; Split File &gt; Select Compare groups\nSend Assessment_Type into the Group Based on box\nClick OK.\n\nAfter you split a file in that manner, any analysis you perform will be done separately for each assessment.\nNow, we will use SPSS to convert the extroversion scores to \\(z-scores\\). Follow the steps below:\n\nClick Analyze &gt; Descriptive Statistics &gt; Descriptives.\n\n\nHighlight the column label Extroversion_Score and click the arrow to move it to the Variable(s) box.\nClick the Save standardized values as variables check box.\nClick OK.\n\nA new column (variable) in the main data set called ZExtroversion_Score should appear. This new variable contains the \\(z-scores\\) for each applicant’s extroversion score. Importantly, the \\(Z-scores\\) are calculated separately for each assessment, so they are now comparable across the two assessments.\nYou can now order the scores to identify the top 10 most extroverted individuals. To do this, follow the steps below:\n\nGo to Data &gt; Sort Cases.\nMove ZExtroversion_Score into the Sort by box.\nSelect Descending (high to low) and\nClick OK.\n\nAlternatively, you can highlight the ZExtroversion_Score column in the data view, right click then choose Sort Descending. See below:\n\n\n\n\n\n\n\n\n\n\n\nCheckpoint 2\n\n\n\nWho are the top ten most extroverted individuals? Record their Applicant_ID’s, the assessment they took (BFI or EPI) and ZExtroversion_Scores.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#part-3-characteristics-of-z-scores",
+    "href": "labs/lab_4.html#part-3-characteristics-of-z-scores",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Part 3 — Characteristics of Z-scores",
+    "text": "Part 3 — Characteristics of Z-scores\n\nMean and Standard Deviation\nWe want to explore the mean and standard deviation of the \\(z-scores\\) for each assessment. To do this, follow the steps below:\n\nGo to Analyze &gt; Descriptive Statistics&gt;Explore\nMove Assessment_Type into the Factor List and ZExtroversion_Score into the Dependent List.\nSelect Statistics\n\nYour set up should look as shown below:\n\n\n\n\n\n\nClick OK.\n\n\n\n\n\n\n\nCheckpoint\n\n\n\nWhat do you notice about the mean and standard deviation of the \\(z-scores\\)? Would you expect this to be the case every time we convert any set of scores to Z-scores? Explain.\n\n\n\n\nExamining the Distributions (Shape) of Z-scores\nThere is a common misconception that z-scores (standardized scores) are always normally distributed. We will show that this claim is not true by creating histograms for the original assessments and compare them to the histograms of the corresponding \\(z-scores\\).\n\nGo to Graphs &gt; Chart Builder &gt; Histogram.\nMove Extroversion_Score into the Variable box and Assessment_Type into the Panel box under Rows. Your set up should look as shown below:\n\n\n\n\n\nClick OK.\n\nNow repeat the above process but this time use ZExtroversion_Score instead of Extroversion_Score. Your set up should look as shown below:\n\n\n\n\n\n\n“Checkpoint\n\n\n\nHow would you describe the distribution of the original extroversion scores for each assessment? How do these compare to the distribution of the \\(z-scores\\)?",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#part-4-the-standard-normal-distribution",
+    "href": "labs/lab_4.html#part-4-the-standard-normal-distribution",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Part 4 — The Standard Normal Distribution",
+    "text": "Part 4 — The Standard Normal Distribution\nThe standard normal distribution is a special case of the normal distribution with a mean of 0 and a standard deviation of 1. It is a theoretical distribution that researchers commonly use to examine how well a set of data fits the normal distribution. Below is a screenshot of the standard normal distribution.\n\n\n\n\n\n\n\nSource: National Library of Medicine\n\n\n\n\n\n\n\n\nImportant Notes about the Standard Normal Distribution\n\n\n\n\nThe mean, median, and mode are all equal to 0 (center of the distribution).\nThe distribution is bell-shaped and symmetric about the mean.\nThe standard deviation is equal to 1.\n95% of the data falls within 2 standard deviations; while 99.7% (nearly all data) falls within 3 standard deviations of the mean.\nThe further you go from the mean in either direction, the less likely you are to find data points in that region. Data that that are more than 2 sd’s from the mean are very unlikely while those beyond 3 standard deviations can be considered outliers.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#take-home-lab-exercises",
+    "href": "labs/lab_4.html#take-home-lab-exercises",
+    "title": "Lab 4: Z-score Standardization in SPSS",
+    "section": "Take-Home Lab Exercises",
+    "text": "Take-Home Lab Exercises\nBefore beginning the lab, you will need to undo the split file option that was enabled earlier by going to Data &gt; Split File &gt; Analyze all cases, do not create groups &gt; OK. Some exercises here may require use of split file, so you will need to repeat the steps above to split the file again when necessary.\n\nMake a box plot to visualize the Age variable. Based on this box plot, a student claims that the ages of the applicants are “normally distributed”. Would you agree with this claim? Why or why not?\nUse SPSS to find the top 10 most extroverted females in the data. Record their Applicant_ID's and describe the steps you took in SPSS to find them.\nUsing SPSS, find the 10 most extroverted individuals from New Jersey. Record their Applicant_ID and describe the steps you took in SPSS to solve this problem.\nSuppose we want to find the 10 most extroverted individuals aged between 20 and 30 years old (inclusive). Use SPSS to solve this problem and briefly describe your steps.",
+    "crumbs": [
+      "Labs",
+      "Lab 4"
+    ]
+  },
+  {
+    "objectID": "labs/lab_4.html#submission-checklist",
+    "href": "labs/lab_4.html#submission-checklist",
+    "title": "Lab 4: Z-score Standardization in SPSS",
     "section": "Submission Checklist",
     "text": "Submission Checklist\n\nA saved SPSS data (.sav) file showing the variables and data (includes \\(z-scores\\)).\nSPSS output file (.spv) showing the analyses performed.\nCompleted responses for the Questions above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include necessary SPSS output tables and graphs. Remember that SPSS output tables and graphs can be copied and pasted into a word document.",
     "crumbs": [
       "Labs",
-      "Lab 5"
+      "Lab 4"
     ]
   },
   {
-    "objectID": "Projects/first-project.html",
-    "href": "Projects/first-project.html",
-    "title": "Project One",
+    "objectID": "Projects/second-project.html",
+    "href": "Projects/second-project.html",
+    "title": "Final Project",
     "section": "",
-    "text": "The goal of this project is for you to demonstrate your ability to apply the statistical concepts and techniques we have covered in this course to a meaningful psychological research problem. You will work with a real-world psychology dataset and use statistical reasoning to explore relationships, differences, patterns, or other phenomena that are relevant to psychology. You are not expected to conduct an exhaustive analysis by generating every statistic or visualization we have learned in the course. Instead, I expect you to demonstrate your ability to ask meaningful research questions and answer them using carefully selected descriptive statistical analysis techniques and tools. All analyses must be conducted in SPSS.\nYour group will select a psychology dataset from the Journal of Open Psychology Data, which publishes openly accessible datasets associated with psychological research. After selecting a dataset, your group will investigate and become familiar with the study from which the data originated. You should consider questions such as: Who participated in the study? How was the sample obtained? What population might the researchers have been interested in? What variables were collected, and what types of variables are they? What psychological concepts or constructs are being measured? Your team will then identify a research topic or goal and develop two research questions directly related to that topic. You will answer these questions by conducting appropriate statistical analyses of the dataset in SPSS. Your analyses should include both numerical summary statistics (such as means, medians, etc) and data visualizations (scatter plots, box plots, bar graphs, etc), and the statistics and visualizations you choose should complement one another and be appropriately connected to help tell a coherent story about your topic and questions.",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "text": "The goal of this project is for you to demonstrate your ability to apply the exploratory and inferential statistical techniques and procedures we have covered in this course to a meaningful research problem from the field of psychology. You will need to browse the available data sets, their variables, etc, and come up with research questions that can be answered using the data. Your group will narrow down to two or three interesting research questions then use the various tools learned in the course to explore patterns in the data (exploratory analysis) then use statistical inference tools taught in the course to run inferential analysis. Your exploratory analysis should include both numerical statistics (e.g., means, medians, proportions, etc.) and visualizations (e.g., histograms, bar plots, box plots, etc.). Your inferential analysis should use both hypotheses tests, confidence intervals, and report effect sizes. You will then write a report that summarizes your findings and their implications."
   },
   {
-    "objectID": "Projects/first-project.html#other-data-sources",
-    "href": "Projects/first-project.html#other-data-sources",
-    "title": "Project One",
+    "objectID": "Projects/second-project.html#other-data-sources",
+    "href": "Projects/second-project.html#other-data-sources",
+    "title": "Final Project",
     "section": "Other Data Sources",
-    "text": "Other Data Sources\nThe following data sources are not specific to psychology but you may explore them to see if there is any data that fits your needs.\n\nKaggle: This is a platform for predictive modeling and analytics competitions in which companies and researchers post data and statisticians and data miners from all over the world compete to produce the best models.\nOpenintro website: Most of these data sets can be loaded into your work space as long as the openintro package is installed and running. I recommend you use this option if you are new to R and RStudio.\nFiveThirtyEight: This is an American website that does opinion poll analysis on politics, economics, and sports in the United States. 538 shares their data sets, related articles, and code.",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "text": "Other Data Sources\nThe following data sources are not specific to psychology but you may explore them to see if there is any data that fits your needs.\n\nKaggle: This is a platform for predictive modeling and analytics competitions in which companies and researchers post data and statisticians and data miners from all over the world compete to produce the best models.\nOpenintro website: This website contains data sets from various domains. Look for any domains that might be relevant to your research. For example, Youth Risk Behavior Survey (YRBS) is a survey conducted by the CDC to monitor health-risk behaviors among youth and young adults in the United States.\nFiveThirtyEight: This is an American website that does opinion poll analysis on politics, economics, and sports in the United States. 538 shares their data sets, related articles, and code.\n\nYour chosen data set should meet the following criteria:\n\nMust have at least 60 subjects (rows) and 3 variables (columns).\nHave both continuous and discrete variables or describe a plan of modifying existing variables to create new ones.\nYou may not use data that has previously been used in any course materials, such as labs or class activities. If you must use a data set that has been used in the course, you must get approval from the instructor first. The approval will be granted depending on how your proposed analyses and research questions differ from those used in the course.\nYou are free to reuse data from the first project, but you must have a new research question and new analyses. You may not use the exact same research questions and analyses from the first project.\n\nIf you are unsure whether your chosen data meets the above criteria, please check with me."
   },
   {
-    "objectID": "Projects/first-project.html#abstract",
-    "href": "Projects/first-project.html#abstract",
-    "title": "Project One",
+    "objectID": "Projects/second-project.html#abstract",
+    "href": "Projects/second-project.html#abstract",
+    "title": "Final Project",
     "section": "Abstract",
-    "text": "Abstract\nThe abstract should be a brief summary of your research topic, questions, data, methods, and main findings. It should be no more than 350 words. It is best to write the abstract after you are done with all the other parts of the project.\nClick on the following link to read an example of a well written abstract:\nSample Abstract",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "text": "Abstract\nThe abstract should be a brief summary of your research topic, questions, data, methods, and main findings. It should be no more than 350 words. It is best to write the abstract after you are done with all the other parts of the project.\nClick on the following link to read an example of a well written abstract:\nSample Abstract"
   },
   {
-    "objectID": "Projects/first-project.html#introduction",
-    "href": "Projects/first-project.html#introduction",
-    "title": "Project One",
+    "objectID": "Projects/second-project.html#introduction",
+    "href": "Projects/second-project.html#introduction",
+    "title": "Final Project",
     "section": "Introduction",
-    "text": "Introduction\nThe introduction section introduces your topic and provides the background. In this section, you will need to provide a rationale for your chosen topic and/or questions and describe why we should care. Consider citing a few articles in the introduction section to help you make your case.",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "text": "Introduction\nThe introduction section introduces your topic and provides the background. In this section, you will need to provide a rationale for your chosen topic and/or questions and describe why we should care. Consider citing a few articles in the introduction section to help you make your case."
   },
   {
-    "objectID": "Projects/first-project.html#research-questions",
-    "href": "Projects/first-project.html#research-questions",
-    "title": "Project One",
-    "section": "Research Questions",
-    "text": "Research Questions\nWrite down two to three research questions that you will answer as part of your study. Both questions should address your research topic. In other words, you should not have questions that are unrelated as this might suggest you are doing two different studies in one. The variables of interest should be clearly identified in each question.",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "objectID": "Projects/second-project.html#research-questions-hypotheses",
+    "href": "Projects/second-project.html#research-questions-hypotheses",
+    "title": "Final Project",
+    "section": "Research Questions & Hypotheses",
+    "text": "Research Questions & Hypotheses\nWrite down two research questions that you will answer in your study. Both questions should clearly relate to your research topic. Avoid including unrelated questions, as this may indicate that you are conducting two separate studies within one project. The variables of interest should be clearly identified in each question.\nSince each question will be answered using inferential statistics, you should write down the hypotheses corresponding to each question. The analyses will be done in SPSS."
   },
   {
-    "objectID": "Projects/first-project.html#literature-review",
-    "href": "Projects/first-project.html#literature-review",
-    "title": "Project One",
+    "objectID": "Projects/second-project.html#literature-review",
+    "href": "Projects/second-project.html#literature-review",
+    "title": "Final Project",
     "section": "Literature Review",
-    "text": "Literature Review\nFind 5 to 7 articles about your topic, read and synthesize them to show what previous researchers have done on that topic. If the articles were empirical studies, you need to state the rationale for the study, the methods used (e.g. experimental, observational, mixed methods), findings, etc. The goal is to situate your own study in the context of existing studies/literature.",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "text": "Literature Review\nFind 5 to 7 articles related to your topic, read them, and synthesize their findings to summarize what previous researchers have reported. The goal is to place your study within the context of existing literature. This section should be approximately five paragraphs in length."
   },
   {
-    "objectID": "Projects/first-project.html#methods",
-    "href": "Projects/first-project.html#methods",
-    "title": "Project One",
-    "section": "Methods",
-    "text": "Methods\nThe methods section should describe the data and the methods used to analyze the data. This section should include the following subsections:\n\nSample and Sampling Method\nDescribe your sample and its characteristics. Who are the participants and how many are they? What are their demographics? What data were collected and how were these data collected? e.g., surveys etc). What is the target population ? What sampling method was used and how does this impact whether or not the sample is representative of the population?  Note that since you are using existing data that you did not collect, I will allow you to speculate on some of the data collection techniques as long as the speculation seems reasonable. You will do this only when you cannot find enough information in the documentation for the data set of your choice.\n\n\nData Analysis Techniques\nDescribe the data analysis techniques that you used to answer each of your research questions. This section should include a description of the variables used in the analysis, their types (continuous vs discrete), and how their measurement levels (nominal, ordinal, etc.). You should also describe any data transformations (pre-processing) that was done before the analysis. Finally, you should describe the statistical tools used to analyze the data (e.g., frequency tables, summary statistics, scatter plots , etc.) and why they are appropriate for your research questions.",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "objectID": "Projects/second-project.html#methodology",
+    "href": "Projects/second-project.html#methodology",
+    "title": "Final Project",
+    "section": "Methodology",
+    "text": "Methodology\nThe methods section should describe the data and the methods used to analyze the data. This section should include the following subsections:\n\nSample and Data Collection Methods\nDescribe your sample, the participants involved, and their demographic characteristics (e.g., age, gender, etc). How large is the sample and how was it collected (e.g., what instruments were used?). What is the target population? What sampling method(s) was used and how does this impact whether or not the sample is representative of the population?  Note that since you are using existing data that you did not collect, you are allowed to speculate on some of the data collection techniques as long as the speculation seems reasonable. You will do this only when you cannot find enough documentation for the data set of your choice.\n\n\nDescription of Data Analysis Techniques\nBriefly describe the data analysis techniques you will use to answer each of your research questions and justify your choices. This section should include a description of the variables used in the analysis, including their types (continuous or discrete) and their measurement levels (nominal, ordinal, interval, or ratio). You should also explain any data cleaning or transformations performed prior to the analysis. If you created a discrete variable from a continuous variable, describe this step and provide a rationale for doing so.\nFinally, outline the statistical methods you will use to analyze the data. Your description should include both exploratory and inferential analyses. Exploratory analysis should include summary statistics and data visualizations. Inferential statistics should include hypothesis tests, confidence intervals, and effect sizes. You must also provide a justification for your choice of analysis methods (e.g., inference for two independent means is appropriate because the question involves….)."
   },
   {
-    "objectID": "Projects/first-project.html#data-analysis-and-results",
-    "href": "Projects/first-project.html#data-analysis-and-results",
-    "title": "Project One",
-    "section": "Data Analysis and Results",
-    "text": "Data Analysis and Results\nThis section includes the actual analyses discussed under methodology section above. Each analysis tool should be accompanied by an interpretation and discussion in light of the research questions. Numerical summary statistics and visualizations, however nice they may be, do not have much meaning on their own. You as the author of the report must give them meaning through the interpretations that you make. The analysis and interpretations of outputs should be organized by research question.",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "objectID": "Projects/second-project.html#data-analysis-results-and-discussion",
+    "href": "Projects/second-project.html#data-analysis-results-and-discussion",
+    "title": "Final Project",
+    "section": "Data Analysis, Results, and Discussion",
+    "text": "Data Analysis, Results, and Discussion\nIn this section, you will carry out the analyses described above and report your findings. All outputs (such as graphs, summary statistics, t-test tables, etc) must be accompanied by interpretations in the context of your study and should directly address the original research questions. Be sure to label all outputs (figures and tables) in your report. Any graphics that you do not generate yourself must be properly cited. If possible, include clickable links within the document for easy navigation by the reader.\nOrganize the section by research question. For each question, include both exploratory and inferential analyses. It is standard to start with exploratory analyses, followed by inferential analyses."
   },
   {
-    "objectID": "Projects/first-project.html#conclusion",
-    "href": "Projects/first-project.html#conclusion",
-    "title": "Project One",
+    "objectID": "Projects/second-project.html#conclusion",
+    "href": "Projects/second-project.html#conclusion",
+    "title": "Final Project",
     "section": "Conclusion",
-    "text": "Conclusion\nFinally, you will need to write a conclusion of your report. In the conclusion, you want to briefly restate what you set out to do and how you went about it. Give some brief summary on the data used, data explorations/analyses performed and the results obtained. What insights did you draw from your analyses? Do your findings agree with existing literature? Are there any surprises? Discuss the potential implications of your work (i.e., what practical consequences does your study have?) Lastly, reflect on possible limitations of your study and how future similar studies might be better designed.",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "text": "Conclusion\nFinally, you will need to write a conclusion for your study. In the conclusion, you want to briefly restate what you set out to do and how you went about it. Give some brief summary on the data used, data explorations/analyses performed and the results obtained. State the insights drawn from the study and compare to existing findings reported under literature review section. Discuss the potential implications of your work (i.e., what practical consequences does your study have?) Lastly, reflect on limitations of your study and how future similar studies might be better designed."
   },
   {
-    "objectID": "Projects/first-project.html#references",
-    "href": "Projects/first-project.html#references",
-    "title": "Project One",
+    "objectID": "Projects/second-project.html#references",
+    "href": "Projects/second-project.html#references",
+    "title": "Final Project",
     "section": "References",
-    "text": "References\nAll sources used should be cited both in text and listed under references. Use the APA format. You may find the APA referencing guide on this link.",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
-  },
-  {
-    "objectID": "Projects/first-project.html#presentation-guide",
-    "href": "Projects/first-project.html#presentation-guide",
-    "title": "Project One",
-    "section": "Presentation Guide +",
-    "text": "Presentation Guide +\nYou will make a poster-style presentation. Several samples are available in the Hallway on the first floor of Williams Hall.\nPlease consider submitting abstracts for next year’s Whalen Symposium (we will discuss this after your projects are done).",
-    "crumbs": [
-      "Projects",
-      "Project 1"
-    ]
+    "text": "References\nAll sources used should be cited both in text and listed under references. Use the APA format. You may find the APA referencing guide on this link."
   },
   {
     "objectID": "exam-review/exam-2-review.html",
@@ -1102,28 +1194,6 @@
     "crumbs": [
       "Downloads",
       "Sample Projects"
-    ]
-  },
-  {
-    "objectID": "labs/lab_6.html#take-home-lab-exercises",
-    "href": "labs/lab_6.html#take-home-lab-exercises",
-    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
-    "section": "Take-Home Lab Exercises",
-    "text": "Take-Home Lab Exercises\nIn today’s lab exercises, you will perform an independent samples T-test as demonstrated in the above exploration work.\nThe research question being examined is whether in the general population, there is a difference in average weight loss at the seventh month (Month7Loss) between individuals who receive incentives and those who don’t.\n\nQuestion 1\nWhat is the population of interest in the scenario? State the null and the alternative hypotheses in words and in symbols.\n\n\nQuestion 2\nCreate side-by-side box plots to visualize the distribution of the weight loss at the seventh month (Month7Loss) for the incentive and the non-incentive groups. How do these distributions compare?\n\n\nQuestion 3\nRun an independent samples t-test to test the whether, in the overall population, there is a difference in average weight loss at the seventh month between the incentive group and the non incentive group.\n\nWhat is the P-value for the two-sided test? What does this mean in the context of the research question?\nState and interpret the 95% confidence interval for this scenario.\nWhat is the effect size (Cohen’s d) for this test? To find this, please check the table near the bottom of your t-test output. How would you interpret this effect size in the context of the scenario at hand?\n\n\n\nQuestion 4\nWrite an APA-style interpretation of the results of the independent samples t-test performed in exercise 3 above.",
-    "crumbs": [
-      "Labs",
-      "Lab 6"
-    ]
-  },
-  {
-    "objectID": "labs/lab_6.html#part-4-running-the-t-test",
-    "href": "labs/lab_6.html#part-4-running-the-t-test",
-    "title": "Lab 6: Inference for Two Independent Means: Independent Samples t-test",
-    "section": "Part 4: Running the t-test",
-    "text": "Part 4: Running the t-test\nTo run the independent samples t-test, follow these steps:\n\nAnalysis &gt; Compare Means and Proportions &gt; Independent Samples T Test.\nSend the WeightLoss variable into the Test Variable(s) box and the Group variable into the Grouping Variable box. See below:\n\n\n\n\n\n\n\nNext, click on Define Groups and enter 0 for Group 1 and 1 for Group 2.\nClick Continue.\n\nThe following tables should pop up in the output window:",
-    "crumbs": [
-      "Labs",
-      "Lab 6"
     ]
   }
 ]
