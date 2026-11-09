@@ -946,70 +946,110 @@
     "href": "Projects/second-project.html",
     "title": "Final Project",
     "section": "",
-    "text": "The goal of this project is for you to demonstrate your ability to apply the exploratory and inferential statistical techniques and procedures we have covered in this course to a meaningful research problem from the field of psychology. You will need to browse the available data sets, their variables, etc, and come up with research questions that can be answered using the data. Your group will narrow down to two or three interesting research questions then use the various tools learned in the course to explore patterns in the data (exploratory analysis) then use statistical inference tools taught in the course to run inferential analysis. Your exploratory analysis should include both numerical statistics (e.g., means, medians, proportions, etc.) and visualizations (e.g., histograms, bar plots, box plots, etc.). Your inferential analysis should use both hypotheses tests, confidence intervals, and report effect sizes. You will then write a report that summarizes your findings and their implications."
+    "text": "The goal of this project is for you to demonstrate your ability to apply the exploratory and inferential statistical techniques and procedures we have covered in this course to a meaningful research problem from the field of psychology. You will need to browse the available data sets, their variables, etc, and come up with research questions that can be answered using the data. Your group will narrow down to two or three interesting research questions then use the various tools learned in the course to explore patterns in the data (exploratory analysis) then use statistical inference tools taught in the course to run inferential analysis. Your exploratory analysis should include both numerical statistics (e.g., means, medians, proportions, etc.) and visualizations (e.g., histograms, bar plots, box plots, etc.). Your inferential analysis should use both hypotheses tests, confidence intervals, and report effect sizes. You will then write a report that summarizes your findings and their implications.",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "Projects/second-project.html#other-data-sources",
     "href": "Projects/second-project.html#other-data-sources",
     "title": "Final Project",
     "section": "Other Data Sources",
-    "text": "Other Data Sources\nThe following data sources are not specific to psychology but you may explore them to see if there is any data that fits your needs.\n\nKaggle: This is a platform for predictive modeling and analytics competitions in which companies and researchers post data and statisticians and data miners from all over the world compete to produce the best models.\nOpenintro website: This website contains data sets from various domains. Look for any domains that might be relevant to your research. For example, Youth Risk Behavior Survey (YRBS) is a survey conducted by the CDC to monitor health-risk behaviors among youth and young adults in the United States.\nFiveThirtyEight: This is an American website that does opinion poll analysis on politics, economics, and sports in the United States. 538 shares their data sets, related articles, and code.\n\nYour chosen data set should meet the following criteria:\n\nMust have at least 60 subjects (rows) and 3 variables (columns).\nHave both continuous and discrete variables or describe a plan of modifying existing variables to create new ones.\nYou may not use data that has previously been used in any course materials, such as labs or class activities. If you must use a data set that has been used in the course, you must get approval from the instructor first. The approval will be granted depending on how your proposed analyses and research questions differ from those used in the course.\nYou are free to reuse data from the first project, but you must have a new research question and new analyses. You may not use the exact same research questions and analyses from the first project.\n\nIf you are unsure whether your chosen data meets the above criteria, please check with me."
+    "text": "Other Data Sources\nThe following data sources are not specific to psychology but you may explore them to see if there is any data that fits your needs.\n\nKaggle: This is a platform for predictive modeling and analytics competitions in which companies and researchers post data and statisticians and data miners from all over the world compete to produce the best models.\nOpenintro website: This website contains data sets from various domains. Look for any domains that might be relevant to your research. For example, Youth Risk Behavior Survey (YRBS) is a survey conducted by the CDC to monitor health-risk behaviors among youth and young adults in the United States.\nFiveThirtyEight: This is an American website that does opinion poll analysis on politics, economics, and sports in the United States. 538 shares their data sets, related articles, and code.\n\nYour chosen data set should meet the following criteria:\n\nMust have at least 60 subjects (rows) and 3 variables (columns).\nHave both continuous and discrete variables or describe a plan of modifying existing variables to create new ones.\nYou may not use data that has previously been used in any course materials, such as labs or class activities. If you must use a data set that has been used in the course, you must get approval from the instructor first. The approval will be granted depending on how your proposed analyses and research questions differ from those used in the course.\nYou are free to reuse data from the first project, but you must have a new research question and new analyses. You may not use the exact same research questions and analyses from the first project.\n\nIf you are unsure whether your chosen data meets the above criteria, please check with me.",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "Projects/second-project.html#abstract",
     "href": "Projects/second-project.html#abstract",
     "title": "Final Project",
     "section": "Abstract",
-    "text": "Abstract\nThe abstract should be a brief summary of your research topic, questions, data, methods, and main findings. It should be no more than 350 words. It is best to write the abstract after you are done with all the other parts of the project.\nClick on the following link to read an example of a well written abstract:\nSample Abstract"
+    "text": "Abstract\nThe abstract should be a brief summary of your research topic, questions, data, methods, and main findings. It should be no more than 350 words. It is best to write the abstract after you are done with all the other parts of the project.\nClick on the following link to read an example of a well written abstract:\nSample Abstract",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "Projects/second-project.html#introduction",
     "href": "Projects/second-project.html#introduction",
     "title": "Final Project",
     "section": "Introduction",
-    "text": "Introduction\nThe introduction section introduces your topic and provides the background. In this section, you will need to provide a rationale for your chosen topic and/or questions and describe why we should care. Consider citing a few articles in the introduction section to help you make your case."
+    "text": "Introduction\nThe introduction section introduces your topic and provides the background. In this section, you will need to provide a rationale for your chosen topic and/or questions and describe why we should care. Consider citing a few articles in the introduction section to help you make your case.",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "Projects/second-project.html#research-questions-hypotheses",
     "href": "Projects/second-project.html#research-questions-hypotheses",
     "title": "Final Project",
     "section": "Research Questions & Hypotheses",
-    "text": "Research Questions & Hypotheses\nWrite down two research questions that you will answer in your study. Both questions should clearly relate to your research topic. Avoid including unrelated questions, as this may indicate that you are conducting two separate studies within one project. The variables of interest should be clearly identified in each question.\nSince each question will be answered using inferential statistics, you should write down the hypotheses corresponding to each question. The analyses will be done in SPSS."
+    "text": "Research Questions & Hypotheses\nWrite down two research questions that you will answer in your study. Both questions should clearly relate to your research topic. Avoid including unrelated questions, as this may indicate that you are conducting two separate studies within one project. The variables of interest should be clearly identified in each question.\nSince each question will be answered using inferential statistics, you should write down the hypotheses corresponding to each question. The analyses will be done in SPSS.",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "Projects/second-project.html#literature-review",
     "href": "Projects/second-project.html#literature-review",
     "title": "Final Project",
     "section": "Literature Review",
-    "text": "Literature Review\nFind 5 to 7 articles related to your topic, read them, and synthesize their findings to summarize what previous researchers have reported. The goal is to place your study within the context of existing literature. This section should be approximately five paragraphs in length."
+    "text": "Literature Review\nFind 5 to 7 articles related to your topic, read them, and synthesize their findings to summarize what previous researchers have reported. The goal is to place your study within the context of existing literature. This section should be approximately five paragraphs in length.",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "Projects/second-project.html#methodology",
     "href": "Projects/second-project.html#methodology",
     "title": "Final Project",
     "section": "Methodology",
-    "text": "Methodology\nThe methods section should describe the data and the methods used to analyze the data. This section should include the following subsections:\n\nSample and Data Collection Methods\nDescribe your sample, the participants involved, and their demographic characteristics (e.g., age, gender, etc). How large is the sample and how was it collected (e.g., what instruments were used?). What is the target population? What sampling method(s) was used and how does this impact whether or not the sample is representative of the population?  Note that since you are using existing data that you did not collect, you are allowed to speculate on some of the data collection techniques as long as the speculation seems reasonable. You will do this only when you cannot find enough documentation for the data set of your choice.\n\n\nDescription of Data Analysis Techniques\nBriefly describe the data analysis techniques you will use to answer each of your research questions and justify your choices. This section should include a description of the variables used in the analysis, including their types (continuous or discrete) and their measurement levels (nominal, ordinal, interval, or ratio). You should also explain any data cleaning or transformations performed prior to the analysis. If you created a discrete variable from a continuous variable, describe this step and provide a rationale for doing so.\nFinally, outline the statistical methods you will use to analyze the data. Your description should include both exploratory and inferential analyses. Exploratory analysis should include summary statistics and data visualizations. Inferential statistics should include hypothesis tests, confidence intervals, and effect sizes. You must also provide a justification for your choice of analysis methods (e.g., inference for two independent means is appropriate because the question involves….)."
+    "text": "Methodology\nThe methods section should describe the data and the methods used to analyze the data. This section should include the following subsections:\n\nSample and Data Collection Methods\nDescribe your sample, the participants involved, and their demographic characteristics (e.g., age, gender, etc). How large is the sample and how was it collected (e.g., what instruments were used?). What is the target population? What sampling method(s) was used and how does this impact whether or not the sample is representative of the population?  Note that since you are using existing data that you did not collect, you are allowed to speculate on some of the data collection techniques as long as the speculation seems reasonable. You will do this only when you cannot find enough documentation for the data set of your choice.\n\n\nDescription of Data Analysis Techniques\nBriefly describe the data analysis techniques you will use to answer each of your research questions and justify your choices. This section should include a description of the variables used in the analysis, including their types (continuous or discrete) and their measurement levels (nominal, ordinal, interval, or ratio). You should also explain any data cleaning or transformations performed prior to the analysis. If you created a discrete variable from a continuous variable, describe this step and provide a rationale for doing so.\nFinally, outline the statistical methods you will use to analyze the data. Your description should include both exploratory and inferential analyses. Exploratory analysis should include summary statistics and data visualizations. Inferential statistics should include hypothesis tests, confidence intervals, and effect sizes. You must also provide a justification for your choice of analysis methods (e.g., inference for two independent means is appropriate because the question involves….).",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "Projects/second-project.html#data-analysis-results-and-discussion",
     "href": "Projects/second-project.html#data-analysis-results-and-discussion",
     "title": "Final Project",
     "section": "Data Analysis, Results, and Discussion",
-    "text": "Data Analysis, Results, and Discussion\nIn this section, you will carry out the analyses described above and report your findings. All outputs (such as graphs, summary statistics, t-test tables, etc) must be accompanied by interpretations in the context of your study and should directly address the original research questions. Be sure to label all outputs (figures and tables) in your report. Any graphics that you do not generate yourself must be properly cited. If possible, include clickable links within the document for easy navigation by the reader.\nOrganize the section by research question. For each question, include both exploratory and inferential analyses. It is standard to start with exploratory analyses, followed by inferential analyses."
+    "text": "Data Analysis, Results, and Discussion\nIn this section, you will carry out the analyses described above and report your findings. All outputs (such as graphs, summary statistics, t-test tables, etc) must be accompanied by interpretations in the context of your study and should directly address the original research questions. Be sure to label all outputs (figures and tables) in your report. Any graphics that you do not generate yourself must be properly cited. If possible, include clickable links within the document for easy navigation by the reader.\nOrganize the section by research question. For each question, include both exploratory and inferential analyses. It is standard to start with exploratory analyses, followed by inferential analyses.",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "Projects/second-project.html#conclusion",
     "href": "Projects/second-project.html#conclusion",
     "title": "Final Project",
     "section": "Conclusion",
-    "text": "Conclusion\nFinally, you will need to write a conclusion for your study. In the conclusion, you want to briefly restate what you set out to do and how you went about it. Give some brief summary on the data used, data explorations/analyses performed and the results obtained. State the insights drawn from the study and compare to existing findings reported under literature review section. Discuss the potential implications of your work (i.e., what practical consequences does your study have?) Lastly, reflect on limitations of your study and how future similar studies might be better designed."
+    "text": "Conclusion\nFinally, you will need to write a conclusion for your study. In the conclusion, you want to briefly restate what you set out to do and how you went about it. Give some brief summary on the data used, data explorations/analyses performed and the results obtained. State the insights drawn from the study and compare to existing findings reported under literature review section. Discuss the potential implications of your work (i.e., what practical consequences does your study have?) Lastly, reflect on limitations of your study and how future similar studies might be better designed.",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "Projects/second-project.html#references",
     "href": "Projects/second-project.html#references",
     "title": "Final Project",
     "section": "References",
-    "text": "References\nAll sources used should be cited both in text and listed under references. Use the APA format. You may find the APA referencing guide on this link."
+    "text": "References\nAll sources used should be cited both in text and listed under references. Use the APA format. You may find the APA referencing guide on this link.",
+    "crumbs": [
+      "Projects",
+      "Project 2"
+    ]
   },
   {
     "objectID": "exam-review/exam-2-review.html",

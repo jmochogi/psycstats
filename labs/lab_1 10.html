@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lab 1: Frequency Distributions &amp; Visualizations – PSYC 20700 - Statistics in Psychology</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../labs/lab_2.html" rel="next">
+<link href="../labs/lab_0.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d9ea220ee908cb7322d1b5aeb522d8d4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-65ae455a2e4e78411e26450ecfc10254.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="lab-styles.css">
+<meta property="og:title" content="Lab 1: Frequency Distributions &amp; Visualizations – PSYC 20700 - Statistics in Psychology">
+<meta property="og:description" content="Covers Material from Chapter 1 &amp; 2">
+<meta property="og:image" content="https://jmochogi.github.io/psycstats/labs/images/lab1im2.png">
+<meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
+<meta property="og:image:height" content="892">
+<meta property="og:image:width" content="1016">
+<meta name="twitter:title" content="Lab 1: Frequency Distributions &amp; Visualizations – PSYC 20700 - Statistics in Psychology">
+<meta name="twitter:description" content="Covers Material from Chapter 1 &amp; 2">
+<meta name="twitter:image" content="https://jmochogi.github.io/psycstats/labs/img/twitter-card.png">
+<meta name="twitter:creator" content="@jmochogi">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_0.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_1.html">Lab 1</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../img/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/jmochogi/psycstats" title="GitHub repository" class="quarto-navigation-tool px-1" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
+    <a href="https://calendly.com/jmochogi/20min" title="Office hours" class="quarto-navigation-tool px-1" aria-label="Office hours"><i class="bi bi-life-preserver"></i></a>
+    <a href="https://canvas.ithaca.edu/" title="Canvas Discussions" class="quarto-navigation-tool px-1" aria-label="Canvas Discussions"><i class="bi bi-chat-dots-fill"></i></a>
+    <a href="https://ithaca.zoom.us/j/3364817575?pwd=WlA1S3hJWWZNTTFoWUVaZlA1clhtdz09" title="Zoom link" class="quarto-navigation-tool px-1" aria-label="Zoom link"><i class="bi bi-camera-reels-fill"></i></a>
+    <a href="https://canvas.ithaca.edu/" title="Canvas" class="quarto-navigation-tool px-1" aria-label="Canvas"><i class="bi bi-check-square-fill"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-support.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../course-faq.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAQ</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab_0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 0</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab_1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/lab_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 6</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Projects/first-project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../project/second-project.qmd" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Exam Review</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exam-review/exam-1-review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exam 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Downloads</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Downloads/sample_projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample Projects</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Downloads/templates.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project Templates</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#part-1-build-your-variable-view" id="toc-part-1-build-your-variable-view" class="nav-link" data-scroll-target="#part-1-build-your-variable-view">Part 1: Build Your Variable View</a>
+  <ul class="collapse">
+  <li><a href="#row-1-studentid" id="toc-row-1-studentid" class="nav-link" data-scroll-target="#row-1-studentid">Row 1: StudentID</a></li>
+  <li><a href="#row-2-major" id="toc-row-2-major" class="nav-link" data-scroll-target="#row-2-major">Row 2: Major</a></li>
+  <li><a href="#row-3-classyear" id="toc-row-3-classyear" class="nav-link" data-scroll-target="#row-3-classyear">Row 3: ClassYear</a></li>
+  <li><a href="#row-4-studyhours" id="toc-row-4-studyhours" class="nav-link" data-scroll-target="#row-4-studyhours">Row 4: StudyHours</a></li>
+  <li><a href="#row-5-netflixhours" id="toc-row-5-netflixhours" class="nav-link" data-scroll-target="#row-5-netflixhours">Row 5: NetflixHours</a></li>
+  <li><a href="#row-6-stresslevel" id="toc-row-6-stresslevel" class="nav-link" data-scroll-target="#row-6-stresslevel">Row 6: StressLevel</a></li>
+  </ul></li>
+  <li><a href="#part-2-enter-the-data" id="toc-part-2-enter-the-data" class="nav-link" data-scroll-target="#part-2-enter-the-data">Part 2: Enter the Data</a></li>
+  <li><a href="#part-3-run-your-first-outputdata-analyses" id="toc-part-3-run-your-first-outputdata-analyses" class="nav-link" data-scroll-target="#part-3-run-your-first-outputdata-analyses">Part 3: Run Your First Output/Data Analyses</a>
+  <ul class="collapse">
+  <li><a href="#frequency-table-for-a-nominal-variable" id="toc-frequency-table-for-a-nominal-variable" class="nav-link" data-scroll-target="#frequency-table-for-a-nominal-variable">Frequency table for a nominal variable</a></li>
+  <li><a href="#visualizing-a-nominal-or-ordinal-variable" id="toc-visualizing-a-nominal-or-ordinal-variable" class="nav-link" data-scroll-target="#visualizing-a-nominal-or-ordinal-variable">Visualizing a Nominal (or Ordinal) Variable</a></li>
+  <li><a href="#frequency-table-for-a-scale-variable" id="toc-frequency-table-for-a-scale-variable" class="nav-link" data-scroll-target="#frequency-table-for-a-scale-variable">Frequency Table for a Scale Variable</a></li>
+  <li><a href="#visualizing-a-scale-variable" id="toc-visualizing-a-scale-variable" class="nav-link" data-scroll-target="#visualizing-a-scale-variable">Visualizing a Scale Variable</a></li>
+  </ul></li>
+  <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises" class="nav-link" data-scroll-target="#take-home-lab-exercises">Take-Home Lab Exercises</a></li>
+  <li><a href="#submission-checklist" id="toc-submission-checklist" class="nav-link" data-scroll-target="#submission-checklist">Submission Checklist</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_1.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/lab_0.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/lab_1.html">Lab 1</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Lab 1: Frequency Distributions &amp; Visualizations</h1>
+<p class="subtitle lead">Covers Material from Chapter 1 &amp; 2</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>In this lab, you will be introduced to methods of data organization and visualization using SPSS. You will learn how to create a dataset, enter data, and generate frequency tables and graphs for both nominal (or ordinal) and scale variables. These are important beginning skills for analyzing data in behavioral sciences.</p>
+</section>
+<section id="part-1-build-your-variable-view" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-build-your-variable-view">Part 1: Build Your Variable View</h2>
+<p>Open SPSS and create a new dataset. Click the <strong>Variable View</strong> tab and add the following <strong>6 variables</strong>, one per row. For each one, follow these exact steps.</p>
+<section id="row-1-studentid" class="level3">
+<h3 class="anchored" data-anchor-id="row-1-studentid">Row 1: StudentID</h3>
+<ol type="1">
+<li>Click the empty cell in <strong>row 1, “Name” column</strong>. Type: <code>StudentID</code></li>
+<li>Leave <strong>Type</strong> as the default (Numeric).</li>
+<li>Click the <strong>Decimals</strong> cell for this row. Change it to <code>0</code> (an ID number has no decimal places).</li>
+<li>Click the <strong>Label</strong> cell. Type: <code>Student identifier</code></li>
+<li>Click the <strong>Measure</strong> cell. Click the dropdown arrow and select <strong>Nominal</strong>.
+<ul>
+<li><em>Why nominal?</em> An ID number is just a name written as a digit — Student #7 isn’t “more” than Student #3.</li>
+</ul></li>
+</ol>
+</section>
+<section id="row-2-major" class="level3">
+<h3 class="anchored" data-anchor-id="row-2-major">Row 2: Major</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Major</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Academic major</code></li>
+<li><strong>Values:</strong> Click the Values cell, then click the small gray <strong>…</strong> button that appears on the right side of the cell. A “Value Labels” dialog should open.
+<ul>
+<li>Click the <code>+</code> sign to show <strong>Value</strong> box, and type <code>1</code>. In the <strong>Label</strong> box, type <code>Psychology</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>2</code>, Label <code>Biology</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>3</code>, Label <code>Business</code>. Click <strong>Add</strong>.</li>
+<li>Value <code>4</code>, Label <code>Undecided</code>. Click <strong>Add</strong>.</li>
+<li>Click <strong>OK</strong>.</li>
+</ul></li>
+<li><strong>Measure:</strong> select <strong>Nominal</strong>.</li>
+</ol>
+</section>
+<section id="row-3-classyear" class="level3">
+<h3 class="anchored" data-anchor-id="row-3-classyear">Row 3: ClassYear</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>ClassYear</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Year in school</code></li>
+<li><strong>Values:</strong> same process as above —
+<ul>
+<li><code>1</code> = <code>Freshman</code>, <code>2</code> = <code>Sophomore</code>, <code>3</code> = <code>Junior</code>, <code>4</code> = <code>Senior</code> (Add after each one, then OK)</li>
+</ul></li>
+<li><strong>Measure:</strong> select <strong>Ordinal</strong>.
+<ul>
+<li><em>Why ordinal and not nominal?</em> Unlike majors, Freshman → Senior is an ordered sequence.</li>
+</ul></li>
+</ol>
+</section>
+<section id="row-4-studyhours" class="level3">
+<h3 class="anchored" data-anchor-id="row-4-studyhours">Row 4: StudyHours</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>StudyHours</code></li>
+<li><strong>Decimals:</strong> change to <code>1</code> (allow one decimal place, e.g., 8.5)</li>
+<li><strong>Label:</strong> <code>Hours spent studying per week</code></li>
+<li><strong>Values:</strong> leave blank (this variable’s numbers are real quantities, not category codes — nothing to label)</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong>.
+<ul>
+<li><em>Why Scale?</em> This is a continuous variable with a meaningful zero (0 hours studied means no studying at all), so it meets the textbook’s definition of a ratio scale. Recall that SPSS collapses <code>interval</code> and <code>ratio</code> into one category named <code>Scale</code>.</li>
+</ul></li>
+</ol>
+</section>
+<section id="row-5-netflixhours" class="level3">
+<h3 class="anchored" data-anchor-id="row-5-netflixhours">Row 5: NetflixHours</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>NetflixHrs</code></li>
+<li><strong>Decimals:</strong> <code>1</code></li>
+<li><strong>Label:</strong> <code>Hours spent streaming video per week</code></li>
+<li><strong>Values:</strong> leave blank</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong>.</li>
+</ol>
+</section>
+<section id="row-6-stresslevel" class="level3">
+<h3 class="anchored" data-anchor-id="row-6-stresslevel">Row 6: StressLevel</h3>
+<ol type="1">
+<li><strong>Name:</strong> <code>Stress</code></li>
+<li><strong>Decimals:</strong> <code>0</code></li>
+<li><strong>Label:</strong> <code>Self-rated stress, 1 (low) to 10 (high)</code></li>
+<li><strong>Values:</strong> leave blank for now — we’ll come back to this one in the discussion question below.</li>
+<li><strong>Measure:</strong> select <strong>Scale</strong> for now (we’ll revisit whether this is the right call)</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Note on SPSS's Measure column">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note on SPSS’s Measure column
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The textbook describes <strong>four</strong> scales of measurement (nominal, ordinal, interval, ratio) but SPSS collapses the last two into one “Scale” category.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="part-2-enter-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-enter-the-data">Part 2: Enter the Data</h2>
+<p>Click the <strong>Data View</strong> tab. Your 6 column headers (StudentID, Major, etc.) should already be there from Part 1. Type the following, one row per student — click a cell, type the number, press <strong>Tab</strong> or <strong>Enter</strong> to move to the next cell.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>StudentID</th>
+<th>Major</th>
+<th>ClassYear</th>
+<th>StudyHours</th>
+<th>NetflixHrs</th>
+<th>Stress</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>12.5</td>
+<td>6.0</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>6.0</td>
+<td>10.5</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>15.0</td>
+<td>3.5</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>8.5</td>
+<td>9.0</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>10.0</td>
+<td>5.5</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>2</td>
+<td>4</td>
+<td>18.5</td>
+<td>2.0</td>
+<td>9</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>3</td>
+<td>2</td>
+<td>7.5</td>
+<td>12.0</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>1</td>
+<td>4</td>
+<td>11.0</td>
+<td>4</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>4</td>
+<td>3</td>
+<td>9.5</td>
+<td>8.0</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>2</td>
+<td>2</td>
+<td>13.0</td>
+<td>6.5</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled" title="Tip">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In Data View, the Major and ClassYear columns will still show plain numbers (1, 2, 3, 4) unless you turn on value labels. To check your coding: go to the <strong>View</strong> menu (top menu bar) → click <strong>Value Labels</strong>. The columns should now display “Freshman”, “Sophomore,” etc. instead of numbers. Toggle it back off and on to see both views — the number is what’s stored, the label is what humans read.</p>
+</div>
+</div>
+<p><strong>Save your file now:</strong> File → Save As → name it <code>Lab_1_YourLastName.sav</code> → Note the location you saved your file.</p>
+<hr>
+</section>
+<section id="part-3-run-your-first-outputdata-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-run-your-first-outputdata-analyses">Part 3: Run Your First Output/Data Analyses</h2>
+<p>In this section, you’ll run two basic analyses in SPSS: a frequency table for a nominal variable, and summary statistics for a scale variable. Note that the output will appear in a separate window called the <strong>Output Viewer</strong> and that this output will have to be saved just like the data file.</p>
+<section id="frequency-table-for-a-nominal-variable" class="level3">
+<h3 class="anchored" data-anchor-id="frequency-table-for-a-nominal-variable">Frequency table for a nominal variable</h3>
+<ul>
+<li><p>Go to the menu bar and click <strong>Analyze → Descriptive Statistics → Frequencies.</strong> See below</p>
+<p><img src="images/lab1im2.png" class="img-fluid" width="496"></p></li>
+<li><p>In the dialog box on the left, click <strong>Academic Major</strong>, then click the arrow button in the middle to move <code>Academic Major</code> into the <strong>Variable(s)</strong> box on the right. Make sure the box that says <em>“Display Frequency tables”</em> is checked. See below:</p>
+<p><img src="images/lab1im1.png" class="img-fluid" width="503"></p></li>
+<li><p>Next, click <strong>OK</strong>.</p></li>
+<li><p>The Output Viewer window opens with a table showing how many students fall into each major category, and what percentage each represents.</p></li>
+</ul>
+</section>
+<section id="visualizing-a-nominal-or-ordinal-variable" class="level3">
+<h3 class="anchored" data-anchor-id="visualizing-a-nominal-or-ordinal-variable">Visualizing a Nominal (or Ordinal) Variable</h3>
+<p>The common tools used to visualize the distribution of nominal or ordinal variables are bar graphs or pie charts. To create a bar graph for the variable Major, follow the steps steps below:</p>
+<ul>
+<li><strong>Analyze → Descriptive Statistics → Frequencies.</strong> In the dialog box, select <strong>Academic Major</strong> and move it to the <strong>Variable(s)</strong> box.</li>
+<li>Click <strong>Charts</strong> on the right side of the dialog box. In the new dialog box, select <strong>Bar charts</strong> and click <strong>Continue</strong>.</li>
+<li>C <strong>OK</strong>. A bar graph will appear in the Output Viewer. The same procedure can be followed to create a pie chart by selecting <strong>Pie charts</strong> instead of <strong>Bar charts</strong> in the Charts dialog box.</li>
+</ul>
+<p>It is often helpful to have percentages displayed on the vertical axis instead of the raw frequencies. To do this, select the <code>percentages</code> option under the <code>Frequency Charts</code> pop up box (step 2 above).</p>
+</section>
+<section id="frequency-table-for-a-scale-variable" class="level3">
+<h3 class="anchored" data-anchor-id="frequency-table-for-a-scale-variable">Frequency Table for a Scale Variable</h3>
+<p>We want to create a table that summarizes the variable <code>StudyHours</code>. Follow these steps:</p>
+<ul>
+<li><p>Menu bar: <strong>Analyze → Descriptive Statistics → Frequencies</strong>. If Academic Major is still on the right box, click on it and click the back arrow to move it back to the left.</p></li>
+<li><p>Now move <strong>StudyHours</strong> into the “Variable(s)” box as earlier. Make sure the <strong><em>Display frequency tables</em></strong> box is checked.</p></li>
+<li><p>Click <strong>OK</strong>. A frequency table appears in the <strong>Output Viewer</strong> showing each study hour and the corresponding frequency.</p></li>
+</ul>
+<div class="callout callout-style-default callout-caution callout-titled" title="Caution">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When working with larger data sets, a frequency table on this kind is not helpful. We can use a grouped frequency table instead. Although the grouped frequency table loses some information, it is easier to read and interpret when we have a large number of unique values.</p>
+</div>
+</div>
+<p>Although our data set is fairly small (n=10), we can still use it to demonstrate the process of creating a grouped frequency table for <strong>StudyHours</strong>, we will begin by transforming the variable to create three bins (5-10, 11-15, 16-20) as follows:</p>
+<ul>
+<li><p>Menu bar: <strong>tranform → Recode into Different Variable</strong>.</p></li>
+<li><p>Move the Variable <strong>StudyHours</strong> into the <strong><em>Input Variable → Output Variable</em></strong> box as shown below:</p>
+<p><img src="images/lab1im3.png" class="img-fluid" width="526"></p></li>
+<li><p>In the <strong><em>Output Variable</em></strong> section under <strong>name</strong>, write <code>StudyHoursGroup</code> (no spaces). In the <strong>Label</strong> field, write <code>Study Hours Group</code> (spaces allowed) then click <strong>Change</strong>.</p></li>
+<li><p>Next, click <strong>Old and New Values</strong>. The following window will appear:</p>
+<p><img src="images/lab1im4.png" class="img-fluid" width="542"></p></li>
+<li><p>Start by checking the box that says <strong><em>Output variables are strings</em></strong>.</p></li>
+<li><p>In the <strong><em>Old Value</em></strong> section, select <strong>Range</strong> and type <code>5</code> in the first box and <code>10</code> in the second box as shown in the screenshot above. In the <strong><em>New Value</em></strong> section, write <code>5-10</code>.</p></li>
+<li><p>Click <strong>Add</strong>.</p></li>
+<li><p>To create the next bin, enter 11 and 15 as earlier, then write <code>11-15</code> under <strong>New Value</strong>, then click <strong>Add</strong>. Repeat this for <code>16-20</code>.</p></li>
+<li><p>Click <strong>Continue</strong> to return to the previous window, then click <strong>OK</strong>.</p></li>
+</ul>
+<p>Take a look at the data window and you should see the new variable you just created called <code>StudyHoursGroup.</code></p>
+<p>To create a frequency table, we follow the steps from earlier:</p>
+<ul>
+<li><strong>Analyze → Descriptive Statistics → Frequencies.</strong></li>
+<li>Move the variable <strong>StudyHoursGroup</strong> into the “Variable(s)” box. Make sure the <strong><em>Display frequency tables</em></strong> box is checked. You may want to click on <strong>Charts</strong> and select <strong>None</strong>.</li>
+<li>Click <strong>OK</strong>. A frequency table appears in the Output Viewer showing how many students fall into each study hour group.</li>
+</ul>
+</section>
+<section id="visualizing-a-scale-variable" class="level3">
+<h3 class="anchored" data-anchor-id="visualizing-a-scale-variable">Visualizing a Scale Variable</h3>
+<p>There are various graphs that can be used to visualize the distribution of a scale variable. The most common ones are histograms, boxplots, dotplots, and stem-and-leaf plots. Histograms are good for showing the shape of the distribution, boxplots are good for showing the shape of the distributions as well as locations of the median, quartiles, and if there are any outliers.</p>
+<p>For this lab, we will creat a <code>histogram</code> to visualize the distribution of <code>StudyHours</code>. Here are the steps:</p>
+<ul>
+<li>Menu bar: <strong>Analyze → Descriptive Statistics → Frequencies.</strong> Move the variable <strong>StudyHours</strong> into the “Variable(s)” box. Uncheck the box <strong><em>Display frequency tables</em></strong> (we do not need the table).</li>
+<li>Click <strong>Charts</strong> on the right side of the dialog box. In the new dialog box, select <strong>Histograms</strong> and click <strong>Continue</strong>.</li>
+<li>Click <strong>OK</strong>. A histogram appears in the Output Viewer showing the distribution of <code>StudyHours</code>.</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Checkpoint">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Checkpoint
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Based on the histogram, what can you say about the distribution of the study hours? Is the histogram roughly symmetric, skewed to the left, or skewed to the right?</p>
+</div>
+</div>
+<p><strong>Save your output file:</strong> File → Save As → name it <code>Lab_1_Output_YourLastName.spv</code> → Note the location you saved your file.</p>
+<hr>
+</section>
+</section>
+<section id="take-home-lab-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-lab-exercises">Take-Home Lab Exercises</h2>
+<p>Answer the following questions based on your SPSS output (more analyses may be required). Include screenshots of the relevant software outputs (e.g., frequency tables, bar graphs, histograms) in your report. Your report should be typed (Times New Roman, Font size 12, double spaced). The lab is graded out of 20 points. Ten points are for the 2 SPSS outputs and ten points are for your written responses to the questions below.</p>
+<ol type="1">
+<li><strong>(Frequency tables, 2 points.)</strong> Create a <strong><em>frequency table</em></strong> for the variable <code>ClassYear</code>. Based on the table, answer the following questions:
+<ul>
+<li>What is the most common class year(s) among the students in this dataset?</li>
+<li>What percentage of students are either Freshmen or Sophomores?</li>
+</ul></li>
+<li><strong>(Bar Graph, 2 points.)</strong> Create a <strong><em>bar graph</em></strong> for the variable <code>ClassYear</code>. Based on the graph, answer the following questions:
+<ul>
+<li>Which year has the highest number of students?</li>
+<li>Which year has the lowest number of students?</li>
+</ul></li>
+<li><strong>(Frequency Tables, 4 points.)</strong> Create a <strong><em>grouped frequency table</em></strong> for the variable <code>NetflixHours</code> using the groups 0-4, 5-9, 10-14. Based on the table, answer the following questions:
+<ul>
+<li>What is the most common range of hours spent streaming video per week?</li>
+<li>What percentage of students spend more than 10 hours per week streaming video?</li>
+</ul></li>
+<li><strong>(Histogram, 2 points.)</strong> Create a <strong><em>histogram</em></strong> for the variable <code>NetflixHours</code>. Based on the histogram, what can you say about the distribution of the hours students spent streaming?</li>
+</ol>
+</section>
+<section id="submission-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="submission-checklist">Submission Checklist</h2>
+<ul class="task-list">
+<li><p><label><input type="checkbox">A saved SPSS data file (.sav) with correct <strong>variables</strong> alongside their specifications, and correctly entered data.</label></p></li>
+<li><p><label><input type="checkbox">SPSS output file (.spv) showing the analyses performed, including frequency tables, bar graphs, grouped frequency tables, and histograms.</label></p></li>
+<li><p><label><input type="checkbox">Completed responses for Questions 1—4 above. This document should be typed (Times New Roman, Font size 12, double spaced). The document should include screenshots of the relevant software outputs (e.g., frequency tables).</label></p></li>
+</ul>
+<hr>
+<!--
+## Instructor Notes
+:::
+-->
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/jmochogi\.github\.io\/psycstats\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../labs/lab_0.html" class="pagination-link" aria-label="Lab 0">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 0</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../labs/lab_2.html" class="pagination-link" aria-label="Lab 2">
+        <span class="nav-page-text">Lab 2</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2026, Joash Geteregechi</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This page is built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
