@@ -1,0 +1,76 @@
+---
+title: "Lab 7: Introduction to Analysis of Variance-ANOVA"
+format:
+  html:
+    toc: true
+    number-sections: false
+    theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    pdf-engine: xelatex
+execute:
+  echo: true
+---
+
+------------------------------------------------------------------------
+
+## Part 1: Scenario & Overview
+
+In the previous lab, we performed an ***Independent Samples t-test*** in which we tested whether the average weight loss between individuals in incentives and non-incentives groups was significantly different from zero.
+In today's lab, we introduce a  new inference tool known as ***Analysis of Variance (ANOVA)***. This statistical method is used to compare the means of **three or more groups** to determine if at least one group mean is significantly different from the others. ANOVA helps us understand whether the observed differences in sample means are likely due to random chance or if they reflect true differences in the population.
+
+**Scenario:** 
+
+Psychologists interested in learning and academic achievement often investigate whether the amount of time students spend studying is associated with academic performance.
+A research team wants to investigate whether students’ final mathematics grades differ depending on how much time they spend studying each week. The team uses data collected from secondary school students in Portugal. The dataset includes demographic information, family background, study habits, and academic performance.
+
+
+**Research question:** Do students who spend different amounts of time studying each week have significantly different average final mathematics grades?
+
+**Important limitation:** The data are observational. An association between study time and grades does not establish that studying more causes higher grades. 
+
+:::{.callout-tip title="Objectives"}
+
+- Explore the concept of ANOVA and its application in comparing means across multiple groups.
+- State the assumptions underlying ANOVA and how to check them.
+- State the null and alternative hypotheses for ANOVA.
+- Perform ANOVA using SPSS and interpret the results in APA format.
+::: 
+
+### Stating Hypotheses
+
+Null Hypothesis (H0): There is no significant difference in the average final mathematics grades among students who spend different amounts of time studying each week.
+
+In symbols: $H_0: \mu_1=\mu_2 = \mu_3 =0$ (where $\mu_1$, $\mu_2$, and $\mu_3$ represent the population means of final mathematics grades for the different study time groups).
+
+Alternative Hypothesis (HA): At least one group mean is significantly different from the others.
+
+In symbols: $H_A: \text{At least one } \mu_i \text{ is different}$ (where $\mu_i$ represents the population means of final mathematics grades for the different study time groups).
+
+
+### Checking Assumptions
+Before conducting ANOVA, it is essential to check the following assumptions:
+
+- **Independence:** The individuals in the study must be independent, meaning that each participant or observation belongs to only one group. In this study, the students study times were grouped such that each student belongs to only one study time category, ensuring independence.
+
+- **Normality:** The distribution of the dependent variable (final mathematics grades) should be approximately normal within each group. This can be assessed using visual methods (e.g., histograms, Q-Q plots) or statistical tests (e.g., Shapiro-Wilk test).
+
+- **Equality of Variances (Homoscedasticity):** The variances of the dependent variable should be approximately equal across the groups. This can be assessed using Levene's test and/or by visually inspecting boxplots.
+
+## Part 2: The Data
+
+### Importing Data into SPSS
+
+The data set is available in the following link. Download the data.
+
+[Student Mathematics Data](datasets/student-mat.csv){download=""}.
+
+After downloading the dataset, import it into SPSS, using the following steps:
+
+**File \> Import Data \> CSV Data...**, browse to the file location, and click **OK** on the import wizard (accept the default settings).
+
+
+
+
+
