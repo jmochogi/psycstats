@@ -100,7 +100,10 @@ window.Quarto = {
 
 <meta property="og:title" content="Lab 7: Introduction to Analysis of Variance-ANOVA – PSYC 20700 - Statistics in Psychology">
 <meta property="og:description" content="Homepage for PSYC 207 - Statistics in Psychology, Fall 2026.">
+<meta property="og:image" content="https://jmochogi.github.io/psycstats/labs/images/lab7im1.png">
 <meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
+<meta property="og:image:height" content="584">
+<meta property="og:image:width" content="1040">
 <meta name="twitter:title" content="Lab 7: Introduction to Analysis of Variance-ANOVA – PSYC 20700 - Statistics in Psychology">
 <meta name="twitter:description" content="Homepage for PSYC 207 - Statistics in Psychology, Fall 2026.">
 <meta name="twitter:image" content="https://jmochogi.github.io/psycstats/labs/img/twitter-card.png">
@@ -318,12 +321,24 @@ window.Quarto = {
   <ul>
   <li><a href="#part-1-scenario-overview" id="toc-part-1-scenario-overview" class="nav-link active" data-scroll-target="#part-1-scenario-overview">Part 1: Scenario &amp; Overview</a>
   <ul class="collapse">
-  <li><a href="#stating-hypotheses" id="toc-stating-hypotheses" class="nav-link" data-scroll-target="#stating-hypotheses">Stating Hypotheses</a></li>
+  <li><a href="#research-questions-and-hypotheses" id="toc-research-questions-and-hypotheses" class="nav-link" data-scroll-target="#research-questions-and-hypotheses">Research Questions and Hypotheses</a></li>
   <li><a href="#checking-assumptions" id="toc-checking-assumptions" class="nav-link" data-scroll-target="#checking-assumptions">Checking Assumptions</a></li>
   </ul></li>
   <li><a href="#part-2-the-data" id="toc-part-2-the-data" class="nav-link" data-scroll-target="#part-2-the-data">Part 2: The Data</a>
   <ul class="collapse">
   <li><a href="#importing-data-into-spss" id="toc-importing-data-into-spss" class="nav-link" data-scroll-target="#importing-data-into-spss">Importing Data into SPSS</a></li>
+  <li><a href="#variables-of-interest" id="toc-variables-of-interest" class="nav-link" data-scroll-target="#variables-of-interest">Variables of Interest</a></li>
+  </ul></li>
+  <li><a href="#part-3-exploratory-data-analysis-eda" id="toc-part-3-exploratory-data-analysis-eda" class="nav-link" data-scroll-target="#part-3-exploratory-data-analysis-eda">Part 3: Exploratory Data Analysis (EDA)</a></li>
+  <li><a href="#part-4-running-the-anova-test" id="toc-part-4-running-the-anova-test" class="nav-link" data-scroll-target="#part-4-running-the-anova-test">Part 4: Running the ANOVA test</a></li>
+  <li><a href="#part-5-output-interpretation" id="toc-part-5-output-interpretation" class="nav-link" data-scroll-target="#part-5-output-interpretation">Part 5: Output Interpretation</a></li>
+  <li><a href="#take-home-lab-exercises" id="toc-take-home-lab-exercises" class="nav-link" data-scroll-target="#take-home-lab-exercises">Take-Home Lab Exercises</a>
+  <ul class="collapse">
+  <li><a href="#question-1" id="toc-question-1" class="nav-link" data-scroll-target="#question-1">Question 1</a></li>
+  <li><a href="#question-2" id="toc-question-2" class="nav-link" data-scroll-target="#question-2">Question 2</a></li>
+  <li><a href="#question-3" id="toc-question-3" class="nav-link" data-scroll-target="#question-3">Question 3</a></li>
+  <li><a href="#question-4" id="toc-question-4" class="nav-link" data-scroll-target="#question-4">Question 4</a></li>
+  <li><a href="#question-5" id="toc-question-5" class="nav-link" data-scroll-target="#question-5">Question 5</a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="lab_7.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -353,11 +368,9 @@ window.Quarto = {
 <hr>
 <section id="part-1-scenario-overview" class="level2">
 <h2 class="anchored" data-anchor-id="part-1-scenario-overview">Part 1: Scenario &amp; Overview</h2>
-<p>In the previous lab, we performed an <strong><em>Independent Samples t-test</em></strong> in which we tested whether the average weight loss between individuals in incentives and non-incentives groups was significantly different from zero. In today’s lab, we introduce a new inference tool known as <strong><em>Analysis of Variance (ANOVA)</em></strong>. This statistical method is used to compare the means of <strong>three or more groups</strong> to determine if at least one group mean is significantly different from the others. ANOVA helps us understand whether the observed differences in sample means are likely due to random chance or if they reflect true differences in the population.</p>
-<p><strong>Scenario:</strong></p>
-<p>Psychologists interested in learning and academic achievement often investigate whether the amount of time students spend studying is associated with academic performance. A research team wants to investigate whether students’ final mathematics grades differ depending on how much time they spend studying each week. The team uses data collected from secondary school students in Portugal. The dataset includes demographic information, family background, study habits, and academic performance.</p>
-<p><strong>Research question:</strong> Do students who spend different amounts of time studying each week have significantly different average final mathematics grades?</p>
-<p><strong>Important limitation:</strong> The data are observational. An association between study time and grades does not establish that studying more causes higher grades.</p>
+<p>In the previous lab, we performed an <strong><em>Independent Samples t-test</em></strong> in which we tested whether there was a difference in average weight loss (in lbs) between individuals in the incentive and non-incentives groups. In that scenario, we had only two groups to compare. But what if we have have more than two groups? How can we compare means from three or more groups?</p>
+<p>In today’s lab, we introduce a new inference tool known as <strong><em>Analysis of Variance (ANOVA)</em></strong>. This statistical method is used to compare the means of <strong>three or more groups</strong> to determine if at least one group mean is significantly different from the others. ANOVA helps us understand whether the observed differences in sample means are likely due to random chance or if they reflect true differences in the population.</p>
+<p>Here are the objectives for this lab:</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Objectives">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -376,8 +389,15 @@ Objectives
 </ul>
 </div>
 </div>
-<section id="stating-hypotheses" class="level3">
-<h3 class="anchored" data-anchor-id="stating-hypotheses">Stating Hypotheses</h3>
+<p><strong>Scenario:</strong></p>
+<p>Psychologists interested in learning and academic achievement often investigate whether the amount of time students spend studying is associated with academic performance. A research team wants to investigate whether students’ final mathematics grades differ depending on how much time they spend studying each week. The data were collected using school reports and questionnaires and include information on students’ demographics, family background, study habits, and academic performance.</p>
+<p>The data set is available at the <a href="https://archive.ics.uci.edu/dataset/320/student+performance">UC, Irvine Machine Learning Repository</a>. and can be downloaded from the link below:</p>
+<p><a href="datasets/student-mat.csv" download="">Student Mathematics Data</a>.</p>
+<p><strong>Important limitation:</strong> The data are observational. An association between study time and grades does not establish that studying more causes higher grades.</p>
+<section id="research-questions-and-hypotheses" class="level3">
+<h3 class="anchored" data-anchor-id="research-questions-and-hypotheses">Research Questions and Hypotheses</h3>
+<p><strong>Research question:</strong> Do students who spend different amounts of time studying each week have significantly different average final mathematics grades?</p>
+<p><strong>Research Hypotheses:</strong></p>
 <p>Null Hypothesis (H0): There is no significant difference in the average final mathematics grades among students who spend different amounts of time studying each week.</p>
 <p>In symbols: <span class="math inline">\(H_0: \mu_1=\mu_2 = \mu_3 =0\)</span> (where <span class="math inline">\(\mu_1\)</span>, <span class="math inline">\(\mu_2\)</span>, and <span class="math inline">\(\mu_3\)</span> represent the population means of final mathematics grades for the different study time groups).</p>
 <p>Alternative Hypothesis (HA): At least one group mean is significantly different from the others.</p>
@@ -397,10 +417,127 @@ Objectives
 <h2 class="anchored" data-anchor-id="part-2-the-data">Part 2: The Data</h2>
 <section id="importing-data-into-spss" class="level3">
 <h3 class="anchored" data-anchor-id="importing-data-into-spss">Importing Data into SPSS</h3>
-<p>The data set is available in the following link. Download the data.</p>
+<p>As noted earlier, the data set is available at the <a href="https://archive.ics.uci.edu/dataset/320/student+performance">UC, Irvine Machine Learning Repository</a> and can be downloaded directly from the link:</p>
 <p><a href="datasets/student-mat.csv" download="">Student Mathematics Data</a>.</p>
-<p>After downloading the dataset, import it into SPSS, using the following steps:</p>
+<p>Doanload the .csv file and import it into SPSS, using the following steps:</p>
 <p><strong>File &gt; Import Data &gt; CSV Data…</strong>, browse to the file location, and click <strong>OK</strong> on the import wizard (accept the default settings).</p>
+</section>
+<section id="variables-of-interest" class="level3">
+<h3 class="anchored" data-anchor-id="variables-of-interest">Variables of Interest</h3>
+<p>The data set has many variables, but we are interested in the following variables:</p>
+<ul>
+<li><strong>studytime:</strong> A discrete (categorical) variable representing the amount of time students spend studying each week. The variable has four levels as described below. You can think of this variable as a factor variable (groups) in ANOVA, which will allow us to compare the means of the final mathematics grades across these four groups.
+<ul>
+<li>1: Less than 2 hours</li>
+<li>2: 2 to 5 hours</li>
+<li>3: 5 to 10 hours</li>
+<li>4: More than 10 hours</li>
+</ul></li>
+<li><strong>G3:</strong> A continuous variable representing the final mathematics grade of students, ranging from 0 to 20.</li>
+</ul>
+<div class="callout callout-style-default callout-caution callout-titled" title="Variable Setup">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Variable Setup
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Before you proceed, click on the <strong>Variable View</strong> tab and make sure the variable G3 is set to <strong>Scale</strong> and the variable studytime is set to <strong>Nominal</strong>. This will ensure that SPSS treats the variables correctly during the analysis.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="part-3-exploratory-data-analysis-eda" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-exploratory-data-analysis-eda">Part 3: Exploratory Data Analysis (EDA)</h2>
+<p>Before conducting ANOVA, it is important to perform exploratory data analysis (EDA) to understand the distribution of the dependent variable (G3) across the different levels of the independent variable (studytime). This will help us check the assumptions of normality and equality of variances.</p>
+<p>We can start by generating a table of descriptive statistics for the final mathematics grades (G3) across the different study time groups (studytime). This will provide us with the mean, standard deviation, and sample size for each group.</p>
+<p>Follow these steps:</p>
+<ul>
+<li>Analyze &gt; Compare Means and Proportions &gt; Means.</li>
+<li>Move the variable G3 to the <strong>Dependent List</strong> box and the variable studytime to the <strong>Independent List</strong> box. See screenshot below. <img src="images/lab7im1.png" class="img-fluid quarto-figure quarto-figure-center" width="600"></li>
+<li>Click <strong>OK</strong> to generate the output.</li>
+</ul>
+<p>The following output should appear in the output file: <img src="images/lab7im2.png" class="img-fluid quarto-figure quarto-figure-center" width="600"></p>
+<p>The mean final mathematics grades (G3) for the three study time groups appear very similar, with means of 11.5, 11.9, 12.0, and 12.3 for the four groups, respectively. The standard deviations are also relatively similar across the groups, ranging from 3.2 to 3.6. We also notice that level 4 (more than 10 hours) and level 3 (5 to 10 hours) study hours had the fewest number of students at <span class="math inline">\(n=27\)</span> and <span class="math inline">\(n=67\)</span> respectively.</p>
+<p>Next, we can visualize the distribution of final mathematics grades (G3) across the different study time groups (studytime) using boxplots. This will help us assess the assumptions of normality and equality of variances.</p>
+<p>Follow these steps to create boxplots:</p>
+<ul>
+<li>Graphs &gt; Chart Builder.</li>
+<li>In the Chart Builder dialog box, select <strong>Boxplot</strong> from the gallery and drag the <strong>simple box plot</strong> to the chart preview area.</li>
+<li>Drag the variable G3 to the <strong>Y-Axis</strong> box</li>
+<li>Drag the variable studytime to the <strong>X-Axis</strong> box.</li>
+<li>Click <strong>OK</strong> to generate the boxplot.</li>
+</ul>
+<p>You should see the following output in the output file:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab7im3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="700"></p>
+</figure>
+</div>
+<p>The boxplots show the distribution of final mathematics grades (G3) for each study time group. We can observe that the medians are relatively similar across the groups, and there are a few suspected outliers in each group. These students appear to have scored 0 and it is possible that they missed the exam. However, we will still check the assumptions of normality and equality of variances more formally.</p>
+<hr>
+</section>
+<section id="part-4-running-the-anova-test" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-running-the-anova-test">Part 4: Running the ANOVA test</h2>
+<p>To run the ANOVA test in SPSS, follow these steps:</p>
+<ul>
+<li>Analyze &gt; Compare Means and Proportions &gt; One-Way ANOVA.</li>
+<li>Move the variable <code>G3</code> to the <strong>Dependent List</strong> box and the variable <code>studytime</code> to the <strong>Factor</strong> box.</li>
+<li>Click on the <strong>OK</strong></li>
+</ul>
+<p>The output will display the ANOVA table, which includes the F-statistic, degrees of freedom, and p-value as shown below:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lab7im4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="600"></p>
+</figure>
+</div>
+</section>
+<section id="part-5-output-interpretation" class="level2">
+<h2 class="anchored" data-anchor-id="part-5-output-interpretation">Part 5: Output Interpretation</h2>
+<p>The ANOVA table shows the F-statistic, degrees of freedom (computed as number of groups minus 1), and p-value, among others. In this case, the F-statistic is 1.728 with a p-value of 0.161. The test statistic in ANOVA is called the <code>F-statistic</code> and it measures the ratio of <strong>between-group variance</strong> to <strong>within-group variance</strong>. The larger the F-statistic, the more likely it is that the group means are significantly different. In our case, since the p-value is greater than the significance level of 0.05, we fail to reject the null hypothesis. We conclude that the data does not provide enough evidence to suggest that there is a significant difference in the average final mathematics grades among students who spend different amounts of time studying each week.</p>
+<p>The effect size is commonly reported in ANOVA as <strong>eta squared, <span class="math inline">\(\eta^2\)</span></strong>, which represents the proportion of the total variance in the dependent variable that is attributable to the independent variable. In this case, the effect size is 0.013, which indicates a very small effect of study time on final mathematics grades.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="APA-style Write-up">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+APA-style Write-up
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Here is an example of how to write up the results of the ANOVA test above in APA style. This is what you would include in the results section of a research paper:</p>
+<p>A one-way ANOVA was conducted to examine whether students’ final mathematics grades differed based on the amount of time they spent studying each week. The results indicated that there was no statistically significant difference in the average final mathematics grades among the four study-hour groups, F(3, 391) = 1.73, p = .161, η² = .013. The effect size was small, indicating that study hours explained approximately 1.3% of the variability in students’ final mathematics grades.</p>
+</div>
+</div>
+</section>
+<section id="take-home-lab-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="take-home-lab-exercises">Take-Home Lab Exercises</h2>
+<p>In this lab, we have learned how to perform a one-way ANOVA test to compare means across multiple groups. We also learned how to check the assumptions of ANOVA and interpret the results in APA format. In the lab exercises, you are going to perform a one-way ANOVA test to compare the means of final mathematics grades (G3) across different levels of the variable <code>Fedu</code> (father’s education level). The variable <code>Fedu</code> has five levels recorded as 0 = <code>None</code>; 1 = <code>Primary Education (4th grade)</code>; 2 = <code>5th to 9th grade</code>; 3 = <code>High School Education</code>; 4 = <code>Higher Education</code>.</p>
+<p>In the <code>None</code> category, there are only two students (row 77 and 172), so please exclude those students from the analysis. You can do this by simply highlighting the row (click on 77) and clearing it. The remaining four groups have enough number of students.</p>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
+<p>State the null and alternative hypotheses for this ANOVA test.</p>
+</section>
+<section id="question-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
+<p>Run summary statistics for the variable <code>G3</code> across the different levels of <code>Fedu</code>. What patterns do you notice?</p>
+</section>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
+<p>Create a boxplot to visualize the distribution of final mathematics grades (G3) across the different levels of father’s education (Fedu). What patterns do you notice?</p>
+</section>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
+<p>Run an ANOVA test to determine if there are significant differences in the average final mathematics grades (G3) across the different levels of father’s education (Fedu). Interpret the output.<br>
+(<strong>Note:</strong> If the ANOVA test is significant (i.e., P-value &lt; 0.05), please conduct post-hoc tests to determine which specific groups differ from each other.)</p>
+</section>
+<section id="question-5" class="level3">
+<h3 class="anchored" data-anchor-id="question-5">Question 5</h3>
+<p>Write a short paragraph to report the results as they would appear in a research article in APA format.</p>
 
 
 </section>
