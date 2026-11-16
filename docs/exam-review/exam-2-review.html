@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exam 2 Review – PSYC 20700 - Statistics in Psychology</title>
+<title>PSYC 207: Exam 2 Review - Fall 2026 – PSYC 20700 - Statistics in Psychology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,6 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../Downloads/sample_projects.html" rel="next">
+<link href="../exam-review/exam-1-review.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,14 +70,40 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="Exam 2 Review – PSYC 20700 - Statistics in Psychology">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="PSYC 207: Exam 2 Review - Fall 2026 – PSYC 20700 - Statistics in Psychology">
 <meta property="og:description" content="Homepage for PSYC 207 - Statistics in Psychology, Fall 2026.">
-<meta property="og:image" content="https://jmochogi.github.io/psycstats/exam-review/exam-2-review_files/figure-html/unnamed-chunk-3-1.png">
 <meta property="og:site_name" content="PSYC 20700 - Statistics in Psychology">
-<meta property="og:image:height" content="960">
-<meta property="og:image:width" content="1344">
-<meta name="twitter:title" content="Exam 2 Review – PSYC 20700 - Statistics in Psychology">
+<meta name="twitter:title" content="PSYC 207: Exam 2 Review - Fall 2026 – PSYC 20700 - Statistics in Psychology">
 <meta name="twitter:description" content="Homepage for PSYC 207 - Statistics in Psychology, Fall 2026.">
 <meta name="twitter:image" content="https://jmochogi.github.io/psycstats/exam-review/img/twitter-card.png">
 <meta name="twitter:creator" content="@jmochogi">
@@ -91,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Exam 2 Review</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exam-review/exam-1-review.html">Exam Review</a></li><li class="breadcrumb-item"><a href="../exam-review/exam-2-review.html">Exam 2</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -256,6 +284,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exam 1</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exam-review/exam-2-review.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Exam 2</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -295,16 +329,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#problem-2" id="toc-problem-2" class="nav-link" data-scroll-target="#problem-2">Problem 2</a></li>
   <li><a href="#problem-3" id="toc-problem-3" class="nav-link" data-scroll-target="#problem-3">Problem 3</a></li>
   <li><a href="#problem-4" id="toc-problem-4" class="nav-link" data-scroll-target="#problem-4">Problem 4</a></li>
-  <li><a href="#problem-5" id="toc-problem-5" class="nav-link" data-scroll-target="#problem-5">Problem 5</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="exam-2-review.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../exam-review/exam-1-review.html">Exam Review</a></li><li class="breadcrumb-item"><a href="../exam-review/exam-2-review.html">Exam 2</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Exam 2 Review</h1>
+<h1 class="title">PSYC 207: Exam 2 Review - Fall 2026</h1>
 </div>
 
 
@@ -321,219 +354,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="cell">
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: package 'dials' was built under R version 4.6.1</code></pre>
-</div>
-</div>
-<p>Much of the material on this review is based on statistical inference methods including hypothesis testing and confidence intervals using simulation-based methods (randomization tests and bootstrapping). Most of the material was covered starting the week before spring break to mid April, 2026. Hypotheses tests will be based on a discernibility level of 0.05 (5%).</p>
-<p>Be sure to try these problems on your own before coming for the review session.</p>
+<p>All hypothesis test will use a significance level of <span class="math inline">\(\alpha= 0.05\, \text{or}\,(5\%)\)</span>. Round numerical answers to 2 decimals where necessary.</p>
 <section id="problem-1" class="level2">
 <h2 class="anchored" data-anchor-id="problem-1">Problem 1</h2>
-<p>We have discussed various types of statistical inference methods including:</p>
-<ul>
-<li><p>A: Inference for difference in two proportions (lab 6 &amp; 7)</p></li>
-<li><p>B: Inference for difference in two means (labs 8)</p></li>
-<li><p>C: Inference for a single mean (lab 9)</p></li>
-<li><p>D: Inference for a single proportion (OneNote Activity 4/10)</p></li>
-</ul>
-<p>Read the following scenario carefully and answer the questions that follow.</p>
-<p>A company designs workplace environments to improve employee productivity and well-being. Employees are provided with different types of office setups (e.g., open-plan spaces, private offices, standing desks, relaxation areas), and managers conduct experiments to determine which setups lead to the best outcomes.</p>
-<p>For each of the following research questions, identify the predictor and response variables, parameter of interest, inference method (choose from list above), then state the hypotheses.</p>
+<p>The average (mean) rating for an Airbnb lodging is <span class="math inline">\(\mu=4.8\)</span> with a standard deviation of <span class="math inline">\(\sigma=0.8\)</span>. A research team randomly selected <span class="math inline">\(n=100\)</span> Airbnb lodgings in their city and found that the average rating was <span class="math inline">\(M=4.6\)</span>.</p>
 <ol type="a">
-<li><p><strong>Research Question:</strong> Do employees in private offices exhibit different overall job satisfaction levels compared to employees in open-plan spaces?<br> &nbsp;<strong>Setup:</strong> Employees are randomly assigned to one of two workspace environments: private offices or open-plan spaces. After 3 months, each employee’s job satisfaction level is measured on a scale of 0 to 100.</p>
-<ul>
-<li><p>Predictor and response variables: </p></li>
-<li><p>Parameter of interest: </p></li>
-<li><p>Appropriate Inference method: </p></li>
-<li><p>Null and Alternative Hypotheses: </p></li>
-</ul></li>
-<li><p><strong>Research Question</strong>: Is the proportion of employees in open-plan workspaces who experience high work-related stress lower than the 25% reported in a previous study? <br> <strong>Setup:</strong> Employees working in open-plan work spaces completed a survey asking whether or not they experienced high work-related stress. It was found that 27% experienced high work-related stress. </p>
-<ul>
-<li><p>Predictor and response variables: </p></li>
-<li><p>Parameter of interest: </p></li>
-<li><p>Appropriate Inference method: </p></li>
-<li><p>Null and Alternative Hypotheses: </p></li>
-</ul></li>
-<li><p><strong>Research Question:</strong> Is the average job satisfaction score (on a scale of 0-100) for employees working in private offices different from one reported in a previous study (75%)? <br> <strong>Setup:</strong> Employees working in private offices completed a job satisfaction survey and on average the value was 71%. </p>
-<ul>
-<li><p>Predictor and response variables: </p></li>
-<li><p>Parameter of interest: </p></li>
-<li><p>Appropriate Inference method: </p></li>
-<li><p>Null and Alternative Hypotheses: </p></li>
-</ul></li>
-<li><p><strong>Research Question:</strong> Is there an association between office space type (open-plan or private offices) and overall stress levels (High vs Low)? <br> <strong>Setup:</strong> Over a 3-month period, the researchers measure the average stress levels (High or Low) of employees in private offices and those in open-space offices. </p>
-<ul>
-<li><p>Predictor and response variables: </p></li>
-<li><p>Parameter of interest: </p></li>
-<li><p>Appropriate Inference method: </p></li>
-<li><p>Null and Alternative Hypotheses: </p></li>
-</ul></li>
+<li><p>Identify the population and the sample in this scenario. </p></li>
+<li><p>Suppose we take many different random samples of size <span class="math inline">\(n=100\)</span> and compute the mean of each sample. If we make a histogram of these means, what will be the shape of this histogram? </p></li>
+<li><p>Suppose we average all the means from part (b) above. What would be the mean of these sample means (i.e., the expected mean)? How do you know? </p></li>
+<li><p>What would be the standard deviation of the sample means (the standard error)? </p></li>
+<li><p>What is the probability of observing a sample mean of at least 4.9? To find the probability, you may use statistics tables or the online applet available at <a href="https://onlinestatbook.com/2/calculators/normal_dist.html" class="uri">https://onlinestatbook.com/2/calculators/normal_dist.html</a>.</p></li>
 </ol>
+<ol start="6" type="a">
+<li>Would you consider the sample mean of 4.6 to be unusual? Why or why not? </li>
+</ol>
+<hr>
 </section>
 <section id="problem-2" class="level2">
 <h2 class="anchored" data-anchor-id="problem-2">Problem 2</h2>
-<p>Helen saw a commercial on TV claiming that Domino’s restaurant has the fastest pizza delivery times in her area. She decided to check this claim by running a hypothesis test comparing delivery times for Domino’s and Papa John’s. She took a random sample of several of the two restaurants in her home area and found the average delivery times to be 17.5 minutes for Domino’s and 19.6 minutes for Papa John’s. She also summarized the data as shown on the following side-by-side box plots:</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="exam-2-review_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<p>Psychologists are interested in investigating whether adolescents who spend considerable time on social media differ in their attention span compared to the general adolescent population. In a study, a sample of <span class="math inline">\(n=81\)</span> adolescents who reported spending at least three hours per day on social media completed a standardized attention assessment. In the general population of adolescents, scores on this assessment have a mean of <span class="math inline">\(\mu=100\)</span> but the standard deviation is unknown. The sample of adolescents who spend considerable time on social media had an average attention score of <span class="math inline">\(M=95.4\)</span> and a standard deviation of <span class="math inline">\(SD=16.8\)</span>.</p>
 <ol type="a">
-<li><p>Based on the side-by-side box plots above, comment on the distribution of the average delivery times for the two pizza restaurants. </p></li>
-<li><p>Find the relevant <strong><em>observed statistic</em></strong> for the scenario described above. </p></li>
-<li><p>State the null and alternative hypotheses in words and in symbols. </p></li>
-<li><p>Helen generated 1,000 simulations of the statistic under the null model and created the histogram shown below. Each bin is 0.5 minutes wide.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="exam-2-review_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Estimate of the P-value (show/explain work) and write down the conclusion for your hypothesis test in context. </p></li>
+<li><p>Conduct a hypothesis test (assume all assumptions are met) to determine if the average attention score for adolescents who spend considerable time on social media is significantly different from the general adolescent population. Show/explain all work. </p></li>
+<li><p>Calculate the estimated effect size and interpret it in context. </p></li>
 </ol>
-<ol start="5" type="a">
-<li><p>The histogram below shows the bootstrap distribution for the statistic of interest. The distribution was generated by re-sampling from the original sample.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="exam-2-review_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li>Use the histogram to find the 95% confidence interval. Be sure to give a detailed explanation on how you arrived at your answer. </li>
-</ul></li>
-</ol>
+<hr>
 </section>
 <section id="problem-3" class="level2">
 <h2 class="anchored" data-anchor-id="problem-3">Problem 3</h2>
-<p>Back in 2021, a poll found that 1 in 5 adults (20%) living in Seattle, Washington, supported proposals to reduce police department budgets (“defund the police”). A researcher decided to investigate this claim by surveying 650 randomly selected Seattle residents. It was found that 159 of the 650 respondents supported defunding the police.</p>
+<p>Here is a sample paragraph taken from the results section of a research report. The study investigated the effect of a mindfulness program on anxiety scores among college students.</p>
+<p>“A t-test was conducted to determine whether college students who participated in a mindfulness program had different anxiety scores compared to the general college student population. Results indicated that students who participated in the mindfulness program <span class="math inline">\((M = 42.60, SD = 8.50)\)</span> reported significantly lower anxiety scores than the general population mean of 48, <span class="math inline">\(t(24) = −3.18, p = .004\)</span>, <span class="math inline">\(\text{Cohen's d} = −0.64\)</span>. These findings suggest that anxiety scores among students who participated in the mindfulness program were significantly lower than the population average.”</p>
+<p>Use the paragraph above to answer the following questions.</p>
 <ol type="a">
-<li><p>What is the parameter of interest in this scenario? Calculate the observed statistic. </p></li>
-<li><p>Write the appropriate null and alternative hypotheses (in words and symbols) to test the claim. </p></li>
-<li><p>Describe the setup of a simulation model and the steps for its implementation to generate the null distribution. Also explain how to obtain a p-value based on the simulated data. </p></li>
-<li><p>The histogram below shows the distribution of 1,000 simulated statistics under the null hypothesis. Each bin is 0.01 units wide.</p></li>
+<li><p>How many participants were in the sample? How do you know? </p></li>
+<li><p>Based on the paragraph, was this a one-sample or two-sample t-test? How do you know? </p></li>
+<li><p>Based on the paragraph, state the null hypothesis that was tested. </p></li>
+<li><p>Based on the paragraph, was the null hypothesis rejected or not? How do you know? </p></li>
 </ol>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="exam-2-review_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li>Estimate the p-value using the histogram then write your conclusion for the hypothesis test in context. Be sure to show/explain your work. </li>
-</ul>
-<ol start="5" type="a">
-<li>Use the bootstrap distribution below (bin width is 0.01) to estimate the 95% confidence interval. Interpret the interval and state whether it supports the conclusion reached under the hypothesis test. Explain.</li>
-</ol>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="exam-2-review_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<hr>
 </section>
 <section id="problem-4" class="level2">
 <h2 class="anchored" data-anchor-id="problem-4">Problem 4</h2>
-<p>The <code>Airlines</code> data set from the <code>Stat2Data</code> package contains information on over 10,000 commercial flights operated by Delta and American Airlines. A business analyst wants to conduct a statistical analysis to determine whether the proportion of arrival delays differs between the two airlines. The table below summarizes the arrival status (delayed or on time) by airline:</p>
+<p>A website designer working for <a href="https://www.gofundme.com/">GoFundMe</a> wants to investigate whether including a photograph of a person seeking financial assistance on a fundraising page influences the amount of money donors contribute. The designer suspects that photographs may help donors develop an emotional connection with the person seeking assistance, potentially encouraging them to donate more money.</p>
+<p>To investigate this question, the designer conducts an experiment involving 60 fundraising campaign pages. The pages are randomly assigned to one of two conditions:</p>
+<ul>
+<li><p><strong><em>Photo group:</em></strong> 30 fundraising pages include a photograph of the person seeking donations.</p></li>
+<li><p><strong><em>No-photo group:</em></strong> 30 fundraising pages contain the same information but do not include a photograph.</p></li>
+</ul>
+<p>Each page is presented to a different group of potential donors under similar conditions. The website records the average donation amount (in dollars) received per donor for each campaign page.</p>
+<p>The results are summarized below:</p>
 <table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Airline</th>
-<th>Delayed</th>
-<th>OnTime</th>
-<th>Total</th>
-</tr>
-</thead>
 <tbody>
 <tr class="odd">
-<td>Delta</td>
-<td>659</td>
-<td>2344</td>
-<td>3003</td>
+<td style="text-align: center;">Group</td>
+<td style="text-align: center;">Mean ($)</td>
+<td style="text-align: center;">Standard Deviation ($)</td>
 </tr>
 <tr class="even">
-<td>American</td>
-<td>1450</td>
-<td>5880</td>
-<td>7330</td>
+<td style="text-align: center;">Photo</td>
+<td style="text-align: center;">$38.50</td>
+<td style="text-align: center;">$12.00</td>
 </tr>
 <tr class="odd">
-<td>Total</td>
-<td>2109</td>
-<td>8224</td>
-<td>10333</td>
+<td style="text-align: center;">No Photo</td>
+<td style="text-align: center;">$30.20</td>
+<td style="text-align: center;">$10.50</td>
 </tr>
 </tbody>
 </table>
 <ol type="a">
-<li><p>Identify the <em>population</em> and <em>parameter of interest</em> in this scenario. Also, calculate the <em>observed statistic</em>. </p></li>
-<li><p>State the null and alternative hypotheses in words and in symbols. </p></li>
-<li><p>The histogram below shows the distribution of 1500 simulated statistics under the null hypothesis. Each bin is 0.005 wide.</p></li>
-</ol>
-<div class="cell" data-warnings="false">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="exam-2-review_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li>Use the histogram to estimate the <em>p-value</em> (show/explain work) then write your conclusion for the hypothesis test in context. </li>
-</ul>
-<ol start="4" type="a">
-<li>The histogram below shows the bootstrap distribution for the statistic of interest. The distribution was generated by re-sampling from the original sample. The numbers on each bin represent the counts for the bin. Each bin is 0.005 units wide.</li>
-</ol>
-<div class="cell" data-warnings="false">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="exam-2-review_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li><p>Use the histogram to estimate the 95% confidence interval. Show/explain your work. </p></li>
-<li><p>Interpret the confidence interval in context. Does this interval support the findings under the hypothesis testing part? Explain. </p></li>
-</ul>
-</section>
-<section id="problem-5" class="level2">
-<h2 class="anchored" data-anchor-id="problem-5">Problem 5</h2>
-<p>The average (mean) ACT score for students at a certain college is believed to be 31. A random sample of 100 students produced a sample mean of 30. We want to determine, via simulation-based hypothesis testing, whether this data provides strong evidence that the true average ACT score at this college is lower than 31.</p>
-<ol type="a">
-<li><p>Identify the population, parameter, sample, and the observed statistic in this scenario. </p></li>
-<li><p>State the null and alternative hypotheses in words and symbols. </p></li>
-<li><p>Describe the setup of a simulation model and the steps for its implementation to generate the null distribution. Also explain how to obtain a p-value based on the simulated data. </p></li>
-<li><p>The histogram below shows the distribution of 1,000 simulated statistics under the null hypothesis. Use the histogram to estimate the P-value then write your conclusion in context.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="exam-2-review_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div></li>
-<li><p>Suppose we generate a confidence interval to estimate the true ACT score, would you expect 31 to be inside or outside the interval? Why?</p></li>
+<li><p>Identify the <em>independent</em> variable and the <em>dependent</em> variable in this study. </p></li>
+<li><p>State the null and alternative hypotheses in words and in statistical notation.</p></li>
+<li><p>Calculate the <em>observed difference</em> in means and the <em>standard error</em> (assume equal variances). </p></li>
+<li><p>Calculate the <em>test statistic</em>. </p></li>
+<li><p>Find the <em>P-value</em> and write the conclusion for the hypothesis test in context. Be sure to show/explain your work for finding the <em>P-value</em>. </p></li>
+<li><p>Calculate the estimated <em>effect size</em> and interpret it in context. </p></li>
 </ol>
 
 
@@ -1101,6 +995,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../exam-review/exam-1-review.html" class="pagination-link" aria-label="Exam 1">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Exam 1</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Downloads/sample_projects.html" class="pagination-link" aria-label="Sample Projects">
+        <span class="nav-page-text">Sample Projects</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
